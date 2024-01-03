@@ -1,0 +1,36 @@
+- name: "Spiro-TAD:F6TCNNQ"
+  dopant: F6TCNNQ
+  host: Spiro-TAD
+  concentration: {units: "mol%", data: [0.0, 0.5, 1.0, 2.0, 4.5, 10.0]}
+  doping:
+    works: true
+    efficiency: {method: null, data: null}
+    doi: "10.1002/adfm.201703780"
+  full_text: "https://oar.princeton.edu/jspui/bitstream/88435/pr1hm9f/1/Zhang%20%20Kahn%20Adv.%20Funct.%20Mat.%202017.pdf"
+  EA: {value: 5.6, method: IPES}
+  IP: {value: 5.46, method: UPS}
+  additional_info: null
+- name: "TCTA:F6TCNNQ"
+  dopant: F6TCNNQ
+  host: TCTA
+  concentration: {units: "mol%", data: [0.0, 11.0, 25.0, 33.0, 100.0]}
+  doping:
+    works: false
+    efficiency: {method: null, data: null}
+    doi: "10.1002/adfm.201703780"
+  full_text: "https://oar.princeton.edu/jspui/bitstream/88435/pr1hm9f/1/Zhang%20%20Kahn%20Adv.%20Funct.%20Mat.%202017.pdf"
+  EA: {value: 5.6, method: IPES}
+  IP: {value: 5.85, method: UPS}
+  additional_info: null
+- name: "TCTA:C60F48"
+  dopant: C60F48
+  host: TCTA
+  concentration: {units: "MR", data: [0.04, 0.1, 0.2]}  # MR = molar ratio
+  doping:
+    works: true
+    efficiency: {method: null, data: {0.04: 0.0958}}
+    doi: "10.1021/acs.jpcc.8b03804"
+  full_text: "https://documentserver.uhasselt.be/bitstream/1942/27438/2/Influence_of_Dopant-Host_Energy_Level_Offset_on_Thermoelectric_Properties_of_Doped_Organic_Semiconductors-author%20version.pdf"
+  EA: {value: [5.1, 5.5], method: IPES}
+  IP: {value: 5.85, method: UPS}
+  additional_info: null
