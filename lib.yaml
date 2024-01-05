@@ -5,7 +5,7 @@
   doping:
     works: true
     efficiency: {method: null, data: null}
-    doi: "10.1002/adfm.201703780"
+  doi: "10.1002/adfm.201703780"
   full_text: "https://oar.princeton.edu/jspui/bitstream/88435/pr1hm9f/1/Zhang%20%20Kahn%20Adv.%20Funct.%20Mat.%202017.pdf"
   EA: {value: 5.6, method: IPES}
   IP: {value: 5.46, method: UPS}
@@ -17,7 +17,7 @@
   doping:
     works: false
     efficiency: {method: null, data: null}
-    doi: "10.1002/adfm.201703780"
+  doi: "10.1002/adfm.201703780"
   full_text: "https://oar.princeton.edu/jspui/bitstream/88435/pr1hm9f/1/Zhang%20%20Kahn%20Adv.%20Funct.%20Mat.%202017.pdf"
   EA: {value: 5.6, method: IPES}
   IP: {value: 5.85, method: UPS}
@@ -34,3 +34,44 @@
   EA: {value: [5.1, 5.5], method: IPES}
   IP: {value: 5.85, method: UPS}
   additional_info: null
+- name: "MeO-TPD:F4TCNQ"
+  dopant: F4TCNQ
+  host: MeO-TPD
+  concentration: {units: "MR", data: [0.018, 0.423]} # range
+  doping:
+    works: true
+    efficiency: {method: null, data: null}
+    doi: "10.1063/1.3259436"
+  full_text: "https://pubs.aip.org/aip/jap/article-pdf/doi/10.1063/1.3259436/15044164/103711_1_online.pdf"
+  EA: {value: 5.24, method: IPES}
+  IP: {value: 5.1, method: UPS}
+  additional_info: null
+- name: "ZnPc:F4TCNQ"
+  dopant: F4TCNQ
+  host: ZnPc
+  concentration: {units: "mol%", data: null}
+  doping:
+    works: true
+    efficiency: {method: "position of the b1um18 mode of the TCNQ erivatives", data: 1.0}
+  doi: "10.1016/j.orgel.2003.08.004"
+  full_text: null
+  EA: {value: 5.24, method: UPS}
+  IP: {value: 5.1, method: IPEA}
+  additional_info: "ZnPc doped with F4-TCNQ shows significant changes in conductivity with doping concentration."
+- name: "m-MTDATA:F4TCNQ"
+  dopant: F4TCNQ
+  host: m-MTDATA
+  concentration: {units: "mol%", data: [2]}
+  doping:
+    works: true
+    efficiency: {method: "position of the b1um18 mode of the TCNQ derivatives", data: 1.0}
+  doi: "10.1016/j.orgel.2003.08.004"
+  full_text: null
+  EA: {value: 5.24, method: IPEA}
+  IP: {value: 5.1, method: UPS}
+  additional_info: "m-MTDATA when doped with F4-TCNQ at 2 mol% concentration shows conductivity of 3 × 10^-7 S/cm."
+- name: "TPD:F4TCNQ" # todo add from [28] or the previous publication!
+- name: "ZnPc:TCNQ"  # todo the same
+
+
+
