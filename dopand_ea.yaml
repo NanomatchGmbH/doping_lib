@@ -1,0 +1,6 @@
+- name: F4TCNNQ
+  data:
+    - source: http://dx.doi.org/10.1063/1.3259436
+      value: 5.24
+    - source:
+      value: 5.
