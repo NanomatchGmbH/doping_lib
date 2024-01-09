@@ -30,12 +30,66 @@
   concentration: {units: "MR", data: [0.04, 0.1, 0.2]}  # MR = molar ratio
   doping:
     works: true
-    efficiency: {method: null, data: {0.04: 0.0958}}
+    efficiency: {method: null, data: {0.04: 0.0958, 0.1: 0.121, 0.2: 0.149}} # {concentration: ionized dopants}.
     doi: "10.1021/acs.jpcc.8b03804"
   full_text: "https://documentserver.uhasselt.be/bitstream/1942/27438/2/Influence_of_Dopant-Host_Energy_Level_Offset_on_Thermoelectric_Properties_of_Doped_Organic_Semiconductors-author%20version.pdf"
   EA: {value: [5.1, 5.5], method: IPES}
   IP: {value: 5.85, method: UPS}
+  additional_info: "values are taken from supplementary Figure, and these are the absolute values. In contrast to the main paper. But these are still references wrt BF at MR of 0.04"
+
+- name: "BPAPF:C60F48"
+  dopant: C60F48
+  host: BPAPF
+  concentration: {units: "MR", data: [0.04, 0.1, 0.2]}  # MR = molar ratio
+  doping:
+    works: true
+    efficiency: {method: null, data: {0.04: 0.28, 0.1: 0.283, 0.2: 0.35}}
+    doi: "10.1021/acs.jpcc.8b03804"
+  full_text: "https://documentserver.uhasselt.be/bitstream/1942/27438/2/Influence_of_Dopant-Host_Energy_Level_Offset_on_Thermoelectric_Properties_of_Doped_Organic_Semiconductors-author%20version.pdf"
+  EA: {value: [5.1, 5.5], method: IPES}
+  IP: {value: 5.6, method: UPS}
   additional_info: null
+
+- name: "BPAPF:C60F36"
+  dopant: C60F36
+  host: BPAPF
+  concentration: {units: "MR", data: [0.04, 0.1, 0.2]}  # MR = molar ratio
+  doping:
+    works: true
+    efficiency: {method: null, data: {0.04: 0.28, 0.1: 0.283, 0.2: 0.35}}
+    doi: "10.1021/acs.jpcc.8b03804"
+  full_text: "https://documentserver.uhasselt.be/bitstream/1942/27438/2/Influence_of_Dopant-Host_Energy_Level_Offset_on_Thermoelectric_Properties_of_Doped_Organic_Semiconductors-author%20version.pdf"
+  EA: {value: [5.1, 5.5], method: IPES}
+  IP: {value: 5.6, method: UPS}
+  additional_info: null
+
+- name: "NPB:C60F48"
+  dopant: C60F48
+  host: NPB
+  concentration: {units: "MR", data: [0.04, 0.1, 0.2]}  # MR = molar ratio
+  doping:
+    works: true
+    efficiency: {method: null, data: {0.04: 0.716, 0.1: 0.767, 0.2: 0.68}}
+    doi: "10.1021/acs.jpcc.8b03804"
+  full_text: "https://documentserver.uhasselt.be/bitstream/1942/27438/2/Influence_of_Dopant-Host_Energy_Level_Offset_on_Thermoelectric_Properties_of_Doped_Organic_Semiconductors-author%20version.pdf"
+  EA: {value: [5.1, 5.5], method: IPES}
+  IP: {value: 5.45, method: UPS}
+  additional_info: null
+
+- name: "BF-DPB:C60F48"
+  dopant: C60F48
+  host: BF-DPB
+  concentration: {units: "MR", data: [0.04, 0.1, 0.2]}  # MR = molar ratio
+  doping:
+    works: true
+    efficiency: {method: null, data: {0.04: 1.0, 0.1: 0.894, 0.2: 0.753}}
+    doi: "10.1021/acs.jpcc.8b03804"
+  full_text: "https://documentserver.uhasselt.be/bitstream/1942/27438/2/Influence_of_Dopant-Host_Energy_Level_Offset_on_Thermoelectric_Properties_of_Doped_Organic_Semiconductors-author%20version.pdf"
+  EA: {value: [5.1, 5.5], method: IPES}
+  IP: {value: 5.3, method: UPS}
+  additional_info: null
+
+
 
 - name: "MeO-TPD:F4TCNQ"
   dopant: F4TCNQ
