@@ -10,6 +10,7 @@
   EA: {value: 5.6, method: IPES}
   IP: {value: 5.46, method: UPS}
   additional_info: null
+
 - name: "TCTA:F6TCNNQ"
   dopant: F6TCNNQ
   host: TCTA
@@ -22,6 +23,7 @@
   EA: {value: 5.6, method: IPES}
   IP: {value: 5.85, method: UPS}
   additional_info: null
+
 - name: "TCTA:C60F48"
   dopant: C60F48
   host: TCTA
@@ -34,6 +36,7 @@
   EA: {value: [5.1, 5.5], method: IPES}
   IP: {value: 5.85, method: UPS}
   additional_info: null
+
 - name: "MeO-TPD:F4TCNQ"
   dopant: F4TCNQ
   host: MeO-TPD
@@ -46,32 +49,56 @@
   EA: {value: 5.24, method: IPES}
   IP: {value: 5.1, method: UPS}
   additional_info: null
+
 - name: "ZnPc:F4TCNQ"
   dopant: F4TCNQ
   host: ZnPc
-  concentration: {units: "mol%", data: null}
+  concentration: {units: "mol%", data: 2.0}
   doping:
     works: true
-    efficiency: {method: "position of the b1um18 mode of the TCNQ erivatives", data: 1.0}
+    efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: 1.0}
   doi: "10.1016/j.orgel.2003.08.004"
   full_text: null
-  EA: {value: 5.24, method: UPS}
-  IP: {value: 5.1, method: IPEA}
-  additional_info: "ZnPc doped with F4-TCNQ shows significant changes in conductivity with doping concentration."
+  EA: {value: 5.24, method: IPES}
+  IP: {value: 5.1, method: UPS}
+  additional_info: null
+
+- name: "ZnPc:TCNQ"
+  dopant: TCNQ
+  host: ZnPc
+  concentration: {units: "mol%", data: 2.0}
+  doping:
+    works: true
+    efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: 1.0}
+  doi: "10.1016/j.orgel.2003.08.004"
+  full_text: null
+  EA: {value: 4.5, method: IPES}
+  IP: {value: 5.1, method: UPS}
+  additional_info: "typo in Table 1. Wrong: 1, Correct: 0.2."
+
 - name: "m-MTDATA:F4TCNQ"
   dopant: F4TCNQ
   host: m-MTDATA
-  concentration: {units: "mol%", data: [2]}
+  concentration: {units: "mol%", data: 2.0}
   doping:
     works: true
-    efficiency: {method: "position of the b1um18 mode of the TCNQ derivatives", data: 1.0}
+    efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: 1.0}
   doi: "10.1016/j.orgel.2003.08.004"
   full_text: null
   EA: {value: 5.24, method: IPEA}
   IP: {value: 5.1, method: UPS}
-  additional_info: "m-MTDATA when doped with F4-TCNQ at 2 mol% concentration shows conductivity of 3 × 10^-7 S/cm."
-- name: "TPD:F4TCNQ" # todo add from [28] or the previous publication!
-- name: "ZnPc:TCNQ"  # todo the same
+  additional_info: null
 
-
+- name: "TPD:F4TCNQ"
+  dopant: F4TCNQ
+  host: TPD
+  concentration: {units: "mol%", data: 2.0}
+  doping:
+    works: true
+    efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: 0.64}
+  doi: "10.1016/j.orgel.2003.08.004"
+  full_text: null
+  EA: {value: 5.24, method: IPEA}
+  IP: {value: 5.4, method: UPS}
+  additional_info: null
 
