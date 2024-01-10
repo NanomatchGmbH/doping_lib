@@ -53,13 +53,13 @@
 - name: "BPAPF:C60F36"
   dopant: C60F36
   host: BPAPF
-  concentration: {units: "MR", data: [0.04, 0.1, 0.2]}  # MR = molar ratio
+  concentration: {units: "MR", data: [0.6]}  # MR = molar ratio
   doping:
     works: true
-    efficiency: {method: null, data: {0.04: 0.28, 0.1: 0.283, 0.2: 0.35}}
+    efficiency: {method: null, data: {0.6: 0.1}}
     doi: "10.1021/acs.jpcc.8b03804"
   full_text: "https://documentserver.uhasselt.be/bitstream/1942/27438/2/Influence_of_Dopant-Host_Energy_Level_Offset_on_Thermoelectric_Properties_of_Doped_Organic_Semiconductors-author%20version.pdf"
-  EA: {value: [5.1, 5.5], method: IPES}
+  EA: {value: [4.5, 4.9], method: IPES}
   IP: {value: 5.6, method: UPS}
   additional_info: null
 
@@ -89,7 +89,70 @@
   IP: {value: 5.3, method: UPS}
   additional_info: null
 
+- name: "BF-DPB:CN6-CP"
+  dopant: CN6-CP
+  host: BF-DPB
+  concentration: {units: "MR", [data: 0.36]}  # MR = molar ratio
+  doping:
+    works: true
+    efficiency: {method: null, data: {0.36: 1.0}}
+    doi: "10.1021/acs.jpcc.8b03804"
+  full_text: "https://documentserver.uhasselt.be/bitstream/1942/27438/2/Influence_of_Dopant-Host_Energy_Level_Offset_on_Thermoelectric_Properties_of_Doped_Organic_Semiconductors-author%20version.pdf"
+  EA: {value: 5.88, method: IPES}
+  IP: {value: 5.3, method: UPS}
+  additional_info: null
 
+- name: "NPB:CN6-CP"
+  dopant: CN6-CP
+  host: NPB
+  concentration: {units: "MR", [data: 0.36]}  # MR = molar ratio
+  doping:
+    works: true
+    efficiency: {method: null, data: {0.36: 1.0}}
+    doi: "10.1021/acs.jpcc.8b03804"
+  full_text: "https://documentserver.uhasselt.be/bitstream/1942/27438/2/Influence_of_Dopant-Host_Energy_Level_Offset_on_Thermoelectric_Properties_of_Doped_Organic_Semiconductors-author%20version.pdf"
+  EA: {value: 5.88, method: IPES}
+  IP: {value: 5.45, method: UPS}
+  additional_info: null
+
+- name: "BPAPF:CN6-CP"
+  dopant: CN6-CP
+  host: BPAPF
+  concentration: {units: "MR", [data: 0.36]}  # MR = molar ratio
+  doping:
+    works: true
+    efficiency: {method: null, data: {0.36: 1.0}}
+    doi: "10.1021/acs.jpcc.8b03804"
+  full_text: "https://documentserver.uhasselt.be/bitstream/1942/27438/2/Influence_of_Dopant-Host_Energy_Level_Offset_on_Thermoelectric_Properties_of_Doped_Organic_Semiconductors-author%20version.pdf"
+  EA: {value: 5.88, method: IPES}
+  IP: {value: 5.6, method: UPS}
+  additional_info: null
+
+- name: "TCTA:CN6-CP"
+  dopant: CN6-CP
+  host: TCTA
+  concentration: {units: "MR", [data: 0.36]}  # MR = molar ratio
+  doping:
+    works: true
+    efficiency: {method: null, data: {0.36: 0.5}}
+    doi: "10.1021/acs.jpcc.8b03804"
+  full_text: "https://documentserver.uhasselt.be/bitstream/1942/27438/2/Influence_of_Dopant-Host_Energy_Level_Offset_on_Thermoelectric_Properties_of_Doped_Organic_Semiconductors-author%20version.pdf"
+  EA: {value: 5.88, method: IPES}
+  IP: {value: 5.85, method: UPS}
+  additional_info: null
+
+- name: "POPy2:CN6-CP"
+  dopant: CN6-CP
+  host: POPy2
+  concentration: {units: "mol%", data: [0, 5, 10, 25]}
+  doping:
+    works: true
+    efficiency: {method: null, data: null}
+    doi: "https://doi.org/10.1021/acsami.1c21302"
+  full_text: "https://www.osti.gov/servlets/purl/1923742"
+  EA: {value: 5.88, method: IPES}
+  IP: {value: [5.74, 5.87, 5.9], method: UPS}
+  additional_info: null
 
 - name: "MeO-TPD:F4TCNQ"
   dopant: F4TCNQ
