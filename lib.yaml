@@ -9,7 +9,7 @@
   full_text: "https://oar.princeton.edu/jspui/bitstream/88435/pr1hm9f/1/Zhang%20%20Kahn%20Adv.%20Funct.%20Mat.%202017.pdf"
   EA: {value: 5.6, method: IPES}
   IP: {value: 5.46, method: UPS}
-  additional_info: null
+  additional_info: "conductivity is significantly lower than that of Spiro-OMeTAD, although the offsets are comparable -0.1 eV"
 
 - name: "TCTA:F6TCNNQ"
   dopant: F6TCNNQ
@@ -50,18 +50,31 @@
   IP: {value: 5.6, method: UPS}
   additional_info: null
 
-- name: "BPAPF:C60F36"
+- name: "BFDPB:C60F36"
   dopant: C60F36
-  host: BPAPF
+  host: BFDPB
   concentration: {units: "MR", data: [0.6]}  # MR = molar ratio
   doping:
     works: true
-    efficiency: {method: null, data: {0.6: 0.1}}
+    efficiency: {method: null, data: {0.6: 0.02}}
     doi: "10.1021/acs.jpcc.8b03804"
-  full_text: "https://documentserver.uhasselt.be/bitstream/1942/27438/2/Influence_of_Dopant-Host_Energy_Level_Offset_on_Thermoelectric_Properties_of_Doped_Organic_Semiconductors-author%20version.pdf"
+  full_text: ""
   EA: {value: [4.5, 4.9], method: IPES}
-  IP: {value: 5.6, method: UPS}
-  additional_info: null
+  IP: {value: 5.3, method: UPS}
+  additional_info: "Boder-line doping. Estimated from the doping efficiency of *:C60F48 and the difference in the conductivity between *:C60F48 and *:C60F48"
+
+- name: "BFDPB:C60F36"
+  dopant: C60F36
+  host: BFDPB
+  concentration: {units: "MR", data: [0.6]}  # MR = molar ratio
+  doping:
+    works: true
+    efficiency: {method: null, data: {0.6: 0.02}}
+    doi: "10.1021/acs.jpcc.8b03804"
+  full_text: ""
+  EA: {value: [4.5, 4.9], method: IPES}
+  IP: {value: 5.3, method: UPS}
+  additional_info: "Boder-line doping. Estimated from the doping efficiency of *:C60F48 and the difference in the conductivity between *:C60F48 and *:C60F48"
 
 - name: "NPB:C60F48"
   dopant: C60F48
@@ -76,9 +89,9 @@
   IP: {value: 5.45, method: UPS}
   additional_info: null
 
-- name: "BF-DPB:C60F48"
+- name: "BFDPB:C60F48"
   dopant: C60F48
-  host: BF-DPB
+  host: BFDPB
   concentration: {units: "MR", data: [0.04, 0.1, 0.2]}  # MR = molar ratio
   doping:
     works: true
@@ -89,10 +102,10 @@
   IP: {value: 5.3, method: UPS}
   additional_info: null
 
-- name: "BF-DPB:CN6-CP"
+- name: "BFDPB:CN6-CP"
   dopant: CN6-CP
-  host: BF-DPB
-  concentration: {units: "MR", [data: 0.36]}  # MR = molar ratio
+  host: BFDPB
+  concentration: {units: "MR", data: [0.36]}  # MR = molar ratio
   doping:
     works: true
     efficiency: {method: null, data: {0.36: 1.0}}
@@ -105,7 +118,7 @@
 - name: "NPB:CN6-CP"
   dopant: CN6-CP
   host: NPB
-  concentration: {units: "MR", [data: 0.36]}  # MR = molar ratio
+  concentration: {units: "MR", data: [0.36]}  # MR = molar ratio
   doping:
     works: true
     efficiency: {method: null, data: {0.36: 1.0}}
@@ -118,7 +131,7 @@
 - name: "BPAPF:CN6-CP"
   dopant: CN6-CP
   host: BPAPF
-  concentration: {units: "MR", [data: 0.36]}  # MR = molar ratio
+  concentration: {units: "MR", data: [0.36]}  # MR = molar ratio
   doping:
     works: true
     efficiency: {method: null, data: {0.36: 1.0}}
@@ -131,7 +144,7 @@
 - name: "TCTA:CN6-CP"
   dopant: CN6-CP
   host: TCTA
-  concentration: {units: "MR", [data: 0.36]}  # MR = molar ratio
+  concentration: {units: "MR", data: [0.36]}  # MR = molar ratio
   doping:
     works: true
     efficiency: {method: null, data: {0.36: 0.5}}
@@ -166,6 +179,8 @@
   EA: {value: 5.24, method: IPES}
   IP: {value: 5.1, method: UPS}
   additional_info: null
+
+
 
 - name: "ZnPc:F4TCNQ"
   dopant: F4TCNQ
@@ -218,4 +233,134 @@
   EA: {value: 5.24, method: IPEA}
   IP: {value: 5.4, method: UPS}
   additional_info: null
+
+- name: "Spiro-MeOTAD:F4TCNQ"
+  dopant: F4TCNQ
+  host: Spiro-MeOTAD
+  concentration: {units: Wt%, data: 1.01098}
+  doping:
+    works: true
+    efficiency: {method: Null, data: Null}
+  doi: "10.1039/c2cp41855j"
+  full_text: null
+  EA: {value: 5.2, method: IPEA}
+  IP: {value: 5.21, method: UPS}
+  additional_info: null
+
+- name: "Spiro-MeOTAD:F4TCNQ" # second publication
+  dopant: F4TCNQ
+  host: TPD
+  concentration: {units: todo, data: todo}
+  doping:
+    works: true
+    efficiency: {method: Null, data: Null}
+  doi: "10.1039/c2cp41855j"
+  full_text: null
+  EA: {value: 5.2, method: IPEA}
+  IP: {value: 5.21, method: UPS}
+  additional_info: null
+
+- name: "P3HT:TCNQ Hase"
+  dopant: TCNQ
+  host: P3HT
+  concentration: {units: todo, data: todo}
+  doping:
+    works: false
+    efficiency: {method: todo, data: todo}
+  doi: todo
+  full_text: todo
+  EA: {value: todo, method: todo}
+  IP: {value: todo, method: todo}
+  additional_info: "P3HT, Hase"
+
+- name: "P3HT:FTCNQ"
+  dopant: FTCNQ
+  host: P3HT
+  concentration: {units: todo, data: todo}
+  doping:
+    works: false
+    efficiency: {method: todo, data: todo}
+  doi: todo
+  full_text: todo
+  EA: {value: todo, method: todo}
+  IP: {value: todo, method: todo}
+  additional_info: "P3HT, Hase"
+
+- name: "P3HT:F2TCNQ"
+  dopant: F2TCNQ
+  host: P3HT
+  concentration: {units: todo, data: todo}
+  doping:
+    works: true
+    efficiency: {method: todo, data: todo}
+  doi: todo
+  full_text: todo
+  EA: {value: todo, method: todo}
+  IP: {value: todo, method: todo}
+  additional_info: "P3HT, Hase"
+
+- name: "P3HT:F4TCNQ Hase"
+  dopant: F4TCNQ
+  host: P3HT
+  concentration: {units: todo, data: todo}
+  doping:
+    works: true
+    efficiency: {method: todo, data: todo}
+  doi: todo
+  full_text: todo
+  EA: {value: todo, method: todo}
+  IP: {value: todo, method: todo}
+  additional_info: "P3HT, Hase"
+
+- name: "P3HT:F4DOCDCNQ"
+  dopant: F4DOCDCNQ
+  host: P3HT
+  concentration: {units: todo, data: todo}
+  doping:
+    works: false
+    efficiency: {method: todo, data: todo}
+  doi: todo
+  full_text: todo
+  EA: {value: todo, method: todo}
+  IP: {value: todo, method: todo}
+  additional_info: "P3HT, Li"
+
+- name: "P3HT:F4DMCDCNQ"
+  dopant: F4DMCDCNQ
+  host: P3HT
+  concentration: {units: todo, data: todo}
+  doping:
+    works: false
+    efficiency: {method: todo, data: todo}
+  doi: todo
+  full_text: todo
+  EA: {value: todo, method: todo}
+  IP: {value: todo, method: todo}
+  additional_info: "P3HT, Li"
+
+- name: "P3HT:F4OCTCNQ"
+  dopant: F4OCTCNQ
+  host: P3HT
+  concentration: {units: todo, data: todo}
+  doping:
+    works: true
+    efficiency: {method: todo, data: todo}
+  doi: todo
+  full_text: todo
+  EA: {value: todo, method: todo}
+  IP: {value: todo, method: todo}
+  additional_info: "P3HT, Li"
+
+- name: "P3HT:F4MCTCNQ"
+  dopant: F4MCTCNQ
+  host: P3HT
+  concentration: {units: todo, data: todo}
+  doping:
+    works: true
+    efficiency: {method: todo, data: todo}
+  doi: todo
+  full_text: todo
+  EA: {value: todo, method: todo}
+  IP: {value: todo, method: todo}
+  additional_info: "P3HT, Li"
 
