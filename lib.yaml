@@ -187,8 +187,8 @@
   doping:
     works: true
     efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: {0.02: 0.74}}
-    doi: "10.1063/1.3259436"
-  full_text: "https://pubs.aip.org/aip/jap/article-pdf/doi/10.1063/1.3259436/15044164/103711_1_online.pdf"
+    doi: "10.1016/j.orgel.2003.08.004"
+  full_text: null
   EA: {value: 5.24, method: IPES}
   IP: {value: 5.1, method: UPS}
   additional_info: null
