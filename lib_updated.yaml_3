@@ -1,0 +1,708 @@
+- EA:
+    method: IPES
+    value: 5.6
+  EA_sim: 5.04356880526112
+  IP:
+    method: UPS
+    value: 5.46
+  IP_sim: 5.901977415787202
+  additional_info: conductivity is significantly lower than that of Spiro-OMeTAD,
+    although the offsets are comparable -0.1 eV
+  concentration:
+    data:
+    - 0.0
+    - 0.5
+    - 1.0
+    - 2.0
+    - 4.5
+    - 10.0
+    units: mol%
+  doi: 10.1002/adfm.201703780
+  dopant: F6TCNNQ
+  doping:
+    efficiency:
+      data: null
+      method: null
+    works: true
+  full_text: https://oar.princeton.edu/jspui/bitstream/88435/pr1hm9f/1/Zhang%20%20Kahn%20Adv.%20Funct.%20Mat.%202017.pdf
+  host: Spiro-TAD
+  name: Spiro-TAD:F6TCNNQ
+- EA:
+    method: IPES
+    value: 5.6
+  EA_sim: 5.04356880526112
+  IP:
+    method: UPS
+    value: 5.85
+  IP_sim: 6.344778310535391
+  additional_info: null
+  concentration:
+    data:
+    - 0.0
+    - 11.0
+    - 25.0
+    - 33.0
+    - 100.0
+    units: mol%
+  doi: 10.1002/adfm.201703780
+  dopant: F6TCNNQ
+  doping:
+    efficiency:
+      data: null
+      method: null
+    works: false
+  full_text: https://oar.princeton.edu/jspui/bitstream/88435/pr1hm9f/1/Zhang%20%20Kahn%20Adv.%20Funct.%20Mat.%202017.pdf
+  host: TCTA
+  name: TCTA:F6TCNNQ
+- EA:
+    method: IPES
+    value:
+    - 5.1
+    - 5.5
+  EA_sim: 4.55600219997879
+  IP:
+    method: UPS
+    value: 5.85
+  IP_sim: 6.344778310535391
+  additional_info: values are taken from supplementary Figure, and these are the absolute
+    values. In contrast to the main paper. But these are still references wrt BF at
+    MR of 0.04
+  concentration:
+    data:
+    - 0.04
+    - 0.1
+    - 0.2
+    units: MR
+  dopant: C60F48
+  doping:
+    doi: 10.1021/acs.jpcc.8b03804
+    efficiency:
+      data:
+        0.04: 0.0958
+        0.1: 0.121
+        0.2: 0.149
+      method: null
+    works: true
+  full_text: https://documentserver.uhasselt.be/bitstream/1942/27438/2/Influence_of_Dopant-Host_Energy_Level_Offset_on_Thermoelectric_Properties_of_Doped_Organic_Semiconductors-author%20version.pdf
+  host: TCTA
+  name: TCTA:C60F48
+- EA:
+    method: IPES
+    value:
+    - 5.1
+    - 5.5
+  EA_sim: 4.55600219997879
+  IP:
+    method: UPS
+    value: 5.6
+  IP_sim: 6.231367563155443
+  additional_info: null
+  concentration:
+    data:
+    - 0.04
+    - 0.1
+    - 0.2
+    units: MR
+  dopant: C60F48
+  doping:
+    doi: 10.1021/acs.jpcc.8b03804
+    efficiency:
+      data:
+        0.04: 0.28
+        0.1: 0.283
+        0.2: 0.35
+      method: null
+    works: true
+  full_text: https://documentserver.uhasselt.be/bitstream/1942/27438/2/Influence_of_Dopant-Host_Energy_Level_Offset_on_Thermoelectric_Properties_of_Doped_Organic_Semiconductors-author%20version.pdf
+  host: BPAPF
+  name: BPAPF:C60F48
+- EA:
+    method: IPES
+    value:
+    - 4.5
+    - 4.9
+  EA_sim: 3.85958256316024
+  IP:
+    method: UPS
+    value: 5.3
+  IP_sim: 5.940338963155259
+  additional_info: Boder-line doping. Estimated from the doping efficiency of *:C60F48
+    and the difference in the conductivity between *:C60F48 and *:C60F48
+  concentration:
+    data:
+    - 0.6
+    units: MR
+  dopant: C60F36
+  doping:
+    doi: 10.1021/acs.jpcc.8b03804
+    efficiency:
+      data:
+        0.6: 0.02
+      method: null
+    works: true
+  full_text: ''
+  host: BFDPB
+  name: BFDPB:C60F36
+- EA:
+    method: IPES
+    value:
+    - 4.5
+    - 4.9
+  EA_sim: 3.85958256316024
+  IP:
+    method: UPS
+    value: 5.3
+  IP_sim: 5.940338963155259
+  additional_info: Boder-line doping. Estimated from the doping efficiency of *:C60F48
+    and the difference in the conductivity between *:C60F48 and *:C60F48
+  concentration:
+    data:
+    - 0.6
+    units: MR
+  dopant: C60F36
+  doping:
+    doi: 10.1021/acs.jpcc.8b03804
+    efficiency:
+      data:
+        0.6: 0.02
+      method: null
+    works: true
+  full_text: ''
+  host: BFDPB
+  name: BFDPB:C60F36
+- EA:
+    method: IPES
+    value:
+    - 5.1
+    - 5.5
+  EA_sim: 4.55600219997879
+  IP:
+    method: UPS
+    value: 5.45
+  IP_sim: 5.986848263158918
+  additional_info: null
+  concentration:
+    data:
+    - 0.04
+    - 0.1
+    - 0.2
+    units: MR
+  dopant: C60F48
+  doping:
+    doi: 10.1021/acs.jpcc.8b03804
+    efficiency:
+      data:
+        0.04: 0.716
+        0.1: 0.767
+        0.2: 0.68
+      method: null
+    works: true
+  full_text: https://documentserver.uhasselt.be/bitstream/1942/27438/2/Influence_of_Dopant-Host_Energy_Level_Offset_on_Thermoelectric_Properties_of_Doped_Organic_Semiconductors-author%20version.pdf
+  host: NPB
+  name: NPB:C60F48
+- EA:
+    method: IPES
+    value:
+    - 5.1
+    - 5.5
+  EA_sim: 4.55600219997879
+  IP:
+    method: UPS
+    value: 5.3
+  IP_sim: 5.940338963155259
+  additional_info: null
+  concentration:
+    data:
+    - 0.04
+    - 0.1
+    - 0.2
+    units: MR
+  dopant: C60F48
+  doping:
+    doi: 10.1021/acs.jpcc.8b03804
+    efficiency:
+      data:
+        0.04: 1.0
+        0.1: 0.894
+        0.2: 0.753
+      method: null
+    works: true
+  full_text: https://documentserver.uhasselt.be/bitstream/1942/27438/2/Influence_of_Dopant-Host_Energy_Level_Offset_on_Thermoelectric_Properties_of_Doped_Organic_Semiconductors-author%20version.pdf
+  host: BFDPB
+  name: BFDPB:C60F48
+- EA:
+    method: IPES
+    value: 5.88
+  EA_sim: 5.721102289476152
+  IP:
+    method: UPS
+    value: 5.3
+  IP_sim: 5.940338963155259
+  additional_info: null
+  concentration:
+    data:
+    - 0.36
+    units: MR
+  dopant: CN6-CP
+  doping:
+    doi: 10.1021/acs.jpcc.8b03804
+    efficiency:
+      data:
+        0.36: 1.0
+      method: null
+    works: true
+  full_text: https://documentserver.uhasselt.be/bitstream/1942/27438/2/Influence_of_Dopant-Host_Energy_Level_Offset_on_Thermoelectric_Properties_of_Doped_Organic_Semiconductors-author%20version.pdf
+  host: BFDPB
+  name: BFDPB:CN6-CP
+- EA:
+    method: IPES
+    value: 5.88
+  EA_sim: 5.721102289476152
+  IP:
+    method: UPS
+    value: 5.45
+  IP_sim: 5.986848263158918
+  additional_info: null
+  concentration:
+    data:
+    - 0.36
+    units: MR
+  dopant: CN6-CP
+  doping:
+    doi: 10.1021/acs.jpcc.8b03804
+    efficiency:
+      data:
+        0.36: 1.0
+      method: null
+    works: true
+  full_text: https://documentserver.uhasselt.be/bitstream/1942/27438/2/Influence_of_Dopant-Host_Energy_Level_Offset_on_Thermoelectric_Properties_of_Doped_Organic_Semiconductors-author%20version.pdf
+  host: NPB
+  name: NPB:CN6-CP
+- EA:
+    method: IPES
+    value: 5.88
+  EA_sim: 5.721102289476152
+  IP:
+    method: UPS
+    value: 5.6
+  IP_sim: 6.231367563155443
+  additional_info: null
+  concentration:
+    data:
+    - 0.36
+    units: MR
+  dopant: CN6-CP
+  doping:
+    doi: 10.1021/acs.jpcc.8b03804
+    efficiency:
+      data:
+        0.36: 1.0
+      method: null
+    works: true
+  full_text: https://documentserver.uhasselt.be/bitstream/1942/27438/2/Influence_of_Dopant-Host_Energy_Level_Offset_on_Thermoelectric_Properties_of_Doped_Organic_Semiconductors-author%20version.pdf
+  host: BPAPF
+  name: BPAPF:CN6-CP
+- EA:
+    method: IPES
+    value: 5.88
+  EA_sim: 5.721102289476152
+  IP:
+    method: UPS
+    value: 5.85
+  IP_sim: 6.344778310535391
+  additional_info: null
+  concentration:
+    data:
+    - 0.36
+    units: MR
+  dopant: CN6-CP
+  doping:
+    doi: 10.1021/acs.jpcc.8b03804
+    efficiency:
+      data:
+        0.36: 0.5
+      method: null
+    works: true
+  full_text: https://documentserver.uhasselt.be/bitstream/1942/27438/2/Influence_of_Dopant-Host_Energy_Level_Offset_on_Thermoelectric_Properties_of_Doped_Organic_Semiconductors-author%20version.pdf
+  host: TCTA
+  name: TCTA:CN6-CP
+- EA:
+    method: IPES
+    value: 5.88
+  EA_sim: 5.721102289476152
+  IP:
+    method: UPS
+    value:
+    - 5.74
+    - 5.87
+    - 5.9
+  additional_info: null
+  concentration:
+    data:
+    - 0
+    - 5
+    - 10
+    - 25
+    units: mol%
+  dopant: CN6-CP
+  doping:
+    doi: https://doi.org/10.1021/acsami.1c21302
+    efficiency:
+      data: null
+      method: null
+    works: true
+  full_text: https://www.osti.gov/servlets/purl/1923742
+  host: POPy2
+  name: POPy2:CN6-CP
+- EA:
+    method: IPES
+    value: 5.24
+  EA_sim: 4.860635689472259
+  IP:
+    method: UPS
+    value: 5.1
+  IP_sim: 5.695444100000263
+  additional_info: null
+  concentration:
+    data:
+    - 0.018
+    - 0.423
+    units: MR
+  dopant: F4TCNQ
+  doping:
+    doi: 10.1063/1.3259436
+    efficiency:
+      data: null
+      method: null
+    works: true
+  full_text: https://pubs.aip.org/aip/jap/article-pdf/doi/10.1063/1.3259436/15044164/103711_1_online.pdf
+  host: MeO-TPD
+  name: MeO-TPD:F4TCNQ
+- EA:
+    method: IPES
+    value: 5.24
+  EA_sim: 4.860635689472259
+  IP:
+    method: UPS
+    value: 5.1
+  IP_sim: 5.695444100000263
+  additional_info: null
+  concentration:
+    data:
+    - 2
+    units: mol%
+  dopant: F4TCNQ
+  doping:
+    doi: 10.1016/j.orgel.2003.08.004
+    efficiency:
+      data:
+        0.02: 0.74
+      method: position of the b1uv18 mode of the TCNQ derivatives
+    works: true
+  full_text: null
+  host: MeO-TPD
+  name: MeO-TPD:F4TCNQ
+- EA:
+    method: IPES
+    value: 5.24
+  EA_sim: 4.860635689472259
+  IP:
+    method: UPS
+    value: 5.1
+  IP_sim: 5.8469963263128415
+  additional_info: null
+  concentration:
+    data: 2.0
+    units: mol%
+  doi: 10.1016/j.orgel.2003.08.004
+  dopant: F4TCNQ
+  doping:
+    efficiency:
+      data:
+        0.02: 1.0
+      method: position of the b1uv18 mode of the TCNQ derivatives
+    works: true
+  full_text: null
+  host: ZnPc
+  name: ZnPc:F4TCNQ
+- EA:
+    method: IPES
+    value: 4.5
+  EA_sim: 4.405181521053681
+  IP:
+    method: UPS
+    value: 5.1
+  IP_sim: 5.8469963263128415
+  additional_info: 'typo in Table 1. Wrong: 1, Correct: 0.2.'
+  concentration:
+    data: 2.0
+    units: mol%
+  doi: 10.1016/j.orgel.2003.08.004
+  dopant: TCNQ
+  doping:
+    efficiency:
+      data:
+        0.02: 1.0
+      method: position of the b1uv18 mode of the TCNQ derivatives
+    works: true
+  full_text: null
+  host: ZnPc
+  name: ZnPc:TCNQ
+- EA:
+    method: IPEA
+    value: 5.24
+  EA_sim: 4.860635689472259
+  IP:
+    method: UPS
+    value: 5.1
+  IP_sim: 5.471723052632927
+  additional_info: null
+  concentration:
+    data: 2.0
+    units: mol%
+  doi: 10.1016/j.orgel.2003.08.004
+  dopant: F4TCNQ
+  doping:
+    efficiency:
+      data:
+        0.02: 1.0
+      method: position of the b1uv18 mode of the TCNQ derivatives
+    works: true
+  full_text: null
+  host: m-MTDATA
+  name: m-MTDATA:F4TCNQ
+- EA:
+    method: IPEA
+    value: 5.24
+  EA_sim: 4.860635689472259
+  IP:
+    method: UPS
+    value: 5.4
+  IP_sim: 5.941065873681049
+  additional_info: null
+  concentration:
+    data: 2.0
+    units: mol%
+  doi: 10.1016/j.orgel.2003.08.004
+  dopant: F4TCNQ
+  doping:
+    efficiency:
+      data:
+        0.02: 0.64
+      method: position of the b1uv18 mode of the TCNQ derivatives
+    works: true
+  full_text: null
+  host: TPD
+  name: TPD:F4TCNQ
+- EA:
+    method: IPEA
+    value: 5.2
+  EA_sim: 4.860635689472259
+  IP:
+    method: UPS
+    value: 5.21
+  IP_sim: 5.639666494737964
+  additional_info: null
+  concentration:
+    data: 1.01098
+    units: Wt%
+  doi: 10.1039/c2cp41855j
+  dopant: F4TCNQ
+  doping:
+    efficiency:
+      data: null
+      method: null
+    works: true
+  full_text: null
+  host: Spiro-MeOTAD
+  name: Spiro-MeOTAD:F4TCNQ
+- EA:
+    method: IPEA
+    value: 5.2
+  EA_sim: 4.860635689472259
+  IP:
+    method: UPS
+    value: 5.21
+  IP_sim: 5.941065873681049
+  additional_info: null
+  concentration:
+    data: todo
+    units: todo
+  doi: 10.1039/c2cp41855j
+  dopant: F4TCNQ
+  doping:
+    efficiency:
+      data: null
+      method: null
+    works: true
+  full_text: null
+  host: TPD
+  name: Spiro-MeOTAD:F4TCNQ
+- EA:
+    method: todo
+    value: todo
+  EA_sim: 4.405181521053681
+  IP:
+    method: todo
+    value: todo
+  additional_info: P3HT, Hase
+  concentration:
+    data: todo
+    units: todo
+  doi: todo
+  dopant: TCNQ
+  doping:
+    efficiency:
+      data: todo
+      method: todo
+    works: false
+  full_text: todo
+  host: P3HT
+  name: P3HT:TCNQ Hase
+- EA:
+    method: todo
+    value: todo
+  EA_sim: 4.520101126315025
+  IP:
+    method: todo
+    value: todo
+  additional_info: P3HT, Hase
+  concentration:
+    data: todo
+    units: todo
+  doi: todo
+  dopant: FTCNQ
+  doping:
+    efficiency:
+      data: todo
+      method: todo
+    works: false
+  full_text: todo
+  host: P3HT
+  name: P3HT:FTCNQ
+- EA:
+    method: todo
+    value: todo
+  EA_sim: 4.623583436842003
+  IP:
+    method: todo
+    value: todo
+  additional_info: P3HT, Hase
+  concentration:
+    data: todo
+    units: todo
+  doi: todo
+  dopant: F2TCNQ
+  doping:
+    efficiency:
+      data: todo
+      method: todo
+    works: true
+  full_text: todo
+  host: P3HT
+  name: P3HT:F2TCNQ
+- EA:
+    method: todo
+    value: todo
+  EA_sim: 4.860635689472259
+  IP:
+    method: todo
+    value: todo
+  additional_info: P3HT, Hase
+  concentration:
+    data: todo
+    units: todo
+  doi: todo
+  dopant: F4TCNQ
+  doping:
+    efficiency:
+      data: todo
+      method: todo
+    works: true
+  full_text: todo
+  host: P3HT
+  name: P3HT:F4TCNQ Hase
+- EA:
+    method: todo
+    value: todo
+  EA_sim: 3.8232997420932304
+  IP:
+    method: todo
+    value: todo
+  additional_info: P3HT, Li
+  concentration:
+    data: todo
+    units: todo
+  doi: todo
+  dopant: F4DOCDCNQ
+  doping:
+    efficiency:
+      data: todo
+      method: todo
+    works: false
+  full_text: todo
+  host: P3HT
+  name: P3HT:F4DOCDCNQ
+- EA:
+    method: todo
+    value: todo
+  EA_sim: 3.885218294739999
+  IP:
+    method: todo
+    value: todo
+  additional_info: P3HT, Li
+  concentration:
+    data: todo
+    units: todo
+  doi: todo
+  dopant: F4DMCDCNQ
+  doping:
+    efficiency:
+      data: todo
+      method: todo
+    works: false
+  full_text: todo
+  host: P3HT
+  name: P3HT:F4DMCDCNQ
+- EA:
+    method: todo
+    value: todo
+  EA_sim: 4.435595189470597
+  IP:
+    method: todo
+    value: todo
+  additional_info: P3HT, Li
+  concentration:
+    data: todo
+    units: todo
+  doi: todo
+  dopant: F4OCTCNQ
+  doping:
+    efficiency:
+      data: todo
+      method: todo
+    works: true
+  full_text: todo
+  host: P3HT
+  name: P3HT:F4OCTCNQ
+- EA:
+    method: todo
+    value: todo
+  EA_sim: 4.388707547365679
+  IP:
+    method: todo
+    value: todo
+  additional_info: P3HT, Li
+  concentration:
+    data: todo
+    units: todo
+  doi: todo
+  dopant: F4MCTCNQ
+  doping:
+    efficiency:
+      data: todo
+      method: todo
+    works: true
+  full_text: todo
+  host: P3HT
+  name: P3HT:F4MCTCNQ
