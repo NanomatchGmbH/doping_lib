@@ -1,0 +1,50 @@
+import yaml
+from matplotlib import pyplot as plt
+
+lib_file = "lib_updated.yaml_3"
+
+with open(lib_file) as fid:
+    lib = yaml.load(fid, Loader=yaml.CLoader)
+
+offsets = []
+zero_or_one = []
+particular_values = []
+particular_offsets = []
+names = []  # To store names for annotations
+
+for material in lib:
+    if 'IP_sim' in material and 'EA_sim' in material:
+        material_name = material['name']
+        names.append(material_name)
+        print(material_name)
+
+        offset = material['IP_sim'] - material['EA_sim']
+        material['offset'] = offset
+        print(offset)
+        offsets.append(offset)
+
+        doping_works = material['doping']['works']
+        print(doping_works)
+        zero_or_one.append(0.0 if not doping_works else 1.0)
+
+        eff_dict = material['doping']['efficiency']['data']
+        if isinstance(eff_dict, dict):
+            efficiencies = list(eff_dict.values())
+            particular_values.extend(efficiencies)
+            list_size = len(efficiencies)
+            offsets_per_efficiency = [offset] * list_size
+            particular_offsets.extend(offsets_per_efficiency)
+
+plt.plot(offsets, zero_or_one, 'o', label="yes or not")
+
+# Plot specific values
+plt.plot(particular_offsets, particular_values, '*', label="number")
+
+# Annotating the plot with vertical text
+for i, name in enumerate(names):
+    plt.annotate(name, (offsets[i], zero_or_one[i]), fontsize=8, alpha=0.7, rotation=90)
+
+plt.xlabel("Offset, eV")
+plt.ylabel("Doping Efficiency")
+plt.legend()
+plt.show()
