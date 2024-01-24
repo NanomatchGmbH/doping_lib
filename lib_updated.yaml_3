@@ -1,11 +1,11 @@
 - EA:
     method: IPES
     value: 5.6
-  EA_sim: 5.04356880526112
+  EA_sim: 5.198255105257803
   IP:
     method: UPS
     value: 5.46
-  IP_sim: 5.901977415787202
+  IP_sim: 5.751215015779395
   additional_info: conductivity is significantly lower than that of Spiro-OMeTAD,
     although the offsets are comparable -0.1 eV
   concentration:
@@ -30,11 +30,11 @@
 - EA:
     method: IPES
     value: 5.6
-  EA_sim: 5.04356880526112
+  EA_sim: 5.198255105257803
   IP:
     method: UPS
     value: 5.85
-  IP_sim: 6.344778310535391
+  IP_sim: 6.136869710534143
   additional_info: null
   concentration:
     data:
@@ -59,11 +59,11 @@
     value:
     - 5.1
     - 5.5
-  EA_sim: 4.55600219997879
+  EA_sim: 4.728207299960301
   IP:
     method: UPS
     value: 5.85
-  IP_sim: 6.344778310535391
+  IP_sim: 6.136869710534143
   additional_info: values are taken from supplementary Figure, and these are the absolute
     values. In contrast to the main paper. But these are still references wrt BF at
     MR of 0.04
@@ -91,11 +91,11 @@
     value:
     - 5.1
     - 5.5
-  EA_sim: 4.55600219997879
+  EA_sim: 4.728207299960301
   IP:
     method: UPS
     value: 5.6
-  IP_sim: 6.231367563155443
+  IP_sim: 6.076320163144926
   additional_info: null
   concentration:
     data:
@@ -121,11 +121,11 @@
     value:
     - 4.5
     - 4.9
-  EA_sim: 3.85958256316024
+  EA_sim: 4.00340816317128
   IP:
     method: UPS
     value: 5.3
-  IP_sim: 5.940338963155259
+  IP_sim: 5.775855863154025
   additional_info: Boder-line doping. Estimated from the doping efficiency of *:C60F48
     and the difference in the conductivity between *:C60F48 and *:C60F48
   concentration:
@@ -148,11 +148,11 @@
     value:
     - 4.5
     - 4.9
-  EA_sim: 3.85958256316024
+  EA_sim: 4.00340816317128
   IP:
     method: UPS
     value: 5.3
-  IP_sim: 5.940338963155259
+  IP_sim: 5.775855863154025
   additional_info: Boder-line doping. Estimated from the doping efficiency of *:C60F48
     and the difference in the conductivity between *:C60F48 and *:C60F48
   concentration:
@@ -175,11 +175,11 @@
     value:
     - 5.1
     - 5.5
-  EA_sim: 4.55600219997879
+  EA_sim: 4.728207299960301
   IP:
     method: UPS
     value: 5.45
-  IP_sim: 5.986848263158918
+  IP_sim: 5.810086963161465
   additional_info: null
   concentration:
     data:
@@ -205,11 +205,11 @@
     value:
     - 5.1
     - 5.5
-  EA_sim: 4.55600219997879
+  EA_sim: 4.728207299960301
   IP:
     method: UPS
     value: 5.3
-  IP_sim: 5.940338963155259
+  IP_sim: 5.775855863154025
   additional_info: null
   concentration:
     data:
@@ -233,11 +233,11 @@
 - EA:
     method: IPES
     value: 5.88
-  EA_sim: 5.721102289476152
+  EA_sim: 5.892481689474993
   IP:
     method: UPS
     value: 5.3
-  IP_sim: 5.940338963155259
+  IP_sim: 5.775855863154025
   additional_info: null
   concentration:
     data:
@@ -257,11 +257,11 @@
 - EA:
     method: IPES
     value: 5.88
-  EA_sim: 5.721102289476152
+  EA_sim: 5.892481689474993
   IP:
     method: UPS
     value: 5.45
-  IP_sim: 5.986848263158918
+  IP_sim: 5.810086963161465
   additional_info: null
   concentration:
     data:
@@ -281,11 +281,11 @@
 - EA:
     method: IPES
     value: 5.88
-  EA_sim: 5.721102289476152
+  EA_sim: 5.892481689474993
   IP:
     method: UPS
     value: 5.6
-  IP_sim: 6.231367563155443
+  IP_sim: 6.076320163144926
   additional_info: null
   concentration:
     data:
@@ -305,11 +305,11 @@
 - EA:
     method: IPES
     value: 5.88
-  EA_sim: 5.721102289476152
+  EA_sim: 5.892481689474993
   IP:
     method: UPS
     value: 5.85
-  IP_sim: 6.344778310535391
+  IP_sim: 6.136869710534143
   additional_info: null
   concentration:
     data:
@@ -329,7 +329,7 @@
 - EA:
     method: IPES
     value: 5.88
-  EA_sim: 5.721102289476152
+  EA_sim: 5.892481689474993
   IP:
     method: UPS
     value:
@@ -357,11 +357,11 @@
 - EA:
     method: IPES
     value: 5.24
-  EA_sim: 4.860635689472259
+  EA_sim: 5.041712089472424
   IP:
     method: UPS
     value: 5.1
-  IP_sim: 5.695444100000263
+  IP_sim: 5.537452500002931
   additional_info: null
   concentration:
     data:
@@ -381,11 +381,11 @@
 - EA:
     method: IPES
     value: 5.24
-  EA_sim: 4.860635689472259
+  EA_sim: 5.041712089472424
   IP:
     method: UPS
     value: 5.1
-  IP_sim: 5.695444100000263
+  IP_sim: 5.537452500002931
   additional_info: null
   concentration:
     data:
@@ -405,11 +405,11 @@
 - EA:
     method: IPES
     value: 5.24
-  EA_sim: 4.860635689472259
+  EA_sim: 5.041712089472424
   IP:
     method: UPS
     value: 5.1
-  IP_sim: 5.8469963263128415
+  IP_sim: 5.6540537263213295
   additional_info: null
   concentration:
     data: 2.0
@@ -428,11 +428,11 @@
 - EA:
     method: IPES
     value: 4.5
-  EA_sim: 4.405181521053681
+  EA_sim: 4.602098721052688
   IP:
     method: UPS
     value: 5.1
-  IP_sim: 5.8469963263128415
+  IP_sim: 5.6540537263213295
   additional_info: 'typo in Table 1. Wrong: 1, Correct: 0.2.'
   concentration:
     data: 2.0
@@ -451,11 +451,11 @@
 - EA:
     method: IPEA
     value: 5.24
-  EA_sim: 4.860635689472259
+  EA_sim: 5.041712089472424
   IP:
     method: UPS
     value: 5.1
-  IP_sim: 5.471723052632927
+  IP_sim: 5.299110252631993
   additional_info: null
   concentration:
     data: 2.0
@@ -474,11 +474,11 @@
 - EA:
     method: IPEA
     value: 5.24
-  EA_sim: 4.860635689472259
+  EA_sim: 5.041712089472424
   IP:
     method: UPS
     value: 5.4
-  IP_sim: 5.941065873681049
+  IP_sim: 5.759624373683886
   additional_info: null
   concentration:
     data: 2.0
@@ -497,11 +497,11 @@
 - EA:
     method: IPEA
     value: 5.2
-  EA_sim: 4.860635689472259
+  EA_sim: 5.041712089472424
   IP:
     method: UPS
     value: 5.21
-  IP_sim: 5.639666494737964
+  IP_sim: 5.511816694735087
   additional_info: null
   concentration:
     data: 1.01098
@@ -519,11 +519,11 @@
 - EA:
     method: IPEA
     value: 5.2
-  EA_sim: 4.860635689472259
+  EA_sim: 5.041712089472424
   IP:
     method: UPS
     value: 5.21
-  IP_sim: 5.941065873681049
+  IP_sim: 5.759624373683886
   additional_info: null
   concentration:
     data: todo
@@ -541,7 +541,7 @@
 - EA:
     method: todo
     value: todo
-  EA_sim: 4.405181521053681
+  EA_sim: 4.602098721052688
   IP:
     method: todo
     value: todo
@@ -562,7 +562,7 @@
 - EA:
     method: todo
     value: todo
-  EA_sim: 4.520101126315025
+  EA_sim: 4.712285026313806
   IP:
     method: todo
     value: todo
@@ -583,7 +583,7 @@
 - EA:
     method: todo
     value: todo
-  EA_sim: 4.623583436842003
+  EA_sim: 4.811716836844701
   IP:
     method: todo
     value: todo
@@ -604,7 +604,7 @@
 - EA:
     method: todo
     value: todo
-  EA_sim: 4.860635689472259
+  EA_sim: 5.041712089472424
   IP:
     method: todo
     value: todo
@@ -625,7 +625,7 @@
 - EA:
     method: todo
     value: todo
-  EA_sim: 3.8232997420932304
+  EA_sim: 4.083100042102605
   IP:
     method: todo
     value: todo
@@ -646,7 +646,7 @@
 - EA:
     method: todo
     value: todo
-  EA_sim: 3.885218294739999
+  EA_sim: 4.136294494734713
   IP:
     method: todo
     value: todo
@@ -667,7 +667,7 @@
 - EA:
     method: todo
     value: todo
-  EA_sim: 4.435595189470597
+  EA_sim: 4.653105989471633
   IP:
     method: todo
     value: todo
@@ -688,7 +688,7 @@
 - EA:
     method: todo
     value: todo
-  EA_sim: 4.388707547365679
+  EA_sim: 4.606777147365259
   IP:
     method: todo
     value: todo
