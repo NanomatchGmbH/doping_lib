@@ -180,6 +180,18 @@
   IP: {value: 5.1, method: UPS}
   additional_info: null
 
+- name: "MeO-TPD:F4TCNQ"
+  dopant: F4TCNQ
+  host: MeO-TPD
+  concentration: {units: "mol%", data: [2]}
+  doping:
+    works: true
+    efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: {0.02: 0.74}}
+    doi: "10.1063/1.3259436"
+  full_text: "https://pubs.aip.org/aip/jap/article-pdf/doi/10.1063/1.3259436/15044164/103711_1_online.pdf"
+  EA: {value: 5.24, method: IPES}
+  IP: {value: 5.1, method: UPS}
+  additional_info: null
 
 
 - name: "ZnPc:F4TCNQ"
@@ -188,7 +200,7 @@
   concentration: {units: "mol%", data: 2.0}
   doping:
     works: true
-    efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: 1.0}
+    efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: {0.02: 1.0}}
   doi: "10.1016/j.orgel.2003.08.004"
   full_text: null
   EA: {value: 5.24, method: IPES}
@@ -201,7 +213,7 @@
   concentration: {units: "mol%", data: 2.0}
   doping:
     works: true
-    efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: 1.0}
+    efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: {0.02: 1.0}}
   doi: "10.1016/j.orgel.2003.08.004"
   full_text: null
   EA: {value: 4.5, method: IPES}
@@ -214,7 +226,7 @@
   concentration: {units: "mol%", data: 2.0}
   doping:
     works: true
-    efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: 1.0}
+    efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: {0.02: 1.0}}
   doi: "10.1016/j.orgel.2003.08.004"
   full_text: null
   EA: {value: 5.24, method: IPEA}
@@ -227,7 +239,7 @@
   concentration: {units: "mol%", data: 2.0}
   doping:
     works: true
-    efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: 0.64}
+    efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: {0.02: 0.64}}
   doi: "10.1016/j.orgel.2003.08.004"
   full_text: null
   EA: {value: 5.24, method: IPEA}
