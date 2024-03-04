@@ -154,6 +154,32 @@
   IP: {value: 5.85, method: UPS}
   additional_info: null
 
+- name: "TCTA:CN6-CP"
+  dopant: CN6-CP
+  host: TCTA
+  concentration: {units: "MR", data: [0.1, 0.2, 0.25, 1.0]}  # MR = molar ratio
+  doping:
+    works: true
+    efficiency: {method: "optical absorption measurements", data: {0.36: null}}
+    doi: "10.1021/acsami.8b21865"
+  full_text: null
+  EA: {value: 5.88, method: IPES}
+  IP: {value: 5.85, method: UPS}
+  additional_info: "s. reineke results do not try to quantify the doping efficiency. But the features are clear. data on MR is not precise. see the source Figure 2"
+
+- name: "TAPC:CN6-CP"
+  dopant: CN6-CP
+  host: TAPC
+  concentration: {units: "MR", data: [0.31]}  # MR = molar ratio
+  doping:
+    works: true
+    efficiency: {method: "optical absorption measurements", data: {0.31: null}}  # spectroscopy measurements done, but z not extracted!
+    doi: "10.1021/acsami.8b21865"
+  full_text: null
+  EA: {value: 5.88, method: IPES}
+  IP: {value: 5.5, method: UPS}
+  additional_info: "s. reineke results do not try to quantify the doping efficiency. But the features are clear."
+
 - name: "POPy2:CN6-CP"
   dopant: CN6-CP
   host: POPy2
@@ -213,7 +239,7 @@
   concentration: {units: "mol%", data: 2.0}
   doping:
     works: true
-    efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: {0.02: 1.0}}
+    efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: {0.02: 0.2}}
   doi: "10.1016/j.orgel.2003.08.004"
   full_text: null
   EA: {value: 4.5, method: IPES}
