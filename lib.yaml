@@ -178,7 +178,20 @@
   full_text: null
   EA: {value: 5.88, method: IPES}
   IP: {value: 5.5, method: UPS}
-  additional_info: "s. reineke results do not try to quantify the doping efficiency. But the features are clear."
+  additional_info: "s. reineke results do not try to quantify the doping efficiency. But the features are clear. TAPC should be easlier to dope compared to TCTA, because its IP is lower"
+
+- name: "CBP:CN6-CP"
+  dopant: CN6-CP
+  host: CBP
+  concentration: {units: "MR", data: [0.06, 0.25, 1.0]}  # MR = molar ratio
+  doping:
+    works: true
+    efficiency: {method: "optical absorption measurements", data: {0.25: 0.01}}  # spectroscopy measurements done, but z not extracted!
+    doi: "10.1021/acsami.8b21865"
+  full_text: null
+  EA: {value: 5.88, method: IPES}
+  IP: {value: 6.05, method: UPS}
+  additional_info: "I have estimated the efficiency myself from the Figure S3!"
 
 - name: "POPy2:CN6-CP"
   dopant: CN6-CP
@@ -191,7 +204,7 @@
   full_text: "https://www.osti.gov/servlets/purl/1923742"
   EA: {value: 5.88, method: IPES}
   IP: {value: [5.74, 5.87, 5.9], method: UPS}
-  additional_info: null
+  additional_info: "small offset, expected efficiency ~< 100 %"
 
 - name: "MeO-TPD:F4TCNQ"
   dopant: F4TCNQ
