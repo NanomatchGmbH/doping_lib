@@ -102,4 +102,5 @@ plt.xlabel('Offset (eV)')  # Adjust label as needed
 plt.ylabel('Efficiency')
 plt.title('Efficiency vs Offset')  # Adjust title as needed
 plt.grid(True)  # Adds a grid
+plt.savefig("measured-efficiency.png", dpi=600)
 plt.show()
