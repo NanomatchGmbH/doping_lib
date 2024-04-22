@@ -1,6 +1,7 @@
 """
 This script extracts all doped materials where efficiency was measured, i.e., extracted from the experimental data.
-In some cases, I have evaluated it using ration in a J-V curve.
+In some cases, I have evaluated it using ratio in a J-V curve.
+It also saves the names of materials and doping efficiencies as csv file.
 """
 
 import pandas as pd
@@ -104,3 +105,34 @@ plt.title('Efficiency vs Offset')  # Adjust title as needed
 plt.grid(True)  # Adds a grid
 plt.savefig("measured-efficiency.png", dpi=600)
 plt.show()
+
+
+# Save csv
+
+list_of_dicts = []
+df_has_value = pd.DataFrame(columns=['name', 'IP', 'EA', 'offset', 'efficiency', 'doping'])
+
+# Insert the modifications in your dictionary population loop
+for material in yaml_data:
+    dopant_ionization_rate = material['doping']['efficiency']['data']
+    if dopant_ionization_rate and material['host'] not in exclude_hosts and material['dopant'] not in exclude_dopants:
+        if list(dopant_ionization_rate.values())[0] is not None:
+            tmp_dict = {
+                'name': material['name'],
+                'IP': material['IP']['value'],
+                'EA': material['EA']['value'],
+                'offset': material['IP']['value'] - material['EA']['value'],
+                'efficiency': list(dopant_ionization_rate.values())[0],
+                'doping': list(dopant_ionization_rate.keys())[0],
+                'material_name': f"{material['host']}@{material['dopant']}"
+            }
+            list_of_dicts.append(tmp_dict)
+
+df_has_value = pd.DataFrame(list_of_dicts)
+
+# Create the scatter plot (as previously included)
+
+# Save the DataFrame to a CSV
+df_measured = df_has_value[df_has_value['efficiency'].notnull() & (df_has_value['efficiency'] > 0)]
+df_measured[['material_name', 'efficiency']].to_csv('measured_efficiency.csv', index=False)
+print("Data saved to 'measured_efficiency.csv'.")
