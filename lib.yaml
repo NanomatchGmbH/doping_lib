@@ -187,9 +187,10 @@
   dopant: CN6-CP
   host: TCTA
   concentration: {units: "MR", data: [0.1, 0.2, 0.25, 1.0]}  # MR = molar ratio
+  conductivity: {units: "MR", data = {8.76712e-2: 1.10578e-5, 1.98435e-1: 5.20184e-5, 2.49815e-1: 1.84661e-4, 1.00000e+0: 2.39835e-4}, T:{units: "K", data: 300}}
   doping:
     works: true
-    efficiency: {method: "optical absorption measurements", data: {0.36: null}}
+    efficiency: {method: null, data: null}
     doi: "10.1021/acsami.8b21865"
   full_text: null
   EA: {value: 5.88, method: IPES}
@@ -291,7 +292,7 @@
 - name: "ZnPc:F4TCNQ"
   dopant: F4TCNQ
   host: ZnPc
-  concentration: {units: "mol%", data: 2.0}
+  concentration: {units: "mol%", data: [2.0]}
   doping:
     works: true
     efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: {0.02: 1.0}}
@@ -304,7 +305,7 @@
 - name: "ZnPc:TCNQ"
   dopant: TCNQ
   host: ZnPc
-  concentration: {units: "mol%", data: 2.0}
+  concentration: {units: "mol%", data: [2.0]}
   doping:
     works: true
     efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: {0.02: 0.2}}
@@ -317,7 +318,7 @@
 - name: "m-MTDATA:F4TCNQ"
   dopant: F4TCNQ
   host: m-MTDATA
-  concentration: {units: "mol%", data: 2.0}
+  concentration: {units: "mol%", data: [2.0]}
   doping:
     works: true
     efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: {0.02: 1.0}}
@@ -330,7 +331,7 @@
 - name: "TPD:F4TCNQ"
   dopant: F4TCNQ
   host: TPD
-  concentration: {units: "mol%", data: 2.0}
+  concentration: {units: "mol%", data: [2.0]}
   doping:
     works: true
     efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: {0.02: 0.64}}
@@ -343,7 +344,7 @@
 - name: "Spiro-MeOTAD:F4TCNQ"
   dopant: F4TCNQ
   host: Spiro-MeOTAD
-  concentration: {units: Wt%, data: 1.01098}
+  concentration: {units: Wt%, data: [1.01098]}
   doping:
     works: true
     efficiency: {method: Null, data: Null}
