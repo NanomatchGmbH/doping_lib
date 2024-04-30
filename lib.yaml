@@ -261,6 +261,21 @@
   IP: {value: 5.1, method: UPS}
   additional_info: null
 
+- name: "MeO-TPD:F6TCNNQ"
+  dopant: F6TCNNQ
+  host: MeO-TPD
+  conductivity: {units: "MR", data = {4.00516e-3: 4.55275e-6, 1.24758e-2: 1.50058e-5, 2.37436e-2: 2.86309e-5, 3.69561e-2: 9.91752e-5, 4.00516e-2: 7.73551e-5, 4.65717e-2: 1.16559e-4, 4.70424e-2: 1.31979e-4, 5.86893e-2: 1.24030e-4, 7.77732e-2: 1.96411e-4, 1.73850e-1: 6.97469e-4, 2.93257e-1: 1.74906e-3}, T:{units: "K", data: }}
+  doping:
+    works: true
+    efficiency: {method: null, data: null}
+    doi: null
+  full_text: "https://entorb.net/docs/Torben_Menke-Dissertation.pdf"
+  EA: {value: 5.6, method: IPES}
+  IP: {value: 5.1, method: UPS}
+  additional_info: "Menke dissertation"
+
+
+
 
 - name: "ZnPc:F4TCNQ"
   dopant: F4TCNQ
