@@ -228,6 +228,7 @@
   dopant: CN6-CP
   host: POPy2
   concentration: {units: "mol%", data: [0, 5, 10, 25]}
+  conductivity: {units: "mol%", data = {0.0: 2.0e-10, 5: 2.3e-8, 10: 4.2e-8, 25: 7.5e-8} , T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method: null, data: null}
