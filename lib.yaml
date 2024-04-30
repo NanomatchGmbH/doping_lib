@@ -119,12 +119,12 @@
 - name: "BFDPB:CN6-CP"
   dopant: CN6-CP
   host: BFDPB
-  concentration: {units: "mol%", data: [0.2]}  # MR = molar ratio
-  conductivity: {units: "mol%", data: {0.2: 6.3E-5}, T:{units: "K", data: 300}}
+  concentration: {units: "MR", data: [0.2]}
+  conductivity: {units: "MR", data: {0.2: 6.3E-5}, T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method: null, data: {0.36: 1.0}}
-    doi: "https://doi.org/10.1021/acsami.8b21865"
+    doi: "10.1021/acsami.8b21865"
   full_text: "https://doi.org/10.1021/acsami.8b21865"
   EA: {value: 5.88, method: IPES}
   IP: {value: 5.3, method: UPS}
@@ -214,6 +214,7 @@
   dopant: CN6-CP
   host: CBP
   concentration: {units: "MR", data: [0.06, 0.25, 1.0]}  # MR = molar ratio
+  conductivity: {units: "MR", data = {5.23658e-2: 2.66856e-8, 2.48449e-1: 7.14520e-7, 1.00000e+0: 2.65961e-4} , T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method: "optical absorption measurements", data: {0.25: 0.01}}  # spectroscopy measurements done, but z not extracted!
@@ -276,9 +277,9 @@
   additional_info: "Menke dissertation"
 
 
-- name: "BF-DPB:F6TCNNQ"
+- name: "BFDPB:F6TCNNQ"
   dopant: F6TCNNQ
-  host: BF-DPB:F6TCNNQ
+  host: BFDPB
   conductivity: {units: "MR", data = {1.00000e-2: 4.92545e-7, 2.02151e-2: 3.21510e-6, 4.00516e-2: 4.38618e-6, 6.23390e-2: 5.83696e-6, 1.04104e-1: 2.46653e-5, 1.68684e-1: 9.91752e-5, 2.21298e-1: 2.14257e-4, 3.47924e-1: 5.71734e-4, 4.94679e-1: 1.45168e-3}, T:{units: "K", data: 300}}
   doping:
     works: true
