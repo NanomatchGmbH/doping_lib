@@ -16,6 +16,7 @@
   dopant: F6TCNNQ
   host: TCTA
   concentration: {units: "mol%", data: [0.0, 11.0, 25.0, 33.0, 100.0]}
+  conductivity: {units: "mol%", data = {0.0: 4.45e-9, 10.0: 2.05e-8, 15.0: 1.45e-7, 25.0: 6.61e-7} , T: {units: K, data: 300}, comment: "Au electrodes, not ohmic!"}
   doping:
     works: false
     efficiency: {method: null, data: null}
@@ -256,6 +257,7 @@
   dopant: F4TCNQ
   host: MeO-TPD
   concentration: {units: "mol%", data: [2]}
+  conductivity: {units: "mol%", data: {2.0:1.0E-5}, T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: {0.02: 0.74}}
@@ -296,6 +298,7 @@
   dopant: F4TCNQ
   host: ZnPc
   concentration: {units: "mol%", data: [2.0]}
+  conductivity: {units: "mol%", data: {2.0:1.0E-6}, T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: {0.02: 1.0}}
@@ -305,10 +308,39 @@
   IP: {value: 5.1, method: UPS}
   additional_info: null
 
+- name: "ZnPc:F4TCNQ"
+  dopant: F4TCNQ
+  host: ZnPc
+  concentration: {units: "MR", data: null}
+  conductivity: {units: "MR", data = {2.47567e-3: 1.57520e-4, 4.97561e-3: 4.67188e-4, 9.95326e-3: 8.38936e-4, 9.90674e-3: 1.17221e-3, 1.97249e-2: 4.65887e-3, 2.81607e-2: 4.92599e-3, 8.00492e-2: 3.05824e-2, 8.04251e-2: 8.13601e-3, 2.00510e-1: 1.36264e-2, 3.50149e-1: 2.58722e-2, 6.00109e-1: 3.05824e-2}, T:{units: "K", data: 300}}
+  doping:
+    works: true
+    efficiency: {method:null, data: null}
+  doi: "https://doi.org/10.1016/S0927-0248(00)00022-2"
+  full_text: "https://www.sciencedirect.com/science/article/pii/S0927024800000222?via%3Dihub#BIB34"
+  EA: {value: 5.24, method: IPES}
+  IP: {value: 5.1, method: UPS}
+  additional_info: "second record on this materials, has current. mixed experiment data"
+
+- name: "ZnPc:F6TCNQ"
+  dopant: F6TCNQ
+  host: ZnPc
+  concentration: {units: "MR", data: null}
+  conductivity: {units: "MR", data = {7.02498e-5: 7.33364e-9, 1.55868e-4: 1.64244e-8, 1.89651e-4: 6.98225e-8, 1.99184e-4: 2.10490e-8, 2.01641e-4: 3.83366e-8, 2.09196e-4: 1.55166e-6, 2.19712e-4: 6.12007e-7, 3.17393e-4: 4.10010e-6, 3.21309e-4: 2.13228e-7, 4.69885e-4: 3.74553e-5, 6.07873e-4: 7.62351e-6, 6.22963e-4: 1.42851e-6, 6.54277e-4: 1.34260e-6, 1.00492e-3: 3.10960e-5, 1.62105e-3: 3.59381e-5, 3.14295e-3: 1.12042e-4, 3.18172e-3: 3.35160e-4, 3.22097e-3: 6.54541e-5, 4.71039e-3: 3.02245e-4, 6.39995e-3: 3.56606e-4, 1.05802e-2: 7.98651e-4, 1.12491e-2: 1.82601e-3, 1.36872e-2: 7.20217e-4, 1.40270e-2: 6.23179e-4, 2.43546e-2: 4.35119e-3, 5.02048e-2: 5.24103e-3, 7.07685e-2: 3.61244e-3, 8.50575e-2: 1.19829e-2, 1.79691e-1: 2.13780e-2, 5.35099e-1: 6.39494e-2} , T:{units: "K", data: 300}}
+  doping:
+    works: true
+    efficiency: {method:null, data: null}
+  doi: "https://www.nature.com/articles/s41467-018-03302-z"
+  full_text: "https://www.nature.com/articles/s41467-018-03302-z"
+  EA: {value: 5.6, method: IPES}
+  IP: {value: 5.1, method: UPS}
+  additional_info: "Tietze paper on the elementary steps of doping"
+
 - name: "ZnPc:TCNQ"
   dopant: TCNQ
   host: ZnPc
   concentration: {units: "mol%", data: [2.0]}
+  conductivity: {units: "mol%", data: {2.0:1.0E-3}, T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: {0.02: 0.2}}
@@ -318,10 +350,39 @@
   IP: {value: 5.1, method: UPS}
   additional_info: "typo in Table 1. Wrong: 1, Correct: 0.2."
 
+- name: "ZnPc:TCNQ"
+  dopant: TCNQ
+  host: ZnPc
+  concentration: {units: "MR", data: null}
+  conductivity: {units: "MR", data = {1.74220e-1: 3.71722e-7, 1.98640e-1: 9.86159e-7, 3.18831e-1: 1.41688e-6, 3.97362e-1: 2.30779e-6, 5.67303e-1: 5.79044e-6, 6.90665e-1: 1.21209e-5, 7.76484e-1: 5.47645e-6}, T:{units: "K", data: 300}}
+  doping:
+    works: true
+    efficiency: {method: null, data: null}
+  doi: "https://doi.org/10.1016/S0927-0248(00)00022-2"
+  full_text: "https://www.sciencedirect.com/science/article/pii/S0927024800000222?via%3Dihub#BIB34"
+  EA: {value: 4.5, method: IPES}
+  IP: {value: 5.1, method: UPS}
+  additional_info: "second, from the same source as that doped with F4TCNQ"
+
+- name: "Pc:F4TCNQ"
+  dopant: F4TCNQ
+  host: Pc
+  concentration: {units: "mol%", data: null}
+  conductivity: {units: "mol%", data = {2.0: 6.3E-4}, T:{units: "K", data: 300}}
+  doping:
+    works: true
+    efficiency: {method: null, data: null}
+  doi: "10.1103/PhysRevB.77.195212"
+  full_text: "https://journals.aps.org/prb/pdf/10.1103/PhysRevB.77.195212"
+  EA: {value: 5.24, method: IPES}
+  IP: {value: 5.03, method: UPS}
+  additional_info: "undoped data for IP. p-doped: 5.08"
+
 - name: "m-MTDATA:F4TCNQ"
   dopant: F4TCNQ
   host: m-MTDATA
   concentration: {units: "mol%", data: [2.0]}
+  conductivity: {units: "mol%", data: {2.0:3.0E-7}, T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: {0.02: 1.0}}
@@ -335,6 +396,7 @@
   dopant: F4TCNQ
   host: TPD
   concentration: {units: "mol%", data: [2.0]}
+  conductivity: {units: "mol%", data: {2.0:1.0E-7}, T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: {0.02: 0.64}}
@@ -343,6 +405,35 @@
   EA: {value: 5.24, method: IPEA}
   IP: {value: 5.4, method: UPS}
   additional_info: null
+
+- name: "TDATA:F4TCNQ"
+  dopant: F4TCNQ
+  host: TDATA
+  concentration: {units: "MR", data: [0.01]}
+  conductivity: {units: "MR", data: {0.01:5.9E-7}, T:{units: "K", data: 313}}
+  doping:
+    works: true
+    efficiency: {method: null, data: null}
+  doi: "https://journals.aps.org/prb/pdf/10.1103/PhysRevB.64.195208"
+  full_text: "https://journals.aps.org/prb/pdf/10.1103/PhysRevB.64.195208"
+  EA: {value: 5.24, method: IPEA}
+  IP: {value: 5.1, method: UPS}
+  additional_info: "IP of TDATA is taken to be = m-MTDATA. Obviously wrong!"
+
+
+- name: "TDATA:F4TCNQ"
+  dopant: F4TCNQ
+  host: TDATA
+  concentration: {units: "mol%", data: null}
+  conductivity: {units: "mol%", data: {1.0:4.0E-7, 6.8:6.0E-6}, T:{units: "K", data: 300}}
+  doping:
+    works: true
+    efficiency: {method: null, data: null}
+  doi: "10.1002/1616-3028(200108)11:4<310::AID-ADFM310>3.0.CO;2-D"
+  full_text: "https://onlinelibrary.wiley.com/doi/epdf/10.1002/1616-3028%28200108%2911%3A4%3C310%3A%3AAID-ADFM310%3E3.0.CO%3B2-D"
+  EA: {value: 5.24, method: IPEA}
+  IP: {value: 5.1, method: UPS}
+  additional_info: "IP of TDATA is taken to be = m-MTDATA. Obviously wrong. This is the second input for TDATA:F4."
 
 - name: "Spiro-MeOTAD:F4TCNQ"
   dopant: F4TCNQ
