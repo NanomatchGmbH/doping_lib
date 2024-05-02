@@ -16,7 +16,7 @@
   dopant: F6TCNNQ
   host: TCTA
   concentration: {units: "mol%", data: [0.0, 11.0, 25.0, 33.0, 100.0]}
-  conductivity: {units: "mol%", data = {0.0: 4.45e-9, 10.0: 2.05e-8, 15.0: 1.45e-7, 25.0: 6.61e-7} , T: {units: K, data: 300}, comment: "Au electrodes, not ohmic!"}
+  conductivity: {units: "mol%", data: {0.0: 4.45e-9, 10.0: 2.05e-8, 15.0: 1.45e-7, 25.0: 6.61e-7}, T: {units: K, data: 300}, comment: "Au electrodes, not ohmic!"}
   doping:
     works: false
     efficiency: {method: null, data: null}
@@ -188,7 +188,7 @@
   dopant: CN6-CP
   host: TCTA
   concentration: {units: "MR", data: [0.1, 0.2, 0.25, 1.0]}  # MR = molar ratio
-  conductivity: {units: "MR", data = {8.76712e-2: 1.10578e-5, 1.98435e-1: 5.20184e-5, 2.49815e-1: 1.84661e-4, 1.00000e+0: 2.39835e-4}, T:{units: "K", data: 300}}
+  conductivity: {units: "MR", data: {8.76712e-2: 1.10578e-5, 1.98435e-1: 5.20184e-5, 2.49815e-1: 1.84661e-4, 1.00000e+0: 2.39835e-4}, T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method: null, data: null}
@@ -215,7 +215,7 @@
   dopant: CN6-CP
   host: CBP
   concentration: {units: "MR", data: [0.06, 0.25, 1.0]}  # MR = molar ratio
-  conductivity: {units: "MR", data = {5.23658e-2: 2.66856e-8, 2.48449e-1: 7.14520e-7, 1.00000e+0: 2.65961e-4} , T:{units: "K", data: 300}}
+  conductivity: {units: "MR", data: {5.23658e-2: 2.66856e-8, 2.48449e-1: 7.14520e-7, 1.00000e+0: 2.65961e-4} , T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method: "optical absorption measurements", data: {0.25: 0.01}}  # spectroscopy measurements done, but z not extracted!
@@ -229,21 +229,21 @@
   dopant: CN6-CP
   host: POPy2
   concentration: {units: "mol%", data: [0, 5, 10, 25]}
-  conductivity: {units: "mol%", data = {0.0: 2.0e-10, 5: 2.3e-8, 10: 4.2e-8, 25: 7.5e-8} , T:{units: "K", data: 300}}
+  conductivity: {units: "mol%", data: {0.0: 2.0e-10, 5: 2.3e-8, 10: 4.2e-8, 25: 7.5e-8} , T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method: null, data: null}
     doi: "https://doi.org/10.1021/acsami.1c21302"
   full_text: "https://www.osti.gov/servlets/purl/1923742"
   EA: {value: 5.88, method: IPES}
-  IP: {value: [5.74, 5.87, 5.9], method: UPS}
-  additional_info: "small offset, expected efficiency ~< 100 %"
+  IP: {value: 5.87, method: UPS}
+  additional_info: "small offset, expected efficiency ~< 100 %. Other values: 5.74, 5.9"
 
 - name: "MeO-TPD:F4TCNQ"
   dopant: F4TCNQ
   host: MeO-TPD
   concentration: {units: "MR", data: [0.018, 0.423]} # range
-  conductivity: {units: "MR", data = {1.83090e-2: 1.36013e-5, 2.73620e-2: 2.53777e-5, 6.69138e-2: 1.38950e-4, 1.21458e-1: 4.51769e-4, 2.43496e-1: 1.53295e-3, 3.04826e-1: 1.96397e-3, 4.26967e-1: 2.25167e-3}, T:{units: "K", data: 300}}
+  conductivity: {units: "MR", data: {1.83090e-2: 1.36013e-5, 2.73620e-2: 2.53777e-5, 6.69138e-2: 1.38950e-4, 1.21458e-1: 4.51769e-4, 2.43496e-1: 1.53295e-3, 3.04826e-1: 1.96397e-3, 4.26967e-1: 2.25167e-3}, T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method: null, data: null}
@@ -257,7 +257,7 @@
   dopant: F4TCNQ
   host: MeO-TPD
   concentration: {units: "mol%", data: [2]}
-  conductivity: {units: "mol%", data: {2.0:1.0E-5}, T:{units: "K", data: 300}}
+  conductivity: {units: "mol%", data: {2.0: 1.0E-5}, T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: {0.02: 0.74}}
@@ -270,7 +270,7 @@
 - name: "MeO-TPD:F6TCNNQ"
   dopant: F6TCNNQ
   host: MeO-TPD
-  conductivity: {units: "MR", data = {4.00516e-3: 4.55275e-6, 1.24758e-2: 1.50058e-5, 2.37436e-2: 2.86309e-5, 3.69561e-2: 9.91752e-5, 4.00516e-2: 7.73551e-5, 4.65717e-2: 1.16559e-4, 4.70424e-2: 1.31979e-4, 5.86893e-2: 1.24030e-4, 7.77732e-2: 1.96411e-4, 1.73850e-1: 6.97469e-4, 2.93257e-1: 1.74906e-3}, T:{units: "K", data: 300}}
+  conductivity: {units: "MR", data: {4.00516e-3: 4.55275e-6, 1.24758e-2: 1.50058e-5, 2.37436e-2: 2.86309e-5, 3.69561e-2: 9.91752e-5, 4.00516e-2: 7.73551e-5, 4.65717e-2: 1.16559e-4, 4.70424e-2: 1.31979e-4, 5.86893e-2: 1.24030e-4, 7.77732e-2: 1.96411e-4, 1.73850e-1: 6.97469e-4, 2.93257e-1: 1.74906e-3}, T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method: null, data: null}
@@ -284,7 +284,7 @@
 - name: "BFDPB:F6TCNNQ"
   dopant: F6TCNNQ
   host: BFDPB
-  conductivity: {units: "MR", data = {1.00000e-2: 4.92545e-7, 2.02151e-2: 3.21510e-6, 4.00516e-2: 4.38618e-6, 6.23390e-2: 5.83696e-6, 1.04104e-1: 2.46653e-5, 1.68684e-1: 9.91752e-5, 2.21298e-1: 2.14257e-4, 3.47924e-1: 5.71734e-4, 4.94679e-1: 1.45168e-3}, T:{units: "K", data: 300}}
+  conductivity: {units: "MR", data: {1.00000e-2: 4.92545e-7, 2.02151e-2: 3.21510e-6, 4.00516e-2: 4.38618e-6, 6.23390e-2: 5.83696e-6, 1.04104e-1: 2.46653e-5, 1.68684e-1: 9.91752e-5, 2.21298e-1: 2.14257e-4, 3.47924e-1: 5.71734e-4, 4.94679e-1: 1.45168e-3}, T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method: null, data: null}
@@ -298,7 +298,7 @@
   dopant: F4TCNQ
   host: ZnPc
   concentration: {units: "mol%", data: [2.0]}
-  conductivity: {units: "mol%", data: {2.0:1.0E-6}, T:{units: "K", data: 300}}
+  conductivity: {units: "mol%", data: {2.0: 1.0E-3}, T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: {0.02: 1.0}}
@@ -312,7 +312,7 @@
   dopant: F4TCNQ
   host: ZnPc
   concentration: {units: "MR", data: null}
-  conductivity: {units: "MR", data = {2.47567e-3: 1.57520e-4, 4.97561e-3: 4.67188e-4, 9.95326e-3: 8.38936e-4, 9.90674e-3: 1.17221e-3, 1.97249e-2: 4.65887e-3, 2.81607e-2: 4.92599e-3, 8.00492e-2: 3.05824e-2, 8.04251e-2: 8.13601e-3, 2.00510e-1: 1.36264e-2, 3.50149e-1: 2.58722e-2, 6.00109e-1: 3.05824e-2}, T:{units: "K", data: 300}}
+  conductivity: {units: "MR", data: {2.47567e-3: 1.57520e-4, 4.97561e-3: 4.67188e-4, 9.95326e-3: 8.38936e-4, 9.90674e-3: 1.17221e-3, 1.97249e-2: 4.65887e-3, 2.81607e-2: 4.92599e-3, 8.00492e-2: 3.05824e-2, 8.04251e-2: 8.13601e-3, 2.00510e-1: 1.36264e-2, 3.50149e-1: 2.58722e-2, 6.00109e-1: 3.05824e-2}, T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method:null, data: null}
@@ -326,7 +326,7 @@
   dopant: F6TCNQ
   host: ZnPc
   concentration: {units: "MR", data: null}
-  conductivity: {units: "MR", data = {7.02498e-5: 7.33364e-9, 1.55868e-4: 1.64244e-8, 1.89651e-4: 6.98225e-8, 1.99184e-4: 2.10490e-8, 2.01641e-4: 3.83366e-8, 2.09196e-4: 1.55166e-6, 2.19712e-4: 6.12007e-7, 3.17393e-4: 4.10010e-6, 3.21309e-4: 2.13228e-7, 4.69885e-4: 3.74553e-5, 6.07873e-4: 7.62351e-6, 6.22963e-4: 1.42851e-6, 6.54277e-4: 1.34260e-6, 1.00492e-3: 3.10960e-5, 1.62105e-3: 3.59381e-5, 3.14295e-3: 1.12042e-4, 3.18172e-3: 3.35160e-4, 3.22097e-3: 6.54541e-5, 4.71039e-3: 3.02245e-4, 6.39995e-3: 3.56606e-4, 1.05802e-2: 7.98651e-4, 1.12491e-2: 1.82601e-3, 1.36872e-2: 7.20217e-4, 1.40270e-2: 6.23179e-4, 2.43546e-2: 4.35119e-3, 5.02048e-2: 5.24103e-3, 7.07685e-2: 3.61244e-3, 8.50575e-2: 1.19829e-2, 1.79691e-1: 2.13780e-2, 5.35099e-1: 6.39494e-2} , T:{units: "K", data: 300}}
+  conductivity: {units: "MR", data: {7.02498e-5: 7.33364e-9, 1.55868e-4: 1.64244e-8, 1.89651e-4: 6.98225e-8, 1.99184e-4: 2.10490e-8, 2.01641e-4: 3.83366e-8, 2.09196e-4: 1.55166e-6, 2.19712e-4: 6.12007e-7, 3.17393e-4: 4.10010e-6, 3.21309e-4: 2.13228e-7, 4.69885e-4: 3.74553e-5, 6.07873e-4: 7.62351e-6, 6.22963e-4: 1.42851e-6, 6.54277e-4: 1.34260e-6, 1.00492e-3: 3.10960e-5, 1.62105e-3: 3.59381e-5, 3.14295e-3: 1.12042e-4, 3.18172e-3: 3.35160e-4, 3.22097e-3: 6.54541e-5, 4.71039e-3: 3.02245e-4, 6.39995e-3: 3.56606e-4, 1.05802e-2: 7.98651e-4, 1.12491e-2: 1.82601e-3, 1.36872e-2: 7.20217e-4, 1.40270e-2: 6.23179e-4, 2.43546e-2: 4.35119e-3, 5.02048e-2: 5.24103e-3, 7.07685e-2: 3.61244e-3, 8.50575e-2: 1.19829e-2, 1.79691e-1: 2.13780e-2, 5.35099e-1: 6.39494e-2} , T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method:null, data: null}
@@ -340,7 +340,7 @@
   dopant: TCNQ
   host: ZnPc
   concentration: {units: "mol%", data: [2.0]}
-  conductivity: {units: "mol%", data: {2.0:1.0E-3}, T:{units: "K", data: 300}}
+  conductivity: {units: "mol%", data: {2.0: 1.0E-6}, T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: {0.02: 0.2}}
@@ -354,7 +354,7 @@
   dopant: TCNQ
   host: ZnPc
   concentration: {units: "MR", data: null}
-  conductivity: {units: "MR", data = {1.74220e-1: 3.71722e-7, 1.98640e-1: 9.86159e-7, 3.18831e-1: 1.41688e-6, 3.97362e-1: 2.30779e-6, 5.67303e-1: 5.79044e-6, 6.90665e-1: 1.21209e-5, 7.76484e-1: 5.47645e-6}, T:{units: "K", data: 300}}
+  conductivity: {units: "MR", data: {1.74220e-1: 3.71722e-7, 1.98640e-1: 9.86159e-7, 3.18831e-1: 1.41688e-6, 3.97362e-1: 2.30779e-6, 5.67303e-1: 5.79044e-6, 6.90665e-1: 1.21209e-5, 7.76484e-1: 5.47645e-6}, T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method: null, data: null}
@@ -368,7 +368,7 @@
   dopant: F4TCNQ
   host: Pc
   concentration: {units: "mol%", data: null}
-  conductivity: {units: "mol%", data = {2.0: 6.3E-4}, T:{units: "K", data: 300}}
+  conductivity: {units: "mol%", data: {2.0: 6.3E-4}, T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method: null, data: null}
@@ -382,7 +382,7 @@
   dopant: F4TCNQ
   host: m-MTDATA
   concentration: {units: "mol%", data: [2.0]}
-  conductivity: {units: "mol%", data: {2.0:3.0E-7}, T:{units: "K", data: 300}}
+  conductivity: {units: "mol%", data: {2.0: 3.0E-7}, T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: {0.02: 1.0}}
@@ -396,7 +396,7 @@
   dopant: F4TCNQ
   host: TPD
   concentration: {units: "mol%", data: [2.0]}
-  conductivity: {units: "mol%", data: {2.0:1.0E-7}, T:{units: "K", data: 300}}
+  conductivity: {units: "mol%", data: {2.0: 1.0E-7}, T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method: "position of the b1uv18 mode of the TCNQ derivatives", data: {0.02: 0.64}}
@@ -410,7 +410,7 @@
   dopant: F4TCNQ
   host: TDATA
   concentration: {units: "MR", data: [0.01]}
-  conductivity: {units: "MR", data: {0.01:5.9E-7}, T:{units: "K", data: 313}}
+  conductivity: {units: "MR", data: {0.01: 5.9E-7}, T:{units: "K", data: 313}}
   doping:
     works: true
     efficiency: {method: null, data: null}
@@ -425,7 +425,7 @@
   dopant: F4TCNQ
   host: TDATA
   concentration: {units: "mol%", data: null}
-  conductivity: {units: "mol%", data: {1.0:4.0E-7, 6.8:6.0E-6}, T:{units: "K", data: 300}}
+  conductivity: {units: "mol%", data: {1.0: 4.0E-7, 6.8: 6.0E-6}, T:{units: "K", data: 300}}
   doping:
     works: true
     efficiency: {method: null, data: null}
