@@ -1,6 +1,6 @@
 Spiro-TAD:
   - data: 5.0E-4
-    method: null
+    method: "todo: add"
     reference: "see https://doi.org/10.1063/1.1525866"
   - data: 2.3E-4
     method: "TOF"
@@ -8,21 +8,21 @@ Spiro-TAD:
     comment: "zero-field mobility at 300K"
 
 Spiro-OMeTAD:
- - data: 8E-5
-   method: null
+ - data: 8.0E-5
+   method: "todo: add"
    reference: null
  - data: 2.0E-4
-   method: null
+   method: "todo: add"
    reference: null
    comment: "upper and lower bounds"
- - data: 6E-5
+ - data: 6.0E-5
    method: "TOF"
    reference: "https://doi.org/10.1063/1.1525866"
    comment: "zero field mobility"
 
 TPD:
-  - data: 1E-3
-    method: null
+  - data: 1.0E-3
+    method: "todo: add"
     reference: null
     comment: "mentioned wo citation"
   - data: 2.8E-4
@@ -49,7 +49,7 @@ MeO-TPD:
     reference: "https://www.sciencedirect.com/science/article/pii/S156611991300520X?via%3Dihub#b0115"
     comment: "from saturation regime [35]"
 
-BF-TPD:
+BFDPB:
   - data: 5.7E-5
     method: "TFT"
     reference: "https://www.sciencedirect.com/science/article/pii/S156611991300520X?via%3Dihub#b0115"
@@ -61,7 +61,7 @@ CBP:
     reference: "https://doi.org/10.1007/s11426-012-4747-y"
 
 POPy2:
-  - data: 1E-7
+  - data: 1.0E-7
     method: "I put it to value < 1 1 order smaller than everything else"
     reference: none
     comment: "used as electron transporting material, too low to determine"
@@ -70,10 +70,21 @@ ZnPc:
   - data: 6.01E-4
     method: "SCLC"
     reference: "https://link.springer.com/article/10.1007/s42452-020-2405-0?fromPaywallRec=false"
-    comment: "too high to my opinion, but."
+    comment: "too low to my opinion, but."
 
 m-MTDATA:
   - data: 1.3E-5
     method: "admittance spectroscopy"
     reference: "https://doi.org/10.1063/1.2158494"
     comment: "coincides with TOF as well"
+  - data: 1.3E-5
+    method: "TOF"
+    reference: "http://dx.doi.org/10.1063/1.2348640"
+    comment: "coincides with admittance"
+
+
+TDATA:
+  - data: 1.3E-5
+    method: "admittance spectroscopy"
+    reference: "https://doi.org/10.1063/1.2158494"
+    comment: "todo: this is of m-MTDATA in fact"
