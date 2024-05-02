@@ -57,8 +57,11 @@ def check_folder_has_mols(mol2_folder: pathlib.Path, mol_names: set):
 
 # 1
 print("1)")
+total_num_doped_materials = 0
 for material in doping_lib:
+    total_num_doped_materials += 1
     print(f"{material['name']=}")
+print(f"{total_num_doped_materials=}")
 
 # 2
 print("1)")
