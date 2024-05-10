@@ -1,0 +1,13 @@
+- name: BFDPB
+  data: 1.21
+  reference: "https://pubs.acs.org/doi/10.1021/acs.jpcc.8b03804"
+  units: "g/cm**3"
+  comment: "intrinsic"
+
+- name: MeO-TPD
+  data: 1.2
+  reference: "https://entorb.net/docs/Torben_Menke-Dissertation.pdf"
+  units: "g/cm**3"
+  comment: "intrinsic"
+
+
