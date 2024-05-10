@@ -1,4 +1,5 @@
 import argparse
+import csv
 
 import pandas as pd
 import yaml
@@ -92,7 +93,10 @@ with open('mobility.yaml', 'r') as file:
     mobility_data = yaml.load(file, Loader=yaml.FullLoader)
 
 # get IP/EA/sigma simulated
+# results before I made "low-concentration materials":
 df_ip_ea_sigma = pd.read_csv('results/2/ip_ea_sigma.csv')
+# results for only low-concentration materials:
+df_ip_ea_sigma = pd.read_csv('results/low_conc_ip_ea/adiabatic_ip_ea_output_ea_reduced.csv')
 
 
 
@@ -121,6 +125,7 @@ if args.normalized_mobility:
     colormap2 = plt.cm.get_cmap('tab20b', len(data))  # Different colormap for distinction
     colormap2 = plt.cm.get_cmap('tab20b', len(data))  # Different colormap for distinction
 
+csv_data = []
 
 # Iterate through each material entry in the YAML data
 for index, material in enumerate(data):
@@ -151,13 +156,14 @@ for index, material in enumerate(data):
             simulated_ip_ea = get_simulated_ip_ea(host, dopant, df_ip_ea_sigma)
             ip = material['IP']['value']
             ea = material['EA']['value']
-            ip_minus_ea = ip - ea
+            ip_minus_ea = ip - ea  # experimental
             values = [(calculate_mobility(sigma, float(conc)) / mu_i if calculate_mobility(sigma, float(
                 conc)) is not None else None) for sigma, conc in zip(values, concentrations)]
+            values = values
 
             # Specify the concentration range you are interested in
             min_concentration = 1.0  # minimum doping concentration in mol%
-            max_concentration = 10.0  # maximum doping concentration in mol%
+            max_concentration = 11.0  # maximum doping concentration in mol%
             filtered_concentrations, filtered_values = filter_by_concentration_range(concentrations, values,
                                                                                      min_concentration,
                                                                                      max_concentration)
@@ -187,12 +193,24 @@ for index, material in enumerate(data):
             if simulated_ip_ea is not None:
                 ax2.plot([simulated_ip_ea] * len(filtered_values), filtered_values, marker=marker, linestyle='-', label=name, color=color)
 
+                # Iterate over filtered values and their corresponding concentrations
+                for conc, value in zip(filtered_concentrations, filtered_values):
+                    csv_data.append([name, simulated_ip_ea, ip_minus_ea, conc, value])
+
         else:
             ylabel = 'Conductivity (S cm$^{-1}$)'
 
         # Use the colormap to assign a color
         color = colormap(index)
         ax.plot(concentrations, values, marker='o', linestyle='-', label=name, color=color)
+
+
+# After the loop, write the collected data to a CSV file
+with open('results/exper_conductivity_vs_simulated_ip_ea/data.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(['name', 'IP - EA (eV)', 'exper. IP - EA (eV)', 'mol%', 'Conductivity [S/cm]'])
+    writer.writerows(csv_data)
+
 
 # Set log scale for both axes
 ax.set_xscale('log')
