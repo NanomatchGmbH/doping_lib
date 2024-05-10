@@ -291,7 +291,7 @@
     doi: null
   full_text: "https://entorb.net/docs/Torben_Menke-Dissertation.pdf"
   EA: {value: 5.6, method: IPES}
-  IP: {value: 5.6, method: UPS}
+  IP: {value: 5.3, method: UPS}
   additional_info: "Menke dissertation"
 
 - name: "ZnPc:F4TCNQ"
@@ -444,7 +444,7 @@
     efficiency: {method: Null, data: Null}
   doi: "10.1039/c2cp41855j"
   full_text: null
-  EA: {value: 5.2, method: IPEA}
+  EA: {value: 5.24, method: IPEA}
   IP: {value: 5.21, method: UPS}
   additional_info: null
 
