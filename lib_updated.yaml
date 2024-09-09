@@ -442,7 +442,7 @@
   doping:
     efficiency:
       data:
-        0.02: 1.0
+        0.02: 0.2
       method: position of the b1uv18 mode of the TCNQ derivatives
     works: true
   full_text: null
