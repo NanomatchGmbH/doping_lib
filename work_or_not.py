@@ -1,7 +1,7 @@
 import yaml
 from matplotlib import pyplot as plt
 
-lib_file = "lib_updated.yaml_3"
+lib_file = "lib_updated.yaml"
 
 with open(lib_file) as fid:
     lib = yaml.load(fid, Loader=yaml.CLoader)
@@ -35,16 +35,26 @@ for material in lib:
             offsets_per_efficiency = [offset] * list_size
             particular_offsets.extend(offsets_per_efficiency)
 
-plt.plot(offsets, zero_or_one, 'o', label="yes or not")
+# Set plot size for better visibility in presentations
+plt.figure(figsize=(10, 6))
 
-# Plot specific values
-plt.plot(particular_offsets, particular_values, '*', label="number")
+plt.plot(offsets, zero_or_one, 'o', label="Yes or No")
+plt.plot(particular_offsets, particular_values, '*', label="Value")
 
-# Annotating the plot with vertical text
+# Annotating the plot
 for i, name in enumerate(names):
     plt.annotate(name, (offsets[i], zero_or_one[i]), fontsize=8, alpha=0.7, rotation=90)
 
-plt.xlabel("Offset, eV")
-plt.ylabel("Doping Efficiency")
+# Enhance labels and title
+plt.xlabel("Offset $E_{off}$, eV", fontsize=14)
+plt.ylabel("Doping Efficiency", fontsize=14)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.title("Doping Efficiency vs Offset", fontsize=16)
+
 plt.legend()
+
+# Save the plot with high resolution
+plt.savefig("doping_efficiency_plot.png", dpi=300)
+
 plt.show()
