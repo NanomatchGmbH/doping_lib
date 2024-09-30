@@ -179,57 +179,102 @@ axes[2].set_title('(c) $V_C$ at First RDF Peak', fontsize=7)
 # --- Plot d ---
 # Use axes[3]
 
-# Read the simulated data (IP, EA)
+# Read the simulated data (IP, EA) and VC data from CSV file
 sim_data = pd.read_csv('../../simulations/summary/Lightforge/ionization_ip_ea.csv')
+
+# Read the VC data, which includes `VC_mean`
+vc_data = pd.read_csv('../../simulations/summary/Deposit/VC_at_first_rdf_peak.csv')
 
 # Read the experimental data
 exp_data = pd.read_csv('../../experimental_data/summary/measured_efficiency.csv')
 
-# Prepare the VC data from results_df
-vc_data = results_df[['material', 'VC_mean']]
-
-# Extract base material names
+# Extract base material names from simulated data
 def extract_base_material(material):
     if '@' in material:
-        base_material = material.split('@')[0]
+        base_material = material.split('_')[0]
     else:
         base_material = material
     return base_material
 
 sim_data['base_material'] = sim_data['material'].apply(extract_base_material)
 vc_data['base_material'] = vc_data['material'].apply(extract_base_material)
+
+# Prepare the experimental data
 exp_data.rename(columns={'material_name': 'base_material', 'efficiency': 'efficiency_exp'}, inplace=True)
 
-# Merge data
+# Merge simulated data with VC data on `base_material`
 sim_data = pd.merge(sim_data, vc_data[['base_material', 'VC_mean']], on='base_material', how='inner')
-merged_data_d = pd.merge(sim_data, exp_data[['base_material', 'efficiency_exp']], on='base_material', how='inner')
+
+# Merge the simulated + VC data with experimental data
+merged_data = pd.merge(sim_data, exp_data[['base_material', 'efficiency_exp']], on='base_material', how='inner')
 
 # Compute IP - EA + VC (from simulations)
-merged_data_d['IP_EA_VC_sim'] = merged_data_d['IP'] - merged_data_d['EA'] + merged_data_d['VC_mean']
+merged_data['IP_EA_VC_sim'] = merged_data['IP'] - merged_data['EA'] + merged_data['VC_mean']
 
-# Check if 'efficiency' is present in sim_data
-if 'efficiency' not in merged_data_d.columns:
-    print("Warning: 'efficiency' column not found in sim_data. Proceeding without simulated efficiency.")
-    plot_simulated_efficiency = False
-else:
-    plot_simulated_efficiency = True
+# Create a mapping from numbers to materials
+materials_info = [
+    {'Number': 1, 'Material': 'BFDPB@CN6-CP', 'mol%': 26},
+    {'Number': 2, 'Material': 'NPB@CN6-CP', 'mol%': 26},
+    {'Number': 3, 'Material': 'BPAPF@CN6-CP', 'mol%': 26},
+    {'Number': 4, 'Material': 'TCTA@CN6-CP', 'mol%': 26},
+    {'Number': 5, 'Material': 'CBP@CN6-CP', 'mol%': 20},
+    {'Number': 6, 'Material': 'MeO-TPD@F4TCNQ', 'mol%': 2},
+    {'Number': 7, 'Material': 'm-MTDATA@F4TCNQ', 'mol%': 2},
+    {'Number': 8, 'Material': 'TPD@F4TCNQ', 'mol%': 2},
+    {'Number': 9, 'Material': 'TCTA@F6TCNNQ', 'mol%': 11},
+    {'Number':10, 'Material': 'ZnPc@F4TCNQ', 'mol%': 2},
+    {'Number':11, 'Material': 'ZnPc@TCNQ', 'mol%': 2}
+]
+
+# Create a mapping from material to number
+material_numbers = {item['Material']: item['Number'] for item in materials_info}
+
+# Assign numbers to the materials in merged_data
+def get_material_number(base_material):
+    return material_numbers.get(base_material, None)
+
+merged_data['material_number'] = merged_data['base_material'].apply(get_material_number)
+
+# Drop any rows where material_number is None (materials not in our list)
+merged_data = merged_data.dropna(subset=['material_number'])
+
+# Convert material_number to integer
+merged_data['material_number'] = merged_data['material_number'].astype(int)
+
+# Relative simulation values for materials 1 to 4
+relative_simulation_values = {
+    1: 1.0,
+    2: 0.969025613,
+    3: 0.921286021,
+    4: 0.848504597
+}
 
 # Plotting on axes[3]
-if plot_simulated_efficiency:
-    axes[3].scatter(merged_data_d['IP_EA_VC_sim'], merged_data_d['efficiency'], color='blue', marker='o', label='Simulated')
 
-axes[3].scatter(merged_data_d['IP_EA_VC_sim'], merged_data_d['efficiency_exp'], color='red', marker='s', label='Experimental')
+# Plot simulated doping efficiency
+axes[3].scatter(merged_data['IP_EA_VC_sim'], merged_data['efficiency'], color='blue', marker='o', label='Simulated')
 
-# Customize subplot (d)
-axes[3].set_xlabel('IP - EA + $V_C$ (Simulated) [eV]')
-axes[3].set_ylabel(r'Ionization Fraction $\eta_{\mathrm{exper}}$')
+# Plot experimental doping efficiency
+axes[3].scatter(merged_data['IP_EA_VC_sim'], merged_data['efficiency_exp'], color='red', marker='s', label='Experimental')
+
+# Add unfilled circles for relative simulation values for materials 1-4
+for i in range(1, 5):
+    material_row = merged_data[merged_data['material_number'] == i]
+    if not material_row.empty:
+        axes[3].scatter(material_row['IP_EA_VC_sim'], relative_simulation_values[i], facecolors='none', edgecolors='blue', marker='o', label='Sim. (relative)' if i == 1 else "")
+
+axes[3].set_xlabel('IP - EA + VC (Simulated) [eV]')
+axes[3].set_ylabel(r'Ionization Fraction  $\eta_{\mathrm{exper}}$')
 axes[3].set_title('(d) Doping Efficiency vs. IP - EA + $V_C$', fontsize=7)
 axes[3].legend(fontsize=6)
 axes[3].set_ylim(bottom=0.0)
 
-# Annotate data points with material names
-for idx, row in merged_data_d.iterrows():
-    axes[3].annotate(row['base_material'], (row['IP_EA_VC_sim'], row['efficiency_exp']), fontsize=6)
+# Annotate data points with italic numbers
+for i, row in merged_data.iterrows():
+    axes[3].annotate(str(row['material_number']), (row['IP_EA_VC_sim'], row['efficiency']), textcoords="offset points",
+                     xytext=(5, -5), fontsize=6, color='blue', fontstyle='italic')
+    axes[3].annotate(str(row['material_number']), (row['IP_EA_VC_sim'], row['efficiency_exp']), textcoords="offset points",
+                     xytext=(5, 5), fontsize=6, color='red', fontstyle='italic')
 
 # Adjust layout to make sure everything fits nicely
 plt.tight_layout(pad=1.0)
