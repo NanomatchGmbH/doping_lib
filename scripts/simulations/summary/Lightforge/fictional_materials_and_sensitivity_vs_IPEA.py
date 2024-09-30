@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
+import numpy as np
 import matplotlib as mpl
 from matplotlib import cm
 
@@ -9,6 +10,12 @@ input_dir = '../../../../simulations/summary/Lightforge/fictional_materials'  # 
 actual_data_file = '../../../../simulations/summary/Lightforge/ionization_ip_ea.csv'  # File with actual data points
 output_dir = '../../../../simulations/summary/Lightforge/fictional_materials'  # Directory to save the plots
 os.makedirs(output_dir, exist_ok=True)
+
+# Conversion toggle for y-axis in the second plot
+use_kcal_per_mol_y_axis = True  # Set to True to convert the derivative units to %/kcal/mol
+
+# Conversion factor from eV to kcal/mol
+eV_to_kcal_per_mol = 23.0609
 
 # Load all CSV files from the input directory
 csv_files = [f.replace('.csv', '') for f in os.listdir(input_dir) if f.endswith('.csv')]  # Remove .csv extension from filenames
@@ -52,7 +59,7 @@ materials_without_csv = [item['Material'] for item in materials_info if item['Ma
 
 # Plot settings for Advanced Materials journal style
 mpl.rcParams['font.family'] = ['Arial', 'Helvetica', 'sans-serif']
-half_page_width = 7.08 / 2  # Half of a full-page width (7.08 inches for full width)
+full_page_width = 7.08  # Full-page width for the journal (7.08 inches)
 mpl.rcParams['font.size'] = 8
 mpl.rcParams['axes.labelsize'] = 8
 mpl.rcParams['axes.titlesize'] = 8
@@ -60,17 +67,19 @@ mpl.rcParams['xtick.labelsize'] = 7
 mpl.rcParams['ytick.labelsize'] = 7
 mpl.rcParams['legend.fontsize'] = 7
 
-# Create the figure
-fig, ax = plt.subplots(figsize=(half_page_width, 4.5))  # Half-page width and height adjustment
+# Create the figure with two subplots (a) and (b)
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(full_page_width, 4.5))  # Full-page width and height adjustment
 
 # Use a vibrant color palette (Set1) or another scientific palette (like cmocean)
 colors = cm.get_cmap('Set1', len(dataframes))  # Get a color palette with distinct colors for each dataset
 
-# Plot each dataset with lines and keep track of unique materials for the legend
+# ---------------------------------------------------
+# Left plot (a): Ionization vs IP - EA Difference
+# ---------------------------------------------------
 for i, df in enumerate(dataframes):
     material_label = material_names[i]
     # Plot the lines for the material (sorted data)
-    ax.plot(df['IP_EA_diff'], df['ionization'], color=colors(i), label=material_label, linestyle='-', marker='')
+    ax1.plot(df['IP_EA_diff'], df['ionization'], color=colors(i), label=material_label, linestyle='-', marker='')
 
 # Plot actual data points for matching materials and annotate with numbers
 for idx, row in actual_data.iterrows():
@@ -87,10 +96,10 @@ for idx, row in actual_data.iterrows():
         else:
             continue  # Skip if no matching material is found in the CSV files
         # Plot the actual data point
-        ax.scatter(ip_ea_diff, efficiency, color=color, marker='o', s=50)
+        ax1.scatter(ip_ea_diff, efficiency, color=color, marker='o', s=50)
         # Annotate the point with the number
-        ax.annotate(str(material_number), (ip_ea_diff, efficiency), textcoords="offset points",
-                    xytext=(5, 5), ha='left', fontsize=8, fontstyle='italic')
+        ax1.annotate(str(material_number), (ip_ea_diff, efficiency), textcoords="offset points",
+                     xytext=(5, 5), ha='left', fontsize=8, fontstyle='italic')
 
 # Plot hollow points for materials without CSV files
 for item in materials_info:
@@ -114,32 +123,61 @@ for item in materials_info:
             else:
                 continue  # Skip if no similar material is found
             # Plot the hollow point
-            ax.scatter(ip_ea_diff, efficiency, facecolors='none', edgecolors=color, marker='o', s=50)
+            ax1.scatter(ip_ea_diff, efficiency, facecolors='none', edgecolors=color, marker='o', s=50)
             # Annotate the hollow point with the number
-            ax.annotate(str(material_number), (ip_ea_diff, efficiency), textcoords="offset points",
-                        xytext=(5, 5), ha='left', fontsize=8, fontstyle='italic')
+            ax1.annotate(str(material_number), (ip_ea_diff, efficiency), textcoords="offset points",
+                         xytext=(5, 5), ha='left', fontsize=8, fontstyle='italic')
 
-# Add labels and title
-ax.set_xlabel('IP - EA Difference [eV]')
-ax.set_ylabel('Ionization')
-ax.set_title('Ionization vs IP - EA Difference')
+# Add labels and title for plot (a)
+ax1.set_xlabel('IP - EA Difference [eV]')
+ax1.set_ylabel(r'Ionization Fraction  $\eta_{\mathrm{sim}}$')
 
-# Add a legend for all datasets (only the line, no repeated points)
-handles, labels = ax.get_legend_handles_labels()
+ax1.set_ylim([0.0, 1.0])
+
+# Add a legend for plot (a)
+handles, labels = ax1.get_legend_handles_labels()
 unique_labels = dict(zip(labels, handles))  # Remove duplicate labels
-ax.legend(unique_labels.values(), unique_labels.keys(), loc='best')
+ax1.legend(unique_labels.values(), unique_labels.keys(), loc='best')
 
-# Adjust the layout to make everything fit nicely
+# ---------------------------------------------------
+# Right plot (b): Derivative of Ionization vs IP - EA
+# ---------------------------------------------------
+for i, df in enumerate(dataframes):
+    # Calculate the derivative d(η)/d(IP - EA)
+    df['d_eta'] = np.gradient(df['ionization'], df['IP_EA_diff']) * 100  # Convert to %/eV
+
+    # If kcal/mol is used for y-axis, apply the conversion factor
+    if use_kcal_per_mol_y_axis:
+        df['d_eta'] /= eV_to_kcal_per_mol  # Convert to %/kcal/mol
+
+    # Plot the derivative
+    ax2.plot(df['IP_EA_diff'], df['d_eta'], color=colors(i), label=material_names[i], linestyle='-', marker='')
+
+# Add labels and title for plot (b)
+y_label_unit = 'kcal/mol' if use_kcal_per_mol_y_axis else 'eV'
+ax2.set_xlabel('IP - EA Difference [eV]')  # x-axis remains in eV
+ax2.set_ylabel(f'd($\eta_{{\mathrm{{sim}}}}$)/d(IP - EA) [%/{y_label_unit}]')
+
+# Add a legend for plot (b)
+handles, labels = ax2.get_legend_handles_labels()
+unique_labels = dict(zip(labels, handles))  # Remove duplicate labels
+ax2.legend(unique_labels.values(), unique_labels.keys(), loc='best')
+
+# Adjust layout to add the labels (a) and (b)
+ax1.text(-0.15, 1.05, "a", transform=ax1.transAxes, fontsize=12, fontweight='bold')
+ax2.text(-0.15, 1.05, "b", transform=ax2.transAxes, fontsize=12, fontweight='bold')
+
+ax2.set_ylim([-10, 0])
+
+# Adjust the layout to make sure everything fits nicely
 plt.tight_layout()
 
-plt.ylim([0.0, 1.0])
-
-# Save the plot as both PNG and PDF
-plot_png = os.path.join(output_dir, 'ionization_vs_ip_ea_with_actual_and_hollow_sorted.png')
-plot_pdf = os.path.join(output_dir, 'ionization_vs_ip_ea_with_actual_and_hollow_sorted.pdf')
+# Save the full figure as both PNG and PDF
+plot_png = os.path.join(output_dir, 'ionization_derivative_plots.png')
+plot_pdf = os.path.join(output_dir, 'ionization_derivative_plots.pdf')
 
 plt.savefig(plot_png, dpi=300)  # Save as PNG
 plt.savefig(plot_pdf)           # Save as PDF
 
-# Show the plot
+# Show the full figure
 plt.show()
