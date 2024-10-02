@@ -224,6 +224,8 @@ axes[2].set_title('c', fontsize=10, fontweight='bold', loc='left')  # Bold label
 # --- Plot d ---
 # Use axes[3]
 
+import numpy as np
+
 # Read the simulated data (IP, EA) and VC data from CSV file
 sim_data = pd.read_csv('../../simulations/summary/Lightforge/ionization_ip_ea.csv')
 
@@ -286,14 +288,6 @@ merged_data = merged_data.dropna(subset=['material_number'])
 # Convert material_number to integer
 merged_data['material_number'] = merged_data['material_number'].astype(int)
 
-# Relative simulation values for materials 1 to 4
-relative_simulation_values = {
-    1: 1.0,
-    2: 0.969025613,
-    3: 0.921286021,
-    4: 0.848504597
-}
-
 # Plotting on axes[3]
 
 # Plot simulated doping efficiency
@@ -303,12 +297,18 @@ axes[3].scatter(merged_data['IP_EA_VC_sim'], merged_data['efficiency'], color='b
 axes[3].scatter(merged_data['IP_EA_VC_sim'], merged_data['efficiency_exp'], color='red', marker='s', label='Experimental')
 
 # Add unfilled circles for relative simulation values for materials 1-4
+relative_simulation_values = {
+    1: 1.0,
+    2: 0.969025613,
+    3: 0.921286021,
+    4: 0.848504597
+}
 for i in range(1, 5):
     material_row = merged_data[merged_data['material_number'] == i]
     if not material_row.empty:
         axes[3].scatter(material_row['IP_EA_VC_sim'], relative_simulation_values[i], facecolors='none', edgecolors='blue', marker='o', label='Sim. (relative)' if i == 1 else "")
 
-axes[3].set_xlabel('IP - EA + VC (Simulated) [eV]')
+axes[3].set_xlabel('IP - EA + $V_C$ (eV)')
 axes[3].set_ylabel(r'Ionization Fraction  $\eta_{\mathrm{exper}}$')
 axes[3].set_title('d', fontsize=10, fontweight='bold', loc='left')  # Bold label
 
@@ -318,6 +318,71 @@ for i, row in merged_data.iterrows():
                      xytext=(5, -5), fontsize=6, color='blue', fontstyle='italic')
     axes[3].annotate(str(row['material_number']), (row['IP_EA_VC_sim'], row['efficiency_exp']), textcoords="offset points",
                      xytext=(5, 5), fontsize=6, color='red', fontstyle='italic')
+
+# --- Add the derivative line from panel b of the second script ---
+
+# Specify the material for which you want to add the derivative line
+material_name = 'TCTA@CN6-CP_0.26'  # Corresponds to material number 4
+
+# Path to the CSV file for the material in the second script
+csv_path = '../../simulations/summary/Lightforge/fictional_materials/{}.csv'.format(material_name)
+
+if os.path.exists(csv_path):
+    # Read the CSV file
+    df_derivative = pd.read_csv(csv_path)
+
+    # Compute IP - EA Difference
+    df_derivative['IP_EA_diff'] = df_derivative['IP'] - df_derivative['EA']
+
+    # Get VC_mean for the base material
+    base_material = material_name.split('_')[0]
+    vc_mean_row = vc_data[vc_data['base_material'] == base_material]
+    if not vc_mean_row.empty:
+        vc_mean = vc_mean_row['VC_mean'].values[0]
+    else:
+        print(f"VC_mean not found for {base_material}")
+        vc_mean = 0  # Default to 0 if not found
+
+    # Adjust IP_EA_diff by adding VC_mean to get IP - EA + VC
+    df_derivative['IP_EA_VC'] = df_derivative['IP_EA_diff'] + vc_mean
+
+    # Extract x (IP - EA + VC) and y (ionization fraction)
+    x = df_derivative['IP_EA_VC'].values
+    y = df_derivative['ionization'].values * 100  # Convert to percentage
+
+    # Ensure x and y are sorted by x
+    sorted_indices = np.argsort(x)
+    x = x[sorted_indices]
+    y = y[sorted_indices]
+
+    # Compute the derivative d(IP - EA + VC)/dη using central difference
+    def central_difference(x, y):
+        dydx = np.zeros_like(y)
+        dydx[1:-1] = (x[2:] - x[:-2]) / (y[2:] - y[:-2])
+        dydx[0] = (x[1] - x[0]) / (y[1] - y[0])
+        dydx[-1] = (x[-1] - x[-2]) / (y[-1] - y[-2])
+        return dydx
+
+    derivative = central_difference(y, x)
+
+    # Convert derivative to kcal/mol per %
+    derivative_kcal_per_percent = derivative * 23.0609  # eV to kcal/mol
+
+    # Create secondary y-axis
+    ax_secondary = axes[3].twinx()
+    ax_secondary.set_ylabel('d(IP - EA + $V_C$)/d$\eta$ (kcal/mol/%)', color='grey', fontsize=7)
+    ax_secondary.tick_params(axis='y', labelcolor='grey')
+
+    # Plot the derivative line
+    ax_secondary.plot(x, derivative_kcal_per_percent, color='grey', linestyle='--', label='Derivative')
+
+    # Adjust x-limits to match axes[3]
+    ax_secondary.set_xlim(axes[3].get_xlim())
+
+    # Add the derivative line to the legend
+    axes[3].legend(loc='upper left', frameon=False)
+else:
+    print(f"CSV file for {material_name} not found at {csv_path}")
 
 # Adjust layout to make sure everything fits nicely
 plt.tight_layout(pad=1.0)
