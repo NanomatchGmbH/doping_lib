@@ -23,7 +23,8 @@ fig_width = full_page_width  # For full width figure
 fig_height = full_page_width * (3/4)  # Adjust height as needed
 
 # Create figure and axes
-fig, axes = plt.subplots(2, 2, figsize=(fig_width, fig_height))
+# fig, axes = plt.subplots(2, 2, figsize=(fig_width, fig_height))
+fig, axes = plt.subplots(2, 2, figsize=(fig_width, 6))
 axes = axes.flatten()
 
 # --- Plot a ---
@@ -46,7 +47,7 @@ axes[0].set_xlabel('Material')
 axes[0].set_ylabel('First RDF Peak (Å)')
 axes[0].set_xticklabels(df_sorted['material_clean'], rotation=45, ha='right')
 axes[0].set_ylim(4, )
-axes[0].set_title('(a) First RDF Peak vs. Material', fontsize=7)
+axes[0].set_title('a', fontsize=10, fontweight='bold', loc='left')  # Bold label
 
 # --- Plot b ---
 # Use axes[1]
@@ -126,7 +127,51 @@ inverse_distance_min = min(all_inverse_distances)
 inverse_distance_max = max(all_inverse_distances)
 axes[1].set_xlim(inverse_distance_min, inverse_distance_max)
 
-axes[1].set_title('(b) $V_C$ vs. Inverse Distance', fontsize=7)
+axes[1].set_title('b', fontsize=10, fontweight='bold', loc='left')  # Bold label
+
+##
+
+# Create a secondary x-axis on top that shares the same scale (for direct distances)
+secax = axes[1].twiny()
+secax.set_xlim(axes[1].get_xlim())
+secax.set_xlabel('Distance (Å)', fontsize=7)
+secax.tick_params(axis='both', which='major', labelsize=7)
+
+# Set ticks on the secondary x-axis at positions corresponding to distances 4, 5, 6, 10, and 20 Å
+distance_ticks = [4, 5, 6, 10, 20]  # Distances in Ångströms
+inverse_distance_ticks = [1 / d for d in distance_ticks]
+
+# Filter ticks to include only those within x-limits
+ticks_in_range = [(inv_d, d) for inv_d, d in zip(inverse_distance_ticks, distance_ticks)
+                  if inverse_distance_min <= inv_d <= inverse_distance_max]
+
+if ticks_in_range:
+    inverse_distance_ticks_filtered, distance_ticks_filtered = zip(*ticks_in_range)
+    secax.set_xticks(inverse_distance_ticks_filtered)
+    secax.set_xticklabels([f'{d}' for d in distance_ticks_filtered])
+else:
+    # If no ticks are in range, use default ticks
+    secax.set_xticks([])
+    print("No secondary x-axis ticks fall within the data range.")
+
+# Adjust legend
+axes[1].legend(
+    fontsize=6,
+    loc='upper right',
+    frameon=False,
+    handletextpad=0.3,
+    borderpad=0.3,
+    labelspacing=0.3
+)
+
+# Adjust layout for tightness
+plt.tight_layout(pad=0.2)
+
+##
+
+
+
+
 
 # --- Plot c ---
 # Use axes[2]
@@ -174,7 +219,7 @@ axes[2].barh(results_df['material'], results_df['VC_mean'], color='skyblue')
 axes[2].set_xlabel('$V_C$ at First RDF Peak (eV)')
 axes[2].set_ylabel('Material')
 axes[2].set_xlim([-0.9, -0.6])
-axes[2].set_title('(c) $V_C$ at First RDF Peak', fontsize=7)
+axes[2].set_title('c', fontsize=10, fontweight='bold', loc='left')  # Bold label
 
 # --- Plot d ---
 # Use axes[3]
@@ -265,9 +310,7 @@ for i in range(1, 5):
 
 axes[3].set_xlabel('IP - EA + VC (Simulated) [eV]')
 axes[3].set_ylabel(r'Ionization Fraction  $\eta_{\mathrm{exper}}$')
-axes[3].set_title('(d) Doping Efficiency vs. IP - EA + $V_C$', fontsize=7)
-axes[3].legend(fontsize=6)
-axes[3].set_ylim(bottom=0.0)
+axes[3].set_title('d', fontsize=10, fontweight='bold', loc='left')  # Bold label
 
 # Annotate data points with italic numbers
 for i, row in merged_data.iterrows():
