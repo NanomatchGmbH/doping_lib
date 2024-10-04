@@ -24,8 +24,14 @@ fig_height = full_page_width * (3/4)  # Adjust height as needed
 
 # Create figure and axes
 # fig, axes = plt.subplots(2, 2, figsize=(fig_width, fig_height))
-fig, axes = plt.subplots(2, 2, figsize=(fig_width, 6))
+fig, axes = plt.subplots(2, 2, figsize=(fig_width, 6), gridspec_kw={'height_ratios': [1, 1.5]})
 axes = axes.flatten()
+
+# Add labels "a", "b", "c", "d" to each subplot
+axes[0].text(-0.15, 1.05, "a", transform=axes[0].transAxes, fontsize=12, fontweight='bold')
+axes[1].text(-0.15, 1.05, "b", transform=axes[1].transAxes, fontsize=12, fontweight='bold')
+axes[2].text(-0.15, 1.05, "c", transform=axes[2].transAxes, fontsize=12, fontweight='bold')
+axes[3].text(-0.15, 1.05, "d", transform=axes[3].transAxes, fontsize=12, fontweight='bold')
 
 # --- Plot a ---
 # Use axes[0]
@@ -47,7 +53,7 @@ axes[0].set_xlabel('Material')
 axes[0].set_ylabel('First RDF Peak (Å)')
 axes[0].set_xticklabels(df_sorted['material_clean'], rotation=45, ha='right')
 axes[0].set_ylim(4, )
-axes[0].set_title('a', fontsize=10, fontweight='bold', loc='left')  # Bold label
+# axes[0].set_title('a', fontsize=10, fontweight='bold', loc='left')  # Bold label
 
 # --- Plot b ---
 # Use axes[1]
@@ -127,7 +133,7 @@ inverse_distance_min = min(all_inverse_distances)
 inverse_distance_max = max(all_inverse_distances)
 axes[1].set_xlim(inverse_distance_min, inverse_distance_max)
 
-axes[1].set_title('b', fontsize=10, fontweight='bold', loc='left')  # Bold label
+# axes[1].set_title('b', fontsize=10, fontweight='bold', loc='left')  # Bold label
 
 ##
 
@@ -219,12 +225,10 @@ axes[2].barh(results_df['material'], results_df['VC_mean'], color='skyblue')
 axes[2].set_xlabel('$V_C$ at First RDF Peak (eV)')
 axes[2].set_ylabel('Material')
 axes[2].set_xlim([-0.9, -0.6])
-axes[2].set_title('c', fontsize=10, fontweight='bold', loc='left')  # Bold label
+# axes[2].set_title('c', fontsize=10, fontweight='bold', loc='left')  # Bold label
 
 # --- Plot d ---
 # Use axes[3]
-
-import numpy as np
 
 # Read the simulated data (IP, EA) and VC data from CSV file
 sim_data = pd.read_csv('../../simulations/summary/Lightforge/ionization_ip_ea.csv')
@@ -310,7 +314,7 @@ for i in range(1, 5):
 
 axes[3].set_xlabel('IP - EA + $V_C$ (eV)')
 axes[3].set_ylabel(r'Ionization Fraction  $\eta_{\mathrm{exper}}$')
-axes[3].set_title('d', fontsize=10, fontweight='bold', loc='left')  # Bold label
+# axes[3].set_title('d', fontsize=10, fontweight='bold', loc='left')  # Bold label
 
 # Annotate data points with italic numbers
 for i, row in merged_data.iterrows():
@@ -322,7 +326,8 @@ for i, row in merged_data.iterrows():
 # --- Add the derivative line from panel b of the second script ---
 
 # Specify the material for which you want to add the derivative line
-material_name = 'TCTA@CN6-CP_0.26'  # Corresponds to material number 4
+# material_name = 'TCTA@CN6-CP_0.26'  # Corresponds to material number 4
+material_name = 'm-MTDATA@F4TCNQ_0.02'  # Corresponds to material number 4
 
 # Path to the CSV file for the material in the second script
 csv_path = '../../simulations/summary/Lightforge/fictional_materials/{}.csv'.format(material_name)
@@ -330,6 +335,9 @@ csv_path = '../../simulations/summary/Lightforge/fictional_materials/{}.csv'.for
 if os.path.exists(csv_path):
     # Read the CSV file
     df_derivative = pd.read_csv(csv_path)
+
+    # Sort the DataFrame by ionization fraction in increasing order
+    df_derivative.sort_values(by='IP', inplace=True)
 
     # Compute IP - EA Difference
     df_derivative['IP_EA_diff'] = df_derivative['IP'] - df_derivative['EA']
@@ -348,12 +356,7 @@ if os.path.exists(csv_path):
 
     # Extract x (IP - EA + VC) and y (ionization fraction)
     x = df_derivative['IP_EA_VC'].values
-    y = df_derivative['ionization'].values * 100  # Convert to percentage
-
-    # Ensure x and y are sorted by x
-    sorted_indices = np.argsort(x)
-    x = x[sorted_indices]
-    y = y[sorted_indices]
+    y = df_derivative['ionization'].values
 
     # Compute the derivative d(IP - EA + VC)/dη using central difference
     def central_difference(x, y):
@@ -363,10 +366,10 @@ if os.path.exists(csv_path):
         dydx[-1] = (x[-1] - x[-2]) / (y[-1] - y[-2])
         return dydx
 
-    derivative = central_difference(y, x)
+    derivative = central_difference(x, y)  # < -- !  dx/dy
 
     # Convert derivative to kcal/mol per %
-    derivative_kcal_per_percent = derivative * 23.0609  # eV to kcal/mol
+    derivative_kcal_per_percent = derivative * 23.0609 / 100   # eV/fraction to kcal/mol / %
 
     # Create secondary y-axis
     ax_secondary = axes[3].twinx()
@@ -376,11 +379,17 @@ if os.path.exists(csv_path):
     # Plot the derivative line
     ax_secondary.plot(x, derivative_kcal_per_percent, color='grey', linestyle='--', label='Derivative')
 
+    ax_secondary.set_ylim([-1.5, 0])
+
     # Adjust x-limits to match axes[3]
     ax_secondary.set_xlim(axes[3].get_xlim())
 
     # Add the derivative line to the legend
     axes[3].legend(loc='upper left', frameon=False)
+
+    axes[3].set_ylim([0.0, 1.0])
+    axes[3].set_xlim([-0.75, 0.5])
+
 else:
     print(f"CSV file for {material_name} not found at {csv_path}")
 
