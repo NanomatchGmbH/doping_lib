@@ -6,6 +6,24 @@ import yaml
 import os
 import sys
 
+# Create a mapping from numbers to materials
+materials_info = [
+    {'Number': 1, 'Material': 'BFDPB@CN6-CP', 'mol%': 26},
+    {'Number': 2, 'Material': 'NPB@CN6-CP', 'mol%': 26},
+    {'Number': 3, 'Material': 'BPAPF@CN6-CP', 'mol%': 26},
+    {'Number': 4, 'Material': 'TCTA@CN6-CP', 'mol%': 26},
+    {'Number': 5, 'Material': 'CBP@CN6-CP', 'mol%': 20},
+    {'Number': 6, 'Material': 'MeO-TPD@F4TCNQ', 'mol%': 2},
+    {'Number': 7, 'Material': 'm-MTDATA@F4TCNQ', 'mol%': 2},
+    {'Number': 8, 'Material': 'TPD@F4TCNQ', 'mol%': 2},
+    {'Number': 9, 'Material': 'TCTA@F6TCNNQ', 'mol%': 11},
+    {'Number': 10, 'Material': 'ZnPc@F4TCNQ', 'mol%': 2},
+    {'Number': 11, 'Material': 'ZnPc@TCNQ', 'mol%': 2}
+]
+
+# Create a mapping from material to number
+material_numbers = {item['Material']: item['Number'] for item in materials_info}
+
 # General Formatting for All Plots
 mpl.rcParams['font.family'] = 'Arial'  # Use Arial font
 mpl.rcParams['font.size'] = 7          # Set font size to 7 pt
@@ -23,7 +41,6 @@ fig_width = full_page_width  # For full width figure
 fig_height = full_page_width * (3/4)  # Adjust height as needed
 
 # Create figure and axes
-# fig, axes = plt.subplots(2, 2, figsize=(fig_width, fig_height))
 fig, axes = plt.subplots(2, 2, figsize=(fig_width, 6), gridspec_kw={'height_ratios': [1, 1.5]})
 axes = axes.flatten()
 
