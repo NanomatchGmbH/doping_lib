@@ -2,6 +2,18 @@ import os
 import yaml
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib as mpl
+
+# General Formatting for All Plots
+mpl.rcParams['font.family'] = 'Arial'  # Use Arial font
+mpl.rcParams['font.size'] = 7  # Set font size to 7 pt
+mpl.rcParams['axes.linewidth'] = 0.5  # Set axes line width
+mpl.rcParams['pdf.fonttype'] = 42  # Ensure fonts are embedded in PDF
+mpl.rcParams['axes.labelsize'] = 7
+mpl.rcParams['axes.titlesize'] = 7
+mpl.rcParams['xtick.labelsize'] = 6
+mpl.rcParams['ytick.labelsize'] = 6
+mpl.rcParams['legend.fontsize'] = 6
 
 # Define the base directory and initialize dictionaries
 base_directory = '../../../../simulations/raw_data/Deposit'
@@ -57,16 +69,25 @@ for folder in os.listdir(base_directory):
                     else:
                         print(f"Missing 'x' or 'y' in RDF data for key {key} in file {output_file}")
 
-# Plot RDFs grouped by dopants
-plt.figure(figsize=(20, 15))
+# General plot settings
+full_page_width = 7.08  # inches (18 cm)
+fig_width = full_page_width  # For full width figure
+fig_height = full_page_width * (3 / 4)  # Adjust height as needed
+
+# Num Dopants
 num_dopants = len(dopant_grouping)
 
-for idx, (dopant, folders) in enumerate(dopant_grouping.items(), start=1):
+# Create figure and axes for dopants
+fig, axes = plt.subplots(num_dopants, 1, figsize=(fig_width, fig_height), sharex=False)
+axes = np.atleast_1d(axes)  # Ensure axes is iterable even if there's only one subplot
+
+for idx, (dopant, folders) in enumerate(dopant_grouping.items()):
+    ax = axes[idx]
     print(f"Plotting RDFs for dopant: {dopant}")
-    plt.subplot(num_dopants, 1, idx)
-    plt.title(f'RDF Cross-pairs for Dopant: {dopant}', fontsize=16)
+    ax.set_title(f'Dopant: {dopant}', fontsize=7)
 
     valid_plots = False
+    plotted_pairs = set()
     for folder in folders:
         folder_path = os.path.join(base_directory, folder)
         output_file = os.path.join(folder_path, 'output_dict.yml')
@@ -82,7 +103,7 @@ for idx, (dopant, folders) in enumerate(dopant_grouping.items(), start=1):
                     uuid1, uuid2 = key.split('_')
                     if uuid1 != uuid2 and 'x' in rdf and 'y' in rdf:  # Cross-compounds only
                         pair_key = f"{uuid1}_{uuid2}" if uuid1 < uuid2 else f"{uuid2}_{uuid1}"
-                        if pair_key in rdf_data:
+                        if pair_key not in plotted_pairs and pair_key in rdf_data:
                             rdf_x = rdf_data[pair_key]['x']
                             rdf_y = rdf_data[pair_key]['y']
 
@@ -95,19 +116,31 @@ for idx, (dopant, folders) in enumerate(dopant_grouping.items(), start=1):
 
                                 # Plot the RDF
                                 print(f"Plotting RDF for {uuid1} <> {uuid2}, Peak at distance: {peak_distance}")
-                                plt.plot(rdf_x, rdf_y, label=f'{uuid1} <> {uuid2}')
-                                plt.scatter([peak_distance], [peak_value], color='red')
-                                plt.axvline(x=peak_distance, linestyle='--', color='gray',
-                                            label=f'Peak at {peak_distance:.2f}')
-                                plt.xlabel('Distance')
-                                plt.ylabel('RDF')
-                                plt.legend()
+                                ax.plot(rdf_x, rdf_y, label=f'{folder}', linewidth=0.5)
+                                ax.scatter([peak_distance], [peak_value], color='red', s=10)
+                                ax.text(peak_distance, peak_value, f'{peak_distance:.2f} Å', fontsize=6, color='red',
+                                        ha='right')
                                 valid_plots = True
+                                plotted_pairs.add(pair_key)
                             else:
                                 print(f"First peak data missing for {uuid1} <> {uuid2} in file {output_file}")
 
-    if not valid_plots:
+    if valid_plots:
+        ax.set_xlabel('Distance (Å)', fontsize=7)
+        ax.set_ylabel('RDF', fontsize=7)
+        ax.legend(fontsize=6, frameon=False)
+    else:
         print(f"No valid plots for dopant: {dopant}")
 
-plt.tight_layout(rect=[0, 0, 1, 0.95])
+    # Add subplot label
+    ax.text(-0.1, 1.05, chr(97 + idx), transform=ax.transAxes, fontsize=12, fontweight='bold', ha='left', va='top')
+
+# Adjust layout to ensure everything fits nicely
+plt.tight_layout(pad=0.2, h_pad=0.5)
+
+# Save the figure in high-resolution PNG and PDF formats
+plt.savefig('rdf_cross_pairs_advanced_materials.png', dpi=600, bbox_inches='tight')
+plt.savefig('rdf_cross_pairs_advanced_materials.pdf', dpi=600, bbox_inches='tight')
+
+# Display the plot
 plt.show()
