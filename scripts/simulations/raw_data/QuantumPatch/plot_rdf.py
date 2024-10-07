@@ -74,12 +74,20 @@ full_page_width = 7.08  # inches (18 cm)
 fig_width = full_page_width  # For full width figure
 fig_height = full_page_width * (3 / 4)  # Adjust height as needed
 
-# Num Dopants
+# Number of dopants
 num_dopants = len(dopant_grouping)
 
 # Create figure and axes for dopants
 fig, axes = plt.subplots(num_dopants, 1, figsize=(fig_width, fig_height), sharex=False)
 axes = np.atleast_1d(axes)  # Ensure axes is iterable even if there's only one subplot
+
+# Determine global y-axis limits for cross pairs only
+global_max_y = 0
+for key, rdf in rdf_data.items():
+    if key.count('_') == 1:
+        if key.split('_')[0] != key.split('_')[1]:
+            global_max_y = max(global_max_y, max(rdf['y']))
+y_max = global_max_y + 0.5
 
 for idx, (dopant, folders) in enumerate(dopant_grouping.items()):
     ax = axes[idx]
@@ -128,6 +136,8 @@ for idx, (dopant, folders) in enumerate(dopant_grouping.items()):
     if valid_plots:
         ax.set_xlabel('Distance (Å)', fontsize=7)
         ax.set_ylabel('RDF', fontsize=7)
+        ax.set_ylim(-0.1, y_max)
+        ax.set_xlim(-2, 20)
         ax.legend(fontsize=6, frameon=False)
     else:
         print(f"No valid plots for dopant: {dopant}")
