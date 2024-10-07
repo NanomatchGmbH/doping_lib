@@ -1,0 +1,24 @@
+2024-03-15 13:52:43 Renaming residue FQY to AAA in file molecule_1.pdb.
+3500 molecules converted
+rm: cannot remove 'deposited_*.cml': No such file or directory
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           hkn1117
+  Local device:         mlx5_2
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           hkn1117
+  Local device:         mlx5_2
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+OMP: Warning #182: OMP_PROC_BIND: ignored because KMP_AFFINITY has been defined

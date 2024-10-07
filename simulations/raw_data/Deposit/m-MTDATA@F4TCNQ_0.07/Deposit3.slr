@@ -1,0 +1,41 @@
+#!/bin/bash
+#SBATCH --job-name=m-MTDATA@F4TCNQ_0.07
+#SBATCH --mem=152000
+#SBATCH --nodes=1
+#SBATCH --tasks-per-node=76
+#SBATCH --partition=cpuonly
+#SBATCH --error=Deposit3.stderr
+#SBATCH --output=Deposit3.stdout
+#SBATCH --time=72:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=artem.fedyay@gmail.com
+
+UC_NODES=1; export UC_NODES;
+UC_PROCESSORS_PER_NODE=76; export UC_PROCESSORS_PER_NODE;
+UC_TOTAL_PROCESSORS=76; export UC_TOTAL_PROCESSORS;
+UC_MEMORY_PER_NODE=152000; export UC_MEMORY_PER_NODE;
+
+
+
+#ACTIVATE-->
+# >>> mamba initialize >>>
+# !! Contents within this block are managed by 'mamba init' !!
+export MAMBA_EXE='/hkfs/home/project/hk-project-zimnano/nz8308/.local/bin/micromamba';
+export MAMBA_ROOT_PREFIX='/hkfs/home/project/hk-project-zimnano/nz8308/micromamba';
+__mamba_setup="$("$MAMBA_EXE" shell hook --shell bash --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__mamba_setup"
+else
+    alias micromamba="$MAMBA_EXE"  # Fallback on help from mamba activate
+fi
+unset __mamba_setup
+# <<< mamba initialize <<<
+
+micromamba activate nmsci-2024.1
+
+export OMP_NUM_THREADS=1
+#<--ACTIVATE
+
+
+cd $SLURM_SUBMIT_DIR
+bash ./deposit_init.sh .93 0.07 3500 60 60 240

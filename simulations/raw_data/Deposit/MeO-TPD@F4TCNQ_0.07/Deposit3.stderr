@@ -1,0 +1,16 @@
+2024-03-15 13:52:44 Renaming residue FQY to AAA in file molecule_1.pdb.
+3500 molecules converted
+rm: cannot remove 'deposited_*.cml': No such file or directory
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   hkn0310
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   hkn0310
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+OMP: Warning #182: OMP_PROC_BIND: ignored because KMP_AFFINITY has been defined

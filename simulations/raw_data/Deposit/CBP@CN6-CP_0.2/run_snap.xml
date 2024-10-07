@@ -1,0 +1,4540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<simona_input>
+  <simona_configuration>
+    <coord id="0" residue_name="FQY" residue_id="0" chain_id="0" name="N" type="N">
+      <X>50.1643372</X>
+      <Y>-21.5842667</Y>
+      <Z>26.8874245</Z>
+    </coord>
+    <coord id="1" residue_name="FQY" residue_id="0" chain_id="0" name="N1" type="N">
+      <X>58.3395729</X>
+      <Y>-27.1837769</Y>
+      <Z>26.416996</Z>
+    </coord>
+    <coord id="2" residue_name="FQY" residue_id="0" chain_id="0" name="C" type="C">
+      <X>48.9021835</X>
+      <Y>-21.9510345</Y>
+      <Z>26.432682</Z>
+    </coord>
+    <coord id="3" residue_name="FQY" residue_id="0" chain_id="0" name="C1" type="C">
+      <X>50.0894012</X>
+      <Y>-20.2994061</Y>
+      <Z>27.4176216</Z>
+    </coord>
+    <coord id="4" residue_name="FQY" residue_id="0" chain_id="0" name="C2" type="C">
+      <X>58.7277985</X>
+      <Y>-27.9637337</Y>
+      <Z>25.3311615</Z>
+    </coord>
+    <coord id="5" residue_name="FQY" residue_id="0" chain_id="0" name="C3" type="C">
+      <X>59.2887039</X>
+      <Y>-27.3225842</Y>
+      <Z>27.4235077</Z>
+    </coord>
+    <coord id="6" residue_name="FQY" residue_id="0" chain_id="0" name="C4" type="C">
+      <X>48.0022888</X>
+      <Y>-20.8897552</Y>
+      <Z>26.6747131</Z>
+    </coord>
+    <coord id="7" residue_name="FQY" residue_id="0" chain_id="0" name="C5" type="C">
+      <X>48.7594147</X>
+      <Y>-19.8357162</Y>
+      <Z>27.302906</Z>
+    </coord>
+    <coord id="8" residue_name="FQY" residue_id="0" chain_id="0" name="C6" type="C">
+      <X>59.9438477</X>
+      <Y>-28.611208</Y>
+      <Z>25.6445236</Z>
+    </coord>
+    <coord id="9" residue_name="FQY" residue_id="0" chain_id="0" name="C7" type="C">
+      <X>60.3029404</X>
+      <Y>-28.2012653</Y>
+      <Z>26.9799271</Z>
+    </coord>
+    <coord id="10" residue_name="FQY" residue_id="0" chain_id="0" name="C8" type="C">
+      <X>51.3283463</X>
+      <Y>-22.3816624</Y>
+      <Z>26.8208542</Z>
+    </coord>
+    <coord id="11" residue_name="FQY" residue_id="0" chain_id="0" name="C9" type="C">
+      <X>57.1758461</X>
+      <Y>-26.3873425</Y>
+      <Z>26.4840317</Z>
+    </coord>
+    <coord id="12" residue_name="FQY" residue_id="0" chain_id="0" name="C10" type="C">
+      <X>48.4952393</X>
+      <Y>-23.1208916</Y>
+      <Z>25.8001518</Z>
+    </coord>
+    <coord id="13" residue_name="FQY" residue_id="0" chain_id="0" name="C11" type="C">
+      <X>51.0822144</X>
+      <Y>-19.5306416</Y>
+      <Z>28.0148354</Z>
+    </coord>
+    <coord id="14" residue_name="FQY" residue_id="0" chain_id="0" name="C12" type="C">
+      <X>58.0825005</X>
+      <Y>-28.1722088</Y>
+      <Z>24.1169548</Z>
+    </coord>
+    <coord id="15" residue_name="FQY" residue_id="0" chain_id="0" name="C13" type="C">
+      <X>59.3478966</X>
+      <Y>-26.7136383</Y>
+      <Z>28.6726112</Z>
+    </coord>
+    <coord id="16" residue_name="FQY" residue_id="0" chain_id="0" name="C14" type="C">
+      <X>53.6447334</X>
+      <Y>-23.966074</Y>
+      <Z>26.6883507</Z>
+    </coord>
+    <coord id="17" residue_name="FQY" residue_id="0" chain_id="0" name="C15" type="C">
+      <X>54.8613815</X>
+      <Y>-24.8001194</Y>
+      <Z>26.6176567</Z>
+    </coord>
+    <coord id="18" residue_name="FQY" residue_id="0" chain_id="0" name="C16" type="C">
+      <X>46.6703453</X>
+      <Y>-21.0153236</Y>
+      <Z>26.2878647</Z>
+    </coord>
+    <coord id="19" residue_name="FQY" residue_id="0" chain_id="0" name="C17" type="C">
+      <X>48.4303284</X>
+      <Y>-18.5696697</Y>
+      <Z>27.7832451</Z>
+    </coord>
+    <coord id="20" residue_name="FQY" residue_id="0" chain_id="0" name="C18" type="C">
+      <X>60.5270386</X>
+      <Y>-29.4668026</Y>
+      <Z>24.7130547</Z>
+    </coord>
+    <coord id="21" residue_name="FQY" residue_id="0" chain_id="0" name="C19" type="C">
+      <X>61.3799057</X>
+      <Y>-28.485693</Y>
+      <Z>27.8153114</Z>
+    </coord>
+    <coord id="22" residue_name="FQY" residue_id="0" chain_id="0" name="C20" type="C">
+      <X>52.4472427</X>
+      <Y>-21.9343834</Y>
+      <Z>26.1215935</Z>
+    </coord>
+    <coord id="23" residue_name="FQY" residue_id="0" chain_id="0" name="C21" type="C">
+      <X>56.3273697</X>
+      <Y>-26.4730377</Y>
+      <Z>27.5850449</Z>
+    </coord>
+    <coord id="24" residue_name="FQY" residue_id="0" chain_id="0" name="C22" type="C">
+      <X>51.368103</X>
+      <Y>-23.6204433</Y>
+      <Z>27.4519806</Z>
+    </coord>
+    <coord id="25" residue_name="FQY" residue_id="0" chain_id="0" name="C23" type="C">
+      <X>56.8657799</X>
+      <Y>-25.5070534</Y>
+      <Z>25.4505196</Z>
+    </coord>
+    <coord id="26" residue_name="FQY" residue_id="0" chain_id="0" name="C24" type="C">
+      <X>53.5898056</X>
+      <Y>-22.7164593</Y>
+      <Z>26.0655785</Z>
+    </coord>
+    <coord id="27" residue_name="FQY" residue_id="0" chain_id="0" name="C25" type="C">
+      <X>55.1907921</X>
+      <Y>-25.6831608</Y>
+      <Z>27.6503372</Z>
+    </coord>
+    <coord id="28" residue_name="FQY" residue_id="0" chain_id="0" name="C26" type="C">
+      <X>52.5094757</X>
+      <Y>-24.4032345</Y>
+      <Z>27.3777161</Z>
+    </coord>
+    <coord id="29" residue_name="FQY" residue_id="0" chain_id="0" name="C27" type="C">
+      <X>55.7193298</X>
+      <Y>-24.7320042</Y>
+      <Z>25.5161629</Z>
+    </coord>
+    <coord id="30" residue_name="FQY" residue_id="0" chain_id="0" name="C28" type="C">
+      <X>47.1630058</X>
+      <Y>-23.2213821</Y>
+      <Z>25.4240189</Z>
+    </coord>
+    <coord id="31" residue_name="FQY" residue_id="0" chain_id="0" name="C29" type="C">
+      <X>50.7280006</X>
+      <Y>-18.2747746</Y>
+      <Z>28.4856033</Z>
+    </coord>
+    <coord id="32" residue_name="FQY" residue_id="0" chain_id="0" name="C30" type="C">
+      <X>58.6839905</X>
+      <Y>-29.0289097</Y>
+      <Z>23.2060432</Z>
+    </coord>
+    <coord id="33" residue_name="FQY" residue_id="0" chain_id="0" name="C31" type="C">
+      <X>60.4313507</X>
+      <Y>-27.0135517</Y>
+      <Z>29.4856224</Z>
+    </coord>
+    <coord id="34" residue_name="FQY" residue_id="0" chain_id="0" name="C32" type="C">
+      <X>46.2559967</X>
+      <Y>-22.1834774</Y>
+      <Z>25.6691437</Z>
+    </coord>
+    <coord id="35" residue_name="FQY" residue_id="0" chain_id="0" name="C33" type="C">
+      <X>49.4188271</X>
+      <Y>-17.7934875</Y>
+      <Z>28.3688583</Z>
+    </coord>
+    <coord id="36" residue_name="FQY" residue_id="0" chain_id="0" name="C34" type="C">
+      <X>59.8953476</X>
+      <Y>-29.6668987</Y>
+      <Z>23.4953957</Z>
+    </coord>
+    <coord id="37" residue_name="FQY" residue_id="0" chain_id="0" name="C35" type="C">
+      <X>61.4376068</X>
+      <Y>-27.8927116</Y>
+      <Z>29.0672379</Z>
+    </coord>
+    <coord id="38" residue_name="FQY" residue_id="0" chain_id="0" name="H" type="H">
+      <X>49.1904755</X>
+      <Y>-23.9234352</Y>
+      <Z>25.5980377</Z>
+    </coord>
+    <coord id="39" residue_name="FQY" residue_id="0" chain_id="0" name="H1" type="H">
+      <X>52.0931625</X>
+      <Y>-19.8983917</Y>
+      <Z>28.1181412</Z>
+    </coord>
+    <coord id="40" residue_name="FQY" residue_id="0" chain_id="0" name="H2" type="H">
+      <X>57.1415863</X>
+      <Y>-27.6911469</Y>
+      <Z>23.8886223</Z>
+    </coord>
+    <coord id="41" residue_name="FQY" residue_id="0" chain_id="0" name="H3" type="H">
+      <X>58.5804176</X>
+      <Y>-26.0260162</Y>
+      <Z>29.000351</Z>
+    </coord>
+    <coord id="42" residue_name="FQY" residue_id="0" chain_id="0" name="H4" type="H">
+      <X>45.9690552</X>
+      <Y>-20.2086887</Y>
+      <Z>26.4658775</Z>
+    </coord>
+    <coord id="43" residue_name="FQY" residue_id="0" chain_id="0" name="H5" type="H">
+      <X>47.4163895</X>
+      <Y>-18.2001934</Y>
+      <Z>27.7043648</Z>
+    </coord>
+    <coord id="44" residue_name="FQY" residue_id="0" chain_id="0" name="H6" type="H">
+      <X>61.4579697</X>
+      <Y>-29.9699268</Y>
+      <Z>24.938694</Z>
+    </coord>
+    <coord id="45" residue_name="FQY" residue_id="0" chain_id="0" name="H7" type="H">
+      <X>62.1649399</X>
+      <Y>-29.1569538</Y>
+      <Z>27.4891357</Z>
+    </coord>
+    <coord id="46" residue_name="FQY" residue_id="0" chain_id="0" name="H8" type="H">
+      <X>52.4162254</X>
+      <Y>-20.9744053</Y>
+      <Z>25.624382</Z>
+    </coord>
+    <coord id="47" residue_name="FQY" residue_id="0" chain_id="0" name="H9" type="H">
+      <X>56.5621376</X>
+      <Y>-27.1601162</Y>
+      <Z>28.3856468</Z>
+    </coord>
+    <coord id="48" residue_name="FQY" residue_id="0" chain_id="0" name="H10" type="H">
+      <X>50.5024719</X>
+      <Y>-23.9671097</Y>
+      <Z>28.0002251</Z>
+    </coord>
+    <coord id="49" residue_name="FQY" residue_id="0" chain_id="0" name="H11" type="H">
+      <X>57.5266228</X>
+      <Y>-25.433794</Y>
+      <Z>24.5972023</Z>
+    </coord>
+    <coord id="50" residue_name="FQY" residue_id="0" chain_id="0" name="H12" type="H">
+      <X>54.4594231</X>
+      <Y>-22.3424969</Y>
+      <Z>25.5392189</Z>
+    </coord>
+    <coord id="51" residue_name="FQY" residue_id="0" chain_id="0" name="H13" type="H">
+      <X>54.5555267</X>
+      <Y>-25.7438259</Y>
+      <Z>28.5243263</Z>
+    </coord>
+    <coord id="52" residue_name="FQY" residue_id="0" chain_id="0" name="H14" type="H">
+      <X>52.5142593</X>
+      <Y>-25.3756161</Y>
+      <Z>27.8544617</Z>
+    </coord>
+    <coord id="53" residue_name="FQY" residue_id="0" chain_id="0" name="H15" type="H">
+      <X>55.4810791</X>
+      <Y>-24.0709114</Y>
+      <Z>24.694088</Z>
+    </coord>
+    <coord id="54" residue_name="FQY" residue_id="0" chain_id="0" name="H16" type="H">
+      <X>46.8209801</X>
+      <Y>-24.1216698</Y>
+      <Z>24.9310951</Z>
+    </coord>
+    <coord id="55" residue_name="FQY" residue_id="0" chain_id="0" name="H17" type="H">
+      <X>51.4823341</X>
+      <Y>-17.6557331</Y>
+      <Z>28.9545593</Z>
+    </coord>
+    <coord id="56" residue_name="FQY" residue_id="0" chain_id="0" name="H18" type="H">
+      <X>58.2022514</X>
+      <Y>-29.2069569</Y>
+      <Z>22.2533875</Z>
+    </coord>
+    <coord id="57" residue_name="FQY" residue_id="0" chain_id="0" name="H19" type="H">
+      <X>60.5007439</X>
+      <Y>-26.5539169</Y>
+      <Z>30.4634056</Z>
+    </coord>
+    <coord id="58" residue_name="FQY" residue_id="0" chain_id="0" name="H20" type="H">
+      <X>45.2229691</X>
+      <Y>-22.2972622</Y>
+      <Z>25.3644409</Z>
+    </coord>
+    <coord id="59" residue_name="FQY" residue_id="0" chain_id="0" name="H21" type="H">
+      <X>49.1771622</X>
+      <Y>-16.808218</Y>
+      <Z>28.7449875</Z>
+    </coord>
+    <coord id="60" residue_name="FQY" residue_id="0" chain_id="0" name="H22" type="H">
+      <X>60.3380585</X>
+      <Y>-30.3274174</Y>
+      <Z>22.7606926</Z>
+    </coord>
+    <coord id="61" residue_name="FQY" residue_id="0" chain_id="0" name="H23" type="H">
+      <X>62.2678528</X>
+      <Y>-28.1060238</Y>
+      <Z>29.7271156</Z>
+    </coord>
+    <coord id="62" residue_name="AAA" residue_id="1" chain_id="1" name="N" type="N">
+      <X>26.2113495</X>
+      <Y>-25.0831528</Y>
+      <Z>175.070496</Z>
+    </coord>
+    <coord id="63" residue_name="AAA" residue_id="1" chain_id="1" name="N1" type="N">
+      <X>26.6365356</X>
+      <Y>-21.5149612</Y>
+      <Z>172.503448</Z>
+    </coord>
+    <coord id="64" residue_name="AAA" residue_id="1" chain_id="1" name="N2" type="N">
+      <X>33.6590424</X>
+      <Y>-22.8719711</Y>
+      <Z>172.268723</Z>
+    </coord>
+    <coord id="65" residue_name="AAA" residue_id="1" chain_id="1" name="N3" type="N">
+      <X>30.0968781</X>
+      <Y>-20.4873428</Y>
+      <Z>171.201706</Z>
+    </coord>
+    <coord id="66" residue_name="AAA" residue_id="1" chain_id="1" name="N4" type="N">
+      <X>29.3081055</X>
+      <Y>-27.153862</Y>
+      <Z>176.00769</Z>
+    </coord>
+    <coord id="67" residue_name="AAA" residue_id="1" chain_id="1" name="N5" type="N">
+      <X>33.2912216</X>
+      <Y>-25.9767685</Y>
+      <Z>174.502106</Z>
+    </coord>
+    <coord id="68" residue_name="AAA" residue_id="1" chain_id="1" name="C" type="C">
+      <X>29.0645676</X>
+      <Y>-23.7216263</Y>
+      <Z>173.636841</Z>
+    </coord>
+    <coord id="69" residue_name="AAA" residue_id="1" chain_id="1" name="C1" type="C">
+      <X>30.336525</X>
+      <Y>-23.3436661</Y>
+      <Z>173.15744</Z>
+    </coord>
+    <coord id="70" residue_name="AAA" residue_id="1" chain_id="1" name="C2" type="C">
+      <X>30.2021942</X>
+      <Y>-24.4836349</Y>
+      <Z>173.979355</Z>
+    </coord>
+    <coord id="71" residue_name="AAA" residue_id="1" chain_id="1" name="C3" type="C">
+      <X>27.7285538</X>
+      <Y>-23.5080338</Y>
+      <Z>173.712616</Z>
+    </coord>
+    <coord id="72" residue_name="AAA" residue_id="1" chain_id="1" name="C4" type="C">
+      <X>31.1165009</X>
+      <Y>-22.5024338</Y>
+      <Z>172.437973</Z>
+    </coord>
+    <coord id="73" residue_name="AAA" residue_id="1" chain_id="1" name="C5" type="C">
+      <X>30.7575455</X>
+      <Y>-25.5370712</Y>
+      <Z>174.624695</Z>
+    </coord>
+    <coord id="74" residue_name="AAA" residue_id="1" chain_id="1" name="C6" type="C">
+      <X>26.8924179</X>
+      <Y>-24.3790054</Y>
+      <Z>174.462906</Z>
+    </coord>
+    <coord id="75" residue_name="AAA" residue_id="1" chain_id="1" name="C7" type="C">
+      <X>27.1272583</X>
+      <Y>-22.4074631</Y>
+      <Z>173.043808</Z>
+    </coord>
+    <coord id="76" residue_name="AAA" residue_id="1" chain_id="1" name="C8" type="C">
+      <X>32.5204697</X>
+      <Y>-22.7077713</Y>
+      <Z>172.34552</Z>
+    </coord>
+    <coord id="77" residue_name="AAA" residue_id="1" chain_id="1" name="C9" type="C">
+      <X>30.5524445</X>
+      <Y>-21.3902206</Y>
+      <Z>171.755508</Z>
+    </coord>
+    <coord id="78" residue_name="AAA" residue_id="1" chain_id="1" name="C10" type="C">
+      <X>29.9562378</X>
+      <Y>-26.4296494</Y>
+      <Z>175.38736</Z>
+    </coord>
+    <coord id="79" residue_name="AAA" residue_id="1" chain_id="1" name="C11" type="C">
+      <X>32.1565933</X>
+      <Y>-25.778923</Y>
+      <Z>174.556259</Z>
+    </coord>
+  </simona_configuration>
+  <simona_moves>
+    <simona_dihedrals>
+      <DihedralSpec>
+        <unique_id>0</unique_id>
+        <DihedralInfo>
+          <bond_end>10</bond_end>
+          <bond_start>0</bond_start>
+          <predecessor>3</predecessor>
+          <successor>24</successor>
+        </DihedralInfo>
+        <AtomSet>
+          <index>1</index>
+          <index>11</index>
+          <range>
+            <start>4</start>
+            <end>6</end>
+          </range>
+          <range>
+            <start>8</start>
+            <end>10</end>
+          </range>
+          <range>
+            <start>14</start>
+            <end>18</end>
+          </range>
+          <range>
+            <start>20</start>
+            <end>30</end>
+          </range>
+          <range>
+            <start>32</start>
+            <end>34</end>
+          </range>
+          <range>
+            <start>36</start>
+            <end>38</end>
+          </range>
+          <range>
+            <start>40</start>
+            <end>42</end>
+          </range>
+          <range>
+            <start>44</start>
+            <end>54</end>
+          </range>
+          <range>
+            <start>56</start>
+            <end>58</end>
+          </range>
+          <range>
+            <start>60</start>
+            <end>62</end>
+          </range>
+        </AtomSet>
+        <InvertSet>
+          <range>
+            <start>2</start>
+            <end>4</end>
+          </range>
+          <range>
+            <start>6</start>
+            <end>8</end>
+          </range>
+          <range>
+            <start>12</start>
+            <end>14</end>
+          </range>
+          <range>
+            <start>18</start>
+            <end>20</end>
+          </range>
+          <range>
+            <start>30</start>
+            <end>32</end>
+          </range>
+          <range>
+            <start>34</start>
+            <end>36</end>
+          </range>
+          <range>
+            <start>38</start>
+            <end>40</end>
+          </range>
+          <range>
+            <start>42</start>
+            <end>44</end>
+          </range>
+          <range>
+            <start>54</start>
+            <end>56</end>
+          </range>
+          <range>
+            <start>58</start>
+            <end>60</end>
+          </range>
+        </InvertSet>
+        <type>0.FQY.single</type>
+        <atomnames>C1.N.C8.C22</atomnames>
+        <atomnames_reversed>C22.C8.N.C1</atomnames_reversed>
+      </DihedralSpec>
+      <DihedralSpec>
+        <unique_id>1</unique_id>
+        <DihedralInfo>
+          <bond_end>11</bond_end>
+          <bond_start>1</bond_start>
+          <predecessor>5</predecessor>
+          <successor>25</successor>
+        </DihedralInfo>
+        <AtomSet>
+          <index>0</index>
+          <index>10</index>
+          <range>
+            <start>2</start>
+            <end>4</end>
+          </range>
+          <range>
+            <start>6</start>
+            <end>8</end>
+          </range>
+          <range>
+            <start>12</start>
+            <end>14</end>
+          </range>
+          <range>
+            <start>16</start>
+            <end>20</end>
+          </range>
+          <range>
+            <start>22</start>
+            <end>32</end>
+          </range>
+          <range>
+            <start>34</start>
+            <end>36</end>
+          </range>
+          <range>
+            <start>38</start>
+            <end>40</end>
+          </range>
+          <range>
+            <start>42</start>
+            <end>44</end>
+          </range>
+          <range>
+            <start>46</start>
+            <end>56</end>
+          </range>
+          <range>
+            <start>58</start>
+            <end>60</end>
+          </range>
+        </AtomSet>
+        <InvertSet>
+          <range>
+            <start>4</start>
+            <end>6</end>
+          </range>
+          <range>
+            <start>8</start>
+            <end>10</end>
+          </range>
+          <range>
+            <start>14</start>
+            <end>16</end>
+          </range>
+          <range>
+            <start>20</start>
+            <end>22</end>
+          </range>
+          <range>
+            <start>32</start>
+            <end>34</end>
+          </range>
+          <range>
+            <start>36</start>
+            <end>38</end>
+          </range>
+          <range>
+            <start>40</start>
+            <end>42</end>
+          </range>
+          <range>
+            <start>44</start>
+            <end>46</end>
+          </range>
+          <range>
+            <start>56</start>
+            <end>58</end>
+          </range>
+          <range>
+            <start>60</start>
+            <end>62</end>
+          </range>
+        </InvertSet>
+        <type>0.FQY.single</type>
+        <atomnames>C3.N1.C9.C23</atomnames>
+        <atomnames_reversed>C23.C9.N1.C3</atomnames_reversed>
+      </DihedralSpec>
+      <DihedralSpec>
+        <unique_id>2</unique_id>
+        <DihedralInfo>
+          <bond_end>17</bond_end>
+          <bond_start>16</bond_start>
+          <predecessor>28</predecessor>
+          <successor>29</successor>
+        </DihedralInfo>
+        <AtomSet>
+          <index>1</index>
+          <index>11</index>
+          <index>23</index>
+          <index>25</index>
+          <index>27</index>
+          <index>29</index>
+          <index>47</index>
+          <index>49</index>
+          <index>51</index>
+          <index>53</index>
+          <range>
+            <start>4</start>
+            <end>6</end>
+          </range>
+          <range>
+            <start>8</start>
+            <end>10</end>
+          </range>
+          <range>
+            <start>14</start>
+            <end>16</end>
+          </range>
+          <range>
+            <start>20</start>
+            <end>22</end>
+          </range>
+          <range>
+            <start>32</start>
+            <end>34</end>
+          </range>
+          <range>
+            <start>36</start>
+            <end>38</end>
+          </range>
+          <range>
+            <start>40</start>
+            <end>42</end>
+          </range>
+          <range>
+            <start>44</start>
+            <end>46</end>
+          </range>
+          <range>
+            <start>56</start>
+            <end>58</end>
+          </range>
+          <range>
+            <start>60</start>
+            <end>62</end>
+          </range>
+        </AtomSet>
+        <InvertSet>
+          <index>0</index>
+          <index>10</index>
+          <index>22</index>
+          <index>24</index>
+          <index>26</index>
+          <index>28</index>
+          <index>46</index>
+          <index>48</index>
+          <index>50</index>
+          <index>52</index>
+          <range>
+            <start>2</start>
+            <end>4</end>
+          </range>
+          <range>
+            <start>6</start>
+            <end>8</end>
+          </range>
+          <range>
+            <start>12</start>
+            <end>14</end>
+          </range>
+          <range>
+            <start>18</start>
+            <end>20</end>
+          </range>
+          <range>
+            <start>30</start>
+            <end>32</end>
+          </range>
+          <range>
+            <start>34</start>
+            <end>36</end>
+          </range>
+          <range>
+            <start>38</start>
+            <end>40</end>
+          </range>
+          <range>
+            <start>42</start>
+            <end>44</end>
+          </range>
+          <range>
+            <start>54</start>
+            <end>56</end>
+          </range>
+          <range>
+            <start>58</start>
+            <end>60</end>
+          </range>
+        </InvertSet>
+        <type>0.FQY.single</type>
+        <atomnames>C26.C14.C15.C27</atomnames>
+        <atomnames_reversed>C27.C15.C14.C26</atomnames_reversed>
+      </DihedralSpec>
+    </simona_dihedrals>
+    <simona_subunits>
+      <simona_subunit>
+        <id>0</id>
+        <AtomSet>
+          <range>
+            <start>0</start>
+            <end>62</end>
+          </range>
+        </AtomSet>
+      </simona_subunit>
+      <simona_subunit>
+        <id>1</id>
+        <AtomSet>
+          <range>
+            <start>62</start>
+            <end>80</end>
+          </range>
+        </AtomSet>
+      </simona_subunit>
+    </simona_subunits>
+  </simona_moves>
+  <energy_models>
+    <forcefield id="0" name="nano">
+      <DepositLennardJonesGridStatic>
+        <constant_scaling_function>
+          <scale_factor>1.0</scale_factor>
+        </constant_scaling_function>
+        <filename>grid.vdw.gz</filename>
+        <neighbourgrid_filename>neighbourgrid.vdw.gz</neighbourgrid_filename>
+        <InlineGrid>
+          <grid_min>
+            <X>-90</X>
+            <Y>-90</Y>
+            <Z>-30</Z>
+          </grid_min>
+          <grid_size>
+            <X>180</X>
+            <Y>180</Y>
+            <Z>540</Z>
+          </grid_size>
+          <grid_numcells>
+            <X>181</X>
+            <Y>181</Y>
+            <Z>541</Z>
+          </grid_numcells>
+          <static_parameters_filename>static_parameters.dpcf.gz</static_parameters_filename>
+        </InlineGrid>
+        <lj>
+          <epsilon>0.1601338432</epsilon>
+          <sigma>2.9</sigma>
+          <unique_id>0</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1601338432</epsilon>
+          <sigma>2.9</sigma>
+          <unique_id>1</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>2</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>3</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>4</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>5</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>6</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>7</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>8</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>9</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>10</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>11</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>12</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>13</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>14</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>15</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>16</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>17</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>18</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>19</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>20</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>21</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>22</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>23</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>24</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>25</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>26</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>27</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>28</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>29</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>30</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>31</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>32</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>33</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>34</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>35</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>36</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>37</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>38</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>39</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>40</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>41</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>42</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>43</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>44</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>45</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>46</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>47</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>48</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>49</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>50</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>51</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>52</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>53</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>54</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>55</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>56</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>57</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>58</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>59</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>60</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.0191204589</epsilon>
+          <sigma>1.78</sigma>
+          <unique_id>61</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1601338432</epsilon>
+          <sigma>2.9</sigma>
+          <unique_id>62</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1601338432</epsilon>
+          <sigma>2.9</sigma>
+          <unique_id>63</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1601338432</epsilon>
+          <sigma>2.9</sigma>
+          <unique_id>64</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1601338432</epsilon>
+          <sigma>2.9</sigma>
+          <unique_id>65</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1601338432</epsilon>
+          <sigma>2.9</sigma>
+          <unique_id>66</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1601338432</epsilon>
+          <sigma>2.9</sigma>
+          <unique_id>67</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>68</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>69</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>70</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>71</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>72</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>73</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>74</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>75</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>76</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>77</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>78</unique_id>
+        </lj>
+        <lj>
+          <epsilon>0.1505736138</epsilon>
+          <sigma>3.56</sigma>
+          <unique_id>79</unique_id>
+        </lj>
+      </DepositLennardJonesGridStatic>
+      <DepositElectrostaticsGrid>
+        <constant_scaling_function>
+          <scale_factor>1.0</scale_factor>
+        </constant_scaling_function>
+        <filename>grid.es.gz</filename>
+        <gridtype>es</gridtype>
+        <ewald>
+          <enabled>False</enabled>
+          <box_size>10000.000000</box_size>
+        </ewald>
+        <InlineGrid>
+          <grid_min>
+            <X>-90</X>
+            <Y>-90</Y>
+            <Z>-30</Z>
+          </grid_min>
+          <grid_size>
+            <X>180</X>
+            <Y>180</Y>
+            <Z>540</Z>
+          </grid_size>
+          <grid_numcells>
+            <X>181</X>
+            <Y>181</Y>
+            <Z>541</Z>
+          </grid_numcells>
+          <static_parameters_filename>static_parameters.dpcf.gz</static_parameters_filename>
+        </InlineGrid>
+        <es>
+          <charge>-0.5357</charge>
+          <unique_id>0</unique_id>
+        </es>
+        <es>
+          <charge>-0.540107</charge>
+          <unique_id>1</unique_id>
+        </es>
+        <es>
+          <charge>0.444488</charge>
+          <unique_id>2</unique_id>
+        </es>
+        <es>
+          <charge>0.444804</charge>
+          <unique_id>3</unique_id>
+        </es>
+        <es>
+          <charge>0.448902</charge>
+          <unique_id>4</unique_id>
+        </es>
+        <es>
+          <charge>0.448863</charge>
+          <unique_id>5</unique_id>
+        </es>
+        <es>
+          <charge>-0.067174</charge>
+          <unique_id>6</unique_id>
+        </es>
+        <es>
+          <charge>-0.067055</charge>
+          <unique_id>7</unique_id>
+        </es>
+        <es>
+          <charge>-0.069023</charge>
+          <unique_id>8</unique_id>
+        </es>
+        <es>
+          <charge>-0.068353</charge>
+          <unique_id>9</unique_id>
+        </es>
+        <es>
+          <charge>0.411605</charge>
+          <unique_id>10</unique_id>
+        </es>
+        <es>
+          <charge>0.411708</charge>
+          <unique_id>11</unique_id>
+        </es>
+        <es>
+          <charge>-0.381434</charge>
+          <unique_id>12</unique_id>
+        </es>
+        <es>
+          <charge>-0.381789</charge>
+          <unique_id>13</unique_id>
+        </es>
+        <es>
+          <charge>-0.383883</charge>
+          <unique_id>14</unique_id>
+        </es>
+        <es>
+          <charge>-0.383928</charge>
+          <unique_id>15</unique_id>
+        </es>
+        <es>
+          <charge>0.09693</charge>
+          <unique_id>16</unique_id>
+        </es>
+        <es>
+          <charge>0.096823</charge>
+          <unique_id>17</unique_id>
+        </es>
+        <es>
+          <charge>-0.138972</charge>
+          <unique_id>18</unique_id>
+        </es>
+        <es>
+          <charge>-0.139263</charge>
+          <unique_id>19</unique_id>
+        </es>
+        <es>
+          <charge>-0.138713</charge>
+          <unique_id>20</unique_id>
+        </es>
+        <es>
+          <charge>-0.139107</charge>
+          <unique_id>21</unique_id>
+        </es>
+        <es>
+          <charge>-0.245326</charge>
+          <unique_id>22</unique_id>
+        </es>
+        <es>
+          <charge>-0.244952</charge>
+          <unique_id>23</unique_id>
+        </es>
+        <es>
+          <charge>-0.245503</charge>
+          <unique_id>24</unique_id>
+        </es>
+        <es>
+          <charge>-0.24506</charge>
+          <unique_id>25</unique_id>
+        </es>
+        <es>
+          <charge>-0.196853</charge>
+          <unique_id>26</unique_id>
+        </es>
+        <es>
+          <charge>-0.196957</charge>
+          <unique_id>27</unique_id>
+        </es>
+        <es>
+          <charge>-0.196609</charge>
+          <unique_id>28</unique_id>
+        </es>
+        <es>
+          <charge>-0.196885</charge>
+          <unique_id>29</unique_id>
+        </es>
+        <es>
+          <charge>-0.075976</charge>
+          <unique_id>30</unique_id>
+        </es>
+        <es>
+          <charge>-0.075879</charge>
+          <unique_id>31</unique_id>
+        </es>
+        <es>
+          <charge>-0.073983</charge>
+          <unique_id>32</unique_id>
+        </es>
+        <es>
+          <charge>-0.074274</charge>
+          <unique_id>33</unique_id>
+        </es>
+        <es>
+          <charge>-0.242392</charge>
+          <unique_id>34</unique_id>
+        </es>
+        <es>
+          <charge>-0.242179</charge>
+          <unique_id>35</unique_id>
+        </es>
+        <es>
+          <charge>-0.243699</charge>
+          <unique_id>36</unique_id>
+        </es>
+        <es>
+          <charge>-0.243363</charge>
+          <unique_id>37</unique_id>
+        </es>
+        <es>
+          <charge>0.179802</charge>
+          <unique_id>38</unique_id>
+        </es>
+        <es>
+          <charge>0.179915</charge>
+          <unique_id>39</unique_id>
+        </es>
+        <es>
+          <charge>0.180328</charge>
+          <unique_id>40</unique_id>
+        </es>
+        <es>
+          <charge>0.180397</charge>
+          <unique_id>41</unique_id>
+        </es>
+        <es>
+          <charge>0.144304</charge>
+          <unique_id>42</unique_id>
+        </es>
+        <es>
+          <charge>0.14436</charge>
+          <unique_id>43</unique_id>
+        </es>
+        <es>
+          <charge>0.144702</charge>
+          <unique_id>44</unique_id>
+        </es>
+        <es>
+          <charge>0.144769</charge>
+          <unique_id>45</unique_id>
+        </es>
+        <es>
+          <charge>0.163106</charge>
+          <unique_id>46</unique_id>
+        </es>
+        <es>
+          <charge>0.163295</charge>
+          <unique_id>47</unique_id>
+        </es>
+        <es>
+          <charge>0.163088</charge>
+          <unique_id>48</unique_id>
+        </es>
+        <es>
+          <charge>0.163248</charge>
+          <unique_id>49</unique_id>
+        </es>
+        <es>
+          <charge>0.148191</charge>
+          <unique_id>50</unique_id>
+        </es>
+        <es>
+          <charge>0.148057</charge>
+          <unique_id>51</unique_id>
+        </es>
+        <es>
+          <charge>0.148171</charge>
+          <unique_id>52</unique_id>
+        </es>
+        <es>
+          <charge>0.148057</charge>
+          <unique_id>53</unique_id>
+        </es>
+        <es>
+          <charge>0.131782</charge>
+          <unique_id>54</unique_id>
+        </es>
+        <es>
+          <charge>0.131714</charge>
+          <unique_id>55</unique_id>
+        </es>
+        <es>
+          <charge>0.131274</charge>
+          <unique_id>56</unique_id>
+        </es>
+        <es>
+          <charge>0.131333</charge>
+          <unique_id>57</unique_id>
+        </es>
+        <es>
+          <charge>0.150035</charge>
+          <unique_id>58</unique_id>
+        </es>
+        <es>
+          <charge>0.149985</charge>
+          <unique_id>59</unique_id>
+        </es>
+        <es>
+          <charge>0.150206</charge>
+          <unique_id>60</unique_id>
+        </es>
+        <es>
+          <charge>0.150152</charge>
+          <unique_id>61</unique_id>
+        </es>
+        <es>
+          <charge>-0.374781</charge>
+          <unique_id>62</unique_id>
+        </es>
+        <es>
+          <charge>-0.374704</charge>
+          <unique_id>63</unique_id>
+        </es>
+        <es>
+          <charge>-0.374486</charge>
+          <unique_id>64</unique_id>
+        </es>
+        <es>
+          <charge>-0.374458</charge>
+          <unique_id>65</unique_id>
+        </es>
+        <es>
+          <charge>-0.37468</charge>
+          <unique_id>66</unique_id>
+        </es>
+        <es>
+          <charge>-0.374631</charge>
+          <unique_id>67</unique_id>
+        </es>
+        <es>
+          <charge>0.114104</charge>
+          <unique_id>68</unique_id>
+        </es>
+        <es>
+          <charge>0.11443</charge>
+          <unique_id>69</unique_id>
+        </es>
+        <es>
+          <charge>0.11489</charge>
+          <unique_id>70</unique_id>
+        </es>
+        <es>
+          <charge>-0.238112</charge>
+          <unique_id>71</unique_id>
+        </es>
+        <es>
+          <charge>-0.235785</charge>
+          <unique_id>72</unique_id>
+        </es>
+        <es>
+          <charge>-0.236839</charge>
+          <unique_id>73</unique_id>
+        </es>
+        <es>
+          <charge>0.436467</charge>
+          <unique_id>74</unique_id>
+        </es>
+        <es>
+          <charge>0.43653</charge>
+          <unique_id>75</unique_id>
+        </es>
+        <es>
+          <charge>0.43517</charge>
+          <unique_id>76</unique_id>
+        </es>
+        <es>
+          <charge>0.435262</charge>
+          <unique_id>77</unique_id>
+        </es>
+        <es>
+          <charge>0.435764</charge>
+          <unique_id>78</unique_id>
+        </es>
+        <es>
+          <charge>0.43586</charge>
+          <unique_id>79</unique_id>
+        </es>
+      </DepositElectrostaticsGrid>
+      <ZDrivingPotential>
+        <constant_scaling_function>
+          <scale_factor>1.0</scale_factor>
+        </constant_scaling_function>
+        <scale>1.0</scale>
+        <steepness>1.0</steepness>
+        <z0>0.0</z0>
+        <cutoff>0.0</cutoff>
+        <AtomSet>
+          <index>1</index>
+        </AtomSet>
+      </ZDrivingPotential>
+      <DepositCOMPlaneDistPot>
+        <constant_scaling_function>
+          <scale_factor>1.0</scale_factor>
+        </constant_scaling_function>
+        <cutoff_energy>100.0</cutoff_energy>
+        <k>120.0</k>
+        <subunit_id>1</subunit_id>
+        <z0>0.0</z0>
+        <zmax_cutoff>3.0</zmax_cutoff>
+      </DepositCOMPlaneDistPot>
+      <DepositInternalOpenMMPairEnergy>
+        <constant_scaling_function>
+          <scale_factor>1.0</scale_factor>
+        </constant_scaling_function>
+        <sixten>True</sixten>
+        <coulomb>True</coulomb>
+        <lj>
+          <charge_internal>-0.5027116247475106</charge_internal>
+          <epsilon_internal>0.24020076260208265</epsilon_internal>
+          <sigma_internal>2.881595295179359</sigma_internal>
+          <unique_id>0</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>10</index>
+            <index>16</index>
+            <index>22</index>
+            <index>24</index>
+            <index>26</index>
+            <index>28</index>
+            <index>46</index>
+            <index>48</index>
+            <index>50</index>
+            <index>52</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>6</start>
+              <end>8</end>
+            </range>
+            <range>
+              <start>12</start>
+              <end>14</end>
+            </range>
+            <range>
+              <start>18</start>
+              <end>20</end>
+            </range>
+            <range>
+              <start>30</start>
+              <end>32</end>
+            </range>
+            <range>
+              <start>34</start>
+              <end>36</end>
+            </range>
+            <range>
+              <start>38</start>
+              <end>40</end>
+            </range>
+            <range>
+              <start>42</start>
+              <end>44</end>
+            </range>
+            <range>
+              <start>54</start>
+              <end>56</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.5273427951188505</charge_internal>
+          <epsilon_internal>0.2106000529909277</epsilon_internal>
+          <sigma_internal>2.9160598546659346</sigma_internal>
+          <unique_id>1</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>11</index>
+            <index>17</index>
+            <index>23</index>
+            <index>25</index>
+            <index>27</index>
+            <index>29</index>
+            <index>47</index>
+            <index>49</index>
+            <index>51</index>
+            <index>53</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>8</start>
+              <end>10</end>
+            </range>
+            <range>
+              <start>14</start>
+              <end>16</end>
+            </range>
+            <range>
+              <start>20</start>
+              <end>22</end>
+            </range>
+            <range>
+              <start>32</start>
+              <end>34</end>
+            </range>
+            <range>
+              <start>36</start>
+              <end>38</end>
+            </range>
+            <range>
+              <start>40</start>
+              <end>42</end>
+            </range>
+            <range>
+              <start>44</start>
+              <end>46</end>
+            </range>
+            <range>
+              <start>56</start>
+              <end>58</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.4361235997947442</charge_internal>
+          <epsilon_internal>0.07529155567172055</epsilon_internal>
+          <sigma_internal>3.652961795370688</sigma_internal>
+          <unique_id>2</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>10</index>
+            <index>22</index>
+            <index>24</index>
+            <index>26</index>
+            <index>28</index>
+            <index>46</index>
+            <index>48</index>
+            <index>54</index>
+            <index>58</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>6</start>
+              <end>8</end>
+            </range>
+            <range>
+              <start>12</start>
+              <end>14</end>
+            </range>
+            <range>
+              <start>18</start>
+              <end>20</end>
+            </range>
+            <range>
+              <start>30</start>
+              <end>32</end>
+            </range>
+            <range>
+              <start>34</start>
+              <end>36</end>
+            </range>
+            <range>
+              <start>38</start>
+              <end>40</end>
+            </range>
+            <range>
+              <start>42</start>
+              <end>44</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.4600271696252495</charge_internal>
+          <epsilon_internal>0.16505919060065108</epsilon_internal>
+          <sigma_internal>3.593518580605612</sigma_internal>
+          <unique_id>3</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>10</index>
+            <index>22</index>
+            <index>24</index>
+            <index>26</index>
+            <index>28</index>
+            <index>46</index>
+            <index>48</index>
+            <index>55</index>
+            <index>59</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>6</start>
+              <end>8</end>
+            </range>
+            <range>
+              <start>12</start>
+              <end>14</end>
+            </range>
+            <range>
+              <start>18</start>
+              <end>20</end>
+            </range>
+            <range>
+              <start>30</start>
+              <end>32</end>
+            </range>
+            <range>
+              <start>34</start>
+              <end>36</end>
+            </range>
+            <range>
+              <start>38</start>
+              <end>40</end>
+            </range>
+            <range>
+              <start>42</start>
+              <end>44</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.3959984936004274</charge_internal>
+          <epsilon_internal>0.0835111639066568</epsilon_internal>
+          <sigma_internal>3.5757611495282475</sigma_internal>
+          <unique_id>4</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>11</index>
+            <index>23</index>
+            <index>25</index>
+            <index>27</index>
+            <index>29</index>
+            <index>47</index>
+            <index>49</index>
+            <index>56</index>
+            <index>60</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>8</start>
+              <end>10</end>
+            </range>
+            <range>
+              <start>14</start>
+              <end>16</end>
+            </range>
+            <range>
+              <start>20</start>
+              <end>22</end>
+            </range>
+            <range>
+              <start>32</start>
+              <end>34</end>
+            </range>
+            <range>
+              <start>36</start>
+              <end>38</end>
+            </range>
+            <range>
+              <start>40</start>
+              <end>42</end>
+            </range>
+            <range>
+              <start>44</start>
+              <end>46</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.4503860587614782</charge_internal>
+          <epsilon_internal>0.1496283693044315</epsilon_internal>
+          <sigma_internal>3.5636701857447792</sigma_internal>
+          <unique_id>5</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>11</index>
+            <index>23</index>
+            <index>25</index>
+            <index>27</index>
+            <index>29</index>
+            <index>47</index>
+            <index>49</index>
+            <index>57</index>
+            <index>61</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>8</start>
+              <end>10</end>
+            </range>
+            <range>
+              <start>14</start>
+              <end>16</end>
+            </range>
+            <range>
+              <start>20</start>
+              <end>22</end>
+            </range>
+            <range>
+              <start>32</start>
+              <end>34</end>
+            </range>
+            <range>
+              <start>36</start>
+              <end>38</end>
+            </range>
+            <range>
+              <start>40</start>
+              <end>42</end>
+            </range>
+            <range>
+              <start>44</start>
+              <end>46</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.034284115198769866</charge_internal>
+          <epsilon_internal>0.1991872870378634</epsilon_internal>
+          <sigma_internal>3.558128893147746</sigma_internal>
+          <unique_id>6</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>10</index>
+            <index>22</index>
+            <index>24</index>
+            <index>54</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>6</start>
+              <end>8</end>
+            </range>
+            <range>
+              <start>12</start>
+              <end>14</end>
+            </range>
+            <range>
+              <start>18</start>
+              <end>20</end>
+            </range>
+            <range>
+              <start>30</start>
+              <end>32</end>
+            </range>
+            <range>
+              <start>34</start>
+              <end>36</end>
+            </range>
+            <range>
+              <start>38</start>
+              <end>40</end>
+            </range>
+            <range>
+              <start>42</start>
+              <end>44</end>
+            </range>
+            <range>
+              <start>58</start>
+              <end>60</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.04816645143740603</charge_internal>
+          <epsilon_internal>0.2206515000461458</epsilon_internal>
+          <sigma_internal>3.618825814355385</sigma_internal>
+          <unique_id>7</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>10</index>
+            <index>22</index>
+            <index>24</index>
+            <index>55</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>6</start>
+              <end>8</end>
+            </range>
+            <range>
+              <start>12</start>
+              <end>14</end>
+            </range>
+            <range>
+              <start>18</start>
+              <end>20</end>
+            </range>
+            <range>
+              <start>30</start>
+              <end>32</end>
+            </range>
+            <range>
+              <start>34</start>
+              <end>36</end>
+            </range>
+            <range>
+              <start>38</start>
+              <end>40</end>
+            </range>
+            <range>
+              <start>42</start>
+              <end>44</end>
+            </range>
+            <range>
+              <start>58</start>
+              <end>60</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.07620410679333464</charge_internal>
+          <epsilon_internal>0.1715060514777785</epsilon_internal>
+          <sigma_internal>3.5879682072387706</sigma_internal>
+          <unique_id>8</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>11</index>
+            <index>23</index>
+            <index>25</index>
+            <index>56</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>8</start>
+              <end>10</end>
+            </range>
+            <range>
+              <start>14</start>
+              <end>16</end>
+            </range>
+            <range>
+              <start>20</start>
+              <end>22</end>
+            </range>
+            <range>
+              <start>32</start>
+              <end>34</end>
+            </range>
+            <range>
+              <start>36</start>
+              <end>38</end>
+            </range>
+            <range>
+              <start>40</start>
+              <end>42</end>
+            </range>
+            <range>
+              <start>44</start>
+              <end>46</end>
+            </range>
+            <range>
+              <start>60</start>
+              <end>62</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.0341765</charge_internal>
+          <epsilon_internal>0.1610061407370166</epsilon_internal>
+          <sigma_internal>3.5847687286808787</sigma_internal>
+          <unique_id>9</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>11</index>
+            <index>23</index>
+            <index>25</index>
+            <index>57</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>8</start>
+              <end>10</end>
+            </range>
+            <range>
+              <start>14</start>
+              <end>16</end>
+            </range>
+            <range>
+              <start>20</start>
+              <end>22</end>
+            </range>
+            <range>
+              <start>32</start>
+              <end>34</end>
+            </range>
+            <range>
+              <start>36</start>
+              <end>38</end>
+            </range>
+            <range>
+              <start>40</start>
+              <end>42</end>
+            </range>
+            <range>
+              <start>44</start>
+              <end>46</end>
+            </range>
+            <range>
+              <start>60</start>
+              <end>62</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.4638908821427283</charge_internal>
+          <epsilon_internal>0.19358039988383258</epsilon_internal>
+          <sigma_internal>3.5771415409383995</sigma_internal>
+          <unique_id>10</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>10</index>
+            <index>22</index>
+            <index>24</index>
+            <index>26</index>
+            <index>28</index>
+            <index>46</index>
+            <index>48</index>
+            <index>50</index>
+            <index>52</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>6</start>
+              <end>8</end>
+            </range>
+            <range>
+              <start>12</start>
+              <end>14</end>
+            </range>
+            <range>
+              <start>16</start>
+              <end>20</end>
+            </range>
+            <range>
+              <start>30</start>
+              <end>32</end>
+            </range>
+            <range>
+              <start>38</start>
+              <end>40</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.4127691745368951</charge_internal>
+          <epsilon_internal>0.08547705868705009</epsilon_internal>
+          <sigma_internal>3.5923046539290517</sigma_internal>
+          <unique_id>11</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>11</index>
+            <index>23</index>
+            <index>25</index>
+            <index>27</index>
+            <index>29</index>
+            <index>47</index>
+            <index>49</index>
+            <index>51</index>
+            <index>53</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>8</start>
+              <end>10</end>
+            </range>
+            <range>
+              <start>14</start>
+              <end>18</end>
+            </range>
+            <range>
+              <start>20</start>
+              <end>22</end>
+            </range>
+            <range>
+              <start>32</start>
+              <end>34</end>
+            </range>
+            <range>
+              <start>40</start>
+              <end>42</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.44798004665066216</charge_internal>
+          <epsilon_internal>0.1805127626795579</epsilon_internal>
+          <sigma_internal>3.5808443785013395</sigma_internal>
+          <unique_id>12</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>10</index>
+            <index>22</index>
+            <index>24</index>
+            <index>30</index>
+            <index>34</index>
+            <index>38</index>
+            <index>42</index>
+            <index>54</index>
+            <index>58</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>6</start>
+              <end>8</end>
+            </range>
+            <range>
+              <start>12</start>
+              <end>14</end>
+            </range>
+            <range>
+              <start>18</start>
+              <end>20</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.41794556046514686</charge_internal>
+          <epsilon_internal>0.18848622614496752</epsilon_internal>
+          <sigma_internal>3.57626075563658</sigma_internal>
+          <unique_id>13</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>10</index>
+            <index>22</index>
+            <index>24</index>
+            <index>31</index>
+            <index>35</index>
+            <index>39</index>
+            <index>43</index>
+            <index>55</index>
+            <index>59</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>6</start>
+              <end>8</end>
+            </range>
+            <range>
+              <start>12</start>
+              <end>14</end>
+            </range>
+            <range>
+              <start>18</start>
+              <end>20</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.43924612653873585</charge_internal>
+          <epsilon_internal>0.1321651863255724</epsilon_internal>
+          <sigma_internal>3.5559931964015217</sigma_internal>
+          <unique_id>14</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>11</index>
+            <index>23</index>
+            <index>25</index>
+            <index>32</index>
+            <index>36</index>
+            <index>40</index>
+            <index>44</index>
+            <index>56</index>
+            <index>60</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>8</start>
+              <end>10</end>
+            </range>
+            <range>
+              <start>14</start>
+              <end>16</end>
+            </range>
+            <range>
+              <start>20</start>
+              <end>22</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.42153155980381757</charge_internal>
+          <epsilon_internal>0.22498699994925037</epsilon_internal>
+          <sigma_internal>3.580889821414665</sigma_internal>
+          <unique_id>15</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>11</index>
+            <index>23</index>
+            <index>25</index>
+            <index>33</index>
+            <index>37</index>
+            <index>41</index>
+            <index>45</index>
+            <index>57</index>
+            <index>61</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>8</start>
+              <end>10</end>
+            </range>
+            <range>
+              <start>14</start>
+              <end>16</end>
+            </range>
+            <range>
+              <start>20</start>
+              <end>22</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.1453927871076136</charge_internal>
+          <epsilon_internal>0.192336948931174</epsilon_internal>
+          <sigma_internal>3.597314813237406</sigma_internal>
+          <unique_id>16</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <range>
+              <start>10</start>
+              <end>12</end>
+            </range>
+            <range>
+              <start>16</start>
+              <end>18</end>
+            </range>
+            <range>
+              <start>22</start>
+              <end>30</end>
+            </range>
+            <range>
+              <start>46</start>
+              <end>54</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.06287952517360813</charge_internal>
+          <epsilon_internal>0.14151505373566076</epsilon_internal>
+          <sigma_internal>3.501840473383755</sigma_internal>
+          <unique_id>17</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <range>
+              <start>10</start>
+              <end>12</end>
+            </range>
+            <range>
+              <start>16</start>
+              <end>18</end>
+            </range>
+            <range>
+              <start>22</start>
+              <end>30</end>
+            </range>
+            <range>
+              <start>46</start>
+              <end>54</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.1371975842785629</charge_internal>
+          <epsilon_internal>0.1899994167333068</epsilon_internal>
+          <sigma_internal>3.640687299599491</sigma_internal>
+          <unique_id>18</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>10</index>
+            <index>30</index>
+            <index>38</index>
+            <index>54</index>
+            <index>58</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>6</start>
+              <end>8</end>
+            </range>
+            <range>
+              <start>12</start>
+              <end>14</end>
+            </range>
+            <range>
+              <start>18</start>
+              <end>20</end>
+            </range>
+            <range>
+              <start>34</start>
+              <end>36</end>
+            </range>
+            <range>
+              <start>42</start>
+              <end>44</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.13906224164166223</charge_internal>
+          <epsilon_internal>0.14525103508530687</epsilon_internal>
+          <sigma_internal>3.605969349462194</sigma_internal>
+          <unique_id>19</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>10</index>
+            <index>31</index>
+            <index>39</index>
+            <index>55</index>
+            <index>59</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>6</start>
+              <end>8</end>
+            </range>
+            <range>
+              <start>12</start>
+              <end>14</end>
+            </range>
+            <range>
+              <start>18</start>
+              <end>20</end>
+            </range>
+            <range>
+              <start>34</start>
+              <end>36</end>
+            </range>
+            <range>
+              <start>42</start>
+              <end>44</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.16217461136867095</charge_internal>
+          <epsilon_internal>0.20177670981395043</epsilon_internal>
+          <sigma_internal>3.5708569711617097</sigma_internal>
+          <unique_id>20</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>11</index>
+            <index>32</index>
+            <index>40</index>
+            <index>56</index>
+            <index>60</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>8</start>
+              <end>10</end>
+            </range>
+            <range>
+              <start>14</start>
+              <end>16</end>
+            </range>
+            <range>
+              <start>20</start>
+              <end>22</end>
+            </range>
+            <range>
+              <start>36</start>
+              <end>38</end>
+            </range>
+            <range>
+              <start>44</start>
+              <end>46</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.18414087932174192</charge_internal>
+          <epsilon_internal>0.1499850377556621</epsilon_internal>
+          <sigma_internal>3.577703883917999</sigma_internal>
+          <unique_id>21</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>11</index>
+            <index>33</index>
+            <index>41</index>
+            <index>57</index>
+            <index>61</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>8</start>
+              <end>10</end>
+            </range>
+            <range>
+              <start>14</start>
+              <end>16</end>
+            </range>
+            <range>
+              <start>20</start>
+              <end>22</end>
+            </range>
+            <range>
+              <start>36</start>
+              <end>38</end>
+            </range>
+            <range>
+              <start>44</start>
+              <end>46</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.15342135042132318</charge_internal>
+          <epsilon_internal>0.2258506511810556</epsilon_internal>
+          <sigma_internal>3.6200175247953625</sigma_internal>
+          <unique_id>22</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>10</index>
+            <index>22</index>
+            <index>24</index>
+            <index>46</index>
+            <index>48</index>
+            <index>50</index>
+            <index>52</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>6</start>
+              <end>8</end>
+            </range>
+            <range>
+              <start>12</start>
+              <end>14</end>
+            </range>
+            <range>
+              <start>16</start>
+              <end>18</end>
+            </range>
+            <range>
+              <start>26</start>
+              <end>30</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.122476</charge_internal>
+          <epsilon_internal>0.11294325450894942</epsilon_internal>
+          <sigma_internal>3.61698756925167</sigma_internal>
+          <unique_id>23</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>11</index>
+            <index>23</index>
+            <index>47</index>
+            <index>49</index>
+            <index>51</index>
+            <index>53</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>8</start>
+              <end>10</end>
+            </range>
+            <range>
+              <start>14</start>
+              <end>18</end>
+            </range>
+            <range>
+              <start>25</start>
+              <end>30</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.1686540429690304</charge_internal>
+          <epsilon_internal>0.22437314114747817</epsilon_internal>
+          <sigma_internal>3.5645217978954506</sigma_internal>
+          <unique_id>24</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>10</index>
+            <index>22</index>
+            <index>24</index>
+            <index>46</index>
+            <index>48</index>
+            <index>50</index>
+            <index>52</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>6</start>
+              <end>8</end>
+            </range>
+            <range>
+              <start>12</start>
+              <end>14</end>
+            </range>
+            <range>
+              <start>16</start>
+              <end>18</end>
+            </range>
+            <range>
+              <start>26</start>
+              <end>30</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.1331228919433683</charge_internal>
+          <epsilon_internal>0.12435851615638101</epsilon_internal>
+          <sigma_internal>3.488785389636354</sigma_internal>
+          <unique_id>25</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>11</index>
+            <index>23</index>
+            <index>47</index>
+            <index>49</index>
+            <index>51</index>
+            <index>53</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>8</start>
+              <end>10</end>
+            </range>
+            <range>
+              <start>14</start>
+              <end>18</end>
+            </range>
+            <range>
+              <start>25</start>
+              <end>30</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.19984691432114765</charge_internal>
+          <epsilon_internal>0.19398041593340568</epsilon_internal>
+          <sigma_internal>3.570538761183163</sigma_internal>
+          <unique_id>26</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>10</index>
+            <index>46</index>
+            <index>48</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>16</start>
+              <end>18</end>
+            </range>
+            <range>
+              <start>22</start>
+              <end>30</end>
+            </range>
+            <range>
+              <start>50</start>
+              <end>54</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.18397670858501294</charge_internal>
+          <epsilon_internal>0.19321802755573875</epsilon_internal>
+          <sigma_internal>3.511516972446602</sigma_internal>
+          <unique_id>27</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>11</index>
+            <index>47</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>16</start>
+              <end>18</end>
+            </range>
+            <range>
+              <start>22</start>
+              <end>30</end>
+            </range>
+            <range>
+              <start>49</start>
+              <end>54</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.21089664458889767</charge_internal>
+          <epsilon_internal>0.20584881574615357</epsilon_internal>
+          <sigma_internal>3.5536462443866688</sigma_internal>
+          <unique_id>28</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>10</index>
+            <index>46</index>
+            <index>48</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>16</start>
+              <end>18</end>
+            </range>
+            <range>
+              <start>22</start>
+              <end>30</end>
+            </range>
+            <range>
+              <start>50</start>
+              <end>54</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.22364980770815382</charge_internal>
+          <epsilon_internal>0.20599184437082457</epsilon_internal>
+          <sigma_internal>3.5850090401611543</sigma_internal>
+          <unique_id>29</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>11</index>
+            <index>47</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>16</start>
+              <end>18</end>
+            </range>
+            <range>
+              <start>22</start>
+              <end>30</end>
+            </range>
+            <range>
+              <start>49</start>
+              <end>54</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.09957182060638468</charge_internal>
+          <epsilon_internal>0.2150224216420266</epsilon_internal>
+          <sigma_internal>3.5731257510225403</sigma_internal>
+          <unique_id>30</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>10</index>
+            <index>12</index>
+            <index>18</index>
+            <index>30</index>
+            <index>34</index>
+            <index>38</index>
+            <index>42</index>
+            <index>54</index>
+            <index>58</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>6</start>
+              <end>8</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.10949065518582247</charge_internal>
+          <epsilon_internal>0.2029664157752845</epsilon_internal>
+          <sigma_internal>3.6375059753799337</sigma_internal>
+          <unique_id>31</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>10</index>
+            <index>13</index>
+            <index>19</index>
+            <index>31</index>
+            <index>35</index>
+            <index>39</index>
+            <index>43</index>
+            <index>55</index>
+            <index>59</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>6</start>
+              <end>8</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.07221902194945337</charge_internal>
+          <epsilon_internal>0.11911419737604445</epsilon_internal>
+          <sigma_internal>3.5760494242121803</sigma_internal>
+          <unique_id>32</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>11</index>
+            <index>14</index>
+            <index>20</index>
+            <index>32</index>
+            <index>36</index>
+            <index>40</index>
+            <index>44</index>
+            <index>56</index>
+            <index>60</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>8</start>
+              <end>10</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.08487898873820753</charge_internal>
+          <epsilon_internal>0.2109640488461295</epsilon_internal>
+          <sigma_internal>3.584323813257209</sigma_internal>
+          <unique_id>33</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>11</index>
+            <index>15</index>
+            <index>21</index>
+            <index>33</index>
+            <index>37</index>
+            <index>41</index>
+            <index>45</index>
+            <index>57</index>
+            <index>61</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>8</start>
+              <end>10</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.2819248676630765</charge_internal>
+          <epsilon_internal>0.1472520394222815</epsilon_internal>
+          <sigma_internal>3.561156845675523</sigma_internal>
+          <unique_id>34</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>12</index>
+            <index>30</index>
+            <index>34</index>
+            <index>38</index>
+            <index>42</index>
+            <index>54</index>
+            <index>58</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>6</start>
+              <end>8</end>
+            </range>
+            <range>
+              <start>18</start>
+              <end>20</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.28576954624619516</charge_internal>
+          <epsilon_internal>0.19638974642495655</epsilon_internal>
+          <sigma_internal>3.5602864550915747</sigma_internal>
+          <unique_id>35</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>13</index>
+            <index>31</index>
+            <index>35</index>
+            <index>39</index>
+            <index>43</index>
+            <index>55</index>
+            <index>59</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>6</start>
+              <end>8</end>
+            </range>
+            <range>
+              <start>18</start>
+              <end>20</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.2605832013762943</charge_internal>
+          <epsilon_internal>0.160325355458353</epsilon_internal>
+          <sigma_internal>3.5859743758790623</sigma_internal>
+          <unique_id>36</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>14</index>
+            <index>32</index>
+            <index>36</index>
+            <index>40</index>
+            <index>44</index>
+            <index>56</index>
+            <index>60</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>8</start>
+              <end>10</end>
+            </range>
+            <range>
+              <start>20</start>
+              <end>22</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.3319116917810201</charge_internal>
+          <epsilon_internal>0.17964524397419404</epsilon_internal>
+          <sigma_internal>3.6037186152816933</sigma_internal>
+          <unique_id>37</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>15</index>
+            <index>33</index>
+            <index>37</index>
+            <index>41</index>
+            <index>45</index>
+            <index>57</index>
+            <index>61</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>8</start>
+              <end>10</end>
+            </range>
+            <range>
+              <start>20</start>
+              <end>22</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.089901</charge_internal>
+          <epsilon_internal>0.016318690314996935</epsilon_internal>
+          <sigma_internal>1.7639492422334593</sigma_internal>
+          <unique_id>38</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>10</index>
+            <index>12</index>
+            <index>18</index>
+            <index>30</index>
+            <index>34</index>
+            <index>38</index>
+            <index>54</index>
+            <index>58</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>6</start>
+              <end>8</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.10402204229640775</charge_internal>
+          <epsilon_internal>0.015016580359342694</epsilon_internal>
+          <sigma_internal>1.8484776678802572</sigma_internal>
+          <unique_id>39</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>10</index>
+            <index>13</index>
+            <index>19</index>
+            <index>31</index>
+            <index>35</index>
+            <index>39</index>
+            <index>55</index>
+            <index>59</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>6</start>
+              <end>8</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.10798580333776997</charge_internal>
+          <epsilon_internal>0.012290953621466113</epsilon_internal>
+          <sigma_internal>1.9093085522005955</sigma_internal>
+          <unique_id>40</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>11</index>
+            <index>14</index>
+            <index>20</index>
+            <index>32</index>
+            <index>36</index>
+            <index>40</index>
+            <index>56</index>
+            <index>60</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>8</start>
+              <end>10</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.10816946803177582</charge_internal>
+          <epsilon_internal>0.00956022945</epsilon_internal>
+          <sigma_internal>1.8429945054977568</sigma_internal>
+          <unique_id>41</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>11</index>
+            <index>15</index>
+            <index>21</index>
+            <index>33</index>
+            <index>37</index>
+            <index>41</index>
+            <index>57</index>
+            <index>61</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>8</start>
+              <end>10</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.20210120523038888</charge_internal>
+          <epsilon_internal>0.025329184336772625</epsilon_internal>
+          <sigma_internal>1.840363168769675</sigma_internal>
+          <unique_id>42</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>12</index>
+            <index>30</index>
+            <index>34</index>
+            <index>42</index>
+            <index>54</index>
+            <index>58</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>6</start>
+              <end>8</end>
+            </range>
+            <range>
+              <start>18</start>
+              <end>20</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.15788172619275173</charge_internal>
+          <epsilon_internal>0.00956022945</epsilon_internal>
+          <sigma_internal>1.7277920892768202</sigma_internal>
+          <unique_id>43</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>13</index>
+            <index>31</index>
+            <index>35</index>
+            <index>43</index>
+            <index>55</index>
+            <index>59</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>6</start>
+              <end>8</end>
+            </range>
+            <range>
+              <start>18</start>
+              <end>20</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.17860069771145187</charge_internal>
+          <epsilon_internal>0.009564108397544114</epsilon_internal>
+          <sigma_internal>1.8300569713119246</sigma_internal>
+          <unique_id>44</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>14</index>
+            <index>32</index>
+            <index>36</index>
+            <index>44</index>
+            <index>56</index>
+            <index>60</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>8</start>
+              <end>10</end>
+            </range>
+            <range>
+              <start>20</start>
+              <end>22</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.1824196924041786</charge_internal>
+          <epsilon_internal>0.025447939324032758</epsilon_internal>
+          <sigma_internal>1.7837958303818928</sigma_internal>
+          <unique_id>45</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>15</index>
+            <index>33</index>
+            <index>37</index>
+            <index>45</index>
+            <index>57</index>
+            <index>61</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>8</start>
+              <end>10</end>
+            </range>
+            <range>
+              <start>20</start>
+              <end>22</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.12571562794332222</charge_internal>
+          <epsilon_internal>0.02321562914618425</epsilon_internal>
+          <sigma_internal>1.8056371128564719</sigma_internal>
+          <unique_id>46</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>10</index>
+            <index>22</index>
+            <index>24</index>
+            <index>26</index>
+            <index>28</index>
+            <index>46</index>
+            <index>48</index>
+            <index>50</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>16</start>
+              <end>18</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.09974905791464124</charge_internal>
+          <epsilon_internal>0.014597779141842682</epsilon_internal>
+          <sigma_internal>1.786927393874971</sigma_internal>
+          <unique_id>47</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>11</index>
+            <index>23</index>
+            <index>25</index>
+            <index>27</index>
+            <index>29</index>
+            <index>47</index>
+            <index>49</index>
+            <index>51</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>16</start>
+              <end>18</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.09938949990526441</charge_internal>
+          <epsilon_internal>0.013337532555972115</epsilon_internal>
+          <sigma_internal>1.7883531459069153</sigma_internal>
+          <unique_id>48</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>10</index>
+            <index>22</index>
+            <index>24</index>
+            <index>26</index>
+            <index>28</index>
+            <index>46</index>
+            <index>48</index>
+            <index>52</index>
+            <range>
+              <start>2</start>
+              <end>4</end>
+            </range>
+            <range>
+              <start>16</start>
+              <end>18</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.16037801404530627</charge_internal>
+          <epsilon_internal>0.013992792181732043</epsilon_internal>
+          <sigma_internal>1.7943765436455419</sigma_internal>
+          <unique_id>49</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>11</index>
+            <index>23</index>
+            <index>25</index>
+            <index>27</index>
+            <index>29</index>
+            <index>47</index>
+            <index>49</index>
+            <index>53</index>
+            <range>
+              <start>4</start>
+              <end>6</end>
+            </range>
+            <range>
+              <start>16</start>
+              <end>18</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.1469160571602557</charge_internal>
+          <epsilon_internal>0.013631043045315814</epsilon_internal>
+          <sigma_internal>1.7894898244370987</sigma_internal>
+          <unique_id>50</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>10</index>
+            <index>22</index>
+            <index>24</index>
+            <index>46</index>
+            <index>50</index>
+            <index>52</index>
+            <range>
+              <start>16</start>
+              <end>18</end>
+            </range>
+            <range>
+              <start>26</start>
+              <end>30</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.11423151653647867</charge_internal>
+          <epsilon_internal>0.028680688350000004</epsilon_internal>
+          <sigma_internal>1.826499146090069</sigma_internal>
+          <unique_id>51</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>11</index>
+            <index>23</index>
+            <index>47</index>
+            <index>51</index>
+            <index>53</index>
+            <range>
+              <start>16</start>
+              <end>18</end>
+            </range>
+            <range>
+              <start>25</start>
+              <end>30</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.16522714686794918</charge_internal>
+          <epsilon_internal>0.018371396290426997</epsilon_internal>
+          <sigma_internal>1.7885106362490166</sigma_internal>
+          <unique_id>52</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>10</index>
+            <index>22</index>
+            <index>24</index>
+            <index>48</index>
+            <index>50</index>
+            <index>52</index>
+            <range>
+              <start>16</start>
+              <end>18</end>
+            </range>
+            <range>
+              <start>26</start>
+              <end>30</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.12336528410812857</charge_internal>
+          <epsilon_internal>0.02563137917883314</epsilon_internal>
+          <sigma_internal>1.8221912214585023</sigma_internal>
+          <unique_id>53</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>11</index>
+            <index>23</index>
+            <index>49</index>
+            <index>51</index>
+            <index>53</index>
+            <range>
+              <start>16</start>
+              <end>18</end>
+            </range>
+            <range>
+              <start>25</start>
+              <end>30</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.11582659060216446</charge_internal>
+          <epsilon_internal>0.028648306971479444</epsilon_internal>
+          <sigma_internal>1.7628546447196258</sigma_internal>
+          <unique_id>54</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>2</index>
+            <index>6</index>
+            <index>12</index>
+            <index>18</index>
+            <index>30</index>
+            <index>34</index>
+            <index>38</index>
+            <index>42</index>
+            <index>54</index>
+            <index>58</index>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.06985361328562457</charge_internal>
+          <epsilon_internal>0.00959962392836732</epsilon_internal>
+          <sigma_internal>1.7456064064517398</sigma_internal>
+          <unique_id>55</unique_id>
+          <AtomSet>
+            <index>0</index>
+            <index>3</index>
+            <index>7</index>
+            <index>13</index>
+            <index>19</index>
+            <index>31</index>
+            <index>35</index>
+            <index>39</index>
+            <index>43</index>
+            <index>55</index>
+            <index>59</index>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.06569994628496463</charge_internal>
+          <epsilon_internal>0.028675548732168998</epsilon_internal>
+          <sigma_internal>1.8068996171534752</sigma_internal>
+          <unique_id>56</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>4</index>
+            <index>8</index>
+            <index>14</index>
+            <index>20</index>
+            <index>32</index>
+            <index>36</index>
+            <index>40</index>
+            <index>44</index>
+            <index>56</index>
+            <index>60</index>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.06990450669899546</charge_internal>
+          <epsilon_internal>0.0286756274067394</epsilon_internal>
+          <sigma_internal>1.767792131342097</sigma_internal>
+          <unique_id>57</unique_id>
+          <AtomSet>
+            <index>1</index>
+            <index>5</index>
+            <index>9</index>
+            <index>15</index>
+            <index>21</index>
+            <index>33</index>
+            <index>37</index>
+            <index>41</index>
+            <index>45</index>
+            <index>57</index>
+            <index>61</index>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.1605979764231402</charge_internal>
+          <epsilon_internal>0.009566403812099764</epsilon_internal>
+          <sigma_internal>1.8056061765522908</sigma_internal>
+          <unique_id>58</unique_id>
+          <AtomSet>
+            <index>2</index>
+            <index>12</index>
+            <index>18</index>
+            <index>30</index>
+            <index>34</index>
+            <index>38</index>
+            <index>42</index>
+            <index>54</index>
+            <index>58</index>
+            <range>
+              <start>6</start>
+              <end>8</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.1042991232478241</charge_internal>
+          <epsilon_internal>0.009563690690556088</epsilon_internal>
+          <sigma_internal>1.7771631331062219</sigma_internal>
+          <unique_id>59</unique_id>
+          <AtomSet>
+            <index>3</index>
+            <index>13</index>
+            <index>19</index>
+            <index>31</index>
+            <index>35</index>
+            <index>39</index>
+            <index>43</index>
+            <index>55</index>
+            <index>59</index>
+            <range>
+              <start>6</start>
+              <end>8</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.1643536644160336</charge_internal>
+          <epsilon_internal>0.028316842950439642</epsilon_internal>
+          <sigma_internal>1.8145455136941848</sigma_internal>
+          <unique_id>60</unique_id>
+          <AtomSet>
+            <index>4</index>
+            <index>14</index>
+            <index>20</index>
+            <index>32</index>
+            <index>36</index>
+            <index>40</index>
+            <index>44</index>
+            <index>56</index>
+            <index>60</index>
+            <range>
+              <start>8</start>
+              <end>10</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.17997010575945163</charge_internal>
+          <epsilon_internal>0.009601142848514762</epsilon_internal>
+          <sigma_internal>1.8274974606539005</sigma_internal>
+          <unique_id>61</unique_id>
+          <AtomSet>
+            <index>5</index>
+            <index>15</index>
+            <index>21</index>
+            <index>33</index>
+            <index>37</index>
+            <index>41</index>
+            <index>45</index>
+            <index>57</index>
+            <index>61</index>
+            <range>
+              <start>8</start>
+              <end>10</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.374486</charge_internal>
+          <epsilon_internal>0.1601338432</epsilon_internal>
+          <sigma_internal>2.9</sigma_internal>
+          <unique_id>64</unique_id>
+          <AtomSet>
+            <index>72</index>
+            <range>
+              <start>64</start>
+              <end>66</end>
+            </range>
+            <range>
+              <start>68</start>
+              <end>71</end>
+            </range>
+            <range>
+              <start>76</start>
+              <end>78</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.374458</charge_internal>
+          <epsilon_internal>0.1601338432</epsilon_internal>
+          <sigma_internal>2.9</sigma_internal>
+          <unique_id>65</unique_id>
+          <AtomSet>
+            <index>72</index>
+            <range>
+              <start>64</start>
+              <end>66</end>
+            </range>
+            <range>
+              <start>68</start>
+              <end>71</end>
+            </range>
+            <range>
+              <start>76</start>
+              <end>78</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.37468</charge_internal>
+          <epsilon_internal>0.1601338432</epsilon_internal>
+          <sigma_internal>2.9</sigma_internal>
+          <unique_id>66</unique_id>
+          <AtomSet>
+            <index>73</index>
+            <range>
+              <start>66</start>
+              <end>71</end>
+            </range>
+            <range>
+              <start>78</start>
+              <end>80</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.374631</charge_internal>
+          <epsilon_internal>0.1601338432</epsilon_internal>
+          <sigma_internal>2.9</sigma_internal>
+          <unique_id>67</unique_id>
+          <AtomSet>
+            <index>73</index>
+            <range>
+              <start>66</start>
+              <end>71</end>
+            </range>
+            <range>
+              <start>78</start>
+              <end>80</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.114104</charge_internal>
+          <epsilon_internal>0.1505736138</epsilon_internal>
+          <sigma_internal>3.56</sigma_internal>
+          <unique_id>68</unique_id>
+          <AtomSet>
+            <range>
+              <start>62</start>
+              <end>80</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.11443</charge_internal>
+          <epsilon_internal>0.1505736138</epsilon_internal>
+          <sigma_internal>3.56</sigma_internal>
+          <unique_id>69</unique_id>
+          <AtomSet>
+            <range>
+              <start>62</start>
+              <end>80</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.11489</charge_internal>
+          <epsilon_internal>0.1505736138</epsilon_internal>
+          <sigma_internal>3.56</sigma_internal>
+          <unique_id>70</unique_id>
+          <AtomSet>
+            <range>
+              <start>62</start>
+              <end>80</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.238112</charge_internal>
+          <epsilon_internal>0.1505736138</epsilon_internal>
+          <sigma_internal>3.56</sigma_internal>
+          <unique_id>71</unique_id>
+          <AtomSet>
+            <range>
+              <start>62</start>
+              <end>64</end>
+            </range>
+            <range>
+              <start>68</start>
+              <end>80</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.235785</charge_internal>
+          <epsilon_internal>0.1505736138</epsilon_internal>
+          <sigma_internal>3.56</sigma_internal>
+          <unique_id>72</unique_id>
+          <AtomSet>
+            <range>
+              <start>64</start>
+              <end>66</end>
+            </range>
+            <range>
+              <start>68</start>
+              <end>80</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.236839</charge_internal>
+          <epsilon_internal>0.1505736138</epsilon_internal>
+          <sigma_internal>3.56</sigma_internal>
+          <unique_id>73</unique_id>
+          <AtomSet>
+            <range>
+              <start>66</start>
+              <end>80</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.436467</charge_internal>
+          <epsilon_internal>0.1505736138</epsilon_internal>
+          <sigma_internal>3.56</sigma_internal>
+          <unique_id>74</unique_id>
+          <AtomSet>
+            <range>
+              <start>62</start>
+              <end>64</end>
+            </range>
+            <range>
+              <start>68</start>
+              <end>76</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.43653</charge_internal>
+          <epsilon_internal>0.1505736138</epsilon_internal>
+          <sigma_internal>3.56</sigma_internal>
+          <unique_id>75</unique_id>
+          <AtomSet>
+            <range>
+              <start>62</start>
+              <end>64</end>
+            </range>
+            <range>
+              <start>68</start>
+              <end>76</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.43517</charge_internal>
+          <epsilon_internal>0.1505736138</epsilon_internal>
+          <sigma_internal>3.56</sigma_internal>
+          <unique_id>76</unique_id>
+          <AtomSet>
+            <range>
+              <start>64</start>
+              <end>66</end>
+            </range>
+            <range>
+              <start>68</start>
+              <end>74</end>
+            </range>
+            <range>
+              <start>76</start>
+              <end>78</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.435262</charge_internal>
+          <epsilon_internal>0.1505736138</epsilon_internal>
+          <sigma_internal>3.56</sigma_internal>
+          <unique_id>77</unique_id>
+          <AtomSet>
+            <range>
+              <start>64</start>
+              <end>66</end>
+            </range>
+            <range>
+              <start>68</start>
+              <end>74</end>
+            </range>
+            <range>
+              <start>76</start>
+              <end>78</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.435764</charge_internal>
+          <epsilon_internal>0.1505736138</epsilon_internal>
+          <sigma_internal>3.56</sigma_internal>
+          <unique_id>78</unique_id>
+          <AtomSet>
+            <range>
+              <start>66</start>
+              <end>74</end>
+            </range>
+            <range>
+              <start>78</start>
+              <end>80</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>0.43586</charge_internal>
+          <epsilon_internal>0.1505736138</epsilon_internal>
+          <sigma_internal>3.56</sigma_internal>
+          <unique_id>79</unique_id>
+          <AtomSet>
+            <range>
+              <start>66</start>
+              <end>74</end>
+            </range>
+            <range>
+              <start>78</start>
+              <end>80</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.374781</charge_internal>
+          <epsilon_internal>0.1601338432</epsilon_internal>
+          <sigma_internal>2.9</sigma_internal>
+          <unique_id>62</unique_id>
+          <AtomSet>
+            <range>
+              <start>62</start>
+              <end>64</end>
+            </range>
+            <range>
+              <start>68</start>
+              <end>72</end>
+            </range>
+            <range>
+              <start>74</start>
+              <end>76</end>
+            </range>
+          </AtomSet>
+        </lj>
+        <lj>
+          <charge_internal>-0.374704</charge_internal>
+          <epsilon_internal>0.1601338432</epsilon_internal>
+          <sigma_internal>2.9</sigma_internal>
+          <unique_id>63</unique_id>
+          <AtomSet>
+            <range>
+              <start>62</start>
+              <end>64</end>
+            </range>
+            <range>
+              <start>68</start>
+              <end>72</end>
+            </range>
+            <range>
+              <start>74</start>
+              <end>76</end>
+            </range>
+          </AtomSet>
+        </lj>
+      </DepositInternalOpenMMPairEnergy>
+      <SplineDihedralPotentialV2>
+        <constant_scaling_function>
+          <scale_factor>1.0</scale_factor>
+        </constant_scaling_function>
+        <Spline dihedral_id="0" x0="2.172181416234459" xend="8.455366723414045" xd="0.03490658503988659">
+          <y_values size="181">
+            <y idx="0">0.0</y>
+            <y idx="1">0.091278927351432</y>
+            <y idx="2">0.21726503151432422</y>
+            <y idx="3">0.3812179985148255</y>
+            <y idx="4">0.5875103969314753</y>
+            <y idx="5">0.8423678273812132</y>
+            <y idx="6">1.1521702125172848</y>
+            <y idx="7">1.5206484742871504</y>
+            <y idx="8">1.9501012344359556</y>
+            <y idx="9">2.444138103806754</y>
+            <y idx="10">3.0089851608752984</y>
+            <y idx="11">3.6536943981159498</y>
+            <y idx="12">4.389486640229946</y>
+            <y idx="13">5.226487238695784</y>
+            <y idx="14">6.168757502976028</y>
+            <y idx="15">7.211715211440208</y>
+            <y idx="16">8.342085853256565</y>
+            <y idx="17">9.539048595575515</y>
+            <y idx="18">10.773886264399694</y>
+            <y idx="19">12.00837688759981</y>
+            <y idx="20">13.194211932685274</y>
+            <y idx="21">14.276047317569324</y>
+            <y idx="22">15.19851170570352</y>
+            <y idx="23">15.916468697111023</y>
+            <y idx="24">16.407486842426632</y>
+            <y idx="25">16.684095593518983</y>
+            <y idx="26">16.796080758087076</y>
+            <y idx="27">16.81508796277659</y>
+            <y idx="28">16.808286441592383</y>
+            <y idx="29">16.813588868419853</y>
+            <y idx="30">16.825505153094046</y>
+            <y idx="31">16.797332921479043</y>
+            <y idx="32">16.659297214411364</y>
+            <y idx="33">16.344064627251758</y>
+            <y idx="34">15.809758781435457</y>
+            <y idx="35">15.0508694344543</y>
+            <y idx="36">14.094818950910616</y>
+            <y idx="37">12.990248081887716</y>
+            <y idx="38">11.794645734743808</y>
+            <y idx="39">10.563325783938351</y>
+            <y idx="40">9.342813920624325</y>
+            <y idx="41">8.169566241815975</y>
+            <y idx="42">7.070631605481655</y>
+            <y idx="43">6.063807986421687</y>
+            <y idx="44">5.15808155472692</y>
+            <y idx="45">4.354367922178284</y>
+            <y idx="46">3.647363542323017</y>
+            <y idx="47">3.0291416473864152</y>
+            <y idx="48">2.4923628673464595</y>
+            <y idx="49">2.0305300846532672</y>
+            <y idx="50">1.6372147403131494</y>
+            <y idx="51">1.3059068388506263</y>
+            <y idx="52">1.0295040422614403</y>
+            <y idx="53">0.7997724155091238</y>
+            <y idx="54">0.6093823523427241</y>
+            <y idx="55">0.4545004432795506</y>
+            <y idx="56">0.3335451194903748</y>
+            <y idx="57">0.24532276500185454</y>
+            <y idx="58">0.18790297104144266</y>
+            <y idx="59">0.15726491653363853</y>
+            <y idx="60">0.1465571534887273</y>
+            <y idx="61">0.14823978703974477</y>
+            <y idx="62">0.15655426012140947</y>
+            <y idx="63">0.16829003930701228</y>
+            <y idx="64">0.18237991929019834</y>
+            <y idx="65">0.19914402169384715</y>
+            <y idx="66">0.21863614937047202</y>
+            <y idx="67">0.239496760796611</y>
+            <y idx="68">0.258912006654515</y>
+            <y idx="69">0.2737743005779389</y>
+            <y idx="70">0.28220468465842613</y>
+            <y idx="71">0.28413338913780345</y>
+            <y idx="72">0.28076822282484815</y>
+            <y idx="73">0.27315397535218444</y>
+            <y idx="74">0.26148017105239746</y>
+            <y idx="75">0.24541301364161694</y>
+            <y idx="76">0.22435839719262396</y>
+            <y idx="77">0.19779136556951843</y>
+            <y idx="78">0.165514092064698</y>
+            <y idx="79">0.1283362407116262</y>
+            <y idx="80">0.08817724567465134</y>
+            <y idx="81">0.04722685049755815</y>
+            <y idx="82">0.007041292019787774</y>
+            <y idx="83">-0.03104356354439422</y>
+            <y idx="84">-0.06491693701858091</y>
+            <y idx="85">-0.09125920333900399</y>
+            <y idx="86">-0.10674764162094381</y>
+            <y idx="87">-0.10888128979391021</y>
+            <y idx="88">-0.09489573307538124</y>
+            <y idx="89">-0.06041527304385095</y>
+            <y idx="90">-3.852331925496927e-06</y>
+            <y idx="91">0.091280258314554</y>
+            <y idx="92">0.21726160277016862</y>
+            <y idx="93">0.38122244910518827</y>
+            <y idx="94">0.5875078055119812</y>
+            <y idx="95">0.8423708722147479</y>
+            <y idx="96">1.1521715361834601</y>
+            <y idx="97">1.5206683218004056</y>
+            <y idx="98">1.9500846591473442</y>
+            <y idx="99">2.444140502404425</y>
+            <y idx="100">3.008989249628305</y>
+            <y idx="101">3.6537004783882</y>
+            <y idx="102">4.38947750956024</y>
+            <y idx="103">5.22648337405026</y>
+            <y idx="104">6.168764454412531</y>
+            <y idx="105">7.211711148500151</y>
+            <y idx="106">8.342059308514196</y>
+            <y idx="107">9.539018727803509</y>
+            <y idx="108">10.773870542397816</y>
+            <y idx="109">12.008338744725126</y>
+            <y idx="110">13.19419385303984</y>
+            <y idx="111">14.276050330843562</y>
+            <y idx="112">15.198532091913883</y>
+            <y idx="113">15.9165085290465</y>
+            <y idx="114">16.407560967732433</y>
+            <y idx="115">16.684193308030007</y>
+            <y idx="116">16.796194299219955</y>
+            <y idx="117">16.81520200210852</y>
+            <y idx="118">16.808379288857378</y>
+            <y idx="119">16.81367085846628</y>
+            <y idx="120">16.825534716765787</y>
+            <y idx="121">16.797350513870846</y>
+            <y idx="122">16.659305602890356</y>
+            <y idx="123">16.344064593229742</y>
+            <y idx="124">15.80975824967045</y>
+            <y idx="125">15.050883026294946</y>
+            <y idx="126">14.09485283355404</y>
+            <y idx="127">12.990293942834391</y>
+            <y idx="128">11.794692659494135</y>
+            <y idx="129">10.563381794299737</y>
+            <y idx="130">9.342866774235253</y>
+            <y idx="131">8.169611449959532</y>
+            <y idx="132">7.070660036484807</y>
+            <y idx="133">6.0638384478915395</y>
+            <y idx="134">5.1580980467391235</y>
+            <y idx="135">4.354382244534527</y>
+            <y idx="136">3.647370104284977</y>
+            <y idx="137">3.0291525247627957</y>
+            <y idx="138">2.492382700448244</y>
+            <y idx="139">2.0305360003793638</y>
+            <y idx="140">1.6372190197901062</y>
+            <y idx="141">1.3059142852025556</y>
+            <y idx="142">1.0295194958268832</y>
+            <y idx="143">0.7997731691925309</y>
+            <y idx="144">0.6093933630708102</y>
+            <y idx="145">0.454506576454666</y>
+            <y idx="146">0.3335437961890471</y>
+            <y idx="147">0.24530891612625585</y>
+            <y idx="148">0.1879141641019905</y>
+            <y idx="149">0.1572685288872215</y>
+            <y idx="150">0.14656319499594683</y>
+            <y idx="151">0.14823571032670083</y>
+            <y idx="152">0.15654758195556936</y>
+            <y idx="153">0.16828577424152547</y>
+            <y idx="154">0.18238057847814257</y>
+            <y idx="155">0.1991320620890232</y>
+            <y idx="156">0.2186416673217486</y>
+            <y idx="157">0.23949720271796013</y>
+            <y idx="158">0.25890738549801745</y>
+            <y idx="159">0.273782180642152</y>
+            <y idx="160">0.2821899792124684</y>
+            <y idx="161">0.2841236923162258</y>
+            <y idx="162">0.2807485061093671</y>
+            <y idx="163">0.27313929635765943</y>
+            <y idx="164">0.26148308025393086</y>
+            <y idx="165">0.24540594527153914</y>
+            <y idx="166">0.22436392891688786</y>
+            <y idx="167">0.19778694425815524</y>
+            <y idx="168">0.1655072497175517</y>
+            <y idx="169">0.12832197171430737</y>
+            <y idx="170">0.08816558551828747</y>
+            <y idx="171">0.04721028168498728</y>
+            <y idx="172">0.007044887772816469</y>
+            <y idx="173">-0.03106242861495548</y>
+            <y idx="174">-0.06493319771756718</y>
+            <y idx="175">-0.09127287207122511</y>
+            <y idx="176">-0.10676124468064248</y>
+            <y idx="177">-0.10887479560234482</y>
+            <y idx="178">-0.09490427780024878</y>
+            <y idx="179">-0.060411322567989104</y>
+            <y idx="180">0.0</y>
+          </y_values>
+        </Spline>
+        <Spline dihedral_id="1" x0="2.170082028058825" xend="8.453267335238412" xd="0.03490658503988659">
+          <y_values size="181">
+            <y idx="0">0.0</y>
+            <y idx="1">0.09455217178247687</y>
+            <y idx="2">0.2255624012051464</y>
+            <y idx="3">0.3964591108370266</y>
+            <y idx="4">0.6117291854634198</y>
+            <y idx="5">0.8778876810456265</y>
+            <y idx="6">1.2017289465374845</y>
+            <y idx="7">1.5874323784123912</y>
+            <y idx="8">2.0373337192865253</y>
+            <y idx="9">2.555179779766335</y>
+            <y idx="10">3.1472984619890982</y>
+            <y idx="11">3.823038201019981</y>
+            <y idx="12">4.594221728183935</y>
+            <y idx="13">5.471760218842899</y>
+            <y idx="14">6.460542681230001</y>
+            <y idx="15">7.556307713646943</y>
+            <y idx="16">8.74562044046139</y>
+            <y idx="17">10.007059204648748</y>
+            <y idx="18">11.310910308435401</y>
+            <y idx="19">12.617549375064408</y>
+            <y idx="20">13.876606865073326</y>
+            <y idx="21">15.029810453287368</y>
+            <y idx="22">16.018166320148563</y>
+            <y idx="23">16.79270884091476</y>
+            <y idx="24">17.327615912830066</y>
+            <y idx="25">17.633285328462467</y>
+            <y idx="26">17.760119855562944</y>
+            <y idx="27">17.783333371749713</y>
+            <y idx="28">17.775621925172597</y>
+            <y idx="29">17.780066672302535</y>
+            <y idx="30">17.79431216931474</y>
+            <y idx="31">17.77153203666033</y>
+            <y idx="32">17.63855537696335</y>
+            <y idx="33">17.32280729416649</y>
+            <y idx="34">16.777267549922357</y>
+            <y idx="35">15.99311834594127</y>
+            <y idx="36">14.997241085124571</y>
+            <y idx="37">13.839818818136887</y>
+            <y idx="38">12.581426217646145</y>
+            <y idx="39">11.281076726299553</y>
+            <y idx="40">9.988751036072971</y>
+            <y idx="41">8.743816232174899</y>
+            <y idx="42">7.575591310272925</y>
+            <y idx="43">6.503599858131401</y>
+            <y idx="44">5.53801134278371</y>
+            <y idx="45">4.680386708647637</y>
+            <y idx="46">3.9254800737582194</y>
+            <y idx="47">3.264970605218804</y>
+            <y idx="48">2.691065182488255</y>
+            <y idx="49">2.1968431768638053</y>
+            <y idx="50">1.7755480280799958</y>
+            <y idx="51">1.4203139954064028</y>
+            <y idx="52">1.123672589821852</y>
+            <y idx="53">0.8769624891557102</y>
+            <y idx="54">0.6722787556076557</y>
+            <y idx="55">0.5053215291412199</y>
+            <y idx="56">0.37435231258958807</y>
+            <y idx="57">0.27809355401334285</y>
+            <y idx="58">0.21462064041735396</y>
+            <y idx="59">0.17985068532944223</y>
+            <y idx="60">0.16668704887940886</y>
+            <y idx="61">0.1670621903146532</y>
+            <y idx="62">0.17477394455308107</y>
+            <y idx="63">0.1862928529162251</y>
+            <y idx="64">0.2004012673566912</y>
+            <y idx="65">0.2173528735052098</y>
+            <y idx="66">0.2372933963844152</y>
+            <y idx="67">0.2588403196287243</y>
+            <y idx="68">0.2790821822171997</y>
+            <y idx="69">0.2947381831418287</y>
+            <y idx="70">0.30364953512924625</y>
+            <y idx="71">0.30571573185623085</y>
+            <y idx="72">0.30211085030593215</y>
+            <y idx="73">0.2940429743431365</y>
+            <y idx="74">0.2817028699706929</y>
+            <y idx="75">0.2648026250557617</y>
+            <y idx="76">0.24269463083999504</y>
+            <y idx="77">0.21479373641198538</y>
+            <y idx="78">0.18089743917376758</y>
+            <y idx="79">0.14176679168291825</y>
+            <y idx="80">0.09937748709248012</y>
+            <y idx="81">0.056067862429951605</y>
+            <y idx="82">0.013560694467247749</y>
+            <y idx="83">-0.026798972498913616</y>
+            <y idx="84">-0.0628364095422745</y>
+            <y idx="85">-0.09112587866512019</y>
+            <y idx="86">-0.10811554995410502</y>
+            <y idx="87">-0.11113346959102001</y>
+            <y idx="88">-0.09735255108016302</y>
+            <y idx="89">-0.062216090265169374</y>
+            <y idx="90">-2.733157516660931e-05</y>
+            <y idx="91">0.09454126415832016</y>
+            <y idx="92">0.2255388841871446</y>
+            <y idx="93">0.3964495580207415</y>
+            <y idx="94">0.6117336944258421</y>
+            <y idx="95">0.877877221813268</y>
+            <y idx="96">1.2017300850962505</y>
+            <y idx="97">1.5874134165927007</y>
+            <y idx="98">2.037334427273575</y>
+            <y idx="99">2.555168409012691</y>
+            <y idx="100">3.147277645917611</y>
+            <y idx="101">3.8230343552535913</y>
+            <y idx="102">4.594205610930989</y>
+            <y idx="103">5.471768722393478</y>
+            <y idx="104">6.460541145235239</y>
+            <y idx="105">7.556314361115556</y>
+            <y idx="106">8.745629564054505</y>
+            <y idx="107">10.007062263923402</y>
+            <y idx="108">11.310943381833706</y>
+            <y idx="109">12.617592119758463</y>
+            <y idx="110">13.876671779876139</y>
+            <y idx="111">15.029867587264345</y>
+            <y idx="112">16.01823983029946</y>
+            <y idx="113">16.792788489072567</y>
+            <y idx="114">17.32766254933375</y>
+            <y idx="115">17.633299850962544</y>
+            <y idx="116">17.760048560303776</y>
+            <y idx="117">17.783242749888952</y>
+            <y idx="118">17.77542994143202</y>
+            <y idx="119">17.77984848100052</y>
+            <y idx="120">17.794079566093483</y>
+            <y idx="121">17.771336160050556</y>
+            <y idx="122">17.63840680092021</y>
+            <y idx="123">17.3227173111316</y>
+            <y idx="124">16.777200183268878</y>
+            <y idx="125">15.99313461924034</y>
+            <y idx="126">14.997260707828499</y>
+            <y idx="127">13.839884092712712</y>
+            <y idx="128">12.5814770615194</y>
+            <y idx="129">11.281129256241558</y>
+            <y idx="130">9.988818323258513</y>
+            <y idx="131">8.7438762386528</y>
+            <y idx="132">7.575623529559505</y>
+            <y idx="133">6.50362993062786</y>
+            <y idx="134">5.538036608096263</y>
+            <y idx="135">4.680407756765493</y>
+            <y idx="136">3.9254847052457476</y>
+            <y idx="137">3.264989328634692</y>
+            <y idx="138">2.691059935100156</y>
+            <y idx="139">2.1968476016383796</y>
+            <y idx="140">1.7755535786021421</y>
+            <y idx="141">1.4203308011887958</y>
+            <y idx="142">1.1236658835951312</y>
+            <y idx="143">0.8769584941822535</y>
+            <y idx="144">0.672282586636356</y>
+            <y idx="145">0.5053171768991963</y>
+            <y idx="146">0.374350290443719</y>
+            <y idx="147">0.2780911710348903</y>
+            <y idx="148">0.21462317481834292</y>
+            <y idx="149">0.17985813884371854</y>
+            <y idx="150">0.16667825462067717</y>
+            <y idx="151">0.16707688947435498</y>
+            <y idx="152">0.17478304233115888</y>
+            <y idx="153">0.186309622095206</y>
+            <y idx="154">0.2004045614711308</y>
+            <y idx="155">0.217355967071481</y>
+            <y idx="156">0.23730426730883505</y>
+            <y idx="157">0.2588669442764135</y>
+            <y idx="158">0.2790928183018335</y>
+            <y idx="159">0.2947381542443981</y>
+            <y idx="160">0.3036706395970915</y>
+            <y idx="161">0.3057262186374732</y>
+            <y idx="162">0.30212927241794374</y>
+            <y idx="163">0.29405346083540446</y>
+            <y idx="164">0.28174779699870617</y>
+            <y idx="165">0.2648211027471648</y>
+            <y idx="166">0.24270519795609444</y>
+            <y idx="167">0.2148122802785046</y>
+            <y idx="168">0.18091071783210552</y>
+            <y idx="169">0.14177479742709345</y>
+            <y idx="170">0.09939874192328929</y>
+            <y idx="171">0.05608381477489402</y>
+            <y idx="172">0.0135660261395194</y>
+            <y idx="173">-0.026791051135235788</y>
+            <y idx="174">-0.06283387620085801</y>
+            <y idx="175">-0.091118183568324</y>
+            <y idx="176">-0.1081080371037712</y>
+            <y idx="177">-0.1111208990160567</y>
+            <y idx="178">-0.09733233857967584</y>
+            <y idx="179">-0.062196250348887476</y>
+            <y idx="180">0.0</y>
+          </y_values>
+        </Spline>
+        <Spline dihedral_id="2" x0="-0.6693707929982919" xend="5.6138145141812945" xd="0.03490658503988659">
+          <y_values size="181">
+            <y idx="0">0.0</y>
+            <y idx="1">-0.10445207273330019</y>
+            <y idx="2">-0.18925495400624381</y>
+            <y idx="3">-0.25471907820370526</y>
+            <y idx="4">-0.30200742655906615</y>
+            <y idx="5">-0.3327026349572226</y>
+            <y idx="6">-0.3481296172354546</y>
+            <y idx="7">-0.34895205353432956</y>
+            <y idx="8">-0.3352220144065981</y>
+            <y idx="9">-0.30704382085253557</y>
+            <y idx="10">-0.26551377688924654</y>
+            <y idx="11">-0.2134027570280376</y>
+            <y idx="12">-0.15484243172511597</y>
+            <y idx="13">-0.09428886377994895</y>
+            <y idx="14">-0.03544939536018479</y>
+            <y idx="15">0.019057146544432645</y>
+            <y idx="16">0.06727592859775118</y>
+            <y idx="17">0.10758906458602682</y>
+            <y idx="18">0.1384093042296072</y>
+            <y idx="19">0.15822650323406856</y>
+            <y idx="20">0.16571107254084486</y>
+            <y idx="21">0.16009131839265767</y>
+            <y idx="22">0.14167400949004835</y>
+            <y idx="23">0.11214173404760307</y>
+            <y idx="24">0.07438689706558158</y>
+            <y idx="25">0.03165430506606107</y>
+            <y idx="26">-0.013471108554111249</y>
+            <y idx="27">-0.05970867490013035</y>
+            <y idx="28">-0.10635606738942047</y>
+            <y idx="29">-0.1515876179673571</y>
+            <y idx="30">-0.19164621769229337</y>
+            <y idx="31">-0.22128894865103305</y>
+            <y idx="32">-0.23546076106598482</y>
+            <y idx="33">-0.23099428325545143</y>
+            <y idx="34">-0.20728267115465884</y>
+            <y idx="35">-0.16551419415765217</y>
+            <y idx="36">-0.10721942639328529</y>
+            <y idx="37">-0.0330517024892257</y>
+            <y idx="38">0.05750752830534902</y>
+            <y idx="39">0.1654798830754701</y>
+            <y idx="40">0.2912439503938203</y>
+            <y idx="41">0.43418188489018944</y>
+            <y idx="42">0.5928369490470993</y>
+            <y idx="43">0.7652956383411498</y>
+            <y idx="44">0.9496203061201292</y>
+            <y idx="45">1.1440985917302748</y>
+            <y idx="46">1.3469544626490728</y>
+            <y idx="47">1.5559426382778512</y>
+            <y idx="48">1.7684062959745266</y>
+            <y idx="49">1.9816903553039011</y>
+            <y idx="50">2.1932938103057613</y>
+            <y idx="51">2.400809240783898</y>
+            <y idx="52">2.6020253744649615</y>
+            <y idx="53">2.7953118699548125</y>
+            <y idx="54">2.9793145097873612</y>
+            <y idx="55">3.152561279188917</y>
+            <y idx="56">3.3131168274065037</y>
+            <y idx="57">3.458585538718021</y>
+            <y idx="58">3.5867405206473473</y>
+            <y idx="59">3.696040479546699</y>
+            <y idx="60">3.7859404949680364</y>
+            <y idx="61">3.8565405784833384</y>
+            <y idx="62">3.908293971286029</y>
+            <y idx="63">3.941488674861822</y>
+            <y idx="64">3.955926218373137</y>
+            <y idx="65">3.9506395113203774</y>
+            <y idx="66">3.924543641674129</y>
+            <y idx="67">3.877357240333385</y>
+            <y idx="68">3.809930341456497</y>
+            <y idx="69">3.7240268713355826</y>
+            <y idx="70">3.621405916905736</y>
+            <y idx="71">3.502761017796593</y>
+            <y idx="72">3.3673861457622905</y>
+            <y idx="73">3.21407490356041</y>
+            <y idx="74">3.0428266521163323</y>
+            <y idx="75">2.8558766797599575</y>
+            <y idx="76">2.6574407674890743</y>
+            <y idx="77">2.452272723131742</y>
+            <y idx="78">2.243903556957039</y>
+            <y idx="79">2.0337472640678143</y>
+            <y idx="80">1.8218547932071822</y>
+            <y idx="81">1.6082344141983538</y>
+            <y idx="82">1.3941150895921313</y>
+            <y idx="83">1.1822177424366338</y>
+            <y idx="84">0.9761581975293459</y>
+            <y idx="85">0.77924995784929</y>
+            <y idx="86">0.5939055086207136</y>
+            <y idx="87">0.42182865655298957</y>
+            <y idx="88">0.2645073960369148</y>
+            <y idx="89">0.12340676484728845</y>
+            <y idx="90">-1.0021202019919681e-05</y>
+            <y idx="91">-0.10445744435372968</y>
+            <y idx="92">-0.1892671375309398</y>
+            <y idx="93">-0.2547197396661581</y>
+            <y idx="94">-0.3020103195922181</y>
+            <y idx="95">-0.3327123454811763</y>
+            <y idx="96">-0.34813239549449004</y>
+            <y idx="97">-0.34896394551692717</y>
+            <y idx="98">-0.33523156258750436</y>
+            <y idx="99">-0.3070487356694799</y>
+            <y idx="100">-0.26552781264222025</y>
+            <y idx="101">-0.213414456483621</y>
+            <y idx="102">-0.1548540896568999</y>
+            <y idx="103">-0.09428673105757175</y>
+            <y idx="104">-0.035451810619499015</y>
+            <y idx="105">0.019045596382750874</y>
+            <y idx="106">0.06726670039190642</y>
+            <y idx="107">0.10758673912818262</y>
+            <y idx="108">0.13839783473916242</y>
+            <y idx="109">0.1582310979508797</y>
+            <y idx="110">0.16571568460092972</y>
+            <y idx="111">0.16008677670624105</y>
+            <y idx="112">0.14167864635601746</y>
+            <y idx="113">0.11214637845956385</y>
+            <y idx="114">0.07438008587005465</y>
+            <y idx="115">0.031654370603624145</y>
+            <y idx="116">-0.013461877554998858</y>
+            <y idx="117">-0.05971320136949192</y>
+            <y idx="118">-0.10635601886160659</y>
+            <y idx="119">-0.15158758157149668</y>
+            <y idx="120">-0.19164390461654598</y>
+            <y idx="121">-0.22128665391913288</y>
+            <y idx="122">-0.2354584877630334</y>
+            <y idx="123">-0.23098974236115546</y>
+            <y idx="124">-0.2072758655456672</y>
+            <y idx="125">-0.16550283468859986</y>
+            <y idx="126">-0.10722185144988151</y>
+            <y idx="127">-0.033049579022153205</y>
+            <y idx="128">0.05752107356886364</y>
+            <y idx="129">0.16547963622565393</y>
+            <y idx="130">0.2912551206294128</y>
+            <y idx="131">0.43419071820303323</y>
+            <y idx="132">0.5928457352912989</y>
+            <y idx="133">0.7652997915132213</y>
+            <y idx="134">0.949628992056837</y>
+            <y idx="135">1.1440980569237487</y>
+            <y idx="136">1.346956165083162</y>
+            <y idx="137">1.555955744164535</y>
+            <y idx="138">1.7684055921544628</y>
+            <y idx="139">1.9816964678906848</y>
+            <y idx="140">2.1933021540463384</y>
+            <y idx="141">2.4008083544842456</y>
+            <y idx="142">2.6020358845305087</y>
+            <y idx="143">2.7953223153582987</y>
+            <y idx="144">2.9793157216069193</y>
+            <y idx="145">3.152576175977062</y>
+            <y idx="146">3.3131270724451496</y>
+            <y idx="147">3.4585980069475637</y>
+            <y idx="148">3.5867368755164617</y>
+            <y idx="149">3.696041347877719</y>
+            <y idx="150">3.785955043848444</y>
+            <y idx="151">3.8565527633421324</y>
+            <y idx="152">3.9082969156402627</y>
+            <y idx="153">3.941496129759622</y>
+            <y idx="154">3.9559290154763063</y>
+            <y idx="155">3.9506376500035576</y>
+            <y idx="156">3.9245485812135765</y>
+            <y idx="157">3.877350644594682</y>
+            <y idx="158">3.8099236698826613</y>
+            <y idx="159">3.7240407512492366</y>
+            <y idx="160">3.6214105523542264</y>
+            <y idx="161">3.502763284512436</y>
+            <y idx="162">3.367390627455989</y>
+            <y idx="163">3.2140747242076135</y>
+            <y idx="164">3.0428332714102035</y>
+            <y idx="165">2.8558740539633063</y>
+            <y idx="166">2.657442648442149</y>
+            <y idx="167">2.4522905707361584</y>
+            <y idx="168">2.2438984080475906</y>
+            <y idx="169">2.0337512064524055</y>
+            <y idx="170">1.8218609513200592</y>
+            <y idx="171">1.6082450804784356</y>
+            <y idx="172">1.394121096743484</y>
+            <y idx="173">1.1822236750452622</y>
+            <y idx="174">0.9761617642819759</y>
+            <y idx="175">0.7792603275427156</y>
+            <y idx="176">0.5939066384349371</y>
+            <y idx="177">0.4218365912257747</y>
+            <y idx="178">0.2645129688976859</y>
+            <y idx="179">0.1234168531711128</y>
+            <y idx="180">0.0</y>
+          </y_values>
+        </Spline>
+      </SplineDihedralPotentialV2>
+    </forcefield>
+  </energy_models>
+  <Algorithm>
+    <TransformationSequence weight="1.0" repeats="3500">
+      <MixingRatioActiveConformation weight="1.0">
+        <mixing_ratio id="0">0.8</mixing_ratio>
+        <mixing_ratio id="1">0.2</mixing_ratio>
+        <number_depositions>3500</number_depositions>
+      </MixingRatioActiveConformation>
+      <RandomMolInit min_x="-60.0" max_x="60.0" min_y="-60.0" max_y="60.0" z_shift="20.0" alpha="90.0" static_parameters_filename="static_parameters.dpcf.gz"/>
+      <MPIMultiMove>
+        <repeats>30</repeats>
+        <tend>5.0</tend>
+        <tscaling>geometric</tscaling>
+        <tstart>5.0</tstart>
+        <TransformationSequence weight="1.0" repeats="1">
+          <RecalcEnergies>
+            <beginstep>0</beginstep>
+            <laststep>0</laststep>
+            <stepmod>1</stepmod>
+          </RecalcEnergies>
+          <RepeatedMove>
+            <repeats>130000</repeats>
+            <tend>300.0</tend>
+            <tscaling>geometric</tscaling>
+            <tstart>4000.0</tstart>
+            <TransformationSequence weight="1.0" repeats="1">
+              <TransformationSequence weight="1.0" repeats="1">
+                <RecalcEnergies>
+                  <beginstep>0</beginstep>
+                  <laststep>0</laststep>
+                  <stepmod>1000</stepmod>
+                </RecalcEnergies>
+                <PrintEnergy>
+                  <beginstep>0</beginstep>
+                  <laststep>0</laststep>
+                  <stepmod>5000</stepmod>
+                </PrintEnergy>
+              </TransformationSequence>
+              <ConditionalTransformation weight="1.0">
+                <MetropolisAcceptanceCriterion>
+                  <energymodel_nr>0</energymodel_nr>
+                  <kB>0.0019858775</kB>
+                </MetropolisAcceptanceCriterion>
+                <TransformationChoice weight="1.0" repeats="1">
+                  <TransformationSequence weight="1.0" repeats="1">
+                    <TransformationChoice weight="1.0" repeats="1">
+                      <SetActiveTranslationRandomPBCXY weight="1.0">
+                        <Lx>60.0</Lx>
+                        <Ly>60.0</Ly>
+                        <alpha>90.0</alpha>
+                        <comx>0</comx>
+                        <comy>0</comy>
+                        <comz>0</comz>
+                        <max_radius>1.0</max_radius>
+                        <min_radius>0.0</min_radius>
+                        <unique_id>0</unique_id>
+                      </SetActiveTranslationRandomPBCXY>
+                      <SetActiveRotationRandom weight="1.0">
+                        <comx>0</comx>
+                        <comy>0</comy>
+                        <comz>0</comz>
+                        <max_angle>3.141593</max_angle>
+                        <min_angle>0.0</min_angle>
+                        <unique_id>0</unique_id>
+                      </SetActiveRotationRandom>
+                      <SetRandomActiveDihedralRelativeRandom weight="3.0">
+                        <distribution type="gaussian">
+                          <sigma>0.523599</sigma>
+                          <mean>0.0</mean>
+                        </distribution>
+                      </SetRandomActiveDihedralRelativeRandom>
+                    </TransformationChoice>
+                    <ResetToPBCCell weight="1.0">
+                      <Lx>60.0</Lx>
+                      <Ly>60.0</Ly>
+                      <alpha>90.0</alpha>
+                      <comx>0</comx>
+                      <comy>0</comy>
+                      <comz>0</comz>
+                      <max_radius>1.0</max_radius>
+                      <min_radius>0.0</min_radius>
+                      <unique_id>0</unique_id>
+                    </ResetToPBCCell>
+                  </TransformationSequence>
+                </TransformationChoice>
+              </ConditionalTransformation>
+            </TransformationSequence>
+          </RepeatedMove>
+        </TransformationSequence>
+      </MPIMultiMove>
+      <UpdateGridsAndCheckpoint min_x="-60.0" size_x="120.0" min_y="-60.0" size_y="120.0" dz_cutoff="10.0" alpha="90.0" pbc="True" pbc_cutoff="20.0">
+        <beginstep>0</beginstep>
+        <laststep>0</laststep>
+        <stepmod>500</stepmod>
+        <static_parameters_filename>static_parameters.dpcf.gz</static_parameters_filename>
+      </UpdateGridsAndCheckpoint>
+      <RandomMolInit min_x="-60.0" max_x="60.0" min_y="-60.0" max_y="60.0" z_shift="20.0" alpha="90.0" static_parameters_filename="static_parameters.dpcf.gz"/>
+    </TransformationSequence>
+  </Algorithm>
+  <PDB>HEADER 	&lt;EH&gt;	DepositCOMPlaneDistPot		DepositElectrostaticsGrid		DepositInternalOpenMMPairEnergy		DepositLennardJonesGridStatic		SplineDihedralPotentialV2		ZDrivingPotential		Total
+HEADER	&lt;E&gt;	0		-2.15906		77.5416		-27.4351		0		0		47.9475
+HEADER STEP 0
+REMARK    Generated using the SIMONA PdbWriter engine
+ATOM      1 N    FQY A   1      50.164 -21.584  26.887 -0.54  0.00           N
+ATOM      2  N1  FQY A   1      58.340 -27.184  26.417 -0.54  0.00           N
+ATOM      3  C   FQY A   1      48.902 -21.951  26.433  0.44  0.00           C
+ATOM      4  C1  FQY A   1      50.089 -20.299  27.418  0.44  0.00           C
+ATOM      5  C2  FQY A   1      58.728 -27.964  25.331  0.45  0.00           C
+ATOM      6  C3  FQY A   1      59.289 -27.323  27.424  0.45  0.00           C
+ATOM      7  C4  FQY A   1      48.002 -20.890  26.675 -0.07  0.00           C
+ATOM      8  C5  FQY A   1      48.759 -19.836  27.303 -0.07  0.00           C
+ATOM      9  C6  FQY A   1      59.944 -28.611  25.645 -0.07  0.00           C
+ATOM     10  C7  FQY A   1      60.303 -28.201  26.980 -0.07  0.00           C
+ATOM     11  C8  FQY A   1      51.328 -22.382  26.821  0.41  0.00           C
+ATOM     12  C9  FQY A   1      57.176 -26.387  26.484  0.41  0.00           C
+ATOM     13  C10 FQY A   1      48.495 -23.121  25.800 -0.38  0.00           C
+ATOM     14  C11 FQY A   1      51.082 -19.531  28.015 -0.38  0.00           C
+ATOM     15  C12 FQY A   1      58.083 -28.172  24.117 -0.38  0.00           C
+ATOM     16  C13 FQY A   1      59.348 -26.714  28.673 -0.38  0.00           C
+ATOM     17  C14 FQY A   1      53.645 -23.966  26.688  0.10  0.00           C
+ATOM     18  C15 FQY A   1      54.861 -24.800  26.618  0.10  0.00           C
+ATOM     19  C16 FQY A   1      46.670 -21.015  26.288 -0.14  0.00           C
+ATOM     20  C17 FQY A   1      48.430 -18.570  27.783 -0.14  0.00           C
+ATOM     21  C18 FQY A   1      60.527 -29.467  24.713 -0.14  0.00           C
+ATOM     22  C19 FQY A   1      61.380 -28.486  27.815 -0.14  0.00           C
+ATOM     23  C20 FQY A   1      52.447 -21.934  26.122 -0.25  0.00           C
+ATOM     24  C21 FQY A   1      56.327 -26.473  27.585 -0.24  0.00           C
+ATOM     25  C22 FQY A   1      51.368 -23.620  27.452 -0.25  0.00           C
+ATOM     26  C23 FQY A   1      56.866 -25.507  25.451 -0.25  0.00           C
+ATOM     27  C24 FQY A   1      53.590 -22.716  26.066 -0.20  0.00           C
+ATOM     28  C25 FQY A   1      55.191 -25.683  27.650 -0.20  0.00           C
+ATOM     29  C26 FQY A   1      52.509 -24.403  27.378 -0.20  0.00           C
+ATOM     30  C27 FQY A   1      55.719 -24.732  25.516 -0.20  0.00           C
+ATOM     31  C28 FQY A   1      47.163 -23.221  25.424 -0.08  0.00           C
+ATOM     32  C29 FQY A   1      50.728 -18.275  28.486 -0.08  0.00           C
+ATOM     33  C30 FQY A   1      58.684 -29.029  23.206 -0.07  0.00           C
+ATOM     34  C31 FQY A   1      60.431 -27.014  29.486 -0.07  0.00           C
+ATOM     35  C32 FQY A   1      46.256 -22.183  25.669 -0.24  0.00           C
+ATOM     36  C33 FQY A   1      49.419 -17.793  28.369 -0.24  0.00           C
+ATOM     37  C34 FQY A   1      59.895 -29.667  23.495 -0.24  0.00           C
+ATOM     38  C35 FQY A   1      61.438 -27.893  29.067 -0.24  0.00           C
+ATOM     39  H   FQY A   1      49.190 -23.923  25.598  0.18  0.00           H
+ATOM     40  H1  FQY A   1      52.093 -19.898  28.118  0.18  0.00           H
+ATOM     41  H2  FQY A   1      57.142 -27.691  23.889  0.18  0.00           H
+ATOM     42  H3  FQY A   1      58.580 -26.026  29.000  0.18  0.00           H
+ATOM     43  H4  FQY A   1      45.969 -20.209  26.466  0.14  0.00           H
+ATOM     44  H5  FQY A   1      47.416 -18.200  27.704  0.14  0.00           H
+ATOM     45  H6  FQY A   1      61.458 -29.970  24.939  0.14  0.00           H
+ATOM     46  H7  FQY A   1      62.165 -29.157  27.489  0.14  0.00           H
+ATOM     47  H8  FQY A   1      52.416 -20.974  25.624  0.16  0.00           H
+ATOM     48  H9  FQY A   1      56.562 -27.160  28.386  0.16  0.00           H
+ATOM     49  H10 FQY A   1      50.502 -23.967  28.000  0.16  0.00           H
+ATOM     50  H11 FQY A   1      57.527 -25.434  24.597  0.16  0.00           H
+ATOM     51  H12 FQY A   1      54.459 -22.342  25.539  0.15  0.00           H
+ATOM     52  H13 FQY A   1      54.556 -25.744  28.524  0.15  0.00           H
+ATOM     53  H14 FQY A   1      52.514 -25.376  27.854  0.15  0.00           H
+ATOM     54  H15 FQY A   1      55.481 -24.071  24.694  0.15  0.00           H
+ATOM     55  H16 FQY A   1      46.821 -24.122  24.931  0.13  0.00           H
+ATOM     56  H17 FQY A   1      51.482 -17.656  28.955  0.13  0.00           H
+ATOM     57  H18 FQY A   1      58.202 -29.207  22.253  0.13  0.00           H
+ATOM     58  H19 FQY A   1      60.501 -26.554  30.463  0.13  0.00           H
+ATOM     59  H20 FQY A   1      45.223 -22.297  25.364  0.15  0.00           H
+ATOM     60  H21 FQY A   1      49.177 -16.808  28.745  0.15  0.00           H
+ATOM     61  H22 FQY A   1      60.338 -30.327  22.761  0.15  0.00           H
+ATOM     62  H23 FQY A   1      62.268 -28.106  29.727  0.15  0.00           H
+TER      63      FQY A   1 
+ATOM     63  N   AAA B   2      26.211 -25.083 175.070 -0.37  0.00           N
+ATOM     64  N1  AAA B   2      26.637 -21.515 172.503 -0.37  0.00           N
+ATOM     65  N2  AAA B   2      33.659 -22.872 172.269 -0.37  0.00           N
+ATOM     66  N3  AAA B   2      30.097 -20.487 171.202 -0.37  0.00           N
+ATOM     67  N4  AAA B   2      29.308 -27.154 176.008 -0.37  0.00           N
+ATOM     68  N5  AAA B   2      33.291 -25.977 174.502 -0.37  0.00           N
+ATOM     69  C   AAA B   2      29.065 -23.722 173.637  0.11  0.00           C
+ATOM     70  C1  AAA B   2      30.337 -23.344 173.157  0.11  0.00           C
+ATOM     71  C2  AAA B   2      30.202 -24.484 173.979  0.11  0.00           C
+ATOM     72  C3  AAA B   2      27.729 -23.508 173.713 -0.24  0.00           C
+ATOM     73  C4  AAA B   2      31.117 -22.502 172.438 -0.24  0.00           C
+ATOM     74  C5  AAA B   2      30.758 -25.537 174.625 -0.24  0.00           C
+ATOM     75  C6  AAA B   2      26.892 -24.379 174.463  0.44  0.00           C
+ATOM     76  C7  AAA B   2      27.127 -22.407 173.044  0.44  0.00           C
+ATOM     77  C8  AAA B   2      32.520 -22.708 172.346  0.44  0.00           C
+ATOM     78  C9  AAA B   2      30.552 -21.390 171.756  0.44  0.00           C
+ATOM     79  C10 AAA B   2      29.956 -26.430 175.387  0.44  0.00           C
+ATOM     80  C11 AAA B   2      32.157 -25.779 174.556  0.44  0.00           C
+TER      19      AAA B   1 
+</PDB>
+  <Random_random_seed/>
+</simona_input>

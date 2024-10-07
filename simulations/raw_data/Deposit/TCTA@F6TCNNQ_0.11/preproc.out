@@ -1,0 +1,18 @@
+Reading input file(s)
+  Reading PDB file merged.pdb
+  Generated 6 intra-residue moves and 0 inter-residue moves.
+  There are 2 bonded units
+  Detected moves:
+    Detected 6 various dihedrals
+Building Input
+  Time for SIMONAConfiguration:     6.3 s
+  Time for SIMONAMoves:     4.5 s
+Building Forcefield
+  Added Term: DepositLennardJonesGridStatic, time:     0.0 s
+  Added Term: DepositScreenElectrostatics, time:     0.0 s
+  Added Term: ZDrivingPotential, time:     0.0 s
+  Added Term: DepositCOMPlaneDistPot, time:     0.0 s
+  Added Term: DepositInternalOpenMM, time:     0.0 s
+  Added Term: SIMONASplineDihedralPotentialV2, time:     0.0 s
+Writing output to run.xml.gz
+Done.

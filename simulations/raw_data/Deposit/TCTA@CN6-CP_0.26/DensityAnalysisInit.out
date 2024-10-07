@@ -1,0 +1,155 @@
+AnalysisSettings paramaters: 
+	Analysis.AtomicDistance.atomIds:
+		Atom ids in molecule for which to find closest atoms in neighbors
+		Default: [0].
+	Analysis.AtomicDistance.enabled:
+		Computes distributions of distances of certain atoms to atoms of close neighboring molecules
+		Default: False.
+	Analysis.AtomicDistance.numberMolecules:
+		number of core molecules for which to perform this analysis to generate a distribution
+		Default: 1.
+	Analysis.Density.enabled:
+		Compute density of sample
+		Default: False.
+	Analysis.Density.inner_box_cutoff:
+		cuttoff from edge to avoid edge effects in density computation e.g. at unsmooth surfaces
+		Default: 10.0.
+	Analysis.Density.no_samples:
+		Density is averaged over no_samples slightly randomized boxes within the inner_box_cutoff
+		Default: 20.
+	Analysis.Dipole.do_select:
+		select one mol type
+		Default: False.
+	Analysis.Dipole.enabled:
+		Should the Dipole analysis be run?
+		Default: False.
+	Analysis.Dipole.label:
+		Label for the this plot. If unset, an automatic label is set
+		Default: unset.
+	Analysis.Dipole.plot_heatmaps:
+		generate heatmaps of dipole distribution (norm and orientation)
+		Default: False.
+	Analysis.Dipole.qp_charge_file:
+		charge file from QP in the same order as atoms in the morphology
+		Default: None.
+	Analysis.Dipole.select_mol_type:
+		mol type for Dipole analysis for a specific moltype
+		Default: None.
+	Analysis.Dipole.select_z_cutoff:
+		lower z cutoff for Dipole analysis, e.g. to cut off first layer
+		Default: None.
+	Analysis.Dipole.vol_per_mol:
+		molecular volume in nm3 for gsp computation. If None, vol_per_mol will be computed for the morphology automatically
+		Default: None.
+	Analysis.GSP.box_size:
+		box size in Angstrom for ewald summation
+		Default: 10.0.
+	Analysis.GSP.cutoff:
+		Neglecting molecules within the cutoff from the edge of the structure
+		Default: 1.0.
+	Analysis.GSP.do_ewald:
+		use ewald summation for computing coulomb
+		Default: False.
+	Analysis.GSP.do_select:
+		select one mol type and z cutoff for GSP analysis
+		Default: False.
+	Analysis.GSP.enabled:
+		Should the GSP analysis be run?
+		Default: False.
+	Analysis.GSP.outfile_basename:
+		Basename for outputs of GSP analysis
+		Default: GSP_analysis_system.
+	Analysis.GSP.qp_charge_file:
+		If file is specified, parcial charges are read from QP output instead of projected from spf
+		Default: None.
+	Analysis.GSP.rename_atoms:
+		If atom tag names are e.g. C C C instead of C C1 C2 this option MAY help. Better use proper Deposit output instead
+		Default: False.
+	Analysis.GSP.select_mol_type:
+		mol type for GSP analysis
+		Default: None.
+	Analysis.GSP.select_z_cutoff:
+		z cutoff for GSP analysis
+		Default: None.
+	Analysis.Orientation.axis.0.Ids:
+		IDs of the simple axis (from,to), from, to. Axis will be normalized
+		Default: [0, 1].
+	Analysis.Orientation.axis.0.label:
+		Label for the this plot. If unset, an automatic label is set
+		Default: unset.
+	Analysis.Orientation.axis.0.moltype:
+		Three letter code of the moltype this axis will be evaluated on
+		Default: None.
+	Analysis.Orientation.axis.bins:
+		number of bins for histogram plots
+		Default: 15.
+	Analysis.Orientation.axis.enabled:
+		Enable simple axis (two atom ids) orientation analysis module
+		Default: False.
+	Analysis.Orientation.complex_axis.0.atom.0.id:
+		ID of the first atom of the complex_axis
+		Default: 0.
+	Analysis.Orientation.complex_axis.0.atom.0.multiplier:
+		Multiplier of the first atom of the complex_axis
+		Default: -1.
+	Analysis.Orientation.complex_axis.0.atom.1.id:
+		ID of the second atom of the complex_axis
+		Default: 1.
+	Analysis.Orientation.complex_axis.0.atom.1.multiplier:
+		Multiplier of the second atom of the complex_axis
+		Default: 1.
+	Analysis.Orientation.complex_axis.0.label:
+		Label for the this plot. If unset, an automatic label is set
+		Default: unset.
+	Analysis.Orientation.complex_axis.0.moltype:
+		Multiplier of the second atom of the complex_axis
+		Default: None.
+	Analysis.Orientation.complex_axis.enabled:
+		Enable complex_axis (internal coordinate system) orientation analysis module
+		Default: False.
+	Analysis.Orientation.normal.0.Ids:
+		Atom ids of the atoms in the normal plane
+		Default: [2, 5, 7].
+	Analysis.Orientation.normal.0.label:
+		Label for the this plot. If unset, an automatic label is set
+		Default: unset.
+	Analysis.Orientation.normal.0.moltype:
+		Atom ids of the atoms in the normal plane
+		Default: None.
+	Analysis.Orientation.normal.bins:
+		number of bins for histogram plots
+		Default: 15.
+	Analysis.Orientation.normal.core_ids:
+		Core ids for neighbor_relative analysis. Ignored for neighbor_relative=False
+		Default: [0].
+	Analysis.Orientation.normal.enabled:
+		Enable normal orientation analysis module
+		Default: False.
+	Analysis.Orientation.normal.neighbor_relative:
+		compute relative orientation between groups in core molecules and their neighbors. Specify core_ids respectively
+		Default: False.
+	Analysis.Orientation.normal.relative:
+		if more than one normal, compute relative orientation in each molecule
+		Default: False.
+	Analysis.Orientation.plot_heatmaps:
+		generate heatmaps of axis distribution (projection on z-axis)
+		Default: False.
+	Analysis.QPGSP.enabled:
+		Should the QPGSP analysis be run?
+		Default: False.
+	Analysis.QPGSP.homo_lumo_file:
+		File of the following format MOLID HOMO LUMO TOTAL. Only require if QPGSP is enabled
+		Default: molid_homo_lumo_total.dat.
+	Analysis.RDF.cutoff:
+		Cutoff for RDF
+		Default: 20.
+	Analysis.RDF.enabled:
+		Computes RDF for all molecule combinations in the morphology
+		Default: False.
+	Morphology.parameters:
+		Morphology to be analyzed
+		Default: structure.spf.
+	Morphology.structure:
+		Morphology to be analyzed
+		Default: structure.cml.
+Could not find analysis_settings.yml, writing template analysis_settings.yml. Please edit them and restart the run.

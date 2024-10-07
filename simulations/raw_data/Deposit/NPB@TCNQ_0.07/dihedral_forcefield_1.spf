@@ -1,0 +1,231 @@
+parametrization_info: {}
+residues:
+  FQY:
+    atoms:
+      C:
+        charge: 0.399133
+        charge_internal: 0.399133
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.56
+      C1:
+        charge: 0.413441
+        charge_internal: 0.413441
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.56
+      C10:
+        charge: 0.513702
+        charge_internal: 0.513702
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.1
+        sigma: 3.56
+        sigma_internal: 3.56
+      C11:
+        charge: 0.51378
+        charge_internal: 0.51378
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.1
+        sigma: 3.56
+        sigma_internal: 3.56
+      C2:
+        charge: -0.222117
+        charge_internal: -0.222117
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.56
+      C3:
+        charge: -0.215684
+        charge_internal: -0.215684
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.56
+      C4:
+        charge: -0.221988
+        charge_internal: -0.221988
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.56
+      C5:
+        charge: -0.215818
+        charge_internal: -0.215818
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.56
+      C6:
+        charge: -0.456666
+        charge_internal: -0.456666
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.3
+        sigma: 3.56
+        sigma_internal: 3.56
+      C7:
+        charge: -0.468493
+        charge_internal: -0.468493
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.3
+        sigma: 3.56
+        sigma_internal: 3.56
+      C8:
+        charge: 0.510214
+        charge_internal: 0.510214
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.1
+        sigma: 3.56
+        sigma_internal: 3.56
+      C9:
+        charge: 0.510258
+        charge_internal: 0.510258
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.1
+        sigma: 3.56
+        sigma_internal: 3.56
+      H:
+        charge: 0.180256
+        charge_internal: 0.180256
+        epsilon: 0.0191204589
+        epsilon_internal: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.78
+      H1:
+        charge: 0.180233
+        charge_internal: 0.180233
+        epsilon: 0.0191204589
+        epsilon_internal: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.78
+      H2:
+        charge: 0.179763
+        charge_internal: 0.179763
+        epsilon: 0.0191204589
+        epsilon_internal: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.78
+      H3:
+        charge: 0.179785
+        charge_internal: 0.179785
+        epsilon: 0.0191204589
+        epsilon_internal: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.78
+      N:
+        charge: -0.44464
+        charge_internal: -0.44464
+        epsilon: 0.1601338432
+        epsilon_internal: 0.1601338432
+        mol2_atom_type: N.1
+        sigma: 2.9
+        sigma_internal: 2.9
+      N1:
+        charge: -0.444657
+        charge_internal: -0.444657
+        epsilon: 0.1601338432
+        epsilon_internal: 0.1601338432
+        mol2_atom_type: N.1
+        sigma: 2.9
+        sigma_internal: 2.9
+      N2:
+        charge: -0.445229
+        charge_internal: -0.445229
+        epsilon: 0.1601338432
+        epsilon_internal: 0.1601338432
+        mol2_atom_type: N.1
+        sigma: 2.9
+        sigma_internal: 2.9
+      N3:
+        charge: -0.445271
+        charge_internal: -0.445271
+        epsilon: 0.1601338432
+        epsilon_internal: 0.1601338432
+        mol2_atom_type: N.1
+        sigma: 2.9
+        sigma_internal: 2.9
+    bonds:
+    - - H
+      - C2
+      - '1'
+    - - C6
+      - C9
+      - '1'
+    - - C6
+      - C8
+      - '1'
+    - - C6
+      - C
+      - '1'
+    - - H3
+      - C5
+      - '1'
+    - - H2
+      - C3
+      - '1'
+    - - H1
+      - C4
+      - '1'
+    - - C11
+      - C7
+      - '1'
+    - - C11
+      - N3
+      - '3'
+    - - C10
+      - C7
+      - '1'
+    - - C10
+      - N2
+      - '3'
+    - - C9
+      - N1
+      - '3'
+    - - C8
+      - N
+      - '3'
+    - - C7
+      - C1
+      - '1'
+    - - C5
+      - C4
+      - ar
+    - - C5
+      - C
+      - ar
+    - - C4
+      - C1
+      - ar
+    - - C3
+      - C2
+      - ar
+    - - C3
+      - C
+      - ar
+    - - C2
+      - C1
+      - ar
+    moves: {}
+structure:
+  bonds: []
+  moves: {}
+  parameters: {}
+

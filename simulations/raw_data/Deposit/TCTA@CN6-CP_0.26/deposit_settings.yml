@@ -1,0 +1,99 @@
+Box:
+  Lx: 60
+  Ly: 60
+  Lz: 240
+  pbc_cutoff: 20.0
+  alpha: 90.0
+  grid_overhang: 30
+simparams:
+  Nmol: 3500
+  zshift: 20
+  dz_cutoff: 10
+  Thi: 4000.0
+  Tlo: 300.0
+  PBC: true
+  ntypes: 1
+  doquantum: false
+  sa:
+    steps: 130000
+    cycles: 30
+    Tacc: 5.0
+  only_generate_xmls: false
+  grids:
+    use_grids: true
+    es_spacing: 1.0
+    debug:
+      vdw_spacing: 1.0
+  moves:
+    delta_rigid_trans: 1.0
+    delta_rigid_rot: 3.141592653589793
+    delta_dihedral: 0.5235987755982988
+    dihedralmoves: true
+    subunits: -1
+  output:
+    out_freq: 5000
+    out_traj_freq: 10000000
+    checkpoint_freq: 500
+    filenames:
+      sml_file_base: simulation_parameters
+      run_xml_base: run
+      out_xml: out.xml.gz
+      out_pdb: out.pdb
+      stdout: run.out
+      preproc_stdout: preproc.out
+      snap_xml: snap.xml.gz
+      trajectory: trajectory.pdb.gz
+      settings_file: deposit_settings.yml
+      merged_spf_file: merged.spf
+      merged_pdb_file: merged.pdb
+      sml_file: simulation.sml
+      PBC_structure: structurePBC.pdb.gz
+      structure: structure.cml
+      static_parameters: static_parameters.dpcf.gz
+    trajectory_subset: ''
+    trajectory_subset_stepmod: 1000
+  postrelaxation_steps: 0
+machineparams:
+  ncpu: 76
+  cpu_per_node: 76
+codeposit:
+  enabled: false
+  contains_crystal: false
+  mu0: 10.0
+  mu1: 10.0
+molecule:
+  '0':
+    spf: dihedral_forcefield_0.spf
+    pdb: molecule_0.pdb
+    conc: 0.74
+  '1':
+    pdb: molecule_1.pdb
+    spf: dihedral_forcefield_1.spf
+    conc: 0.26
+forcefields:
+  orientation:
+    enable: false
+  zdriving:
+    enable: true
+    steepness: 1.0
+  comdist:
+    enable: true
+    forceconst: 120.0
+  anndihedrals:
+    enable: false
+  ewald:
+    enable: false
+  polarization:
+    enable: false
+dihedralparametrization:
+  number_of_steps: 20
+  do_dihedralparametrization: false
+  spf_outfile: dihedralparametrization.spf
+dynamic:
+  dodynamic: false
+  stepmod: 300
+  toplayer: true
+  toplayerwidth: 15.0
+  extra_layerwidth: -1.0
+simulation:
+  mode: Deposit

@@ -1,0 +1,2429 @@
+parametrization_info:
+  internal_coulomb: true
+  internal_sixten: true
+residues:
+  AAA:
+    atoms:
+      C:
+        charge: 0.114104
+        charge_internal: 0.114104
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.2
+        sigma: 3.56
+        sigma_internal: 3.56
+      C1:
+        charge: 0.11443
+        charge_internal: 0.11443
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.2
+        sigma: 3.56
+        sigma_internal: 3.56
+      C10:
+        charge: 0.435764
+        charge_internal: 0.435764
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.1
+        sigma: 3.56
+        sigma_internal: 3.56
+      C11:
+        charge: 0.43586
+        charge_internal: 0.43586
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.1
+        sigma: 3.56
+        sigma_internal: 3.56
+      C2:
+        charge: 0.11489
+        charge_internal: 0.11489
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.2
+        sigma: 3.56
+        sigma_internal: 3.56
+      C3:
+        charge: -0.238112
+        charge_internal: -0.238112
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.2
+        sigma: 3.56
+        sigma_internal: 3.56
+      C4:
+        charge: -0.235785
+        charge_internal: -0.235785
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.2
+        sigma: 3.56
+        sigma_internal: 3.56
+      C5:
+        charge: -0.236839
+        charge_internal: -0.236839
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.2
+        sigma: 3.56
+        sigma_internal: 3.56
+      C6:
+        charge: 0.436467
+        charge_internal: 0.436467
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.1
+        sigma: 3.56
+        sigma_internal: 3.56
+      C7:
+        charge: 0.43653
+        charge_internal: 0.43653
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.1
+        sigma: 3.56
+        sigma_internal: 3.56
+      C8:
+        charge: 0.43517
+        charge_internal: 0.43517
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.1
+        sigma: 3.56
+        sigma_internal: 3.56
+      C9:
+        charge: 0.435262
+        charge_internal: 0.435262
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1505736138
+        mol2_atom_type: C.1
+        sigma: 3.56
+        sigma_internal: 3.56
+      N:
+        charge: -0.374781
+        charge_internal: -0.374781
+        epsilon: 0.1601338432
+        epsilon_internal: 0.1601338432
+        mol2_atom_type: N.1
+        sigma: 2.9
+        sigma_internal: 2.9
+      N1:
+        charge: -0.374704
+        charge_internal: -0.374704
+        epsilon: 0.1601338432
+        epsilon_internal: 0.1601338432
+        mol2_atom_type: N.1
+        sigma: 2.9
+        sigma_internal: 2.9
+      N2:
+        charge: -0.374486
+        charge_internal: -0.374486
+        epsilon: 0.1601338432
+        epsilon_internal: 0.1601338432
+        mol2_atom_type: N.1
+        sigma: 2.9
+        sigma_internal: 2.9
+      N3:
+        charge: -0.374458
+        charge_internal: -0.374458
+        epsilon: 0.1601338432
+        epsilon_internal: 0.1601338432
+        mol2_atom_type: N.1
+        sigma: 2.9
+        sigma_internal: 2.9
+      N4:
+        charge: -0.37468
+        charge_internal: -0.37468
+        epsilon: 0.1601338432
+        epsilon_internal: 0.1601338432
+        mol2_atom_type: N.1
+        sigma: 2.9
+        sigma_internal: 2.9
+      N5:
+        charge: -0.374631
+        charge_internal: -0.374631
+        epsilon: 0.1601338432
+        epsilon_internal: 0.1601338432
+        mol2_atom_type: N.1
+        sigma: 2.9
+        sigma_internal: 2.9
+    bonds:
+    - - N
+      - C6
+      - '3'
+    - - N1
+      - C7
+      - '3'
+    - - N2
+      - C8
+      - '3'
+    - - N3
+      - C9
+      - '3'
+    - - N4
+      - C10
+      - '3'
+    - - N5
+      - C11
+      - '3'
+    - - C
+      - C1
+      - '1'
+    - - C
+      - C2
+      - '1'
+    - - C
+      - C3
+      - '2'
+    - - C1
+      - C2
+      - '1'
+    - - C1
+      - C4
+      - '2'
+    - - C2
+      - C5
+      - '2'
+    - - C3
+      - C6
+      - '1'
+    - - C3
+      - C7
+      - '1'
+    - - C4
+      - C8
+      - '1'
+    - - C4
+      - C9
+      - '1'
+    - - C5
+      - C10
+      - '1'
+    - - C5
+      - C11
+      - '1'
+    moves: {}
+  FQY:
+    atoms:
+      C:
+        charge: 0.423128
+        charge_internal: 0.3618199648445394
+        epsilon: 0.1505736138
+        epsilon_internal: 0.11510003912122423
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.5881435970891506
+      C1:
+        charge: 0.423524
+        charge_internal: 0.2138165723164105
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1925684630898303
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.5906342479915456
+      C10:
+        charge: -0.081206
+        charge_internal: -0.09204042399338104
+        epsilon: 0.1505736138
+        epsilon_internal: 0.19835398832793436
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.578020727487384
+      C11:
+        charge: -0.137683
+        charge_internal: -0.19013365103771548
+        epsilon: 0.1505736138
+        epsilon_internal: 0.16516019859893488
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.6564128545421934
+      C12:
+        charge: -0.079532
+        charge_internal: -0.09859790252757536
+        epsilon: 0.1505736138
+        epsilon_internal: 0.15931378092364143
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.5520182514504417
+      C13:
+        charge: -0.295654
+        charge_internal: -0.1645674756892346
+        epsilon: 0.1505736138
+        epsilon_internal: 0.20569995334088095
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 4.011255972014165
+      C14:
+        charge: -0.300149
+        charge_internal: -0.15366192929091146
+        epsilon: 0.1505736138
+        epsilon_internal: 0.16370486052654423
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 4.040423236146998
+      C15:
+        charge: -0.238781
+        charge_internal: -0.3581715
+        epsilon: 0.1505736138
+        epsilon_internal: 0.16806031264463087
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.5275636339242813
+      C16:
+        charge: -0.240359
+        charge_internal: -0.3576285914794133
+        epsilon: 0.1505736138
+        epsilon_internal: 0.20147116538953241
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.5485352005619215
+      C17:
+        charge: 0.345094
+        charge_internal: 0.5152658962164821
+        epsilon: 0.1505736138
+        epsilon_internal: 0.16073447837758617
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.6059683569438614
+      C18:
+        charge: 0.375618
+        charge_internal: 0.18831931042468583
+        epsilon: 0.1505736138
+        epsilon_internal: 0.14104162181436616
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.641817686936563
+      C19:
+        charge: 0.32429
+        charge_internal: 0.4247755287618946
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1084379029834998
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.5464383330368965
+      C2:
+        charge: 0.337272
+        charge_internal: 0.18149624826847605
+        epsilon: 0.1505736138
+        epsilon_internal: 0.22433535731267504
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.631153531333405
+      C20:
+        charge: -0.318975
+        charge_internal: -0.1662301076216599
+        epsilon: 0.1505736138
+        epsilon_internal: 0.20992256294949754
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 4.079503151071062
+      C21:
+        charge: -0.319938
+        charge_internal: -0.16176425960744306
+        epsilon: 0.1505736138
+        epsilon_internal: 0.22459946858920948
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 4.0352405368212745
+      C22:
+        charge: -0.266652
+        charge_internal: -0.1456806616849094
+        epsilon: 0.1505736138
+        epsilon_internal: 0.2223346044173751
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 4.06576160091933
+      C23:
+        charge: -0.272711
+        charge_internal: -0.15625486177773856
+        epsilon: 0.1505736138
+        epsilon_internal: 0.2258604207
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.9762271134776643
+      C24:
+        charge: -0.191631
+        charge_internal: -0.10427640375027683
+        epsilon: 0.1505736138
+        epsilon_internal: 0.20837954043127913
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 4.5495455141376295
+      C25:
+        charge: -0.18698
+        charge_internal: -0.10050256731442635
+        epsilon: 0.1505736138
+        epsilon_internal: 0.22032300638300095
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 4.40983218169257
+      C26:
+        charge: -0.245634
+        charge_internal: -0.1290038038795183
+        epsilon: 0.1505736138
+        epsilon_internal: 0.2254384451939195
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.754099854791331
+      C27:
+        charge: -0.240138
+        charge_internal: -0.13267306046103977
+        epsilon: 0.1505736138
+        epsilon_internal: 0.22004130657233364
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 4.151952478336663
+      C28:
+        charge: 0.330252
+        charge_internal: 0.27883900725599364
+        epsilon: 0.1505736138
+        epsilon_internal: 0.21563171676076565
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.643439382573938
+      C29:
+        charge: 0.372923
+        charge_internal: 0.2801289626559985
+        epsilon: 0.1505736138
+        epsilon_internal: 0.13978174867273557
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.6913831899210146
+      C3:
+        charge: -0.067072
+        charge_internal: -0.09699785532740492
+        epsilon: 0.1505736138
+        epsilon_internal: 0.15948359906715254
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.5589581739819307
+      C30:
+        charge: 0.439029
+        charge_internal: 0.2212262201800596
+        epsilon: 0.1505736138
+        epsilon_internal: 0.07685596696715725
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.6116200219372767
+      C31:
+        charge: 0.430834
+        charge_internal: 0.4999007628506026
+        epsilon: 0.1505736138
+        epsilon_internal: 0.21861035224226444
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.6164638403036564
+      C32:
+        charge: 0.451987
+        charge_internal: 0.37476189631081785
+        epsilon: 0.1505736138
+        epsilon_internal: 0.18485825671832262
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.5612462812934953
+      C33:
+        charge: 0.458214
+        charge_internal: 0.4623481435416692
+        epsilon: 0.1505736138
+        epsilon_internal: 0.16238489794169786
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.4847209792593117
+      C34:
+        charge: -0.071021
+        charge_internal: -0.09713658338198722
+        epsilon: 0.1505736138
+        epsilon_internal: 0.14472912113113282
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.5563035278060764
+      C35:
+        charge: -0.372745
+        charge_internal: -0.5588349970706346
+        epsilon: 0.1505736138
+        epsilon_internal: 0.12625551677940539
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.5030871697042287
+      C36:
+        charge: -0.066398
+        charge_internal: -0.09558641238158638
+        epsilon: 0.1505736138
+        epsilon_internal: 0.22186103335177737
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.4954741795211066
+      C37:
+        charge: -0.366668
+        charge_internal: -0.3619159248402673
+        epsilon: 0.1505736138
+        epsilon_internal: 0.07546577003936504
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.453550189224854
+      C38:
+        charge: -0.070359
+        charge_internal: -0.06261671355732971
+        epsilon: 0.1505736138
+        epsilon_internal: 0.14102405461165107
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.5938586693602335
+      C39:
+        charge: -0.398773
+        charge_internal: -0.5483514543504056
+        epsilon: 0.1505736138
+        epsilon_internal: 0.07528887249206725
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.3746445997853347
+      C4:
+        charge: -0.364248
+        charge_internal: -0.4294448073866073
+        epsilon: 0.1505736138
+        epsilon_internal: 0.0752868069
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.5092390086576026
+      C40:
+        charge: -0.084948
+        charge_internal: -0.08437182867501702
+        epsilon: 0.1505736138
+        epsilon_internal: 0.13749408862196577
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.5489399858844606
+      C41:
+        charge: -0.400214
+        charge_internal: -0.5784378687771933
+        epsilon: 0.1505736138
+        epsilon_internal: 0.07529154346574182
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.452771907666458
+      C42:
+        charge: -0.135915
+        charge_internal: -0.20383670406374263
+        epsilon: 0.1505736138
+        epsilon_internal: 0.17030005940995677
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.531013594467739
+      C43:
+        charge: -0.078556
+        charge_internal: -0.10828478785730494
+        epsilon: 0.1505736138
+        epsilon_internal: 0.17500580439074898
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.592982866743724
+      C44:
+        charge: -0.138098
+        charge_internal: -0.20711443585113956
+        epsilon: 0.1505736138
+        epsilon_internal: 0.22586001456777827
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.6401277288305405
+      C45:
+        charge: -0.081497
+        charge_internal: -0.09779973105353851
+        epsilon: 0.1505736138
+        epsilon_internal: 0.17280661195159083
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.64157413943426
+      C46:
+        charge: -0.132702
+        charge_internal: -0.1799420089389229
+        epsilon: 0.1505736138
+        epsilon_internal: 0.16780799055352635
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.642638853704353
+      C47:
+        charge: -0.068425
+        charge_internal: -0.10080758491310618
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1368684567051265
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.529089089284326
+      C48:
+        charge: -0.125728
+        charge_internal: -0.18694965057581528
+        epsilon: 0.1505736138
+        epsilon_internal: 0.18303154313492234
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.5204581192263746
+      C49:
+        charge: -0.067485
+        charge_internal: -0.10112667804746597
+        epsilon: 0.1505736138
+        epsilon_internal: 0.20275192624473817
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.497630339091766
+      C5:
+        charge: -0.06502
+        charge_internal: -0.09639459855349858
+        epsilon: 0.1505736138
+        epsilon_internal: 0.16842802329085163
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.5253371122567705
+      C50:
+        charge: -0.242481
+        charge_internal: -0.36293241878534954
+        epsilon: 0.1505736138
+        epsilon_internal: 0.19300821217406058
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.6126734832714744
+      C51:
+        charge: -0.240697
+        charge_internal: -0.3422803114346898
+        epsilon: 0.1505736138
+        epsilon_internal: 0.18423246681696115
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.6004486204804143
+      C52:
+        charge: -0.245296
+        charge_internal: -0.35478383549513004
+        epsilon: 0.1505736138
+        epsilon_internal: 0.20013848927877206
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.5074434072561815
+      C53:
+        charge: -0.248674
+        charge_internal: -0.24970742140351546
+        epsilon: 0.1505736138
+        epsilon_internal: 0.20491477341705858
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.580096281091697
+      C6:
+        charge: -0.3673
+        charge_internal: -0.39917477319177375
+        epsilon: 0.1505736138
+        epsilon_internal: 0.20166385470254694
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.618738895051922
+      C7:
+        charge: -0.205685
+        charge_internal: -0.18338552494503144
+        epsilon: 0.1505736138
+        epsilon_internal: 0.22328631838280324
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 4.612282560417333
+      C8:
+        charge: -0.195511
+        charge_internal: -0.0977555
+        epsilon: 0.1505736138
+        epsilon_internal: 0.20720886447068393
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 4.014648880582926
+      C9:
+        charge: -0.138358
+        charge_internal: -0.09405313943724913
+        epsilon: 0.1505736138
+        epsilon_internal: 0.1257023983375424
+        mol2_atom_type: C.ar
+        sigma: 3.56
+        sigma_internal: 3.6318559901420264
+      H:
+        charge: 0.170118
+        charge_internal: 0.15451946692106813
+        epsilon: 0.0191204589
+        epsilon_internal: 0.01223373124984028
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.6791190192327907
+      H1:
+        charge: 0.171508
+        charge_internal: 0.17464621424736246
+        epsilon: 0.0191204589
+        epsilon_internal: 0.012376798755084448
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.7891560978901777
+      H10:
+        charge: 0.1487
+        charge_internal: 0.08976914025624391
+        epsilon: 0.0191204589
+        epsilon_internal: 0.011744424357509468
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.8196129444380864
+      H11:
+        charge: 0.149078
+        charge_internal: 0.09132122076807579
+        epsilon: 0.0191204589
+        epsilon_internal: 0.02867777966166596
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.854917831130833
+      H12:
+        charge: 0.187848
+        charge_internal: 0.23274002611667827
+        epsilon: 0.0191204589
+        epsilon_internal: 0.011530999318648549
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.6827078526769979
+      H13:
+        charge: 0.18821
+        charge_internal: 0.23027031010965626
+        epsilon: 0.0191204589
+        epsilon_internal: 0.013917563333220808
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.7081236501264714
+      H14:
+        charge: 0.180145
+        charge_internal: 0.24453867172194887
+        epsilon: 0.0191204589
+        epsilon_internal: 0.014876557825210773
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.7224521037879523
+      H15:
+        charge: 0.182699
+        charge_internal: 0.24812519757831314
+        epsilon: 0.0191204589
+        epsilon_internal: 0.011698166609971042
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.6998626382790256
+      H16:
+        charge: 0.159925
+        charge_internal: 0.23047068657163985
+        epsilon: 0.0191204589
+        epsilon_internal: 0.011066469195568468
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.747122531928174
+      H17:
+        charge: 0.159325
+        charge_internal: 0.23765826569700851
+        epsilon: 0.0191204589
+        epsilon_internal: 0.02749676026047522
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.85318056369766
+      H18:
+        charge: 0.171021
+        charge_internal: 0.19774521435252687
+        epsilon: 0.0191204589
+        epsilon_internal: 0.00956022945
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.8320560994242454
+      H19:
+        charge: 0.169476
+        charge_internal: 0.2537876996785314
+        epsilon: 0.0191204589
+        epsilon_internal: 0.02700374406862935
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.9349674876331056
+      H2:
+        charge: 0.162319
+        charge_internal: 0.22739676091165695
+        epsilon: 0.0191204589
+        epsilon_internal: 0.027903177568060454
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.6924360218378751
+      H20:
+        charge: 0.17315
+        charge_internal: 0.25208172939227663
+        epsilon: 0.0191204589
+        epsilon_internal: 0.012193214856674194
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.9134833005004477
+      H21:
+        charge: 0.171228
+        charge_internal: 0.10306491943627269
+        epsilon: 0.0191204589
+        epsilon_internal: 0.010953039613168906
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.7593783882454979
+      H22:
+        charge: 0.186711
+        charge_internal: 0.2759029064963982
+        epsilon: 0.0191204589
+        epsilon_internal: 0.010399481396435291
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.8520258867979316
+      H23:
+        charge: 0.186875
+        charge_internal: 0.2803125
+        epsilon: 0.0191204589
+        epsilon_internal: 0.018246732148762695
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.7552927154672684
+      H24:
+        charge: 0.143611
+        charge_internal: 0.07359438534539556
+        epsilon: 0.0191204589
+        epsilon_internal: 0.009578447864799252
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.9280121844951754
+      H25:
+        charge: 0.131682
+        charge_internal: 0.12654746388098081
+        epsilon: 0.0191204589
+        epsilon_internal: 0.028678857246657533
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.7653085063560259
+      H26:
+        charge: 0.143973
+        charge_internal: 0.08017531520317137
+        epsilon: 0.0191204589
+        epsilon_internal: 0.00957606804182383
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.7840631318999884
+      H27:
+        charge: 0.132294
+        charge_internal: 0.07365983748511316
+        epsilon: 0.0191204589
+        epsilon_internal: 0.011513551241395583
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.8081741485117828
+      H28:
+        charge: 0.143039
+        charge_internal: 0.1105487807958123
+        epsilon: 0.0191204589
+        epsilon_internal: 0.015213378509878552
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.9115540138410512
+      H29:
+        charge: 0.130244
+        charge_internal: 0.09788606932972405
+        epsilon: 0.0191204589
+        epsilon_internal: 0.028649689844418676
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.8750366007650487
+      H3:
+        charge: 0.159621
+        charge_internal: 0.21724889369129266
+        epsilon: 0.0191204589
+        epsilon_internal: 0.022763011908806273
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.7086338573224156
+      H30:
+        charge: 0.142155
+        charge_internal: 0.15309593567786378
+        epsilon: 0.0191204589
+        epsilon_internal: 0.02868035021892849
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.7824468557176618
+      H31:
+        charge: 0.130442
+        charge_internal: 0.06531056346323429
+        epsilon: 0.0191204589
+        epsilon_internal: 0.009622835664309685
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.8153936746553077
+      H32:
+        charge: 0.149378
+        charge_internal: 0.17238550381010034
+        epsilon: 0.0191204589
+        epsilon_internal: 0.028680497353841986
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.819738948855244
+      H33:
+        charge: 0.149111
+        charge_internal: 0.10101299658970478
+        epsilon: 0.0191204589
+        epsilon_internal: 0.011759481367762715
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.8258524829571285
+      H34:
+        charge: 0.149506
+        charge_internal: 0.09495513394912812
+        epsilon: 0.0191204589
+        epsilon_internal: 0.013300211564567788
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.7694112373653312
+      H35:
+        charge: 0.150247
+        charge_internal: 0.10969386289768471
+        epsilon: 0.0191204589
+        epsilon_internal: 0.009586310057108756
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.8421223542390024
+      H4:
+        charge: 0.143837
+        charge_internal: 0.16783710070339897
+        epsilon: 0.0191204589
+        epsilon_internal: 0.009564757648798801
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.751595498654226
+      H5:
+        charge: 0.132055
+        charge_internal: 0.08956591674772016
+        epsilon: 0.0191204589
+        epsilon_internal: 0.016340459054736477
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.7763125661871937
+      H6:
+        charge: 0.143822
+        charge_internal: 0.12584219264453694
+        epsilon: 0.0191204589
+        epsilon_internal: 0.00959407759752162
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.8799207055886147
+      H7:
+        charge: 0.131761
+        charge_internal: 0.13446542839453843
+        epsilon: 0.0191204589
+        epsilon_internal: 0.02267862330251578
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.806084393105477
+      H8:
+        charge: 0.184195
+        charge_internal: 0.2762925
+        epsilon: 0.0191204589
+        epsilon_internal: 0.011108509180417087
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.6353951886830245
+      H9:
+        charge: 0.184419
+        charge_internal: 0.2682908398429249
+        epsilon: 0.0191204589
+        epsilon_internal: 0.011596149681393221
+        mol2_atom_type: H
+        sigma: 1.78
+        sigma_internal: 1.7013150944501723
+      N:
+        charge: -0.492546
+        charge_internal: -0.7377162921140127
+        epsilon: 0.1601338432
+        epsilon_internal: 0.11534013046768649
+        mol2_atom_type: N.ar
+        sigma: 2.9
+        sigma_internal: 2.9294641723429975
+      N1:
+        charge: -0.428689
+        charge_internal: -0.3428368608524063
+        epsilon: 0.1601338432
+        epsilon_internal: 0.2390419306281006
+        mol2_atom_type: N.pl3
+        sigma: 2.9
+        sigma_internal: 2.9130174438319156
+      N2:
+        charge: -0.508042
+        charge_internal: -0.5102554424431909
+        epsilon: 0.1601338432
+        epsilon_internal: 0.21506446213643354
+        mol2_atom_type: N.ar
+        sigma: 2.9
+        sigma_internal: 2.9416187448762283
+      N3:
+        charge: -0.520721
+        charge_internal: -0.6085714611722354
+        epsilon: 0.1601338432
+        epsilon_internal: 0.19355096385773696
+        mol2_atom_type: N.ar
+        sigma: 2.9
+        sigma_internal: 2.9519280895023807
+    bonds:
+    - - H32
+      - C50
+      - '1'
+    - - H25
+      - C43
+      - '1'
+    - - H34
+      - C52
+      - '1'
+    - - C50
+      - C43
+      - ar
+    - - C50
+      - C42
+      - ar
+    - - H29
+      - C47
+      - '1'
+    - - C43
+      - C35
+      - ar
+    - - C52
+      - C47
+      - ar
+    - - C52
+      - C46
+      - ar
+    - - C47
+      - C39
+      - ar
+    - - H24
+      - C42
+      - '1'
+    - - C42
+      - C34
+      - ar
+    - - C35
+      - H20
+      - '1'
+    - - C35
+      - C30
+      - ar
+    - - H28
+      - C46
+      - '1'
+    - - C46
+      - C38
+      - ar
+    - - C39
+      - H22
+      - '1'
+    - - C39
+      - C32
+      - ar
+    - - H16
+      - C24
+      - '1'
+    - - C34
+      - C30
+      - ar
+    - - C34
+      - C36
+      - ar
+    - - C30
+      - N2
+      - ar
+    - - C38
+      - C32
+      - ar
+    - - C38
+      - C40
+      - ar
+    - - H12
+      - C20
+      - '1'
+    - - C32
+      - N3
+      - ar
+    - - C24
+      - C20
+      - ar
+    - - C24
+      - C28
+      - ar
+    - - H26
+      - C44
+      - '1'
+    - - C36
+      - C44
+      - ar
+    - - C36
+      - C31
+      - ar
+    - - C20
+      - C18
+      - ar
+    - - N2
+      - C28
+      - '1'
+    - - N2
+      - C31
+      - ar
+    - - H30
+      - C48
+      - '1'
+    - - H19
+      - C27
+      - '1'
+    - - C44
+      - C51
+      - ar
+    - - C40
+      - C48
+      - ar
+    - - C40
+      - C33
+      - ar
+    - - N3
+      - C29
+      - '1'
+    - - N3
+      - C33
+      - ar
+    - - C28
+      - C25
+      - ar
+    - - C31
+      - C37
+      - ar
+    - - C27
+      - C29
+      - ar
+    - - C27
+      - C23
+      - ar
+    - - C29
+      - C26
+      - ar
+    - - C48
+      - C53
+      - ar
+    - - H15
+      - C23
+      - '1'
+    - - C33
+      - C41
+      - ar
+    - - C23
+      - C19
+      - ar
+    - - C26
+      - H18
+      - '1'
+    - - C26
+      - C22
+      - ar
+    - - C18
+      - N1
+      - '1'
+    - - C18
+      - C21
+      - ar
+    - - H9
+      - C14
+      - '1'
+    - - C19
+      - C22
+      - ar
+    - - C19
+      - N1
+      - '1'
+    - - C51
+      - H33
+      - '1'
+    - - C51
+      - C45
+      - ar
+    - - C22
+      - H14
+      - '1'
+    - - C37
+      - C45
+      - ar
+    - - C37
+      - H21
+      - '1'
+    - - N1
+      - C17
+      - '1'
+    - - C25
+      - C21
+      - ar
+    - - C25
+      - H17
+      - '1'
+    - - C53
+      - H35
+      - '1'
+    - - C53
+      - C49
+      - ar
+    - - H5
+      - C10
+      - '1'
+    - - C41
+      - C49
+      - ar
+    - - C41
+      - H23
+      - '1'
+    - - C45
+      - H27
+      - '1'
+    - - C21
+      - H13
+      - '1'
+    - - C14
+      - C17
+      - ar
+    - - C14
+      - C8
+      - ar
+    - - H
+      - C4
+      - '1'
+    - - C49
+      - H31
+      - '1'
+    - - C17
+      - C13
+      - ar
+    - - H3
+      - C8
+      - '1'
+    - - C10
+      - C4
+      - ar
+    - - C10
+      - C15
+      - ar
+    - - C8
+      - C2
+      - ar
+    - - C4
+      - C
+      - ar
+    - - C13
+      - H8
+      - '1'
+    - - C13
+      - C7
+      - ar
+    - - H10
+      - C15
+      - '1'
+    - - C15
+      - C9
+      - ar
+    - - C2
+      - C7
+      - ar
+    - - C2
+      - N
+      - '1'
+    - - C
+      - N
+      - ar
+    - - C
+      - C3
+      - ar
+    - - C7
+      - H2
+      - '1'
+    - - N
+      - C1
+      - ar
+    - - C9
+      - C3
+      - ar
+    - - C9
+      - H4
+      - '1'
+    - - C3
+      - C5
+      - ar
+    - - C1
+      - C5
+      - ar
+    - - C1
+      - C6
+      - ar
+    - - C5
+      - C11
+      - ar
+    - - H1
+      - C6
+      - '1'
+    - - C6
+      - C12
+      - ar
+    - - C11
+      - H6
+      - '1'
+    - - C11
+      - C16
+      - ar
+    - - C12
+      - C16
+      - ar
+    - - C12
+      - H7
+      - '1'
+    - - C16
+      - H11
+      - '1'
+    dihedrals:
+      C1.N.C2.C7:
+        spline:
+        - -1.0031855065492392
+        - 5.279999800630347
+        - 0.03490658503988659
+        - 0.0
+        - 0.030583675567897296
+        - 0.08004029414817869
+        - 0.15081818476958753
+        - 0.2448604315461757
+        - 0.3646384056972468
+        - 0.5132352846385098
+        - 0.693552166876658
+        - 0.9082334889699841
+        - 1.1608380646344485
+        - 1.4561547342227086
+        - 1.7991290758069798
+        - 2.1941702357280404
+        - 2.6453708118262673
+        - 3.1566655476570893
+        - 3.7305809195042654
+        - 4.366554684072376
+        - 5.059188661394084
+        - 5.797041808634706
+        - 6.561870810280452
+        - 7.328775763848992
+        - 8.066785476633502
+        - 8.740545818095377
+        - 9.314208561464099
+        - 9.758191709740341
+        - 10.05818911195508
+        - 10.22277181624578
+        - 10.284464008901018
+        - 10.290394792071547
+        - 10.2847999557297
+        - 10.29165343633239
+        - 10.30643056096799
+        - 10.298736186372693
+        - 10.223185602776903
+        - 10.03580132163426
+        - 9.709751439163043
+        - 9.242479652696993
+        - 8.652003712553679
+        - 7.9688002865611605
+        - 7.228477176592324
+        - 6.465951196222279
+        - 5.711461272955275
+        - 4.98851169008056
+        - 4.313623225446907
+        - 3.696861305655414
+        - 3.142899081441888
+        - 2.6520329115528685
+        - 2.221501549159071
+        - 1.846921530043888
+        - 1.523299531552592
+        - 1.2452743565367517
+        - 1.0074127022002601
+        - 0.8054093934556232
+        - 0.6368490788522503
+        - 0.5000959190730945
+        - 0.3926670617389183
+        - 0.31110795424036214
+        - 0.251666325347381
+        - 0.21059017744025949
+        - 0.18409281681301373
+        - 0.1687623190096395
+        - 0.16214132294796701
+        - 0.16277817051067636
+        - 0.16980333042140053
+        - 0.18209432293845823
+        - 0.19797766169971154
+        - 0.21560189735112126
+        - 0.23322134574592565
+        - 0.24914584675888468
+        - 0.2618139496445658
+        - 0.27017132054857396
+        - 0.2741066051075188
+        - 0.2743320787829057
+        - 0.2717753644969325
+        - 0.2668517822307968
+        - 0.25919318578481426
+        - 0.24800266975398735
+        - 0.23273339905320403
+        - 0.21332021796121264
+        - 0.19025808213201784
+        - 0.16437947667542568
+        - 0.1367757139519462
+        - 0.10850023489972453
+        - 0.08032787910479934
+        - 0.05309040628754302
+        - 0.02794459885953753
+        - 0.006535867010370616
+        - -0.009164490683917606
+        - -0.017089862690678154
+        - -0.014953493518264662
+        - -0.00011940674060747678
+        - 0.03043689272751644
+        - 0.07983153736382706
+        - 0.15056687012481101
+        - 0.2445830223173578
+        - 0.3643283883902447
+        - 0.5128662241266398
+        - 0.6931423268314826
+        - 0.907804190777525
+        - 1.1603950975756316
+        - 1.4557035775614322
+        - 1.7986700202367165
+        - 2.193670289556041
+        - 2.6448385891010666
+        - 3.1561181433392678
+        - 3.7300812752277985
+        - 4.3660822344223025
+        - 5.058720350009234
+        - 5.7965139418867775
+        - 6.561280518089501
+        - 7.328143916326029
+        - 8.066108537456028
+        - 8.739803543123527
+        - 9.313253665893159
+        - 9.756841734071285
+        - 10.05626387518801
+        - 10.22029278466537
+        - 10.281599376854249
+        - 10.28744022915419
+        - 10.282037385432965
+        - 10.289238158311308
+        - 10.304440183882498
+        - 10.29719312431382
+        - 10.222107617731922
+        - 10.035161670195784
+        - 9.70946800232946
+        - 9.24242992568582
+        - 8.652055279895379
+        - 7.968864244278041
+        - 7.228501731005054
+        - 6.465961730808093
+        - 5.711503436111095
+        - 4.988620237823679
+        - 4.313784391060968
+        - 3.697063861539124
+        - 3.143116709810148
+        - 2.6522792615564104
+        - 2.2218346446712585
+        - 1.8473543262477983
+        - 1.5238151868222454
+        - 1.245799940976854
+        - 1.0079099184861031
+        - 0.8058421342653439
+        - 0.6372017986942898
+        - 0.5003981738001873
+        - 0.3929487772078596
+        - 0.3113500875082446
+        - 0.2518793232878839
+        - 0.21075080227484477
+        - 0.18419491071296223
+        - 0.1688537202626991
+        - 0.16231460039797307
+        - 0.1630582108794867
+        - 0.17013962227354756
+        - 0.18240405145633834
+        - 0.19817187104009282
+        - 0.21568863507433478
+        - 0.23323021592957643
+        - 0.24917419267705399
+        - 0.2618821271776731
+        - 0.27028735838147827
+        - 0.2742646624858261
+        - 0.2744970473845174
+        - 0.2719367522478546
+        - 0.2669883010151271
+        - 0.2592958434844725
+        - 0.24809940178763232
+        - 0.2328521161949613
+        - 0.21350419948420943
+        - 0.190504388783585
+        - 0.16466666059827703
+        - 0.137076131093019
+        - 0.10874924858524464
+        - 0.08050083455157361
+        - 0.05316721338403959
+        - 0.02796515116808951
+        - 0.006572320643936384
+        - -0.009080086798008315
+        - -0.01698405149894201
+        - -0.01484059786335709
+        - 0.0
+      C13.C17.N1.C19:
+        spline:
+        - -0.7214559529280372
+        - 5.561729354251549
+        - 0.03490658503988659
+        - 0.0
+        - -0.11860178894625856
+        - -0.23404051696185574
+        - -0.3458953785735468
+        - -0.45376427081640414
+        - -0.5572715859538848
+        - -0.6560736663577804
+        - -0.7498580252447153
+        - -0.8383238648688907
+        - -0.9211696081572187
+        - -0.9980952365352657
+        - -1.0688225509909222
+        - -1.1331099781872496
+        - -1.1907681559380523
+        - -1.2416622709983824
+        - -1.2856941358055511
+        - -1.3227764725213313
+        - -1.3528134312247035
+        - -1.3756943556975276
+        - -1.3913109274909075
+        - -1.3995774269038115
+        - -1.4004447598891157
+        - -1.3939051337338404
+        - -1.3799819264564392
+        - -1.3587218941363444
+        - -1.3301881574574004
+        - -1.2944586431595992
+        - -1.2516330975169072
+        - -1.2018424375418117
+        - -1.1452534266939063
+        - -1.0820655577408342
+        - -1.0125040393584217
+        - -0.9368096655704938
+        - -0.8552271266829472
+        - -0.7680042300698607
+        - -0.6754051477239009
+        - -0.5777314566614558
+        - -0.47531824252007715
+        - -0.36853721671171136
+        - -0.2577741174976493
+        - -0.14342013802621897
+        - -0.025854782372734933
+        - 0.09452374286499644
+        - 0.2172915151242859
+        - 0.34196772500437894
+        - 0.46801545549452017
+        - 0.5948588259836171
+        - 0.7218853300649196
+        - 0.8484809027479749
+        - 0.9740127764914887
+        - 1.0978302604313888
+        - 1.2192553891904545
+        - 1.3375860398897994
+        - 1.452096711433635
+        - 1.5620377452741183
+        - 1.6666392217217745
+        - 1.765124207580951
+        - 1.8567103146980837
+        - 1.940630740288868
+        - 2.0161506316348112
+        - 2.0825834508223022
+        - 2.1393050015777852
+        - 2.1857635598562926
+        - 2.221489225060165
+        - 2.2460946993379944
+        - 2.2593048998953593
+        - 2.260964751707812
+        - 2.2510462009845265
+        - 2.2296443188011805
+        - 2.196978859641131
+        - 2.1533864686611737
+        - 2.0993160061034457
+        - 2.035312182563437
+        - 1.962006986978071
+        - 1.880100984159915
+        - 1.790330585340291
+        - 1.693447007849193
+        - 1.5901952347810266
+        - 1.48132570407471
+        - 1.3675748266993313
+        - 1.2496852477674287
+        - 1.1284120806500961
+        - 1.004515893612551
+        - 0.878743227936006
+        - 0.7518055576542821
+        - 0.624366041890005
+        - 0.4970504347137287
+        - 0.3704385130894923
+        - 0.24508200021885918
+        - 0.12149755201347673
+        - 0.0001753291566078825
+        - -0.1184202236758919
+        - -0.23384492285057537
+        - -0.3456779629012853
+        - -0.4535289299361077
+        - -0.5570284503973888
+        - -0.6558391008287214
+        - -0.7496429395526056
+        - -0.8381290382984944
+        - -0.9209895858073234
+        - -0.9979230049847428
+        - -1.0686557724209167
+        - -1.1329502111743772
+        - -1.1906239724871444
+        - -1.2415430223848603
+        - -1.2856021598766192
+        - -1.3227086522158953
+        - -1.352757298213335
+        - -1.3756397794980035
+        - -1.3912508946820992
+        - -1.3995088204317117
+        - -1.4003668005327472
+        - -1.393815483702698
+        - -1.379876689447188
+        - -1.358593277471442
+        - -1.3300299270146574
+        - -1.2942669026356812
+        - -1.2514125225778743
+        - -1.2016062758727304
+        - -1.145020380866881
+        - -1.0818527717938777
+        - -1.0123263195036045
+        - -0.9366724667657277
+        - -0.8551296697285169
+        - -0.7679363844835434
+        - -0.6753552244964693
+        - -0.5776854289577407
+        - -0.47526520060144084
+        - -0.3684717057478159
+        - -0.25769613753810666
+        - -0.14333514405020334
+        - -0.0257760220653129
+        - 0.09458380109643488
+        - 0.2173188443240848
+        - 0.34195375310391973
+        - 0.4679601824371034
+        - 0.5947700444184358
+        - 0.7217840802624469
+        - 0.8483804322657037
+        - 0.9739224365127027
+        - 1.0977477130876212
+        - 1.2191759587802078
+        - 1.3375050507115762
+        - 1.4520063707035809
+        - 1.5619364943943552
+        - 1.6665356326049978
+        - 1.765023735078761
+        - 1.856612179469016
+        - 1.9405287080973348
+        - 2.0160314548170075
+        - 2.0824338816718995
+        - 2.1391180265956935
+        - 2.185544633887024
+        - 2.2212500371200345
+        - 2.2458523933587027
+        - 2.259071944156723
+        - 2.2607419254308083
+        - 2.2508280492183315
+        - 2.2294246073102046
+        - 2.1967575883686754
+        - 2.1531737681036365
+        - 2.0991259031030842
+        - 2.035156366136565
+        - 1.9618854570892517
+        - 1.8800012724159332
+        - 1.7902332099055405
+        - 1.6933332661586575
+        - 1.590056554808612
+        - 1.4811574101472689
+        - 1.3673870493132614
+        - 1.249491234508573
+        - 1.128224299840795
+        - 1.0043421379303477
+        - 0.8785780424584257
+        - 0.7516411496329077
+        - 0.6241961771317724
+        - 0.49687199609375665
+        - 0.3702546176972251
+        - 0.24489966146125036
+        - 0.12131988697288344
+        - 0.0
+      C17.N1.C18.C21:
+        spline:
+        - -0.689021486768077
+        - 5.594163820411509
+        - 0.03490658503988659
+        - 0.0
+        - -0.1091868173579268
+        - -0.21505851994753494
+        - -0.3173328619815224
+        - -0.4156674827316027
+        - -0.5096489098633618
+        - -0.5988805325373753
+        - -0.6829774696072495
+        - -0.7616611406784851
+        - -0.8347064822798126
+        - -0.9019419478431878
+        - -0.9632267812922786
+        - -1.0184128954117637
+        - -1.067325077860744
+        - -1.109735332402978
+        - -1.1453408855765947
+        - -1.173839696940944
+        - -1.1951152025402672
+        - -1.2092546426278195
+        - -1.216505808233211
+        - -1.2170944970024231
+        - -1.2111211448508374
+        - -1.1984809170756652
+        - -1.178941417933158
+        - -1.1522805150967939
+        - -1.118490877067534
+        - -1.0777968347154874
+        - -1.030600131175439
+        - -0.9772519250038585
+        - -0.9179567528508988
+        - -0.8527505362634611
+        - -0.7816105479765794
+        - -0.704595435775312
+        - -0.6219390604190379
+        - -0.5340336341798041
+        - -0.4413116902840519
+        - -0.3442086943364744
+        - -0.24315351395067908
+        - -0.13853542884043704
+        - -0.030607360410453508
+        - 0.08044521594786315
+        - 0.19437670990878791
+        - 0.31076411877523796
+        - 0.42899089905834276
+        - 0.5483965207286746
+        - 0.668326318586652
+        - 0.7882605194726227
+        - 0.9078149753414226
+        - 1.026587943531666
+        - 1.1440530527525956
+        - 1.2594808605523309
+        - 1.3720172958496206
+        - 1.480806088212849
+        - 1.585073075354988
+        - 1.6841775207798033
+        - 1.777599650907585
+        - 1.8647881684056582
+        - 1.9450070324310018
+        - 2.01729293829882
+        - 2.0807243684545007
+        - 2.134610001503451
+        - 2.1785246345781104
+        - 2.2123605008908123
+        - 2.236026695128878
+        - 2.249299619170047
+        - 2.251759934729904
+        - 2.2429487155908596
+        - 2.22268854928821
+        - 2.1912910070186618
+        - 2.1494628056093568
+        - 2.098091006690387
+        - 2.0378705972091695
+        - 1.9692260468986982
+        - 1.8924198082931185
+        - 1.8077913103225458
+        - 1.7159636950536832
+        - 1.6178548142682867
+        - 1.5144866211963157
+        - 1.4067476431569186
+        - 1.2952954781013126
+        - 1.1806946190643044
+        - 1.0635205556925018
+        - 0.9444426155234721
+        - 0.8241851092204718
+        - 0.7034503541498088
+        - 0.5828600256423179
+        - 0.46294929215018077
+        - 0.3441932071579241
+        - 0.22712547284859252
+        - 0.1122629298702354
+        - 6.157083535505722e-05
+        - -0.10912671313842302
+        - -0.21499841610808368
+        - -0.31728668757885364
+        - -0.41565283236860423
+        - -0.509675313956043
+        - -0.5989318626586392
+        - -0.683048593981807
+        - -0.7617417957690937
+        - -0.834772475479164
+        - -0.9019852149310661
+        - -0.9632370587247733
+        - -1.0183975142611876
+        - -1.0672972340759292
+        - -1.1097038232653653
+        - -1.1453262381273321
+        - -1.1738580395537874
+        - -1.195154072340945
+        - -1.2093103740701743
+        - -1.2165600735531157
+        - -1.217143630640385
+        - -1.2111534170471503
+        - -1.1985043920105398
+        - -1.1789590280248512
+        - -1.1523010576267467
+        - -1.1185048216064017
+        - -1.0778093129985535
+        - -1.030611143196036
+        - -0.9772622038298789
+        - -0.9179611667203891
+        - -0.852744686489027
+        - -0.7816046980754613
+        - -0.7045866532825797
+        - -0.6219273453280237
+        - -0.5340131216006536
+        - -0.44128604572958496
+        - -0.34417058670770784
+        - -0.2431102743199256
+        - -0.1384965876037034
+        - -0.03057731620846024
+        - 0.08046646312845121
+        - 0.194378896564066
+        - 0.3107399138262258
+        - 0.4289461674015625
+        - 0.5483393265576721
+        - 0.6682647261283112
+        - 0.7882143226801954
+        - 0.9077768431425967
+        - 1.0265571428118754
+        - 1.1440229855674287
+        - 1.2594500606726564
+        - 1.3719989592576085
+        - 1.4808031473534267
+        - 1.5850906620034442
+        - 1.6842009727648422
+        - 1.7776157722670396
+        - 1.864786695628956
+        - 1.944976235785107
+        - 2.017243814422206
+        - 2.0806745119700576
+        - 2.13456747661806
+        - 2.178507035894659
+        - 2.2123524331434425
+        - 2.2360296245333853
+        - 2.2493113464027377
+        - 2.2517738618196956
+        - 2.242967774962677
+        - 2.222711274739592
+        - 2.1912998039200504
+        - 2.149460606412347
+        - 2.09806974718143
+        - 2.0378332098331926
+        - 1.9691813289571454
+        - 1.892372891554611
+        - 1.8077568569650466
+        - 1.7159387726189304
+        - 1.6178408889920786
+        - 1.5144734295414102
+        - 1.4067241884781745
+        - 1.2952610272841645
+        - 1.1806543038773734
+        - 1.0634802409923048
+        - 0.9443935039952298
+        - 0.824121335987665
+        - 0.703366787443816
+        - 0.5827669289870467
+        - 0.46285399661127624
+        - 0.3441081755829879
+        - 0.22706096874819695
+        - 0.11220135862815753
+        - 0.0
+      C17.N1.C19.C22:
+        spline:
+        - 2.417439833603529
+        - 8.700625140783115
+        - 0.03490658503988659
+        - 0.0
+        - -0.10117624200320477
+        - -0.1995496533861288
+        - -0.2948144353334065
+        - -0.3867267485035222
+        - -0.47503808989838353
+        - -0.5594653125255242
+        - -0.6396986201366716
+        - -0.7153789153806104
+        - -0.7861131230990649
+        - -0.8515707937888629
+        - -0.9115087541140225
+        - -0.9658297352067194
+        - -1.0145217456953104
+        - -1.0575774577253645
+        - -1.0949175904681336
+        - -1.126320289666289
+        - -1.1515157323281255
+        - -1.170284062740077
+        - -1.1826386058057456
+        - -1.1888032152654202
+        - -1.189005742158991
+        - -1.1832575124524416
+        - -1.1713120207219487
+        - -1.1528541397058987
+        - -1.1276859986537244
+        - -1.0959714899938888
+        - -1.0582069552258169
+        - -1.0149633535664446
+        - -0.9665205013746381
+        - -0.9128270982341561
+        - -0.8535920006325206
+        - -0.7885866906457046
+        - -0.7179244266792617
+        - -0.6421195379566081
+        - -0.5618728982676077
+        - -0.47779077657461233
+        - -0.39017097701501263
+        - -0.29900283885276413
+        - -0.2041877588882509
+        - -0.10581167980517764
+        - -0.00429898949242294
+        - 0.0996667604391164
+        - 0.20534072512230386
+        - 0.3120866553175834
+        - 0.41951947072037454
+        - 0.527455958955079
+        - 0.6357535476656169
+        - 0.7441217612537334
+        - 0.8520109603627992
+        - 0.9586529818912698
+        - 1.0631830592875546
+        - 1.1647704036859374
+        - 1.2627241346637155
+        - 1.356531255311506
+        - 1.4457214074771063
+        - 1.5297402878564628
+        - 1.6078597068954465
+        - 1.679220227522798
+        - 1.7429903943037486
+        - 1.798549280652335
+        - 1.845523131527078
+        - 1.8837713725703198
+        - 1.9131787461419805
+        - 1.9335054093881954
+        - 1.9443163138052277
+        - 1.945122446123763
+        - 1.9356419907928237
+        - 1.9159808784483638
+        - 1.886594144582934
+        - 1.8480940550686922
+        - 1.8009936073421837
+        - 1.7456352437264033
+        - 1.6822714653128188
+        - 1.6112933491582737
+        - 1.5333711229032
+        - 1.4494301805074368
+        - 1.360429893640935
+        - 1.2670877921700423
+        - 1.1698369253882064
+        - 1.0689790950959799
+        - 0.9649473504898608
+        - 0.8584085877041355
+        - 0.7502542225704383
+        - 0.6413523528132409
+        - 0.5323965236711529
+        - 0.4238197841407142
+        - 0.3159279331160619
+        - 0.20905941477228301
+        - 0.10361463272801819
+        - 6.46110016391359e-05
+        - -0.10108564856930295
+        - -0.19941175813228554
+        - -0.29463190317247784
+        - -0.38651690140845785
+        - -0.4748109213090567
+        - -0.5592314821297151
+        - -0.639464790207431
+        - -0.7151444196700316
+        - -0.7858926186672415
+        - -0.8513722753743632
+        - -0.911353541080288
+        - -0.9657158288524448
+        - -1.0144378200605715
+        - -1.057515518017059
+        - -1.0948529861257017
+        - -1.1262436934371705
+        - -1.1514104884266845
+        - -1.1701608308177371
+        - -1.1825187052259487
+        - -1.18869130961809
+        - -1.1889224845717807
+        - -1.1832022366592665
+        - -1.171290056548521
+        - -1.1528568261172685
+        - -1.1276993447771115
+        - -1.0959821711983606
+        - -1.0582123065500426
+        - -1.0149553802233817
+        - -0.9665025344826338
+        - -0.912801136464219
+        - -0.8535547127996508
+        - -0.7885374104898764
+        - -0.7178558256431613
+        - -0.6420269523957775
+        - -0.5617643229145557
+        - -0.47768020225970376
+        - -0.3900737270220109
+        - -0.2989428974579666
+        - -0.20417578576125964
+        - -0.1058390139292211
+        - -0.004351639988661561
+        - 0.09960145197188651
+        - 0.20526342493804892
+        - 0.31201668412691436
+        - 0.41944017278007034
+        - 0.5273626706570379
+        - 0.6356462690340763
+        - 0.7440151493851428
+        - 0.8519196723414899
+        - 0.9586010020541325
+        - 1.063179714868971
+        - 1.1647990389426865
+        - 1.2627627639844492
+        - 1.3565525632652236
+        - 1.4456947474478061
+        - 1.5296596637887039
+        - 1.6077237863297718
+        - 1.679053661013708
+        - 1.7428231622435748
+        - 1.7983913765112478
+        - 1.8453845487691876
+        - 1.8836381203652615
+        - 1.9130461608755929
+        - 1.933370159905775
+        - 1.9441810650438682
+        - 1.9449998564664897
+        - 1.9355367238598578
+        - 1.9158809420864078
+        - 1.8864755544914527
+        - 1.8479361581018552
+        - 1.800791073650041
+        - 1.7454007316859221
+        - 1.6820416176196777
+        - 1.6111028098007882
+        - 1.5332412112629892
+        - 1.4493482382014748
+        - 1.3603646078174325
+        - 1.2670098486785155
+        - 1.1697263373004338
+        - 1.0688311987856818
+        - 0.96477680302319
+        - 0.8582280474641184
+        - 0.7500690193888458
+        - 0.6411738126075821
+        - 0.5322246464232498
+        - 0.4236638970788892
+        - 0.31580002837543397
+        - 0.2089681533393271
+        - 0.10354668997180157
+        - 0.0
+      C25.C28.N2.C31:
+        spline:
+        - -1.0120792556744351
+        - 5.271106051505151
+        - 0.03490658503988659
+        - 0.0
+        - 0.01881525933667681
+        - 0.0525056781378652
+        - 0.10350218877474103
+        - 0.17292634715763291
+        - 0.2621186040838392
+        - 0.37317188089605574
+        - 0.5084200234593079
+        - 0.6701371692424994
+        - 0.8615095718415795
+        - 1.086685052137023
+        - 1.3494709708827861
+        - 1.652607631723576
+        - 1.9981575658269752
+        - 2.388121059124866
+        - 2.8245828006710014
+        - 3.3081852517045593
+        - 3.8351825671978306
+        - 4.396390545189883
+        - 4.9777757726434935
+        - 5.5606841253115515
+        - 6.121915458654105
+        - 6.634748073046029
+        - 7.072178567005255
+        - 7.41214528255078
+        - 7.64404804312642
+        - 7.774369967516655
+        - 7.826671983152757
+        - 7.83447061679449
+        - 7.829717778516083
+        - 7.831331746199289
+        - 7.837664564497015
+        - 7.827136108963072
+        - 7.767458284409469
+        - 7.627030302748812
+        - 7.383751636669284
+        - 7.031943050662952
+        - 6.583140128316979
+        - 6.060637644856428
+        - 5.493564888574584
+        - 4.910219225306735
+        - 4.33382658156001
+        - 3.7824041827876975
+        - 3.2682686390325335
+        - 2.7988259429440085
+        - 2.3781586496568994
+        - 2.0065165842569876
+        - 1.681388188291135
+        - 1.3991326903300163
+        - 1.1550867634961364
+        - 0.9444978753004177
+        - 0.7636573601327714
+        - 0.6103534666431879
+        - 0.48335217717699275
+        - 0.38102348092367117
+        - 0.3008229736908645
+        - 0.23960263612569552
+        - 0.19463460324206672
+        - 0.16353881957277572
+        - 0.14387137963115165
+        - 0.13368120849903653
+        - 0.13198155942519496
+        - 0.1377309025644458
+        - 0.14874867896249105
+        - 0.16203144672670572
+        - 0.1750010390285621
+        - 0.18665960957653108
+        - 0.1973698455402496
+        - 0.2079855328651151
+        - 0.2187374905518849
+        - 0.22862240732572972
+        - 0.23570664048697065
+        - 0.23836388008530301
+        - 0.23613783397271085
+        - 0.2296343806474786
+        - 0.21980340890526934
+        - 0.20747786781007307
+        - 0.19317121408652133
+        - 0.1768919548956628
+        - 0.15845551616677023
+        - 0.1379567679151024
+        - 0.11607240912209918
+        - 0.09368819692603085
+        - 0.07148422002651332
+        - 0.04996309347979856
+        - 0.029951588942956815
+        - 0.012967056575640599
+        - 0.0005445370132904915
+        - -0.006383222879014153
+        - -0.007015962835193851
+        - 0.00042041639239327354
+        - 0.01910653174444266
+        - 0.052681079684906366
+        - 0.1036304669486356
+        - 0.17298698379843763
+        - 0.26197008073795436
+        - 0.37275183336926676
+        - 0.5077912042952797
+        - 0.669468672489212
+        - 0.8609474084564955
+        - 1.0864145752877823
+        - 1.349526204374738
+        - 1.6528665340120736
+        - 1.9984361055199311
+        - 2.3881824602175823
+        - 2.824290298982425
+        - 3.307570025327975
+        - 3.8344786999842686
+        - 4.395804122232552
+        - 4.9773944904765735
+        - 5.560472537808929
+        - 6.121803426196697
+        - 6.634709117343971
+        - 7.072276427598188
+        - 7.412451288685757
+        - 7.644581978743551
+        - 7.775144667417541
+        - 7.827650333950741
+        - 7.835541146267678
+        - 7.830756633122146
+        - 7.832224819500343
+        - 7.838334510377411
+        - 7.827418264857856
+        - 7.767268108583124
+        - 7.626343822534078
+        - 7.38276143592459
+        - 7.030915217019474
+        - 6.582305283710286
+        - 6.060184303333494
+        - 5.493528850482125
+        - 4.910476151761956
+        - 4.3341396277866595
+        - 3.7825295139335275
+        - 3.268091780093807
+        - 2.7983860070779527
+        - 2.3775379305485917
+        - 2.005826248296173
+        - 1.6807571674953241
+        - 1.3984738705393305
+        - 1.1542467375138632
+        - 0.9433783399291578
+        - 0.762317613751446
+        - 0.6089845645917993
+        - 0.4821533661469993
+        - 0.38015512885496044
+        - 0.30025826443083614
+        - 0.23919819580192375
+        - 0.19423879186408688
+        - 0.16306353303004312
+        - 0.14331088367789555
+        - 0.13309213008618606
+        - 0.13143698275906612
+        - 0.13732154837187652
+        - 0.14856289693612973
+        - 0.16208694806801408
+        - 0.1752496071707539
+        - 0.18696238456186348
+        - 0.1975785443807013
+        - 0.20798247257381308
+        - 0.21850621438730225
+        - 0.22824180174071676
+        - 0.23529090582726614
+        - 0.23799308532333738
+        - 0.2358567405684504
+        - 0.22944420456420395
+        - 0.21975363277436566
+        - 0.2076191587951227
+        - 0.1935354140590451
+        - 0.17749561155035043
+        - 0.15920689398956636
+        - 0.13874177361436746
+        - 0.1168311000245213
+        - 0.09440183111328102
+        - 0.07214818081197344
+        - 0.050509198493069514
+        - 0.03029516819771026
+        - 0.013021070079077978
+        - 0.0003043154081769021
+        - -0.006817625504075899
+        - -0.007506876321719605
+        - 0.0
+      C26.C29.N3.C33:
+        spline:
+        - -2.1642471013652247
+        - 4.118938205814361
+        - 0.03490658503988659
+        - 0.0
+        - -0.039084243131206654
+        - -0.06351964898995088
+        - -0.07417596638507647
+        - -0.07236034198513429
+        - -0.06029691409388341
+        - -0.04139846651425998
+        - -0.019366641623502004
+        - 0.003406265249633423
+        - 0.026120180576285172
+        - 0.04892269517116265
+        - 0.07203584842906695
+        - 0.09497210199056282
+        - 0.11633669213258123
+        - 0.13470157408267067
+        - 0.14930751789733826
+        - 0.16005977425608597
+        - 0.16720339920264282
+        - 0.1710830997863583
+        - 0.17207301945330863
+        - 0.17048344098028106
+        - 0.16660494756368466
+        - 0.16081826179117914
+        - 0.15372870619918091
+        - 0.1460963192584857
+        - 0.1383445955894193
+        - 0.13074778136437956
+        - 0.12445032600778437
+        - 0.12143426674779136
+        - 0.12372477370280996
+        - 0.1328466226686328
+        - 0.15051191187528906
+        - 0.17992394888180954
+        - 0.2258575271275045
+        - 0.2930064996392751
+        - 0.38442977830772923
+        - 0.5017390709316838
+        - 0.6468167094838614
+        - 0.8225374469988722
+        - 1.0322074530338197
+        - 1.2789982054828486
+        - 1.5668813799283345
+        - 1.9015772057472642
+        - 2.289586422604275
+        - 2.735954569910563
+        - 3.2442123600636505
+        - 3.8168518339777733
+        - 4.455676182716254
+        - 5.160326293262987
+        - 5.92507189200902
+        - 6.735254476577212
+        - 7.565889863657321
+        - 8.384930333191953
+        - 9.157477358939033
+        - 9.848261869719288
+        - 10.424701153318022
+        - 10.862361556648848
+        - 11.153511163998424
+        - 11.31243458019302
+        - 11.373361783109909
+        - 11.382797363848166
+        - 11.384081584035577
+        - 11.397622521468788
+        - 11.410683316165604
+        - 11.384040917865123
+        - 11.268403101545724
+        - 11.021784019185565
+        - 10.623061161087138
+        - 10.074589493300543
+        - 9.398440523119737
+        - 8.630435518032348
+        - 7.810429646950502
+        - 6.973718830299539
+        - 6.1497194932931905
+        - 5.361973445869062
+        - 4.6271603751809565
+        - 3.9557000525305406
+        - 3.351616826279341
+        - 2.8135499869222764
+        - 2.3384338062318033
+        - 1.9217073469548656
+        - 1.556900093346918
+        - 1.2377818694532319
+        - 0.9596961138676215
+        - 0.7198874662736333
+        - 0.5183088506335648
+        - 0.35525077283939316
+        - 0.22778595833056092
+        - 0.13004990044183745
+        - 0.05599914809692861
+        - 0.0009129358246263404
+        - -0.03832637968647573
+        - -0.06313926482667764
+        - -0.07424002907744302
+        - -0.07273083801671162
+        - -0.06069746216126136
+        - -0.0415902522230339
+        - -0.019261152393293957
+        - 0.003670375655157313
+        - 0.026349615966977366
+        - 0.049036915700826855
+        - 0.0721148987356851
+        - 0.09515412385129358
+        - 0.11679059349425254
+        - 0.1354408423315618
+        - 0.15018680323942432
+        - 0.1609200814222563
+        - 0.16784475734917934
+        - 0.1714165864453963
+        - 0.17210367948473845
+        - 0.1702282950924877
+        - 0.16613740445543734
+        - 0.1602015001252224
+        - 0.15310620654340254
+        - 0.1455996247980692
+        - 0.1380676906168383
+        - 0.13071634536796384
+        - 0.12459782149693213
+        - 0.12168905637649412
+        - 0.12398962527389698
+        - 0.13300896185156227
+        - 0.1505582728469954
+        - 0.17989898570231233
+        - 0.22585889841118703
+        - 0.29312509507779955
+        - 0.3845960006712469
+        - 0.501796304299474
+        - 0.6466648259117863
+        - 0.8221721204836889
+        - 1.0317406888733658
+        - 1.2786088395264172
+        - 1.5667092112755931
+        - 1.9016564172497799
+        - 2.2897260438540363
+        - 2.7358768598788563
+        - 3.243779994573326
+        - 3.8161362092645548
+        - 4.454962481976121
+        - 5.1599340306896035
+        - 5.925137834491635
+        - 6.735664135195612
+        - 7.566383192081428
+        - 8.385229622644664
+        - 9.157459537533214
+        - 9.8479428616708
+        - 10.424244022818486
+        - 10.861901638715548
+        - 11.153021920653698
+        - 11.311904283969255
+        - 11.37277427209876
+        - 11.382090129027208
+        - 11.383213124358923
+        - 11.396618694026103
+        - 11.409693823785851
+        - 11.383233676028023
+        - 11.267770985007322
+        - 11.021310250709151
+        - 10.622721722856822
+        - 10.074297741029953
+        - 9.398036982115576
+        - 8.629850999647275
+        - 7.809705473261946
+        - 6.972976170474048
+        - 6.14913229454472
+        - 5.361645777611369
+        - 4.627118227735788
+        - 3.955828449847906
+        - 3.3517062187879807
+        - 2.8133870064356987
+        - 2.337953463895862
+        - 1.9209743701930433
+        - 1.5560082321148616
+        - 1.2368812805259457
+        - 0.9589643524134979
+        - 0.719479961490935
+        - 0.5181710108035406
+        - 0.355177763526142
+        - 0.22756105090404732
+        - 0.1295213266652159
+        - 0.055192825151014764
+        - 0.0
+    moves:
+      dihedral:
+      - - - C1
+          - N
+          - C2
+          - C7
+        - single
+      - - - C13
+          - C17
+          - N1
+          - C19
+        - single
+      - - - C17
+          - N1
+          - C18
+          - C21
+        - single
+      - - - C17
+          - N1
+          - C19
+          - C22
+        - single
+      - - - C25
+          - C28
+          - N2
+          - C31
+        - single
+      - - - C26
+          - C29
+          - N3
+          - C33
+        - single
+structure:
+  bonds: []
+  moves: {}
+  parameters: {}
