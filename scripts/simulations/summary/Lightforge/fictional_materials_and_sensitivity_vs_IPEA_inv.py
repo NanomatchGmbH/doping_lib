@@ -91,7 +91,7 @@ for i, df in enumerate(dataframes):
              linestyle='-', marker='')
 
 # Plot actual data points for matching materials and annotate with numbers
-for idx, row in actual_data.iloc[::-1].iterrows():
+for idx, row in actual_data.iterrows():
     material = row['material']
     # Check if the material is in our materials_info
     material_number = material_numbers.get(material, None)
@@ -105,7 +105,7 @@ for idx, row in actual_data.iloc[::-1].iterrows():
         else:
             continue  # Skip if no matching material is found in the CSV files
         # Plot the actual data point
-        ax1.scatter(ip_ea_diff, efficiency, color=color, marker='o', s=50, label = f'real 4 [a]' if material_number == 4 else ( f'real 6 [c]' if material_number == 6 else '') )
+        ax1.scatter(ip_ea_diff, efficiency, color=color, marker='o', s=50, label = f'real 4 [a]' if material_number == 4 else ( f'real 7 [c]' if material_number == 7 else '') )
         # Annotate the point with the number
         ax1.annotate(str(material_number), (ip_ea_diff, efficiency), textcoords="offset points",
                      xytext=(5, 5), ha='left', fontsize=8, fontstyle='italic')
@@ -114,7 +114,7 @@ for idx, row in actual_data.iloc[::-1].iterrows():
 for item in materials_info:
     material = item['Material']
     material_number = item['Number']
-    if material in reversed (materials_without_csv):
+    if material in materials_without_csv:
         matching_row = actual_data[actual_data['material'] == material]
         if not matching_row.empty:
             ip_ea_diff = matching_row['IP'].values[0] - matching_row['EA'].values[0]
@@ -132,7 +132,7 @@ for item in materials_info:
             else:
                 continue  # Skip if no similar material is found
             # Plot the hollow point
-            ax1.scatter(ip_ea_diff, efficiency, facecolors='none', edgecolors=color, marker='o', s=50, label = f'real $7,8$ [c]' if material_number == 7 else(f'real $2,3,4$ [a]' if material_number==2 else ''))
+            ax1.scatter(ip_ea_diff, efficiency, facecolors='none', edgecolors=color, marker='o', s=50, label = f'real $6,8$ [c]' if material_number == 6 else(f'real $1,2,3$ [a]' if material_number==2 else ''))
             # if material_number == 3:
             #     ax1.scatter(ip_ea_diff, efficiency, facecolors=color, edgecolors=color, marker='o', s=50, label = f'real 4 [a]')
 
@@ -221,22 +221,22 @@ for i, df in enumerate(dataframes):
         dydx *= eV_to_kcal_per_mol  # Convert to kcal/mol
 
     # Plot the derivative using evaluated points (x values)
-    ax2.plot(df['IP_EA_diff'], dydx, color=colors(i), label=material_names[i], linestyle='-', marker='')
+    ax2.plot(df['IP_EA_diff'], dydx, color=colors(i), label= 'fictitious ' + str(material_numbers[material_names[i]]), linestyle='-', marker='')
 
 # Add labels and title for plot (b)
 y_label_unit = 'kcal/mol' if use_kcal_per_mol_y_axis else 'eV'
 ax2.set_xlabel('IP - EA Difference [eV]')  # x-axis remains in eV
-ax2.set_ylabel(f'd(IP - EA)/d($\eta_{{\mathrm{{sim}}}}$) [{y_label_unit}/%]')
+ax2.set_ylabel(r'$\frac{{d(\mathrm{{IP}} - \mathrm{{EA}})}}{{d\eta_{{\mathrm{{sim}}}}}}$ [{} / %]'.format(y_label_unit))
 
 # Add horizontal line at -1 with label
-ax2.axhline(y=-1, color='gray', linestyle='--')
-ax2.annotate('-1 [kcal/mol] / %', xy=(0.05, -1), xytext=(-0.55, -0.95),
-             textcoords='data', color='gray', fontsize=8)
+ax2.axhline(y=-1, color='black', linestyle='--', linewidth = 0.75)
+ax2.annotate('-1 kcal/mol / %', xy=(0.05, -1), xytext=(-0.55, -0.95),
+             textcoords='data', color='black', fontsize=8)
 
 # Add horizontal line at -0.1 with label
-ax2.axhline(y=-0.1, color='gray', linestyle='--')
-ax2.annotate('-0.1 [kcal/mol] / %', xy=(0.05, -0.1), xytext=(-0.55, -0.05),
-             textcoords='data', color='gray', fontsize=8)
+ax2.axhline(y=-0.1, color='black', linestyle='--', linewidth=0.75)
+ax2.annotate('-0.1 kcal/mol / %', xy=(0.05, -0.1), xytext=(-0.55, -0.05),
+             textcoords='data', color='black', fontsize=8)
 
 # Add a legend for plot (b)
 handles, labels = ax2.get_legend_handles_labels()
