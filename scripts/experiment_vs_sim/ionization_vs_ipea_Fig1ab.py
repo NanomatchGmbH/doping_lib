@@ -100,17 +100,24 @@ fig, (ax2, ax1) = plt.subplots(1, 2, figsize=(full_page_width, 4.5))  # Adjust h
 # --------------------------------------------
 
 # Plot experimental doping efficiency
-ax1.scatter(merged_data['IP_EA_sim'], merged_data['efficiency_exp'], color='red', marker='s',  label=r'Experimental $\eta_{\mathrm{exp}}$')
+ax1.scatter(merged_data['IP_EA_sim'], merged_data['efficiency_exp'], color=plt.cm.tab10(3), marker='s',  label=r'Experimental $\eta_{\mathrm{exp}}$')
 
 # Plot simulated doping efficiency
-ax1.scatter(merged_data['IP_EA_sim'], merged_data['efficiency'], color='blue', marker='o',  label=r'Simulated $\eta_{\mathrm{sim}}$')
+ax1.scatter(merged_data['IP_EA_sim'], merged_data['efficiency'], color=plt.cm.tab10(0), marker='o',  label=r'Simulated $\eta_{\mathrm{sim}}$')
 
 # Add unfilled circles for relative simulation values for materials 1-4
 for i in range(1, 5):
     material_row = merged_data[merged_data['material_number'] == i]
     if not material_row.empty:
-        ax1.scatter(material_row['IP_EA_sim'], relative_simulation_values[i], facecolors='none', edgecolors='blue',
+        ax1.scatter(material_row['IP_EA_sim'], relative_simulation_values[i], facecolors='none', edgecolors=plt.cm.tab10(0),
                     marker='o', label=r'Simulated $\eta_{\mathrm{sim,rel}}$' if i == 1 else "")
+
+# Add unfilled circles for relative simulation values for materials 1-4
+for i in range(1, 5):
+    material_row = merged_data[merged_data['material_number'] == i]
+    if not material_row.empty:
+        ax1.annotate(str(i), (material_row['IP_EA_sim'].values[0], relative_simulation_values[i]), textcoords="offset points",
+                     xytext=(5, 5), fontsize=7, color=plt.cm.tab10(0), fontstyle='italic')
 
 ax1.set_xlabel('IP - EA (Simulated) [eV]')
 ax1.set_ylabel(r'Ionization Fraction, $\eta$')
@@ -119,9 +126,9 @@ ax1.legend()
 # Annotate data points with italic numbers
 for i, row in merged_data.iterrows():
     ax1.annotate(str(row['material_number']), (row['IP_EA_sim'], row['efficiency']), textcoords="offset points",
-                 xytext=(5, -5), fontsize=7, color='blue', fontstyle='italic')
+                 xytext=(5, -5), fontsize=7, color=plt.cm.tab10(0), fontstyle='italic')
     ax1.annotate(str(row['material_number']), (row['IP_EA_sim'], row['efficiency_exp']), textcoords="offset points",
-                 xytext=(5, 5), fontsize=7, color='red', fontstyle='italic')
+                 xytext=(5, 5), fontsize=7, color=plt.cm.tab10(3), fontstyle='italic')
 
 # Restrict y-axis to start from 0.0
 ax1.set_ylim(bottom=0.0)
@@ -134,7 +141,7 @@ ax1.text(-0.15, 1.05, "b", transform=ax1.transAxes, fontsize=12, fontweight='bol
 # --------------------------------------------
 
 # Scatter plot
-ax2.scatter(merged_data['efficiency_exp'], merged_data['efficiency'], color='green', marker='o')
+ax2.scatter(merged_data['efficiency_exp'], merged_data['efficiency'], color=plt.cm.tab10(2), marker='o')
 
 # Plot x=y line
 max_efficiency = max(merged_data['efficiency'].max(), merged_data['efficiency_exp'].max())
@@ -147,12 +154,22 @@ ax2.set_ylabel(r'Simulated Ionization Fraction, $\eta_{\mathrm{sim}}$')
 for i in range(1, 5):
     material_row = merged_data[merged_data['material_number'] == i]
     if not material_row.empty:
-        ax2.scatter(material_row['efficiency_exp'], relative_simulation_values[i], facecolors='none', edgecolors='green', marker='o', label='Sim. (relative)' if i == 1 else "")
+        ax2.scatter(material_row['efficiency_exp'], relative_simulation_values[i], facecolors='none', edgecolors=plt.cm.tab10(2), marker='o', label='Sim. (relative)' if i == 1 else "")
 
 # Annotate data points with italic numbers
 for i, row in merged_data.iterrows():
     ax2.annotate(str(row['material_number']), (row['efficiency_exp'], row['efficiency']), textcoords="offset points",
                  xytext=(5, -5), fontsize=7, fontstyle='italic')
+
+# Annotate hollow points with italic numbers for Panel A (ax2)
+for i in range(1, 5):
+    material_row = merged_data[merged_data['material_number'] == i]
+    if not material_row.empty:
+        efficiency_exp = material_row['efficiency_exp'].values[0]  # Experimental efficiency
+        relative_efficiency = relative_simulation_values[i]  # Relative simulated efficiency
+        ax2.annotate(str(i), (efficiency_exp, relative_efficiency),
+                     textcoords="offset points", xytext=(-5, 5),  # Adjust for left-upper position
+                     fontsize=7, color='black', fontstyle='italic')
 
 # Set equal aspect ratio
 ax2.set_aspect('equal', 'box')
@@ -172,6 +189,8 @@ plt.tight_layout()
 # Save the combined plot
 plot_filename = os.path.join(output_dir, 'Fig2.png')
 plt.savefig(plot_filename, dpi=600)
+plot_filename = os.path.join(output_dir, 'Fig2.pdf')
+plt.savefig(plot_filename)
 
 plt.show()
 

@@ -125,8 +125,8 @@ for idx, material in enumerate(folders):
         print(f"Data for {material} not found in the YAML file.")
 
 # Customize the plot
-ax0.set_xlabel('Inverse Center of Mass Distance (1/Å)')
-ax0.set_ylabel('$V_C$ (eV)')
+ax0.set_xlabel('Inverse COM Distance $d^{-1}$ [1/Å]')
+ax0.set_ylabel('$V_\mathrm{C}$ (eV)')
 ax0.grid(True, linestyle='--', linewidth=0.5, alpha=0.7)
 ax0.legend(fontsize=6, loc='upper right', frameon=False)
 
@@ -138,7 +138,7 @@ ax0.set_xlim(inverse_distance_min, inverse_distance_max)
 # Create a secondary x-axis on top that shares the same scale (for direct distances)
 secax = ax0.twiny()
 secax.set_xlim(ax0.get_xlim())
-secax.set_xlabel('Center of Mass Distance (Å)', fontsize=7)
+secax.set_xlabel('COM Distance $d$ [Å]', fontsize=7)
 secax.tick_params(axis='both', which='major', labelsize=7)
 
 # Set ticks on the secondary x-axis at positions corresponding to distances 4, 5, 6, 10, and 20 Å
@@ -232,7 +232,7 @@ ax1_twin = ax1.twinx()
 
 # Plot 'VC_mean' as scatter points inside the bars
 ax1_twin.scatter(x, VC_mean, color='darkred', marker='o', zorder=5)
-ax1_twin.set_ylabel('$V_C$ at First RDF Peak (eV)', color='darkred')
+ax1_twin.set_ylabel('$V_\mathrm{eff}$ [eV]', color='darkred')
 ax1_twin.tick_params(axis='y', labelcolor='darkred')
 
 # Set x-axis labels
@@ -272,8 +272,8 @@ vc_data['base_material'] = vc_data['material'].apply(extract_base_material)
 sim_data = pd.merge(sim_data, vc_data[['base_material', 'VC_mean']], on='base_material', how='inner')
 
 
-ax2.set_xlabel('IP - EA + $V_C$ (eV)')
-ax2.set_ylabel(r'Ionization Fraction  $\eta_{\mathrm{exper}}$')
+ax2.set_xlabel('$E_{CT}$ = IP - EA + $V_C$ [eV]')
+ax2.set_ylabel(r'Simulated Ionization Fraction  $\eta_{\mathrm{sim}}$')
 
 
 # --- Add the derivative line from panel b of the second script ---
@@ -314,7 +314,7 @@ if os.path.exists(csv_path):
 
     ionization_fraction = df_ionization_fictional_material['ionization'].values
 
-    ax2.plot(IP_minus_EA, ionization_fraction, color='black', linestyle='-', label=material_name.split("_")[0])  # ionization fraction
+    ax2.plot(IP_minus_EA, ionization_fraction, color='black', linestyle='-', label=f'$\eta(E_{{CT}})$')  # ionization fraction
 
     # Compute the derivative d(IP - EA + VC)/dη using central difference
     def central_difference(x, y):
@@ -333,11 +333,11 @@ if os.path.exists(csv_path):
 
     # Create secondary y-axis
     ax_secondary = ax2.twinx()
-    ax_secondary.set_ylabel('d(IP - EA + $V_C$)/d$\eta$ (kcal/mol/%)', color='grey', fontsize=7)
+    ax_secondary.set_ylabel('d$E_{CT}$/d$\eta$ [kcal/mol/%]', color='grey', fontsize=7)
     ax_secondary.tick_params(axis='y', labelcolor='grey')
 
     # Plot the derivative line
-    ax_secondary.plot(IP_minus_EA, derivative_kcal_per_percent, color='grey', linestyle='-', label='Derivative')
+    ax_secondary.plot(IP_minus_EA, derivative_kcal_per_percent, color='grey', linestyle='-', label=f'd$E_{{CT}}$$(\eta)$/d$\eta$')
 
     ax_secondary.set_ylim([-1.5, 0])
 
@@ -345,12 +345,14 @@ if os.path.exists(csv_path):
     ax_secondary.set_xlim(ax2.get_xlim())
 
     # Add the derivative line to the legend
-    ax2.legend(loc='upper left', frameon=False)
+    ax2.legend(loc='upper left', frameon=True)
+    ax_secondary.legend(loc = 'upper right') # set_xlim(ax2.get_xlim())
 
     ax2.set_ylim([0.0, 1.0])
     ax2.set_xlim([-0.75, 0.5])
 
     ax2.plot([0.0, 0.0], [0.0, 1.0], linestyle='--', color='grey')
+    plt.title(f'{material_name.split("_")[0]}')
 
 else:
     print(f"CSV file for {material_name} not found at {csv_path}")

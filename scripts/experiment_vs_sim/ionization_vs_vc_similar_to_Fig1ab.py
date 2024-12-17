@@ -6,7 +6,7 @@ import os
 sim_data = pd.read_csv('../../simulations/summary/Lightforge/ionization_ip_ea.csv')
 
 # Read the VC data, which includes `VC_mean`
-vc_data = pd.read_csv('../../simulations/summary/Deposit/VC_at_first_rdf_peak.csv')  # Update this path to your actual CSV file
+vc_data = pd.read_csv('../../simulations/summary/Deposit/VC_at_first_rdf_peak.csv')
 
 # Read the experimental data
 exp_data = pd.read_csv('../../experimental_data/summary/measured_efficiency.csv')

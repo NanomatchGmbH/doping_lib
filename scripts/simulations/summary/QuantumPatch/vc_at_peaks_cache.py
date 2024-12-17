@@ -5,6 +5,13 @@ import matplotlib as mpl
 import re  # Import regular expressions module
 import yaml
 
+# Path to the merged YAML file
+# yaml_file_path = 'merged_vc_data.yaml'
+yaml_file_path = '../../../../simulations/summary/QuantumPatch/merged_vc_data.yaml'
+
+# Read the CSV file containing first RDF peak distances
+rdf_peak_file = '../../../../simulations/summary/Deposit/first_rdf_peak.csv'
+
 # Set font family to Arial (or Helvetica)
 mpl.rcParams['font.family'] = ['Arial', 'Helvetica', 'sans-serif']
 
@@ -24,8 +31,6 @@ mpl.rcParams['legend.fontsize'] = 7
 mpl.rcParams['axes.linewidth'] = 0.5   # Set axes line width
 mpl.rcParams['pdf.fonttype'] = 42      # Ensure fonts are embedded in PDF
 
-# Read the CSV file containing first RDF peak distances
-rdf_peak_file = 'rdf_peaks.csv'  # Name of the CSV file provided by the user
 
 # Read the first_rdf_peak data
 rdf_peak_df = pd.read_csv(rdf_peak_file)
@@ -40,8 +45,6 @@ rdf_peak_df.set_index('material', inplace=True)
 # List of materials (folders) to process
 materials = rdf_peak_df.index.tolist()
 
-# Path to the merged YAML file
-yaml_file_path = 'merged_vc_data.yaml'
 
 # Check if the merged YAML file exists
 if not os.path.isfile(yaml_file_path):

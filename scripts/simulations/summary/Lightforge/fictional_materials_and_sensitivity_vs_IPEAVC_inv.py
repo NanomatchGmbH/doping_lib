@@ -9,6 +9,8 @@ from matplotlib import cm
 input_dir = '../../../../simulations/summary/Lightforge/fictional_materials'  # Directory where CSV files are located
 actual_data_file = '../../../../simulations/summary/Lightforge/ionization_ip_ea.csv'  # File with actual data points
 output_dir = '../../../../simulations/summary/Lightforge/fictional_materials'  # Directory to save the plots
+vc_dir = '../../../../simulations/summary/Deposit/VC_at_first_rdf_peak.csv'
+
 os.makedirs(output_dir, exist_ok=True)
 
 # Conversion toggle for y-axis in the second plot
@@ -30,13 +32,15 @@ for file in csv_files:
     dataframes.append(df)
     material_names.append(file)
 
-# Calculate IP - EA difference for each dataset
-for df in dataframes:
-    df['IP_EA_diff'] = df['IP'] - df['EA']
-    df.sort_values(by='IP_EA_diff', inplace=True)  # Sort data based on IP - EA difference
+# Read the VC data
+vc_df = pd.read_csv(vc_dir)
 
-# Read the actual data
+# Create a dictionary to map materials to their VC values
+vc_dict = dict(zip(vc_df['material'], vc_df['VC_mean']))
+
+# Load the actual data and merge with VC data
 actual_data = pd.read_csv(actual_data_file)
+actual_data = pd.merge(actual_data, vc_df[['material', 'VC_mean']], on='material', how='left')
 
 # Create a mapping from numbers to materials, adding those without csv files
 materials_info = [
@@ -73,13 +77,25 @@ fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(full_page_width, 4.5))  # Full-pag
 # Use a vibrant color palette (Set1) or another scientific palette (like cmocean)
 colors = cm.get_cmap('Set1', len(dataframes))  # Get a color palette with distinct colors for each dataset
 
+# Calculate IP - EA + VC difference for each dataset
+for i, (df, material_name) in enumerate(zip(dataframes, material_names)):
+    # Add 'VC' to df
+    if material_name in vc_dict:
+        df['VC'] = vc_dict[material_name]
+    else:
+        print(f"Warning: {material_name} not found in VC data.")
+        df['VC'] = np.nan
+    # Calculate IP - EA + VC difference
+    df['IP_EA_VC_diff'] = df['IP'] - df['EA'] + df['VC']
+    df.sort_values(by='IP_EA_VC_diff', inplace=True)  # Sort data based on IP - EA + VC difference
+
 # ---------------------------------------------------
-# Left plot (a): Ionization vs IP - EA Difference
+# Left plot (a): Ionization vs IP - EA + VC Difference
 # ---------------------------------------------------
 for i, df in enumerate(dataframes):
     material_label = material_names[i]
     # Plot the lines for the material (sorted data)
-    ax1.plot(df['IP_EA_diff'], df['ionization'], color=colors(i), label=material_label, linestyle='-', marker='')
+    ax1.plot(df['IP_EA_VC_diff'], df['ionization'], color=colors(i), label=material_label, linestyle='-', marker='')
 
 # Plot actual data points for matching materials and annotate with numbers
 for idx, row in actual_data.iterrows():
@@ -87,7 +103,12 @@ for idx, row in actual_data.iterrows():
     # Check if the material is in our materials_info
     material_number = material_numbers.get(material, None)
     if material_number is not None:
-        ip_ea_diff = row['IP'] - row['EA']
+        # Calculate IP - EA + VC difference
+        if pd.notna(row['VC_mean']):
+            ip_ea_vc_diff = row['IP'] - row['EA'] + row['VC_mean']
+        else:
+            print(f"Warning: VC_mean missing for material {material}")
+            ip_ea_vc_diff = row['IP'] - row['EA']
         efficiency = row['efficiency']
         # Find the color corresponding to this material in the datasets
         if material in material_names:
@@ -96,9 +117,9 @@ for idx, row in actual_data.iterrows():
         else:
             continue  # Skip if no matching material is found in the CSV files
         # Plot the actual data point
-        ax1.scatter(ip_ea_diff, efficiency, color=color, marker='o', s=50)
+        ax1.scatter(ip_ea_vc_diff, efficiency, color=color, marker='o', s=50)
         # Annotate the point with the number
-        ax1.annotate(str(material_number), (ip_ea_diff, efficiency), textcoords="offset points",
+        ax1.annotate(str(material_number), (ip_ea_vc_diff, efficiency), textcoords="offset points",
                      xytext=(5, 5), ha='left', fontsize=8, fontstyle='italic')
 
 # Plot hollow points for materials without CSV files
@@ -108,7 +129,14 @@ for item in materials_info:
     if material in materials_without_csv:
         matching_row = actual_data[actual_data['material'] == material]
         if not matching_row.empty:
+            # Calculate IP - EA + VC difference
             ip_ea_diff = matching_row['IP'].values[0] - matching_row['EA'].values[0]
+            vc_mean = matching_row['VC_mean'].values[0]
+            if not np.isnan(vc_mean):
+                ip_ea_vc_diff = ip_ea_diff + vc_mean
+            else:
+                print(f"Warning: VC_mean missing for material {material}")
+                ip_ea_vc_diff = ip_ea_diff
             efficiency = matching_row['efficiency'].values[0]
             # Find the color of a material with the same ionization fraction
             similar_material = None
@@ -123,13 +151,13 @@ for item in materials_info:
             else:
                 continue  # Skip if no similar material is found
             # Plot the hollow point
-            ax1.scatter(ip_ea_diff, efficiency, facecolors='none', edgecolors=color, marker='o', s=50)
+            ax1.scatter(ip_ea_vc_diff, efficiency, facecolors='none', edgecolors=color, marker='o', s=50)
             # Annotate the hollow point with the number
-            ax1.annotate(str(material_number), (ip_ea_diff, efficiency), textcoords="offset points",
+            ax1.annotate(str(material_number), (ip_ea_vc_diff, efficiency), textcoords="offset points",
                          xytext=(5, 5), ha='left', fontsize=8, fontstyle='italic')
 
 # Add labels and title for plot (a)
-ax1.set_xlabel('IP - EA Difference [eV]')
+ax1.set_xlabel('IP - EA + VC [eV]')
 ax1.set_ylabel(r'Ionization Fraction  $\eta_{\mathrm{sim}}$')
 
 ax1.set_ylim([0.0, 1.0])
@@ -172,15 +200,15 @@ def central_difference_full(x, y):
 
 
 # ---------------------------------------------------
-# Right plot (b): Derivative of IP - EA vs Ionization using central difference method
+# Right plot (b): Derivative of IP - EA + VC vs Ionization using central difference method
 # ---------------------------------------------------
 for i, df in enumerate(dataframes):
     # Ensure there are no NaN or misaligned data points
-    df = df.dropna(subset=['IP_EA_diff', 'ionization']).reset_index(drop=True)
+    df = df.dropna(subset=['IP_EA_VC_diff', 'ionization']).reset_index(drop=True)
 
     # Extract x and y, converting to NumPy arrays
     x = (df['ionization'] * 100).values  # Multiply by 100 to convert to percentage
-    y = df['IP_EA_diff'].values
+    y = df['IP_EA_VC_diff'].values
 
     # Ensure x and y have the same length
     if len(x) != len(y):
@@ -196,12 +224,12 @@ for i, df in enumerate(dataframes):
         dydx *= eV_to_kcal_per_mol  # Convert to kcal/mol
 
     # Plot the derivative using evaluated points (x values)
-    ax2.plot(df['IP_EA_diff'], dydx, color=colors(i), label=material_names[i], linestyle='-', marker='')
+    ax2.plot(df['IP_EA_VC_diff'], dydx, color=colors(i), label=material_names[i], linestyle='-', marker='')
 
 # Add labels and title for plot (b)
 y_label_unit = 'kcal/mol' if use_kcal_per_mol_y_axis else 'eV'
-ax2.set_xlabel('IP - EA Difference [eV]')  # x-axis remains in eV
-ax2.set_ylabel(f'd(IP - EA)/d($\eta_{{\mathrm{{sim}}}}$) [{y_label_unit}/%]')
+ax2.set_xlabel('IP - EA + VC [eV]')  # x-axis remains in eV
+ax2.set_ylabel(f'd(IP - EA + VC)/d($\eta_{{\mathrm{{sim}}}}$) [{y_label_unit}/%]')
 
 # Add horizontal line at -1 with label
 ax2.axhline(y=-1, color='gray', linestyle='--')
@@ -212,6 +240,11 @@ ax2.annotate('-1 [kcal/mol] / %', xy=(0.05, -1), xytext=(-0.55, -0.95),
 ax2.axhline(y=-0.1, color='gray', linestyle='--')
 ax2.annotate('-0.1 [kcal/mol] / %', xy=(0.05, -0.1), xytext=(-0.55, -0.05),
              textcoords='data', color='gray', fontsize=8)
+
+# **Add vertical line at IP - EA + VC = 0.0**
+ax2.axvline(x=0.0, color='black', linestyle='--')
+ax2.annotate('IP - EA + VC = 0', xy=(0.0, ax2.get_ylim()[0]), xytext=(0.5, -1.4),
+             textcoords='data', color='black', fontsize=8, rotation=90, verticalalignment='bottom')
 
 # Add a legend for plot (b)
 handles, labels = ax2.get_legend_handles_labels()
