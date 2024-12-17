@@ -266,76 +266,33 @@ sim_data['base_material'] = sim_data['material'].apply(extract_base_material)
 vc_data['base_material'] = vc_data['material'].apply(extract_base_material)
 
 # Prepare the experimental data
-exp_data.rename(columns={'material_name': 'base_material', 'efficiency': 'efficiency_exp'}, inplace=True)
+# exp_data.rename(columns={'material_name': 'base_material', 'efficiency': 'efficiency_exp'}, inplace=True)
 
 # Merge simulated data with VC data on `base_material`
 sim_data = pd.merge(sim_data, vc_data[['base_material', 'VC_mean']], on='base_material', how='inner')
 
-# Merge the simulated + VC data with experimental data
-merged_data_c = pd.merge(sim_data, exp_data[['base_material', 'efficiency_exp']], on='base_material', how='inner')
-
-# Compute IP - EA + VC (from simulations)
-merged_data_c['IP_EA_VC_sim'] = merged_data_c['IP'] - merged_data_c['EA'] + merged_data_c['VC_mean']
-
-# Assign numbers to the materials in merged_data_c
-def get_material_number(base_material):
-    return material_numbers.get(base_material, None)
-
-merged_data_c['material_number'] = merged_data_c['base_material'].apply(get_material_number)
-
-# Drop any rows where material_number is None (materials not in our list)
-merged_data_c = merged_data_c.dropna(subset=['material_number'])
-
-# Convert material_number to integer
-merged_data_c['material_number'] = merged_data_c['material_number'].astype(int)
-
-# Plotting on ax2
-
-# Plot simulated doping efficiency
-ax2.scatter(merged_data_c['IP_EA_VC_sim'], merged_data_c['efficiency'], color='blue', marker='o', label='Simulated')
-
-# Plot experimental doping efficiency
-ax2.scatter(merged_data_c['IP_EA_VC_sim'], merged_data_c['efficiency_exp'], color='red', marker='s', label='Experimental')
-
-# Add unfilled circles for relative simulation values for materials 1-4
-relative_simulation_values = {
-    1: 1.0,
-    2: 0.969025613,
-    3: 0.921286021,
-    4: 0.848504597
-}
-for i in range(1, 5):
-    material_row = merged_data_c[merged_data_c['material_number'] == i]
-    if not material_row.empty:
-        ax2.scatter(material_row['IP_EA_VC_sim'], relative_simulation_values[i], facecolors='none', edgecolors='blue', marker='o', label='Sim. (relative)' if i == 1 else "")
 
 ax2.set_xlabel('IP - EA + $V_C$ (eV)')
 ax2.set_ylabel(r'Ionization Fraction  $\eta_{\mathrm{exper}}$')
 
-# Annotate data points with italic numbers
-for i, row in merged_data_c.iterrows():
-    ax2.annotate(str(row['material_number']), (row['IP_EA_VC_sim'], row['efficiency']), textcoords="offset points",
-                 xytext=(5, -5), fontsize=6, color='blue', fontstyle='italic')
-    ax2.annotate(str(row['material_number']), (row['IP_EA_VC_sim'], row['efficiency_exp']), textcoords="offset points",
-                 xytext=(5, 5), fontsize=6, color='red', fontstyle='italic')
 
 # --- Add the derivative line from panel b of the second script ---
-
 # Specify the material for which you want to add the derivative line
 material_name = 'm-MTDATA@F4TCNQ_0.02'  # Corresponds to material number 4
 
 # Path to the CSV file for the material in the second script
 csv_path = '../../simulations/summary/Lightforge/fictional_materials/{}.csv'.format(material_name)
 
+
 if os.path.exists(csv_path):
     # Read the CSV file
-    df_derivative = pd.read_csv(csv_path)
+    df_ionization_fictional_material = pd.read_csv(csv_path)
 
     # Sort the DataFrame by ionization fraction in increasing order
-    df_derivative.sort_values(by='IP', inplace=True)
+    df_ionization_fictional_material.sort_values(by='IP', inplace=True)
 
     # Compute IP - EA Difference
-    df_derivative['IP_EA_diff'] = df_derivative['IP'] - df_derivative['EA']
+    df_ionization_fictional_material['IP_EA_diff'] = df_ionization_fictional_material['IP'] - df_ionization_fictional_material['EA']
 
     # Get VC_mean for the base material
     base_material = material_name.split('_')[0]
@@ -347,11 +304,17 @@ if os.path.exists(csv_path):
         vc_mean = 0  # Default to 0 if not found
 
     # Adjust IP_EA_diff by adding VC_mean to get IP - EA + VC
-    df_derivative['IP_EA_VC'] = df_derivative['IP_EA_diff'] + vc_mean
+    df_ionization_fictional_material['IP_EA_VC'] = df_ionization_fictional_material['IP_EA_diff'] + vc_mean
 
     # Extract x (IP - EA + VC) and y (ionization fraction)
-    x_deriv = df_derivative['IP_EA_VC'].values
-    y_deriv = df_derivative['ionization'].values
+    IP_minus_EA = df_ionization_fictional_material['IP_EA_VC'].values
+
+    #
+
+
+    ionization_fraction = df_ionization_fictional_material['ionization'].values
+
+    ax2.plot(IP_minus_EA, ionization_fraction, color='black', linestyle='-', label=material_name.split("_")[0])  # ionization fraction
 
     # Compute the derivative d(IP - EA + VC)/dη using central difference
     def central_difference(x, y):
@@ -361,10 +324,12 @@ if os.path.exists(csv_path):
         dydx[-1] = (x[-1] - x[-2]) / (y[-1] - y[-2])
         return dydx
 
-    derivative = central_difference(x_deriv, y_deriv)  # dx/dy
+    derivative = central_difference(IP_minus_EA, ionization_fraction)  # dx/dy
 
     # Convert derivative to kcal/mol per %
     derivative_kcal_per_percent = derivative * 23.0609 / 100   # eV/fraction to kcal/mol / %
+
+
 
     # Create secondary y-axis
     ax_secondary = ax2.twinx()
@@ -372,7 +337,7 @@ if os.path.exists(csv_path):
     ax_secondary.tick_params(axis='y', labelcolor='grey')
 
     # Plot the derivative line
-    ax_secondary.plot(x_deriv, derivative_kcal_per_percent, color='grey', linestyle='--', label='Derivative')
+    ax_secondary.plot(IP_minus_EA, derivative_kcal_per_percent, color='grey', linestyle='-', label='Derivative')
 
     ax_secondary.set_ylim([-1.5, 0])
 
@@ -385,6 +350,8 @@ if os.path.exists(csv_path):
     ax2.set_ylim([0.0, 1.0])
     ax2.set_xlim([-0.75, 0.5])
 
+    ax2.plot([0.0, 0.0], [0.0, 1.0], linestyle='--', color='grey')
+
 else:
     print(f"CSV file for {material_name} not found at {csv_path}")
 
@@ -392,8 +359,8 @@ else:
 plt.tight_layout(pad=1.0)
 
 # Save the figure in high-resolution PNG and PDF formats
-plt.savefig('figure_4_abc_old.png', dpi=600, bbox_inches='tight')
-plt.savefig('figure_4_abc_old.pdf', dpi=600, bbox_inches='tight')
+plt.savefig('figure_4_abc.png', dpi=600, bbox_inches='tight')
+plt.savefig('figure_4_abc.pdf', dpi=600, bbox_inches='tight')
 
 # Display the plot
 plt.show()
