@@ -23,22 +23,13 @@ extra_data = pd.read_csv("../exper_conductivity_vs_simulated_ip_ea/data.csv")
 sns.set(style="whitegrid")
 plt.figure(figsize=(10, 6))
 
-# Plot main data with log scale for the y-axis
-plot_main = sns.lineplot(x='IP - EA [eV]', y='sigma [S/cm]', data=data, marker=None, label='kMC simulations (5 mol%) mean',
-                         color='red')
-# plot_main_1 = sns.lineplot(x='onset IP - EA [eV]', y='sigma [S/cm]', data=data, marker=None, label='kMC simulations (5 mol%) onset',
-#                          color='blue')
-# plt.errorbar(data['IP - EA [eV]'], data['sigma [S/cm]'], xerr=data['std_err'], fmt='o', capsize=5, color='blue')
+# Use tab10 colormap for consistent styling
+tab10 = plt.cm.get_cmap('tab10')
 
-# Unique colors for each 'name' in extra_data
-unique_names = extra_data['name'].unique()
-palette = sns.color_palette("hsv", len(unique_names))
-color_map = dict(zip(unique_names, palette))
+# Choose colors from tab10: blue and red
+blue_color = tab10(0)  # default "tab10" blue
+red_color = tab10(3)   # default "tab10" red
 
-# Plot extra data
-
-plt.scatter(extra_data['IP - EA (eV)'], extra_data['Conductivity [S/cm]'], color='r', marker='o', label='simulation mean')
-plt.scatter(extra_data['exper. IP - EA (eV)'], extra_data['Conductivity [S/cm]'], color='b', marker='x', label='experiment onset')
 
 
 # plot Fermi function -->
@@ -46,8 +37,25 @@ x_values = np.linspace(-0.5, 1.5, 100)
 def Fermi(x_values):
     return 10.0 / (1 + np.exp((x_values - 0.7) / .025))
 y_values = Fermi(x_values)
-plt.plot(x_values, y_values, '--', color='black', alpha=0.6)
+plt.plot(x_values, y_values, '--', color='black', alpha=0.6,
+         label=r'$C \cdot \exp\left(E_{CT}/k_B T\right)$ vs (IP - EA)')
 # <-- plot Fermi function
+
+
+
+# Plot main data with log scale for the y-axis
+plot_main = sns.lineplot(x='IP - EA [eV]', y='sigma [S/cm]', data=data, marker=None, label=r'$\sigma_{sim}$ vs (IP - EA)',
+                         color=red_color)
+# plot_main_1 = sns.lineplot(x='onset IP - EA [eV]', y='sigma [S/cm]', data=data, marker=None, label='kMC simulations (5 mol%) onset',
+#                          color='blue')
+# plt.errorbar(data['IP - EA [eV]'], data['sigma [S/cm]'], xerr=data['std_err'], fmt='o', capsize=5, color='blue')
+
+# Plot extra data
+
+plt.scatter(extra_data['IP - EA (eV)'], extra_data['Conductivity [S/cm]'], color=red_color, marker='o', label='$\sigma_{exp}$ vs (IP - EA)')
+plt.scatter(extra_data['exper. IP - EA (eV)'], extra_data['Conductivity [S/cm]'], color=blue_color, marker='x', label='$\sigma_{exp}$ vs (IP$_{onset}$ - EA$_{onset}$)')
+
+
 
 
 # Set the y-axis to logarithmic scale and adjust limits
@@ -65,13 +73,13 @@ plt.ylabel('Conductivity (S/cm)')
 plt.legend()
 
 # Add a second x-axis for IP_onset - EA_onset
-ax = plt.gca()
-ax2 = ax.twiny()
-ax2.set_xlabel('IP$_{onset}$ - EA$_{onset}$ [eV]')
+# ax = plt.gca()
+# ax2 = ax.twiny()
+# ax2.set_xlabel('Experimental IP$_{onset}$ - EA$_{onset}$ [eV]')
 
 # Remove labels and ticks on the second axis
 # ax2.set_xlabel('')
-ax2.set_xticks([])
+# ax2.set_xticks([])
 
 # The "onset" axis is shifted by 0.4 relative to IP - EA
 # We simply adjust the new axis limits by subtracting 0.4 from the original:
