@@ -64,6 +64,20 @@ plt.ylabel('Conductivity (S/cm)')
 # Add legend
 plt.legend()
 
+# Add a second x-axis for IP_onset - EA_onset
+ax = plt.gca()
+ax2 = ax.twiny()
+ax2.set_xlabel('IP$_{onset}$ - EA$_{onset}$ [eV]')
+
+# Remove labels and ticks on the second axis
+# ax2.set_xlabel('')
+ax2.set_xticks([])
+
+# The "onset" axis is shifted by 0.4 relative to IP - EA
+# We simply adjust the new axis limits by subtracting 0.4 from the original:
+# orig_xlim = ax.get_xlim()
+# ax2.set_xlim(orig_xlim[0] - 0.4, orig_xlim[1] - 0.4)
+
 # Show the plot
 # plt.show()
 plt.savefig("Figure5.png", dpi=600)
