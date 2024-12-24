@@ -3,6 +3,11 @@ import yaml
 import pandas as pd
 import ast
 
+
+existing_csv_path = 'ionization_data.csv'
+new_csv_path = 'new_ionization_data.csv'
+
+
 def extract_ip_ea_from_yaml(filepath):
     with open(filepath, 'r') as file:
         data = yaml.safe_load(file)
@@ -33,7 +38,6 @@ def main():
                 new_data = pd.concat([new_data, new_row], ignore_index=True)
     
     # Save the new data to a CSV file
-    new_csv_path = 'new_ionization_data.csv'
     new_data.to_csv(new_csv_path, index=False)
     
     # Check if there is an existing 'ionization_data.csv' and merge if it exists
