@@ -1,0 +1,190 @@
+CT_file: vc.csv
+ML_energy_environment: false
+analyse_doping:
+  analyse_ion_dop: true
+autorun_start: 0.5
+connect_electrodes: false
+continue_run: false
+coulomb_autorun_iter: 10
+coulomb_correction: true
+coulomb_correction_mode: QP_csv_file
+coulomb_mesh: false
+ct_rate_memory_multiplier: 10.0
+current_analysis:
+  x_axis:
+    Temperature: true
+    field_strength: false
+  y_axis:
+    current_density: false
+    ion_doping: true
+    mobility: false
+damping_activation_threshold: 0.1
+device_layout: stack
+dimensions:
+- 14.437700000000001
+- 15.245999999999999
+- 15.1588
+distance_epsilon: false
+doping: true
+doping_regeneration_steps: 30
+dos:
+  analyse_dos: true
+  get_hole_transport_level: true
+  plot_host_only: false
+  yscale: log
+electrode_stack_distance: 0.8
+electrodes:
+- coupling_model: QP_output
+  electrode_center: -0.5 0 0
+  electrode_coupling: 0.001
+  electrode_coupling_file: J_electrode_0.dat
+  electrode_dimensions: 10 10
+  electrode_norm_vector: 1 0 0
+  electrode_wf_decay_length: 0.3
+  electrode_workfunction: -5.0
+- coupling_model: QP_output
+  electrode_center: 10.5 0 0
+  electrode_coupling: 0.001
+  electrode_coupling_file: J_electrode_1.dat
+  electrode_dimensions: 10 10
+  electrode_norm_vector: -1 0 0
+  electrode_wf_decay_length: 0.3
+  electrode_workfunction: -5.0
+epsilon_material: 3.0
+excitonics: no excitons
+expansion_scheme: no expansion
+experiments:
+- Temperature:
+  - 300
+  field_direction: 1 0 0
+  field_strength: 1.0e-09
+  initial_electrons: 0
+  initial_holes: 0
+  measurement: DC
+  simulations: 31
+friction: 0.1
+global_xy_dimension: true
+image_charges: 0
+irradiance: 0.0
+iv_fluctuation: 0.05
+jump_tacker_update_iter: 2000
+layers:
+- box1:
+    dimensions: 14.437700000000001 15.245999999999999 15.1588
+    morphology file: COM_modified.dat
+  dimensions: 29.0 18.0 18.0
+  gsp: 0.0
+  layer_center: 0 0 0
+  molecule_species:
+  - concentration: 0.9990574696738285
+    material: host
+  - concentration: 0.0009425303261714897
+    material: dopant
+  morphology_input_mode: 'custom Files: morphology'
+  morphology_source: stochastic_extension
+  thickness: 14.437700000000001
+light_off_time: 0.01
+light_on_time: 1.0e-08
+materials:
+- input_mode_transport: 'PAR: eaip,sig,l'
+  molecule_parameters:
+    QP_output_sigma: DisorderJs
+    custom_hash: 7bcea01794773fc317d8fb5a8ea7c275
+    energies: '[[11.942529700001614, 5.696984353668965], [0.10158874404678221, 0.1028648344714156],
+      [0.0574702999983856, 0.0574702999983856]]'
+    exciton preset: doping
+    is_dopant: true
+  name: dopant
+- input_mode_transport: 'PAR: eaip,sig,l'
+  molecule_parameters:
+    QP_output_sigma: DisorderJs
+    custom_hash: 8f9f22e615cea1141c61fed1edc78168
+    energies: '[[5.909043569691717, 1.0298793999972986], [0.07061405648498163, 0.09517601163822818],
+      [0.0298793999972986, 0.0298793999972986]]'
+    exciton preset: doping
+    is_dopant: false
+  name: host
+max_bond_noise: 0.85
+max_damp_factor: 0.1
+max_iterations: 10000000000
+max_time: 1.0e10
+neighbours: 50
+new_wano: true
+noise_damping: false
+pair_input:
+- QP_output_coulomb: CT
+  QP_output_coulomb_EAIP: EAIP
+  molecule 1: host
+  molecule 2: host
+  transfer_integral_parameters:
+    Dexter_transfer_integrals:
+      maximum_ti: 0.003
+      wf_decay_length: 0.0
+    electron_transfer_integrals:
+      maximum_ti: 0.003
+      wf_decay_length: 0.0
+    hole_transfer_integrals:
+      maximum_ti: 0.003
+      wf_decay_length: 0.0
+- QP_output_coulomb: CT
+  QP_output_coulomb_EAIP: EAIP
+  molecule 1: host
+  molecule 2: dopant
+  transfer_integral_parameters:
+    Dexter_transfer_integrals:
+      maximum_ti: 0.003
+      wf_decay_length: 0.0
+    electron_transfer_integrals:
+      maximum_ti: 0.003
+      wf_decay_length: 0.0
+    hole_transfer_integrals:
+      maximum_ti: 0.003
+      wf_decay_length: 0.0
+- QP_output_coulomb: CT
+  QP_output_coulomb_EAIP: EAIP
+  molecule 1: dopant
+  molecule 2: dopant
+  transfer_integral_parameters:
+    Dexter_transfer_integrals:
+      maximum_ti: 0.003
+      wf_decay_length: 0.0
+    electron_transfer_integrals:
+      maximum_ti: 0.003
+      wf_decay_length: 0.0
+    hole_transfer_integrals:
+      maximum_ti: 0.003
+      wf_decay_length: 0.0
+particles:
+  electrons: true
+  excitons: true
+  holes: true
+pbc:
+- false
+- true
+- true
+polarization_correction: false
+r_cut_QP: 25
+rate_scaling:
+  charge_injection: 1.0
+  dexter_spinflip: 1.0
+  exciton_separation: 1.0
+  ptq: 1.0
+rates: mixed-marcus
+recursive_neighbours: 18
+reset_random_numbers: 800000
+scaling:
+- None
+screening_length: 1.3
+set_pbc: manual
+skip_material_plots:
+  all: true
+std_scale: -0.2
+superexchange: false
+td_scaling: 0.4
+ti_damping: false
+ti_prune: true
+ti_prune_cutoff: 1.0e-05
+track_exciton_lifecycle: false
+transfer_integral_file: transfer_integral_file.dat
+transfer_integral_source: Miller-Abrahams
+tta_rate: Miller

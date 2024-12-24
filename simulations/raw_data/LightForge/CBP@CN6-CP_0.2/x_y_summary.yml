@@ -1,0 +1,40 @@
+ion_doping:
+  Temperature:
+    T: !!python/object/apply:numpy.core.multiarray._reconstruct
+      args:
+      - !!python/name:numpy.ndarray ''
+      - !!python/tuple
+        - 0
+      - !!binary |
+        Yg==
+      state: !!python/tuple
+      - 1
+      - !!python/tuple
+        - 1
+      - !!python/object/apply:numpy.dtype
+        args:
+        - i8
+        - false
+        - true
+        state: !!python/tuple
+        - 3
+        - <
+        - null
+        - null
+        - null
+        - -1
+        - -1
+        - 0
+      - false
+      - !!binary |
+        LAEAAAAAAAA=
+    n_dop:
+    - 775.999999999997
+    n_ion_p_dop:
+    - 255.80733419436683
+    x_data:
+    - 300
+    y_data:
+    - - 775.999999999997
+      - 255.80733419436683
+      - 1.0e-50
