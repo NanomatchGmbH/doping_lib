@@ -73,7 +73,7 @@ def main():
             data_entry['fraction'] = extract_fraction_from_folder(folder)
             ionization = extract_ionization(folder_path)
             if ionization is not None:
-                data_entry['ionization'] = ionization
+                data_entry['efficiency'] = ionization
             ip, ea = extract_ip_ea(folder_path)
             if ip is not None:
                 data_entry['IP'] = ip

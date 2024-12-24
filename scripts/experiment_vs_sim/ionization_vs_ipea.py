@@ -58,6 +58,14 @@ merged_data = merged_data.dropna(subset=['material_number'])
 # Convert material_number to integer
 merged_data['material_number'] = merged_data['material_number'].astype(int)
 
+# Relative simulation values for materials 1 to 4
+relative_simulation_values = {
+    1: 0.969025613,
+    2: 0.921286021,
+    3: 0.848504597,
+    4: 0.800000000  # Example for material 4, you can modify this value
+}
+
 # Create a directory to save the plots if it doesn't exist
 output_dir = '../../exper_vs_sim/'
 os.makedirs(output_dir, exist_ok=True)
@@ -93,6 +101,12 @@ plt.scatter(merged_data['IP_EA_sim'], merged_data['efficiency'], color='blue', m
 # Plot experimental doping efficiency
 plt.scatter(merged_data['IP_EA_sim'], merged_data['efficiency_exp'], color='red', marker='s', label='Experimental')
 
+# Add unfilled circles for relative simulation values for materials 1-4
+for i in range(1, 5):
+    material_row = merged_data[merged_data['material_number'] == i]
+    if not material_row.empty:
+        plt.scatter(material_row['IP_EA_sim'], relative_simulation_values[i], facecolors='none', edgecolors='blue', marker='o')
+
 plt.xlabel('IP - EA (Simulated) [eV]')
 plt.ylabel(r'Ionization Fraction  $\eta_{\mathrm{exper}}$')
 plt.legend()
@@ -103,6 +117,9 @@ for i, row in merged_data.iterrows():
                  xytext=(5, -5), fontsize=7, color='blue', fontstyle='italic')
     plt.annotate(str(row['material_number']), (row['IP_EA_sim'], row['efficiency_exp']), textcoords="offset points",
                  xytext=(5, 5), fontsize=7, color='red', fontstyle='italic')
+
+plt.axis('square')
+
 
 # Restrict y-axis to start from 0.0
 plt.ylim(bottom=0.0)

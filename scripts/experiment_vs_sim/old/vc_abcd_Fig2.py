@@ -54,7 +54,7 @@ axes[3].text(-0.15, 1.05, "d", transform=axes[3].transAxes, fontsize=12, fontwei
 # Use axes[0]
 
 # Read data from the CSV file
-df = pd.read_csv('../../simulations/summary/Deposit/first_rdf_peak.csv')
+df = pd.read_csv('../../../simulations/summary/Deposit/first_rdf_peak.csv')
 
 # Remove doping information by splitting at '_' and keeping the part before it
 df['material_clean'] = df['material'].apply(lambda x: x.split('_')[0])
@@ -76,7 +76,7 @@ axes[0].set_ylim(4, )
 # Use axes[1]
 
 # Check if the merged YAML file exists
-yaml_file_path = '../../simulations/summary/QuantumPatch/merged_vc_data.yaml'
+yaml_file_path = '../../../simulations/summary/QuantumPatch/merged_vc_data.yaml'
 
 if not os.path.isfile(yaml_file_path):
     sys.exit(f"{yaml_file_path} does not exist.")
@@ -200,7 +200,7 @@ plt.tight_layout(pad=0.2)
 # Use axes[2]
 
 # Read the first_rdf_peak data
-rdf_peak_df = pd.read_csv('../../simulations/summary/Deposit/first_rdf_peak.csv')
+rdf_peak_df = pd.read_csv('../../../simulations/summary/Deposit/first_rdf_peak.csv')
 rdf_peak_df['clean_material'] = rdf_peak_df['material'].apply(lambda x: x.split('_')[0])
 rdf_peak_df.set_index('material', inplace=True)
 
@@ -248,13 +248,13 @@ axes[2].set_xlim([-0.9, -0.6])
 # Use axes[3]
 
 # Read the simulated data (IP, EA) and VC data from CSV file
-sim_data = pd.read_csv('../../simulations/summary/Lightforge/ionization_ip_ea.csv')
+sim_data = pd.read_csv('../../../simulations/summary/Lightforge/ionization_ip_ea.csv')
 
 # Read the VC data, which includes `VC_mean`
-vc_data = pd.read_csv('../../simulations/summary/Deposit/VC_at_first_rdf_peak.csv')
+vc_data = pd.read_csv('../../../simulations/summary/Deposit/VC_at_first_rdf_peak.csv')
 
 # Read the experimental data
-exp_data = pd.read_csv('../../experimental_data/summary/measured_efficiency.csv')
+exp_data = pd.read_csv('../../../experimental_data/summary/measured_efficiency.csv')
 
 # Extract base material names from simulated data
 def extract_base_material(material):

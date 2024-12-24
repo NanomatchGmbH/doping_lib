@@ -11,18 +11,17 @@ output_dir = '../../../../simulations/summary/Lightforge/fictional_materials'  #
 os.makedirs(output_dir, exist_ok=True)
 
 # Load all CSV files from the input directory
-csv_files = [f for f in os.listdir(input_dir) if f.endswith('.csv')]
+csv_files = [f.replace('.csv', '') for f in os.listdir(input_dir) if f.endswith('.csv')]  # Remove .csv extension from filenames
 
 # Create a list to hold dataframes and corresponding material names
 dataframes = []
 material_names = []
 
-# Read each CSV file and store the dataframe and corresponding material name (without .csv)
+# Read each CSV file and store the dataframe and corresponding material name
 for file in csv_files:
-    df = pd.read_csv(os.path.join(input_dir, file))
-    material_name = file.replace('.csv', '')  # Remove .csv extension
+    df = pd.read_csv(os.path.join(input_dir, file + '.csv'))
     dataframes.append(df)
-    material_names.append(material_name)
+    material_names.append(file)
 
 # Calculate IP - EA difference for each dataset
 for df in dataframes:
@@ -31,6 +30,25 @@ for df in dataframes:
 
 # Read the actual data
 actual_data = pd.read_csv(actual_data_file)
+
+# Create a mapping from numbers to materials, adding those without csv files
+materials_info = [
+    {'Number': 1, 'Material': 'BFDPB@CN6-CP_0.26'},
+    {'Number': 2, 'Material': 'NPB@CN6-CP_0.26'},
+    {'Number': 3, 'Material': 'BPAPF@CN6-CP_0.26'},
+    {'Number': 4, 'Material': 'TCTA@CN6-CP_0.26'},
+    {'Number': 5, 'Material': 'CBP@CN6-CP_0.07'},
+    {'Number': 6, 'Material': 'MeO-TPD@F4TCNQ_0.02'},
+    {'Number': 7, 'Material': 'm-MTDATA@F4TCNQ_0.02'},
+    {'Number': 8, 'Material': 'TPD@F4TCNQ_0.02'},
+    {'Number': 9, 'Material': 'TCTA@F6TCNNQ'}
+]
+
+# Create a mapping from material to number
+material_numbers = {item['Material']: item['Number'] for item in materials_info}
+
+# Get the materials without CSV files
+materials_without_csv = [item['Material'] for item in materials_info if item['Material'] not in material_names]
 
 # Plot settings for Advanced Materials journal style
 mpl.rcParams['font.family'] = ['Arial', 'Helvetica', 'sans-serif']
@@ -54,12 +72,52 @@ for i, df in enumerate(dataframes):
     # Plot the lines for the material (sorted data)
     ax.plot(df['IP_EA_diff'], df['ionization'], color=colors(i), label=material_label, linestyle='-', marker='')
 
-# Add actual data points for matching materials and ensure only one legend entry
-for i, material in enumerate(material_names):
-    matching_row = actual_data[actual_data['material'] == material]
-    if not matching_row.empty:
-        # Only add the actual data points, reusing the color of the corresponding line
-        ax.scatter(matching_row['IP'] - matching_row['EA'], matching_row['efficiency'], color=colors(i), label=None, marker='o', s=50)
+# Plot actual data points for matching materials and annotate with numbers
+for idx, row in actual_data.iterrows():
+    material = row['material']
+    # Check if the material is in our materials_info
+    material_number = material_numbers.get(material, None)
+    if material_number is not None:
+        ip_ea_diff = row['IP'] - row['EA']
+        efficiency = row['efficiency']
+        # Find the color corresponding to this material in the datasets
+        if material in material_names:
+            i = material_names.index(material)
+            color = colors(i)
+        else:
+            continue  # Skip if no matching material is found in the CSV files
+        # Plot the actual data point
+        ax.scatter(ip_ea_diff, efficiency, color=color, marker='o', s=50)
+        # Annotate the point with the number
+        ax.annotate(str(material_number), (ip_ea_diff, efficiency), textcoords="offset points",
+                    xytext=(5, 5), ha='left', fontsize=8, fontstyle='italic')
+
+# Plot hollow points for materials without CSV files
+for item in materials_info:
+    material = item['Material']
+    material_number = item['Number']
+    if material in materials_without_csv:
+        matching_row = actual_data[actual_data['material'] == material]
+        if not matching_row.empty:
+            ip_ea_diff = matching_row['IP'].values[0] - matching_row['EA'].values[0]
+            efficiency = matching_row['efficiency'].values[0]
+            # Find the color of a material with the same ionization fraction
+            similar_material = None
+            fraction = material.split('_')[-1]
+            for other_material in material_names:
+                if other_material.endswith(fraction):
+                    similar_material = other_material
+                    break
+            if similar_material:
+                i = material_names.index(similar_material)
+                color = colors(i)
+            else:
+                continue  # Skip if no similar material is found
+            # Plot the hollow point
+            ax.scatter(ip_ea_diff, efficiency, facecolors='none', edgecolors=color, marker='o', s=50)
+            # Annotate the hollow point with the number
+            ax.annotate(str(material_number), (ip_ea_diff, efficiency), textcoords="offset points",
+                        xytext=(5, 5), ha='left', fontsize=8, fontstyle='italic')
 
 # Add labels and title
 ax.set_xlabel('IP - EA Difference [eV]')
@@ -77,8 +135,8 @@ plt.tight_layout()
 plt.ylim([0.0, 1.0])
 
 # Save the plot as both PNG and PDF
-plot_png = os.path.join(output_dir, 'ionization_vs_ip_ea_with_actual_sorted.png')
-plot_pdf = os.path.join(output_dir, 'ionization_vs_ip_ea_with_actual_sorted.pdf')
+plot_png = os.path.join(output_dir, 'ionization_vs_ip_ea_with_actual_and_hollow_sorted.png')
+plot_pdf = os.path.join(output_dir, 'ionization_vs_ip_ea_with_actual_and_hollow_sorted.pdf')
 
 plt.savefig(plot_png, dpi=300)  # Save as PNG
 plt.savefig(plot_pdf)           # Save as PDF

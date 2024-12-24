@@ -1,12 +1,21 @@
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
+
+TYPE_OF_DISORDER = 'dynamic'  # dynamic, statis
 
 # Read the simulated data (IP, EA) and VC data from CSV file
 sim_data = pd.read_csv('../../simulations/summary/Lightforge/ionization_ip_ea.csv')
 
 # Read the VC data, which includes `VC_mean`
-vc_data = pd.read_csv('../../simulations/summary/Deposit/VC_at_first_rdf_peak.csv')  # Update this path to your actual CSV file
+vc_data = pd.read_csv('../../simulations/summary/Deposit/VC_at_first_rdf_peak.csv')
+
+# Read the disorder data
+if TYPE_OF_DISORDER == 'static':
+    disorder_data = pd.read_csv('../../simulations/summary/Parametrizer/disorder.csv')  # /sqrt(2)
+elif TYPE_OF_DISORDER == 'dynamic':
+    disorder_data = pd.read_csv('../../simulations/summary/Lightforge/dynamic_disorder.csv')  # /1
 
 # Read the experimental data
 exp_data = pd.read_csv('../../experimental_data/summary/measured_efficiency.csv')
@@ -21,6 +30,7 @@ def extract_base_material(material):
 
 sim_data['base_material'] = sim_data['material'].apply(extract_base_material)
 vc_data['base_material'] = vc_data['material'].apply(extract_base_material)
+disorder_data['base_material'] = disorder_data['material'].apply(extract_base_material)
 
 # Prepare the experimental data
 exp_data.rename(columns={'material_name': 'base_material', 'efficiency': 'efficiency_exp'}, inplace=True)
@@ -31,8 +41,19 @@ sim_data = pd.merge(sim_data, vc_data[['base_material', 'VC_mean']], on='base_ma
 # Merge the simulated + VC data with experimental data
 merged_data = pd.merge(sim_data, exp_data[['base_material', 'efficiency_exp']], on='base_material', how='inner')
 
+# Merge with disorder data
+merged_data = pd.merge(merged_data, disorder_data[['base_material', 'homo_disorder', 'lumo_disorder']], on='base_material', how='inner')
+
 # Compute IP - EA + VC (from simulations)
 merged_data['IP_EA_VC_sim'] = merged_data['IP'] - merged_data['EA'] + merged_data['VC_mean']
+
+# Compute delta_sigma = times_disorder<default 1 or 2>*(sigma_host + sigma_dopant)
+times_disorder = 2
+
+merged_data['delta_sigma'] = times_disorder * np.sqrt((0*merged_data['homo_disorder']**2 + 0*merged_data['lumo_disorder']**2)) / np.sqrt(1)
+
+# Adjust the x-axis data by subtracting delta_sigma
+merged_data['IP_EA_VC_sigma_sim'] = merged_data['IP_EA_VC_sim'] - merged_data['delta_sigma']
 
 # Create a mapping from numbers to materials
 materials_info = [
@@ -92,30 +113,31 @@ mpl.rcParams['legend.fontsize'] = 7
 fig, ax1 = plt.subplots(figsize=(half_page_width, 4.5))  # Adjust height as needed
 
 # --------------------------------------------
-# Plot: Doping Efficiency vs IP - EA + VC (Simulated)
+# Plot: Doping Efficiency vs IP - EA + VC - 2σ (Simulated)
 # --------------------------------------------
 
 # Plot simulated doping efficiency
-ax1.scatter(merged_data['IP_EA_VC_sim'], merged_data['efficiency'], color='blue', marker='o', label='Simulated')
+ax1.scatter(merged_data['IP_EA_VC_sigma_sim'], merged_data['efficiency'], color='blue', marker='o', label='Simulated')
 
 # Plot experimental doping efficiency
-ax1.scatter(merged_data['IP_EA_VC_sim'], merged_data['efficiency_exp'], color='red', marker='s', label='Experimental')
+ax1.scatter(merged_data['IP_EA_VC_sigma_sim'], merged_data['efficiency_exp'], color='red', marker='s', label='Experimental')
 
 # Add unfilled circles for relative simulation values for materials 1-4
 for i in range(1, 5):
     material_row = merged_data[merged_data['material_number'] == i]
     if not material_row.empty:
-        ax1.scatter(material_row['IP_EA_VC_sim'], relative_simulation_values[i], facecolors='none', edgecolors='blue', marker='o', label='Sim. (relative)' if i == 1 else "")
+        ax1.scatter(material_row['IP_EA_VC_sigma_sim'], relative_simulation_values[i], facecolors='none', edgecolors='blue', marker='o', label='Sim. (relative)' if i == 1 else "")
 
-ax1.set_xlabel('IP - EA + VC (Simulated) [eV]')
+ax1.set_xlabel(fr'IP - EA + VC - {times_disorder}x$\sigma_{{\mathrm{{host}}}}$ - {times_disorder}x$\sigma_{{\mathrm{{dop}}}}$ (Simulated) [eV]')
+#ax1.set_xlabel(fr'IP - EA + VC - ${times_disorder}\sigma_{\mathrm{host}}$ - ${times_disorder}\sigma_{\mathrm{dop}}$ (Simulated) [eV]')
 ax1.set_ylabel(r'Ionization Fraction  $\eta_{\mathrm{exper}}$')
 ax1.legend()
 
 # Annotate data points with italic numbers
 for i, row in merged_data.iterrows():
-    ax1.annotate(str(row['material_number']), (row['IP_EA_VC_sim'], row['efficiency']), textcoords="offset points",
+    ax1.annotate(str(row['material_number']), (row['IP_EA_VC_sigma_sim'], row['efficiency']), textcoords="offset points",
                  xytext=(5, -5), fontsize=7, color='blue', fontstyle='italic')
-    ax1.annotate(str(row['material_number']), (row['IP_EA_VC_sim'], row['efficiency_exp']), textcoords="offset points",
+    ax1.annotate(str(row['material_number']), (row['IP_EA_VC_sigma_sim'], row['efficiency_exp']), textcoords="offset points",
                  xytext=(5, 5), fontsize=7, color='red', fontstyle='italic')
 
 # Restrict y-axis to start from 0.0
@@ -125,7 +147,7 @@ ax1.set_ylim(bottom=0.0)
 plt.tight_layout()
 
 # Save the plot
-plot_filename = os.path.join(output_dir, 'doping_efficiency_vs_ipeavc_single_plot.png')
+plot_filename = os.path.join(output_dir, 'doping_efficiency_vs_ipeavcsigma_single_plot.png')
 plt.savefig(plot_filename, dpi=300)
 
 plt.show()

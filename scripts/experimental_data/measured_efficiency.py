@@ -9,7 +9,15 @@ import yaml
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-LIB_NAME = 'lib.yaml'
+###
+LIB_NAME = 'experimental_data/doped_materials.yaml'  # where to take the experimental data lib.
+
+target_file_name = 'experimental_data/summary/measured_efficiency.csv'  # where to save csv
+
+target_figure_name = 'experimental_data/summary/measured_efficiency.png'  # where to save its vizualization (IP-EA vs efficiency)
+
+
+####
 
 exclude_hosts = ['P3HT']
 exclude_dopants = ['C60F48', 'C60F36']
@@ -27,7 +35,7 @@ materials_counter = 0
 filtered_materials = []
 
 list_of_dicts = []
-df_has_value = pd.DataFrame(columns=['name', 'IP', 'EA', 'offset', 'efficiency', 'doping'])
+df_has_value = pd.DataFrame(columns=['name', 'IP', 'EA', 'offset', 'efficiency', 'doping', 'doi', 'doi'])
 
 for material in yaml_data:
     dopant_ionization_rate = material['doping']['efficiency']['data']
@@ -55,10 +63,11 @@ for material in yaml_data:
                 print(tmp_dict['offset'])
                 tmp_dict['efficiency'] = list(dopant_ionization_rate.values())[0]
                 tmp_dict['doping'] = list(dopant_ionization_rate.keys())[0]
+                tmp_dict['doi'] = material['doi']
                 list_of_dicts.append(tmp_dict)
 
 # add all materials for which the doping does not work to the materials with zero efficiencies
-print("Dopants which zero efficiencies: ")
+print("Materials with zero efficiencies: ")
 for material in yaml_data:
     dopant_ionization_rate = material['doping']['efficiency']['data']
     if not dopant_ionization_rate and material['host'] not in exclude_hosts and material['dopant'] not in exclude_dopants and material['doping']['works'] == False:
@@ -74,6 +83,7 @@ for material in yaml_data:
         print(tmp_dict['offset'])
         tmp_dict['efficiency'] = 0.0
         tmp_dict['doping'] = None
+        tmp_dict['doi'] = material['doi']
         list_of_dicts.append(tmp_dict)
 
 df_has_value = pd.DataFrame(list_of_dicts)
@@ -99,20 +109,20 @@ for index, row in df_has_value.iterrows():
              color='black', 
              rotation=30)  # Rotate the text vertically
 plt.ylim([0,1])
-plt.xlabel('Offset (eV)')  # Adjust label as needed
+plt.xlabel('IP-EA(eV)')
 plt.ylabel('Efficiency')
-plt.title('Efficiency vs Offset')  # Adjust title as needed
+plt.title('Efficiency vs IP-EA Offset | Experimental')
 plt.grid(True)  # Adds a grid
-plt.savefig("measured-efficiency.png", dpi=600)
+plt.savefig(target_figure_name, dpi=600)
 plt.show()
 
 
 # Save csv
 
 list_of_dicts = []
-df_has_value = pd.DataFrame(columns=['name', 'IP', 'EA', 'offset', 'efficiency', 'doping'])
+df_has_value = pd.DataFrame(columns=['name', 'IP', 'EA', 'offset', 'efficiency', 'doping', 'doi'])
 
-# Insert the modifications in your dictionary population loop
+# Insert the modifications in the dictionary population loop
 for material in yaml_data:
     dopant_ionization_rate = material['doping']['efficiency']['data']
     if dopant_ionization_rate and material['host'] not in exclude_hosts and material['dopant'] not in exclude_dopants:
@@ -124,7 +134,8 @@ for material in yaml_data:
                 'offset': material['IP']['value'] - material['EA']['value'],
                 'efficiency': list(dopant_ionization_rate.values())[0],
                 'doping': list(dopant_ionization_rate.keys())[0],
-                'material_name': f"{material['host']}@{material['dopant']}"
+                'material_name': f"{material['host']}@{material['dopant']}",
+                'doi': material['doi'],
             }
             list_of_dicts.append(tmp_dict)
 
@@ -133,6 +144,6 @@ df_has_value = pd.DataFrame(list_of_dicts)
 # Create the scatter plot (as previously included)
 
 # Save the DataFrame to a CSV
-df_measured = df_has_value[df_has_value['efficiency'].notnull() & (df_has_value['efficiency'] > 0)]
-df_measured[['material_name', 'efficiency']].to_csv('measured_efficiency.csv', index=False)
-print("Data saved to 'measured_efficiency.csv'.")
+df_measured = df_has_value[df_has_value['efficiency'].notnull() & (df_has_value['efficiency'] > 0)]  # ????
+df_measured[['material_name', 'efficiency', 'doi']].to_csv(f'{target_file_name}', index=False)
+print(f"Data saved to {target_file_name}.")
