@@ -1,0 +1,116 @@
+connect_electrodes: false
+coulomb_binding_energy: 0.7
+coulomb_correction: false
+coulomb_correction_mode: constant
+coulomb_mesh: false
+ct_rate_memory_multiplier: 5.0
+doping: true
+electrode_stack_distance: 0.2
+electrodes:
+- coupling_model: parametrized
+  electrode_coupling: 0.0
+  electrode_wf_decay_length: 0.0
+  electrode_workfunction: -5.0
+- coupling_model: parametrized
+  electrode_coupling: 0.0
+  electrode_wf_decay_length: 0.0
+  electrode_workfunction: -5.0
+epsilon_material: 3.0
+excitonics: no excitons
+experiments:
+- Temperature: 300
+  field_direction:
+  - 1
+  - 0
+  - 0
+  field_strength: 0.05
+  initial_electrons: 0
+  initial_holes: 0
+  measurement: DC
+  simulations: 31
+iv_fluctuation: 0.01
+layers:
+- molecule_species:
+  - concentration: 0.95
+    material: host
+  - concentration: 0.05
+    material: dopant
+  morphology_input_mode: cubic
+  thickness: 20
+live_reporting:
+  reporting_time_interval: 60
+materials:
+- input_mode_transport: 'PAR: eaip,sig,l'
+  molecule_parameters:
+    energies:
+    - - 4.0
+      - 1.0
+    - - 0.1
+      - 0.1
+    - - 0.2
+      - 0.2
+    exciton preset: doping
+  name: host
+- input_mode_transport: 'PAR: eaip,sig,l'
+  molecule_parameters:
+    energies:
+    - - 7.0
+      - 4.4
+    - - 0.1
+      - 0.1
+    - - 0.2
+      - 0.2
+    exciton preset: doping
+    is_dopant: true
+  name: dopant
+max_iterations: 5000000
+morphology_width: 20
+neighbours: 26
+new_wano: true
+pair_input:
+- molecule 1: host
+  molecule 2: host
+  transfer_integral_parameters:
+    Dexter_transfer_integrals:
+      maximum_ti: 0.0001
+      wf_decay_length: 0.1
+    electron_transfer_integrals:
+      maximum_ti: 0.001
+      wf_decay_length: 0.1
+    hole_transfer_integrals:
+      maximum_ti: 0.001
+      wf_decay_length: 0.1
+- molecule 1: host
+  molecule 2: dopant
+  transfer_integral_parameters:
+    Dexter_transfer_integrals:
+      maximum_ti: 0.0001
+      wf_decay_length: 0.1
+    electron_transfer_integrals:
+      maximum_ti: 0.001
+      wf_decay_length: 0.1
+    hole_transfer_integrals:
+      maximum_ti: 0.001
+      wf_decay_length: 0.1
+- molecule 1: dopant
+  molecule 2: dopant
+  transfer_integral_parameters:
+    Dexter_transfer_integrals:
+      maximum_ti: 0.0001
+      wf_decay_length: 0.1
+    electron_transfer_integrals:
+      maximum_ti: 0.001
+      wf_decay_length: 0.1
+    hole_transfer_integrals:
+      maximum_ti: 0.001
+      wf_decay_length: 0.1
+particles:
+  electrons: true
+  excitons: true
+  holes: true
+pbc:
+- true
+- true
+- true
+reset_random_numbers: 210000
+transfer_integral_source: Miller-Abrahams
