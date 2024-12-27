@@ -1,0 +1,1200 @@
+Mol_1039_C_1,Mol_1443:
+  energies:
+    1039:
+      total_e_charged: -49093.891631
+      total_e_charged_vacuum: -49092.6701574
+      total_e_uncharged: -49099.4509919
+      total_e_uncharged_vacuum: -49098.5923171
+    1443:
+      total_e_charged: -21362.5185258
+      total_e_charged_vacuum: -21361.4419903
+      total_e_uncharged: -21362.5158502
+      total_e_uncharged_vacuum: -21361.4414674
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 18.075963781763328
+    molids:
+    - 1039
+    - 1443
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_11272_C_1,Mol_11291:
+  energies:
+    11272:
+      total_e_charged: -49093.7020424
+      total_e_charged_vacuum: -49092.2714136
+      total_e_uncharged: -49099.0263695
+      total_e_uncharged_vacuum: -49098.4267036
+    11291:
+      total_e_charged: -21362.5977206
+      total_e_charged_vacuum: -21361.480775
+      total_e_uncharged: -21362.6546339
+      total_e_uncharged_vacuum: -21361.4941957
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 6.686124445847893
+    molids:
+    - 11272
+    - 11291
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_11288_C_1,Mol_11193:
+  energies:
+    11193:
+      total_e_charged: -21362.8214396
+      total_e_charged_vacuum: -21361.3725209
+      total_e_uncharged: -21362.8034528
+      total_e_uncharged_vacuum: -21361.3546721
+    11288:
+      total_e_charged: -49094.1489236
+      total_e_charged_vacuum: -49092.8394987
+      total_e_uncharged: -49099.2774717
+      total_e_uncharged_vacuum: -49098.7276604
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 13.058128082389022
+    molids:
+    - 11288
+    - 11193
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_11462_C_1,Mol_11514:
+  energies:
+    11462:
+      total_e_charged: -49094.0612642
+      total_e_charged_vacuum: -49092.7963182
+      total_e_uncharged: -49099.2972933
+      total_e_uncharged_vacuum: -49098.6795603
+    11514:
+      total_e_charged: -21362.4504137
+      total_e_charged_vacuum: -21361.4497148
+      total_e_uncharged: -21362.5190655
+      total_e_uncharged_vacuum: -21361.4620302
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 4.810116607267462
+    molids:
+    - 11462
+    - 11514
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_11605_C_1,Mol_11849:
+  energies:
+    11605:
+      total_e_charged: -49093.8841813
+      total_e_charged_vacuum: -49092.4906423
+      total_e_uncharged: -49099.8115069
+      total_e_uncharged_vacuum: -49098.1893259
+    11849:
+      total_e_charged: -21362.2810312
+      total_e_charged_vacuum: -21361.5275
+      total_e_uncharged: -21362.423366
+      total_e_uncharged_vacuum: -21361.528392
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 3.940086599281538
+    molids:
+    - 11605
+    - 11849
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_11639_C_1,Mol_11940:
+  energies:
+    11639:
+      total_e_charged: -49094.3891625
+      total_e_charged_vacuum: -49092.6937462
+      total_e_uncharged: -49099.6304171
+      total_e_uncharged_vacuum: -49098.4856575
+    11940:
+      total_e_charged: -21362.2907075
+      total_e_charged_vacuum: -21361.5482479
+      total_e_uncharged: -21362.2946294
+      total_e_uncharged_vacuum: -21361.5470018
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 23.560513095052215
+    molids:
+    - 11639
+    - 11940
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_11862_C_1,Mol_12065:
+  energies:
+    11862:
+      total_e_charged: -49094.1486777
+      total_e_charged_vacuum: -49092.5755685
+      total_e_uncharged: -49099.5629581
+      total_e_uncharged_vacuum: -49098.4206542
+    12065:
+      total_e_charged: -21362.3444435
+      total_e_charged_vacuum: -21361.4979926
+      total_e_uncharged: -21362.3703093
+      total_e_uncharged_vacuum: -21361.48106
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 8.469433117247267
+    molids:
+    - 11862
+    - 12065
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_12129_C_1,Mol_12150:
+  energies:
+    12129:
+      total_e_charged: -49094.1769632
+      total_e_charged_vacuum: -49092.830851
+      total_e_uncharged: -49099.2728574
+      total_e_uncharged_vacuum: -49098.6643476
+    12150:
+      total_e_charged: -21362.0466118
+      total_e_charged_vacuum: -21361.5778462
+      total_e_uncharged: -21362.1972856
+      total_e_uncharged_vacuum: -21361.5637304
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 4.409997527617631
+    molids:
+    - 12129
+    - 12150
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_1330_C_1,Mol_1343:
+  energies:
+    1330:
+      total_e_charged: -49094.0313148
+      total_e_charged_vacuum: -49092.6784613
+      total_e_uncharged: -49099.0830383
+      total_e_uncharged_vacuum: -49098.6210185
+    1343:
+      total_e_charged: -21362.0174085
+      total_e_charged_vacuum: -21361.5808058
+      total_e_uncharged: -21362.0249687
+      total_e_uncharged_vacuum: -21361.5791626
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 15.47727644825204
+    molids:
+    - 1330
+    - 1343
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_14038_C_1,Mol_14039:
+  energies:
+    14038:
+      total_e_charged: -49093.7869107
+      total_e_charged_vacuum: -49092.8723303
+      total_e_uncharged: -49098.919276
+      total_e_uncharged_vacuum: -49098.6561486
+    14039:
+      total_e_charged: -21362.0540738
+      total_e_charged_vacuum: -21361.5711905
+      total_e_uncharged: -21361.9934312
+      total_e_uncharged_vacuum: -21361.587578
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 7.896984329116858
+    molids:
+    - 14038
+    - 14039
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_14569_C_1,Mol_14528:
+  energies:
+    14528:
+      total_e_charged: -21362.197825
+      total_e_charged_vacuum: -21361.5194694
+      total_e_uncharged: -21362.2874632
+      total_e_uncharged_vacuum: -21361.5183816
+    14569:
+      total_e_charged: -49094.1145681
+      total_e_charged_vacuum: -49092.918045
+      total_e_uncharged: -49099.2176543
+      total_e_uncharged_vacuum: -49098.7267111
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 4.155935473345174
+    molids:
+    - 14569
+    - 14528
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_14615_C_1,Mol_14770:
+  energies:
+    14615:
+      total_e_charged: -49093.9175632
+      total_e_charged_vacuum: -49092.9608847
+      total_e_uncharged: -49099.080383
+      total_e_uncharged_vacuum: -49098.8060805
+    14770:
+      total_e_charged: -21362.2965091
+      total_e_charged_vacuum: -21361.5208545
+      total_e_uncharged: -21362.3437302
+      total_e_uncharged_vacuum: -21361.5163265
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 9.604826420282887
+    molids:
+    - 14615
+    - 14770
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_1467_C_1,Mol_1689:
+  energies:
+    1467:
+      total_e_charged: -49093.9796186
+      total_e_charged_vacuum: -49092.6459376
+      total_e_uncharged: -49099.2403186
+      total_e_uncharged_vacuum: -49098.5779171
+    1689:
+      total_e_charged: -21362.1134684
+      total_e_charged_vacuum: -21361.5590404
+      total_e_uncharged: -21362.1050929
+      total_e_uncharged_vacuum: -21361.5714577
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 10.463089903440785
+    molids:
+    - 1467
+    - 1689
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_1497_C_1,Mol_1499:
+  energies:
+    1497:
+      total_e_charged: -49093.8858991
+      total_e_charged_vacuum: -49092.7053329
+      total_e_uncharged: -49099.3646032
+      total_e_uncharged_vacuum: -49098.5473906
+    1499:
+      total_e_charged: -21362.0564488
+      total_e_charged_vacuum: -21361.5595209
+      total_e_uncharged: -21362.1952918
+      total_e_uncharged_vacuum: -21361.5593654
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 4.249918746124457
+    molids:
+    - 1497
+    - 1499
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_17147_C_1,Mol_17219:
+  energies:
+    17147:
+      total_e_charged: -49094.0932789
+      total_e_charged_vacuum: -49092.8762224
+      total_e_uncharged: -49099.0495295
+      total_e_uncharged_vacuum: -49098.6394066
+    17219:
+      total_e_charged: -21362.1401874
+      total_e_charged_vacuum: -21361.5622335
+      total_e_uncharged: -21362.1481069
+      total_e_uncharged_vacuum: -21361.5602613
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 8.176589026603681
+    molids:
+    - 17147
+    - 17219
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_17594_C_1,Mol_17454:
+  energies:
+    17454:
+      total_e_charged: -21362.0993759
+      total_e_charged_vacuum: -21361.5786693
+      total_e_uncharged: -21362.1075659
+      total_e_uncharged_vacuum: -21361.5803531
+    17594:
+      total_e_charged: -49094.1746073
+      total_e_charged_vacuum: -49092.9193389
+      total_e_uncharged: -49099.0770698
+      total_e_uncharged_vacuum: -49098.7140154
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 16.086691216714488
+    molids:
+    - 17594
+    - 17454
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_17630_C_1,Mol_7893:
+  energies:
+    7893:
+      total_e_charged: -21362.2562119
+      total_e_charged_vacuum: -21361.5403059
+      total_e_uncharged: -21362.2326072
+      total_e_uncharged_vacuum: -21361.5468603
+    17630:
+      total_e_charged: -49093.8288795
+      total_e_charged_vacuum: -49092.8175367
+      total_e_uncharged: -49099.008273
+      total_e_uncharged_vacuum: -49098.7400609
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 9.215089942607914
+    molids:
+    - 17630
+    - 7893
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_17775_C_1,Mol_17809:
+  energies:
+    17775:
+      total_e_charged: -49094.2861669
+      total_e_charged_vacuum: -49092.9810774
+      total_e_uncharged: -49099.4437893
+      total_e_uncharged_vacuum: -49098.7544255
+    17809:
+      total_e_charged: -21362.1180904
+      total_e_charged_vacuum: -21361.5667203
+      total_e_uncharged: -21362.2517835
+      total_e_uncharged_vacuum: -21361.5582277
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 3.7397975819632117
+    molids:
+    - 17775
+    - 17809
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_17848_C_1,Mol_17969:
+  energies:
+    17848:
+      total_e_charged: -49093.833851
+      total_e_charged_vacuum: -49092.7613971
+      total_e_uncharged: -49099.1872744
+      total_e_uncharged_vacuum: -49098.637761
+    17969:
+      total_e_charged: -21362.0847834
+      total_e_charged_vacuum: -21361.571408
+      total_e_uncharged: -21362.2002368
+      total_e_uncharged_vacuum: -21361.5685744
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 4.547818628537111
+    molids:
+    - 17848
+    - 17969
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_1805_C_1,Mol_1931:
+  energies:
+    1805:
+      total_e_charged: -49093.8434646
+      total_e_charged_vacuum: -49092.6826523
+      total_e_uncharged: -49099.4056906
+      total_e_uncharged_vacuum: -49098.4625162
+    1931:
+      total_e_charged: -21362.5495887
+      total_e_charged_vacuum: -21361.4458782
+      total_e_uncharged: -21362.6160418
+      total_e_uncharged_vacuum: -21361.4158382
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 10.932135643513957
+    molids:
+    - 1805
+    - 1931
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_1815_C_1,Mol_2257:
+  energies:
+    1815:
+      total_e_charged: -49094.2018835
+      total_e_charged_vacuum: -49092.8747979
+      total_e_uncharged: -49099.3303252
+      total_e_uncharged_vacuum: -49098.7302436
+    2257:
+      total_e_charged: -21362.4295729
+      total_e_charged_vacuum: -21361.5260089
+      total_e_uncharged: -21362.4274004
+      total_e_uncharged_vacuum: -21361.5265652
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 21.860966673890065
+    molids:
+    - 1815
+    - 2257
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_1838_C_1,Mol_1666:
+  energies:
+    1666:
+      total_e_charged: -21362.0202738
+      total_e_charged_vacuum: -21361.5798387
+      total_e_uncharged: -21362.014591
+      total_e_uncharged_vacuum: -21361.5814293
+    1838:
+      total_e_charged: -49094.1176106
+      total_e_charged_vacuum: -49092.8644166
+      total_e_uncharged: -49099.3526616
+      total_e_uncharged_vacuum: -49098.6347842
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 13.951658300473774
+    molids:
+    - 1838
+    - 1666
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_1978_C_1,Mol_2032:
+  energies:
+    1978:
+      total_e_charged: -49094.3450391
+      total_e_charged_vacuum: -49092.9168576
+      total_e_uncharged: -49099.1854662
+      total_e_uncharged_vacuum: -49098.6786657
+    2032:
+      total_e_charged: -21362.3813377
+      total_e_charged_vacuum: -21361.5287973
+      total_e_uncharged: -21362.3091815
+      total_e_uncharged_vacuum: -21361.5563056
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 6.402725976437529
+    molids:
+    - 1978
+    - 2032
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_20482_C_1,Mol_20558:
+  energies:
+    20482:
+      total_e_charged: -49093.7998303
+      total_e_charged_vacuum: -49092.8722471
+      total_e_uncharged: -49098.9065426
+      total_e_uncharged_vacuum: -49098.656242
+    20558:
+      total_e_charged: -21362.7150232
+      total_e_charged_vacuum: -21361.466074
+      total_e_uncharged: -21362.7204142
+      total_e_uncharged_vacuum: -21361.4640031
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 10.068910290844904
+    molids:
+    - 20482
+    - 20558
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_20497_C_1,Mol_20532:
+  energies:
+    20497:
+      total_e_charged: -49093.6409555
+      total_e_charged_vacuum: -49092.6133951
+      total_e_uncharged: -49098.8597653
+      total_e_uncharged_vacuum: -49098.6330375
+    20532:
+      total_e_charged: -21362.4512822
+      total_e_charged_vacuum: -21361.5151831
+      total_e_uncharged: -21362.464532
+      total_e_uncharged_vacuum: -21361.5118735
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 17.424589083552682
+    molids:
+    - 20497
+    - 20532
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_2061_C_1,Mol_2582:
+  energies:
+    2061:
+      total_e_charged: -49093.8551054
+      total_e_charged_vacuum: -49092.9339567
+      total_e_uncharged: -49099.1579812
+      total_e_uncharged_vacuum: -49098.7777035
+    2582:
+      total_e_charged: -21362.0206888
+      total_e_charged_vacuum: -21361.5690796
+      total_e_uncharged: -21362.0262284
+      total_e_uncharged_vacuum: -21361.5695611
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 24.539140033995732
+    molids:
+    - 2061
+    - 2582
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_20825_C_1,Mol_20748:
+  energies:
+    20748:
+      total_e_charged: -21362.1996669
+      total_e_charged_vacuum: -21361.5110598
+      total_e_uncharged: -21362.2186007
+      total_e_uncharged_vacuum: -21361.5069396
+    20825:
+      total_e_charged: -49094.317847
+      total_e_charged_vacuum: -49092.9671691
+      total_e_uncharged: -49099.312953
+      total_e_uncharged_vacuum: -49098.744343
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 11.753324402258821
+    molids:
+    - 20825
+    - 20748
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_20909_C_1,Mol_21009:
+  energies:
+    20909:
+      total_e_charged: -49094.1726417
+      total_e_charged_vacuum: -49092.8659295
+      total_e_uncharged: -49099.1237283
+      total_e_uncharged_vacuum: -49098.6564955
+    21009:
+      total_e_charged: -21362.5954885
+      total_e_charged_vacuum: -21361.4378987
+      total_e_uncharged: -21362.6045526
+      total_e_uncharged_vacuum: -21361.4394018
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 12.60933308389111
+    molids:
+    - 20909
+    - 21009
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_21008_C_1,Mol_20980:
+  energies:
+    20980:
+      total_e_charged: -21361.962933
+      total_e_charged_vacuum: -21361.5682136
+      total_e_uncharged: -21361.9936095
+      total_e_uncharged_vacuum: -21361.5816202
+    21008:
+      total_e_charged: -49093.8610682
+      total_e_charged_vacuum: -49092.7328567
+      total_e_uncharged: -49099.0621554
+      total_e_uncharged_vacuum: -49098.6022692
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 6.096866299838128
+    molids:
+    - 21008
+    - 20980
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_21219_C_1,Mol_21402:
+  energies:
+    21219:
+      total_e_charged: -49094.0692446
+      total_e_charged_vacuum: -49092.8865582
+      total_e_uncharged: -49099.0810037
+      total_e_uncharged_vacuum: -49098.7039474
+    21402:
+      total_e_charged: -21362.4455474
+      total_e_charged_vacuum: -21361.5000827
+      total_e_uncharged: -21362.452555
+      total_e_uncharged_vacuum: -21361.5016865
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 14.934807030093173
+    molids:
+    - 21219
+    - 21402
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_21328_C_1,Mol_21332:
+  energies:
+    21328:
+      total_e_charged: -49094.0163925
+      total_e_charged_vacuum: -49092.6203816
+      total_e_uncharged: -49099.6786393
+      total_e_uncharged_vacuum: -49098.5176548
+    21332:
+      total_e_charged: -21362.5820493
+      total_e_charged_vacuum: -21361.4685481
+      total_e_uncharged: -21362.6500818
+      total_e_uncharged_vacuum: -21361.484118
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 4.669758614330942
+    molids:
+    - 21328
+    - 21332
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_21342_C_1,Mol_24568:
+  energies:
+    21342:
+      total_e_charged: -49093.7332768
+      total_e_charged_vacuum: -49092.7423783
+      total_e_uncharged: -49099.204165
+      total_e_uncharged_vacuum: -49098.5975793
+    24568:
+      total_e_charged: -21362.3556231
+      total_e_charged_vacuum: -21361.4808725
+      total_e_uncharged: -21362.4960394
+      total_e_uncharged_vacuum: -21361.4395769
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 5.082716186350617
+    molids:
+    - 21342
+    - 24568
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_2148_C_1,Mol_2379:
+  energies:
+    2148:
+      total_e_charged: -49093.9109312
+      total_e_charged_vacuum: -49092.773143
+      total_e_uncharged: -49099.1211329
+      total_e_uncharged_vacuum: -49098.686639
+    2379:
+      total_e_charged: -21362.126319
+      total_e_charged_vacuum: -21361.5508376
+      total_e_uncharged: -21362.1338773
+      total_e_uncharged_vacuum: -21361.5488736
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 20.2917534222444
+    molids:
+    - 2148
+    - 2379
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_21549_C_1,Mol_21554:
+  energies:
+    21549:
+      total_e_charged: -49093.663195
+      total_e_charged_vacuum: -49092.4424788
+      total_e_uncharged: -49099.0972495
+      total_e_uncharged_vacuum: -49098.568607
+    21554:
+      total_e_charged: -21362.3325454
+      total_e_charged_vacuum: -21361.5167986
+      total_e_uncharged: -21362.33299
+      total_e_uncharged_vacuum: -21361.5187217
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 21.04614586386295
+    molids:
+    - 21549
+    - 21554
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_21583_C_1,Mol_21678:
+  energies:
+    21583:
+      total_e_charged: -49093.8688001
+      total_e_charged_vacuum: -49092.5547096
+      total_e_uncharged: -49099.3762221
+      total_e_uncharged_vacuum: -49098.519109
+    21678:
+      total_e_charged: -21362.2042063
+      total_e_charged_vacuum: -21361.5595333
+      total_e_uncharged: -21362.2413015
+      total_e_uncharged_vacuum: -21361.547764
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 5.798038163624051
+    molids:
+    - 21583
+    - 21678
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_2301_C_1,Mol_2309:
+  energies:
+    2301:
+      total_e_charged: -49094.3950787
+      total_e_charged_vacuum: -49092.9280701
+      total_e_uncharged: -49099.3239083
+      total_e_uncharged_vacuum: -49098.7505894
+    2309:
+      total_e_charged: -21362.212923
+      total_e_charged_vacuum: -21361.54148
+      total_e_uncharged: -21362.2090791
+      total_e_uncharged_vacuum: -21361.5435193
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 18.769977912421915
+    molids:
+    - 2301
+    - 2309
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_2304_C_1,Mol_2582:
+  energies:
+    2304:
+      total_e_charged: -49093.9933754
+      total_e_charged_vacuum: -49092.8903012
+      total_e_uncharged: -49099.0777357
+      total_e_uncharged_vacuum: -49098.7546417
+    2582:
+      total_e_charged: -21362.0037058
+      total_e_charged_vacuum: -21361.5562025
+      total_e_uncharged: -21362.0230773
+      total_e_uncharged_vacuum: -21361.5690654
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 8.850085514911337
+    molids:
+    - 2304
+    - 2582
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_2311_C_1,Mol_2337:
+  energies:
+    2311:
+      total_e_charged: -49093.9935723
+      total_e_charged_vacuum: -49092.7417526
+      total_e_uncharged: -49099.4115551
+      total_e_uncharged_vacuum: -49098.6266723
+    2337:
+      total_e_charged: -21362.0310613
+      total_e_charged_vacuum: -21361.5376403
+      total_e_uncharged: -21362.0887806
+      total_e_uncharged_vacuum: -21361.5304712
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 11.316041766436124
+    molids:
+    - 2311
+    - 2337
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_2320_C_1,Mol_2340:
+  energies:
+    2320:
+      total_e_charged: -49093.9880596
+      total_e_charged_vacuum: -49092.8990875
+      total_e_uncharged: -49099.1091068
+      total_e_uncharged_vacuum: -49098.7003993
+    2340:
+      total_e_charged: -21362.6059785
+      total_e_charged_vacuum: -21361.4907785
+      total_e_uncharged: -21362.5636711
+      total_e_uncharged_vacuum: -21361.501639
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 14.39964644104969
+    molids:
+    - 2320
+    - 2340
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_25101_C_1,Mol_21562:
+  energies:
+    21562:
+      total_e_charged: -21362.2129173
+      total_e_charged_vacuum: -21361.4944219
+      total_e_uncharged: -21362.2189839
+      total_e_uncharged_vacuum: -21361.4912276
+    25101:
+      total_e_charged: -49093.7987351
+      total_e_charged_vacuum: -49092.8329759
+      total_e_uncharged: -49099.0464172
+      total_e_uncharged_vacuum: -49098.7102185
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 19.472750601753336
+    molids:
+    - 25101
+    - 21562
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_4506_C_1,Mol_4596:
+  energies:
+    4506:
+      total_e_charged: -49093.8938569
+      total_e_charged_vacuum: -49092.7185786
+      total_e_uncharged: -49099.1074361
+      total_e_uncharged_vacuum: -49098.6527681
+    4596:
+      total_e_charged: -21361.818894
+      total_e_charged_vacuum: -21361.5903537
+      total_e_uncharged: -21361.8894268
+      total_e_uncharged_vacuum: -21361.5908944
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 6.99550468898567
+    molids:
+    - 4506
+    - 4596
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_4551_C_1,Mol_4565:
+  energies:
+    4551:
+      total_e_charged: -49094.1059451
+      total_e_charged_vacuum: -49092.8440802
+      total_e_uncharged: -49099.1147988
+      total_e_uncharged_vacuum: -49098.6945305
+    4565:
+      total_e_charged: -21362.0707676
+      total_e_charged_vacuum: -21361.574574
+      total_e_uncharged: -21362.042197
+      total_e_uncharged_vacuum: -21361.5805231
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 7.598826556204932
+    molids:
+    - 4551
+    - 4565
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_4805_C_1,Mol_4762:
+  energies:
+    4762:
+      total_e_charged: -21362.333308
+      total_e_charged_vacuum: -21361.5090776
+      total_e_uncharged: -21362.3696238
+      total_e_uncharged_vacuum: -21361.5132647
+    4805:
+      total_e_charged: -49093.8340223
+      total_e_charged_vacuum: -49092.7952294
+      total_e_uncharged: -49099.2709288
+      total_e_uncharged_vacuum: -49098.5682729
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 5.517224027136072
+    molids:
+    - 4805
+    - 4762
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_5087_C_1,Mol_5187:
+  energies:
+    5087:
+      total_e_charged: -49093.9332506
+      total_e_charged_vacuum: -49092.859527
+      total_e_uncharged: -49099.1668689
+      total_e_uncharged_vacuum: -49098.7088813
+    5187:
+      total_e_charged: -21362.0794027
+      total_e_charged_vacuum: -21361.542119
+      total_e_uncharged: -21362.1980874
+      total_e_uncharged_vacuum: -21361.5123443
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 5.289708605267593
+    molids:
+    - 5087
+    - 5187
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_7455_C_1,Mol_26768:
+  energies:
+    7455:
+      total_e_charged: -49093.9173211
+      total_e_charged_vacuum: -49092.9584056
+      total_e_uncharged: -49099.1810013
+      total_e_uncharged_vacuum: -49098.8126859
+    26768:
+      total_e_charged: -21362.5967989
+      total_e_charged_vacuum: -21361.4734117
+      total_e_uncharged: -21362.5572955
+      total_e_uncharged_vacuum: -21361.4837586
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 7.254138326379257
+    molids:
+    - 7455
+    - 26768
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_7859_C_1,Mol_8263:
+  energies:
+    7859:
+      total_e_charged: -49094.3186098
+      total_e_charged_vacuum: -49092.8944456
+      total_e_uncharged: -49099.4489082
+      total_e_uncharged_vacuum: -49098.7402805
+    8263:
+      total_e_charged: -21362.18275
+      total_e_charged_vacuum: -21361.5613268
+      total_e_uncharged: -21362.1747327
+      total_e_uncharged_vacuum: -21361.5640695
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 22.694496219214006
+    molids:
+    - 7859
+    - 8263
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_8131_C_1,Mol_7976:
+  energies:
+    7976:
+      total_e_charged: -21362.219147
+      total_e_charged_vacuum: -21361.5531304
+      total_e_uncharged: -21362.2125554
+      total_e_uncharged_vacuum: -21361.5602207
+    8131:
+      total_e_charged: -49094.3443758
+      total_e_charged_vacuum: -49092.8949974
+      total_e_uncharged: -49099.5234497
+      total_e_uncharged_vacuum: -49098.6748127
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 13.525936646345908
+    molids:
+    - 8131
+    - 7976
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_8377_C_1,Mol_8172:
+  energies:
+    8172:
+      total_e_charged: -21362.1518815
+      total_e_charged_vacuum: -21361.554468
+      total_e_uncharged: -21362.1699308
+      total_e_uncharged_vacuum: -21361.5514589
+    8377:
+      total_e_charged: -49094.1035076
+      total_e_charged_vacuum: -49092.565065
+      total_e_uncharged: -49099.2303885
+      total_e_uncharged_vacuum: -49098.5218497
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 12.18815847185477
+    molids:
+    - 8377
+    - 8172
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_8658_C_1,Mol_8652:
+  energies:
+    8652:
+      total_e_charged: -21362.3914276
+      total_e_charged_vacuum: -21361.5219242
+      total_e_uncharged: -21362.4881958
+      total_e_uncharged_vacuum: -21361.5261519
+    8658:
+      total_e_charged: -49094.1959284
+      total_e_charged_vacuum: -49092.8204768
+      total_e_uncharged: -49099.3669364
+      total_e_uncharged_vacuum: -49098.6592834
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 3.6103172529422825
+    molids:
+    - 8658
+    - 8652
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT
+Mol_8834_C_1,Mol_18393:
+  energies:
+    8834:
+      total_e_charged: -49094.183962
+      total_e_charged_vacuum: -49092.8370205
+      total_e_uncharged: -49099.079221
+      total_e_uncharged_vacuum: -49098.6508112
+    18393:
+      total_e_charged: -21362.5816332
+      total_e_charged_vacuum: -21361.4736315
+      total_e_uncharged: -21362.5620051
+      total_e_uncharged_vacuum: -21361.4804785
+  info:
+    charges:
+    - 1
+    - 0
+    comdist: 16.768769247757024
+    molids:
+    - 8834
+    - 18393
+    moltypes:
+    - 7049b4f04320513007a41f2c80ce9989
+    - 7bcea01794773fc317d8fb5a8ea7c275
+    simtype: CT

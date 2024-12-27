@@ -1,0 +1,26 @@
+#!/bin/bash
+#SBATCH --nodes=6
+#SBATCH --tasks-per-node=76
+#SBATCH -t 0-72:00:00
+#SBATCH -e stderr
+#SBATCH -o stdout
+#SBATCH --mail-type=FAIL,END
+#SBATCH -J MeO-TPD@F4TCNQ_0.07
+#SBATCH --mail-user=artem.fediai@nanomatch.com
+#SBATCH --partition cpuonly
+#SBATCH -A hk-project-doled
+#set -e
+
+export NANOMATCH=/home/hk-project-zimnano/nz8308/nanomatch
+export NANOVER=V6
+source $NANOMATCH/$NANOVER/configs/quantumpatch.config
+source $NANOMATCH/$NANOVER/configs/deposit.config
+#export FI_PROVIDER=sockets
+export OMP_NUM_THREADS=1
+
+
+cd ${SLURM_SUBMIT_DIR}
+
+export SHREDDERPATH=/hkfs/home/project/hk-project-zimnano/nz8308/nanomatch/V6/QP_master
+#srun $SHREDDERPATH/QuantumPatchNG.py 1>> progress.txt
+$OPENMPI_PATH/bin/mpirun -x CONDA_PREFIX --oversubscribe --bind-to none $ENVCOMMAND --hostfile $HOSTFILE --mca btl self,vader,tcp python -m mpi4py $SHREDDERPATH/QuantumPatchNG.py >> progress.txt 2> shredder_mpi_stderr

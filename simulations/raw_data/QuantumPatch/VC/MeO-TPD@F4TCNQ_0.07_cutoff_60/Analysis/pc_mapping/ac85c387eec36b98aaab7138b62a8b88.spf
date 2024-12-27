@@ -1,0 +1,200 @@
+residues:
+  T01:
+    atoms:
+      C:
+        charge: 0.0652
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C1:
+        charge: 0.1674
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C10:
+        charge: 0.0923
+        epsilon: 0.1505736138
+        mol2_atom_type: C.1
+        sigma: 3.56
+      C11:
+        charge: 0.0923
+        epsilon: 0.1505736138
+        mol2_atom_type: C.1
+        sigma: 3.56
+      C2:
+        charge: 0.1674
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C3:
+        charge: 0.0652
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C4:
+        charge: 0.1674
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C5:
+        charge: 0.1674
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C6:
+        charge: 0.2083
+        epsilon: 0.1505736138
+        mol2_atom_type: C.3
+        sigma: 3.56
+      C7:
+        charge: 0.0923
+        epsilon: 0.1505736138
+        mol2_atom_type: C.1
+        sigma: 3.56
+      C8:
+        charge: 0.0923
+        epsilon: 0.1505736138
+        mol2_atom_type: C.1
+        sigma: 3.56
+      C9:
+        charge: 0.2083
+        epsilon: 0.1505736138
+        mol2_atom_type: C.3
+        sigma: 3.56
+      F:
+        charge: -0.202
+        epsilon: 0.7194072658
+        mol2_atom_type: F
+        sigma: 2.5
+      F1:
+        charge: -0.202
+        epsilon: 0.7194072658
+        mol2_atom_type: F
+        sigma: 2.5
+      F2:
+        charge: -0.202
+        epsilon: 0.7194072658
+        mol2_atom_type: F
+        sigma: 2.5
+      F3:
+        charge: -0.202
+        epsilon: 0.7194072658
+        mol2_atom_type: F
+        sigma: 2.5
+      N:
+        charge: -0.1945
+        epsilon: 0.1601338432
+        mol2_atom_type: N.1
+        sigma: 2.9
+      N1:
+        charge: -0.1945
+        epsilon: 0.1601338432
+        mol2_atom_type: N.1
+        sigma: 2.9
+      N2:
+        charge: -0.1945
+        epsilon: 0.1601338432
+        mol2_atom_type: N.1
+        sigma: 2.9
+      N3:
+        charge: -0.1945
+        epsilon: 0.1601338432
+        mol2_atom_type: N.1
+        sigma: 2.9
+    bonds:
+    - - C
+      - C6
+      - '1'
+    - - C
+      - C1
+      - ar
+    - - C
+      - C5
+      - ar
+    - - C1
+      - F3
+      - '1'
+    - - C1
+      - C2
+      - ar
+    - - C2
+      - F2
+      - '1'
+    - - C2
+      - C3
+      - ar
+    - - C3
+      - C4
+      - ar
+    - - C3
+      - C9
+      - '1'
+    - - C4
+      - C5
+      - ar
+    - - C4
+      - F1
+      - '1'
+    - - C5
+      - F
+      - '1'
+    - - C6
+      - C7
+      - '1'
+    - - C6
+      - C8
+      - '1'
+    - - C7
+      - N
+      - '3'
+    - - C8
+      - N1
+      - '3'
+    - - C9
+      - C10
+      - '1'
+    - - C9
+      - C11
+      - '1'
+    - - C10
+      - N3
+      - '3'
+    - - C11
+      - N2
+      - '3'
+    moves:
+      dihedral:
+      - - - C5
+          - C
+          - C6
+          - C8
+        - single
+      - - - C4
+          - C3
+          - C9
+          - C11
+        - single
+      - - - C
+          - C6
+          - C7
+          - N
+        - single
+      - - - C
+          - C6
+          - C8
+          - N1
+        - single
+      - - - C11
+          - C9
+          - C10
+          - N3
+        - single
+      - - - C10
+          - C9
+          - C11
+          - N2
+        - single
+structure:
+  bonds: []
+  moves: {}
+  parameters: {}

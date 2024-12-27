@@ -1,0 +1,4 @@
+/home/hk-project-zimnano/nz8308/nanomatch/V6/basefolder/local/bin/generate_pbs_nodefile:19: SyntaxWarning: invalid escape sequence '\['
+  parsecomma_regex = ",(?![^\[]*\])"
+/home/hk-project-zimnano/nz8308/nanomatch/V6/basefolder/local/bin/generate_pbs_nodefile:22: SyntaxWarning: invalid escape sequence '\['
+  multinode = re.match("(.+)\[([\d\-\,]+)\]",nodedef)

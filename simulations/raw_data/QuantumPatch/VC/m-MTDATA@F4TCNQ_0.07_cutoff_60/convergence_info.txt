@@ -1,0 +1,1050 @@
+--- Convergence info step 63 ---
+Molecules updated: 252
+
+--- Convergence info step 63 ---
+Molecules updated: 254
+
+--- Convergence info step 63 ---
+Molecules updated: 255
+
+--- Convergence info step 63 ---
+Molecules updated: 252
+
+--- Convergence info step 63 ---
+Molecules updated: 269
+
+--- Convergence info step 63 ---
+Molecules updated: 266
+
+--- Convergence info step 63 ---
+Molecules updated: 274
+
+--- Convergence info step 63 ---
+Molecules updated: 254
+
+--- Convergence info step 63 ---
+Molecules updated: 272
+
+--- Convergence info step 63 ---
+Molecules updated: 267
+
+--- Convergence info step 63 ---
+Molecules updated: 271
+
+--- Convergence info step 63 ---
+Molecules updated: 270
+
+--- Convergence info step 63 ---
+Molecules updated: 261
+
+--- Convergence info step 63 ---
+Molecules updated: 274
+
+--- Convergence info step 63 ---
+Molecules updated: 275
+
+--- Convergence info step 63 ---
+Molecules updated: 269
+
+--- Convergence info step 63 ---
+Molecules updated: 274
+
+--- Convergence info step 63 ---
+Molecules updated: 269
+
+--- Convergence info step 63 ---
+Molecules updated: 274
+
+--- Convergence info step 63 ---
+Molecules updated: 269
+
+--- Convergence info step 63 ---
+Molecules updated: 282
+
+--- Convergence info step 63 ---
+Molecules updated: 283
+
+--- Convergence info step 63 ---
+Molecules updated: 269
+
+--- Convergence info step 63 ---
+Molecules updated: 281
+
+--- Convergence info step 63 ---
+Molecules updated: 275
+
+--- Convergence info step 63 ---
+Molecules updated: 280
+
+--- Convergence info step 63 ---
+Molecules updated: 286
+
+--- Convergence info step 63 ---
+Molecules updated: 283
+
+--- Convergence info step 63 ---
+Molecules updated: 290
+
+--- Convergence info step 63 ---
+Molecules updated: 296
+
+--- Convergence info step 63 ---
+Molecules updated: 293
+
+--- Convergence info step 63 ---
+Molecules updated: 286
+
+--- Convergence info step 63 ---
+Molecules updated: 302
+
+--- Convergence info step 63 ---
+Molecules updated: 296
+
+--- Convergence info step 63 ---
+Molecules updated: 300
+
+--- Convergence info step 63 ---
+Molecules updated: 290
+
+--- Convergence info step 63 ---
+Molecules updated: 308
+
+--- Convergence info step 63 ---
+Molecules updated: 299
+
+--- Convergence info step 63 ---
+Molecules updated: 303
+
+--- Convergence info step 63 ---
+Molecules updated: 314
+
+--- Convergence info step 63 ---
+Molecules updated: 314
+
+--- Convergence info step 63 ---
+Molecules updated: 328
+
+--- Convergence info step 63 ---
+Molecules updated: 320
+
+--- Convergence info step 63 ---
+Molecules updated: 317
+
+--- Convergence info step 63 ---
+Molecules updated: 315
+
+--- Convergence info step 63 ---
+Molecules updated: 331
+
+--- Convergence info step 63 ---
+Molecules updated: 317
+
+--- Convergence info step 63 ---
+Molecules updated: 345
+
+--- Convergence info step 63 ---
+Molecules updated: 331
+
+--- Convergence info step 63 ---
+Molecules updated: 344
+
+--- Convergence info step 64 ---
+Molecules updated: 252
+
+--- Convergence info step 64 ---
+Molecules updated: 254
+
+--- Convergence info step 64 ---
+Molecules updated: 255
+
+--- Convergence info step 64 ---
+Molecules updated: 252
+
+--- Convergence info step 64 ---
+Molecules updated: 269
+
+--- Convergence info step 64 ---
+Molecules updated: 266
+
+--- Convergence info step 64 ---
+Molecules updated: 274
+
+--- Convergence info step 64 ---
+Molecules updated: 254
+
+--- Convergence info step 64 ---
+Molecules updated: 272
+
+--- Convergence info step 64 ---
+Molecules updated: 267
+
+--- Convergence info step 64 ---
+Molecules updated: 271
+
+--- Convergence info step 64 ---
+Molecules updated: 270
+
+--- Convergence info step 64 ---
+Molecules updated: 261
+
+--- Convergence info step 64 ---
+Molecules updated: 274
+
+--- Convergence info step 64 ---
+Molecules updated: 275
+
+--- Convergence info step 64 ---
+Molecules updated: 269
+
+--- Convergence info step 64 ---
+Molecules updated: 274
+
+--- Convergence info step 64 ---
+Molecules updated: 269
+
+--- Convergence info step 64 ---
+Molecules updated: 274
+
+--- Convergence info step 64 ---
+Molecules updated: 269
+
+--- Convergence info step 64 ---
+Molecules updated: 282
+
+--- Convergence info step 64 ---
+Molecules updated: 283
+
+--- Convergence info step 64 ---
+Molecules updated: 269
+
+--- Convergence info step 64 ---
+Molecules updated: 281
+
+--- Convergence info step 64 ---
+Molecules updated: 275
+
+--- Convergence info step 64 ---
+Molecules updated: 280
+
+--- Convergence info step 64 ---
+Molecules updated: 286
+
+--- Convergence info step 64 ---
+Molecules updated: 283
+
+--- Convergence info step 64 ---
+Molecules updated: 290
+
+--- Convergence info step 64 ---
+Molecules updated: 296
+
+--- Convergence info step 64 ---
+Molecules updated: 293
+
+--- Convergence info step 64 ---
+Molecules updated: 286
+
+--- Convergence info step 64 ---
+Molecules updated: 302
+
+--- Convergence info step 64 ---
+Molecules updated: 296
+
+--- Convergence info step 64 ---
+Molecules updated: 300
+
+--- Convergence info step 64 ---
+Molecules updated: 290
+
+--- Convergence info step 64 ---
+Molecules updated: 308
+
+--- Convergence info step 64 ---
+Molecules updated: 299
+
+--- Convergence info step 64 ---
+Molecules updated: 303
+
+--- Convergence info step 64 ---
+Molecules updated: 314
+
+--- Convergence info step 64 ---
+Molecules updated: 314
+
+--- Convergence info step 64 ---
+Molecules updated: 328
+
+--- Convergence info step 64 ---
+Molecules updated: 320
+
+--- Convergence info step 64 ---
+Molecules updated: 317
+
+--- Convergence info step 64 ---
+Molecules updated: 315
+
+--- Convergence info step 64 ---
+Molecules updated: 331
+
+--- Convergence info step 64 ---
+Molecules updated: 317
+
+--- Convergence info step 64 ---
+Molecules updated: 345
+
+--- Convergence info step 64 ---
+Molecules updated: 331
+
+--- Convergence info step 64 ---
+Molecules updated: 344
+
+--- Convergence info step 65 ---
+Molecules updated: 252
+
+--- Convergence info step 65 ---
+Molecules updated: 254
+
+--- Convergence info step 65 ---
+Molecules updated: 255
+
+--- Convergence info step 65 ---
+Molecules updated: 252
+
+--- Convergence info step 65 ---
+Molecules updated: 269
+
+--- Convergence info step 65 ---
+Molecules updated: 266
+
+--- Convergence info step 65 ---
+Molecules updated: 274
+
+--- Convergence info step 65 ---
+Molecules updated: 254
+
+--- Convergence info step 65 ---
+Molecules updated: 272
+
+--- Convergence info step 65 ---
+Molecules updated: 267
+
+--- Convergence info step 65 ---
+Molecules updated: 271
+
+--- Convergence info step 65 ---
+Molecules updated: 270
+
+--- Convergence info step 65 ---
+Molecules updated: 261
+
+--- Convergence info step 65 ---
+Molecules updated: 274
+
+--- Convergence info step 65 ---
+Molecules updated: 275
+
+--- Convergence info step 65 ---
+Molecules updated: 269
+
+--- Convergence info step 65 ---
+Molecules updated: 274
+
+--- Convergence info step 65 ---
+Molecules updated: 269
+
+--- Convergence info step 65 ---
+Molecules updated: 274
+
+--- Convergence info step 65 ---
+Molecules updated: 269
+
+--- Convergence info step 65 ---
+Molecules updated: 282
+
+--- Convergence info step 65 ---
+Molecules updated: 283
+
+--- Convergence info step 65 ---
+Molecules updated: 269
+
+--- Convergence info step 65 ---
+Molecules updated: 281
+
+--- Convergence info step 65 ---
+Molecules updated: 275
+
+--- Convergence info step 65 ---
+Molecules updated: 280
+
+--- Convergence info step 65 ---
+Molecules updated: 286
+
+--- Convergence info step 65 ---
+Molecules updated: 283
+
+--- Convergence info step 65 ---
+Molecules updated: 290
+
+--- Convergence info step 65 ---
+Molecules updated: 296
+
+--- Convergence info step 65 ---
+Molecules updated: 293
+
+--- Convergence info step 65 ---
+Molecules updated: 286
+
+--- Convergence info step 65 ---
+Molecules updated: 302
+
+--- Convergence info step 65 ---
+Molecules updated: 296
+
+--- Convergence info step 65 ---
+Molecules updated: 300
+
+--- Convergence info step 65 ---
+Molecules updated: 290
+
+--- Convergence info step 65 ---
+Molecules updated: 308
+
+--- Convergence info step 65 ---
+Molecules updated: 299
+
+--- Convergence info step 65 ---
+Molecules updated: 303
+
+--- Convergence info step 65 ---
+Molecules updated: 314
+
+--- Convergence info step 65 ---
+Molecules updated: 314
+
+--- Convergence info step 65 ---
+Molecules updated: 328
+
+--- Convergence info step 65 ---
+Molecules updated: 320
+
+--- Convergence info step 65 ---
+Molecules updated: 317
+
+--- Convergence info step 65 ---
+Molecules updated: 315
+
+--- Convergence info step 65 ---
+Molecules updated: 331
+
+--- Convergence info step 65 ---
+Molecules updated: 317
+
+--- Convergence info step 65 ---
+Molecules updated: 345
+
+--- Convergence info step 65 ---
+Molecules updated: 331
+
+--- Convergence info step 65 ---
+Molecules updated: 344
+
+--- Convergence info step 66 ---
+Molecules updated: 252
+
+--- Convergence info step 66 ---
+Molecules updated: 254
+
+--- Convergence info step 66 ---
+Molecules updated: 255
+
+--- Convergence info step 66 ---
+Molecules updated: 252
+
+--- Convergence info step 66 ---
+Molecules updated: 269
+
+--- Convergence info step 66 ---
+Molecules updated: 266
+
+--- Convergence info step 66 ---
+Molecules updated: 274
+
+--- Convergence info step 66 ---
+Molecules updated: 254
+
+--- Convergence info step 66 ---
+Molecules updated: 272
+
+--- Convergence info step 66 ---
+Molecules updated: 267
+
+--- Convergence info step 66 ---
+Molecules updated: 271
+
+--- Convergence info step 66 ---
+Molecules updated: 270
+
+--- Convergence info step 66 ---
+Molecules updated: 261
+
+--- Convergence info step 66 ---
+Molecules updated: 274
+
+--- Convergence info step 66 ---
+Molecules updated: 275
+
+--- Convergence info step 66 ---
+Molecules updated: 269
+
+--- Convergence info step 66 ---
+Molecules updated: 274
+
+--- Convergence info step 66 ---
+Molecules updated: 269
+
+--- Convergence info step 66 ---
+Molecules updated: 274
+
+--- Convergence info step 66 ---
+Molecules updated: 269
+
+--- Convergence info step 66 ---
+Molecules updated: 282
+
+--- Convergence info step 66 ---
+Molecules updated: 283
+
+--- Convergence info step 66 ---
+Molecules updated: 269
+
+--- Convergence info step 66 ---
+Molecules updated: 281
+
+--- Convergence info step 66 ---
+Molecules updated: 275
+
+--- Convergence info step 66 ---
+Molecules updated: 280
+
+--- Convergence info step 66 ---
+Molecules updated: 286
+
+--- Convergence info step 66 ---
+Molecules updated: 283
+
+--- Convergence info step 66 ---
+Molecules updated: 290
+
+--- Convergence info step 66 ---
+Molecules updated: 296
+
+--- Convergence info step 66 ---
+Molecules updated: 293
+
+--- Convergence info step 66 ---
+Molecules updated: 286
+
+--- Convergence info step 66 ---
+Molecules updated: 302
+
+--- Convergence info step 66 ---
+Molecules updated: 296
+
+--- Convergence info step 66 ---
+Molecules updated: 300
+
+--- Convergence info step 66 ---
+Molecules updated: 290
+
+--- Convergence info step 66 ---
+Molecules updated: 308
+
+--- Convergence info step 66 ---
+Molecules updated: 299
+
+--- Convergence info step 66 ---
+Molecules updated: 303
+
+--- Convergence info step 66 ---
+Molecules updated: 314
+
+--- Convergence info step 66 ---
+Molecules updated: 314
+
+--- Convergence info step 66 ---
+Molecules updated: 328
+
+--- Convergence info step 66 ---
+Molecules updated: 320
+
+--- Convergence info step 66 ---
+Molecules updated: 317
+
+--- Convergence info step 66 ---
+Molecules updated: 315
+
+--- Convergence info step 66 ---
+Molecules updated: 331
+
+--- Convergence info step 66 ---
+Molecules updated: 317
+
+--- Convergence info step 66 ---
+Molecules updated: 345
+
+--- Convergence info step 66 ---
+Molecules updated: 331
+
+--- Convergence info step 66 ---
+Molecules updated: 344
+
+--- Convergence info step 67 ---
+Molecules updated: 252
+
+--- Convergence info step 67 ---
+Molecules updated: 254
+
+--- Convergence info step 67 ---
+Molecules updated: 255
+
+--- Convergence info step 67 ---
+Molecules updated: 252
+
+--- Convergence info step 67 ---
+Molecules updated: 269
+
+--- Convergence info step 67 ---
+Molecules updated: 266
+
+--- Convergence info step 67 ---
+Molecules updated: 274
+
+--- Convergence info step 67 ---
+Molecules updated: 254
+
+--- Convergence info step 67 ---
+Molecules updated: 272
+
+--- Convergence info step 67 ---
+Molecules updated: 267
+
+--- Convergence info step 67 ---
+Molecules updated: 271
+
+--- Convergence info step 67 ---
+Molecules updated: 270
+
+--- Convergence info step 67 ---
+Molecules updated: 261
+
+--- Convergence info step 67 ---
+Molecules updated: 274
+
+--- Convergence info step 67 ---
+Molecules updated: 275
+
+--- Convergence info step 67 ---
+Molecules updated: 269
+
+--- Convergence info step 67 ---
+Molecules updated: 274
+
+--- Convergence info step 67 ---
+Molecules updated: 269
+
+--- Convergence info step 67 ---
+Molecules updated: 274
+
+--- Convergence info step 67 ---
+Molecules updated: 269
+
+--- Convergence info step 67 ---
+Molecules updated: 282
+
+--- Convergence info step 67 ---
+Molecules updated: 283
+
+--- Convergence info step 67 ---
+Molecules updated: 269
+
+--- Convergence info step 67 ---
+Molecules updated: 281
+
+--- Convergence info step 67 ---
+Molecules updated: 275
+
+--- Convergence info step 67 ---
+Molecules updated: 280
+
+--- Convergence info step 67 ---
+Molecules updated: 286
+
+--- Convergence info step 67 ---
+Molecules updated: 283
+
+--- Convergence info step 67 ---
+Molecules updated: 290
+
+--- Convergence info step 67 ---
+Molecules updated: 296
+
+--- Convergence info step 67 ---
+Molecules updated: 293
+
+--- Convergence info step 67 ---
+Molecules updated: 286
+
+--- Convergence info step 67 ---
+Molecules updated: 302
+
+--- Convergence info step 67 ---
+Molecules updated: 296
+
+--- Convergence info step 67 ---
+Molecules updated: 300
+
+--- Convergence info step 67 ---
+Molecules updated: 290
+
+--- Convergence info step 67 ---
+Molecules updated: 308
+
+--- Convergence info step 67 ---
+Molecules updated: 299
+
+--- Convergence info step 67 ---
+Molecules updated: 303
+
+--- Convergence info step 67 ---
+Molecules updated: 314
+
+--- Convergence info step 67 ---
+Molecules updated: 314
+
+--- Convergence info step 67 ---
+Molecules updated: 328
+
+--- Convergence info step 67 ---
+Molecules updated: 320
+
+--- Convergence info step 67 ---
+Molecules updated: 317
+
+--- Convergence info step 67 ---
+Molecules updated: 315
+
+--- Convergence info step 67 ---
+Molecules updated: 331
+
+--- Convergence info step 67 ---
+Molecules updated: 317
+
+--- Convergence info step 67 ---
+Molecules updated: 345
+
+--- Convergence info step 67 ---
+Molecules updated: 331
+
+--- Convergence info step 67 ---
+Molecules updated: 344
+
+--- Convergence info step 68 ---
+Molecules updated: 252
+
+--- Convergence info step 68 ---
+Molecules updated: 254
+
+--- Convergence info step 68 ---
+Molecules updated: 255
+
+--- Convergence info step 68 ---
+Molecules updated: 252
+
+--- Convergence info step 68 ---
+Molecules updated: 269
+
+--- Convergence info step 68 ---
+Molecules updated: 266
+
+--- Convergence info step 68 ---
+Molecules updated: 274
+
+--- Convergence info step 68 ---
+Molecules updated: 254
+
+--- Convergence info step 68 ---
+Molecules updated: 272
+
+--- Convergence info step 68 ---
+Molecules updated: 267
+
+--- Convergence info step 68 ---
+Molecules updated: 271
+
+--- Convergence info step 68 ---
+Molecules updated: 270
+
+--- Convergence info step 68 ---
+Molecules updated: 261
+
+--- Convergence info step 68 ---
+Molecules updated: 274
+
+--- Convergence info step 68 ---
+Molecules updated: 275
+
+--- Convergence info step 68 ---
+Molecules updated: 269
+
+--- Convergence info step 68 ---
+Molecules updated: 274
+
+--- Convergence info step 68 ---
+Molecules updated: 269
+
+--- Convergence info step 68 ---
+Molecules updated: 274
+
+--- Convergence info step 68 ---
+Molecules updated: 269
+
+--- Convergence info step 68 ---
+Molecules updated: 282
+
+--- Convergence info step 68 ---
+Molecules updated: 283
+
+--- Convergence info step 68 ---
+Molecules updated: 269
+
+--- Convergence info step 68 ---
+Molecules updated: 281
+
+--- Convergence info step 68 ---
+Molecules updated: 275
+
+--- Convergence info step 68 ---
+Molecules updated: 280
+
+--- Convergence info step 68 ---
+Molecules updated: 286
+
+--- Convergence info step 68 ---
+Molecules updated: 283
+
+--- Convergence info step 68 ---
+Molecules updated: 290
+
+--- Convergence info step 68 ---
+Molecules updated: 296
+
+--- Convergence info step 68 ---
+Molecules updated: 293
+
+--- Convergence info step 68 ---
+Molecules updated: 286
+
+--- Convergence info step 68 ---
+Molecules updated: 302
+
+--- Convergence info step 68 ---
+Molecules updated: 296
+
+--- Convergence info step 68 ---
+Molecules updated: 300
+
+--- Convergence info step 68 ---
+Molecules updated: 290
+
+--- Convergence info step 68 ---
+Molecules updated: 308
+
+--- Convergence info step 68 ---
+Molecules updated: 299
+
+--- Convergence info step 68 ---
+Molecules updated: 303
+
+--- Convergence info step 68 ---
+Molecules updated: 314
+
+--- Convergence info step 68 ---
+Molecules updated: 314
+
+--- Convergence info step 68 ---
+Molecules updated: 328
+
+--- Convergence info step 68 ---
+Molecules updated: 320
+
+--- Convergence info step 68 ---
+Molecules updated: 317
+
+--- Convergence info step 68 ---
+Molecules updated: 315
+
+--- Convergence info step 68 ---
+Molecules updated: 331
+
+--- Convergence info step 68 ---
+Molecules updated: 317
+
+--- Convergence info step 68 ---
+Molecules updated: 345
+
+--- Convergence info step 68 ---
+Molecules updated: 331
+
+--- Convergence info step 68 ---
+Molecules updated: 344
+
+--- Convergence info step 69 ---
+Molecules updated: 252
+
+--- Convergence info step 69 ---
+Molecules updated: 254
+
+--- Convergence info step 69 ---
+Molecules updated: 255
+
+--- Convergence info step 69 ---
+Molecules updated: 252
+
+--- Convergence info step 69 ---
+Molecules updated: 269
+
+--- Convergence info step 69 ---
+Molecules updated: 266
+
+--- Convergence info step 69 ---
+Molecules updated: 274
+
+--- Convergence info step 69 ---
+Molecules updated: 254
+
+--- Convergence info step 69 ---
+Molecules updated: 272
+
+--- Convergence info step 69 ---
+Molecules updated: 267
+
+--- Convergence info step 69 ---
+Molecules updated: 271
+
+--- Convergence info step 69 ---
+Molecules updated: 270
+
+--- Convergence info step 69 ---
+Molecules updated: 261
+
+--- Convergence info step 69 ---
+Molecules updated: 274
+
+--- Convergence info step 69 ---
+Molecules updated: 275
+
+--- Convergence info step 69 ---
+Molecules updated: 269
+
+--- Convergence info step 69 ---
+Molecules updated: 274
+
+--- Convergence info step 69 ---
+Molecules updated: 269
+
+--- Convergence info step 69 ---
+Molecules updated: 274
+
+--- Convergence info step 69 ---
+Molecules updated: 269
+
+--- Convergence info step 69 ---
+Molecules updated: 282
+
+--- Convergence info step 69 ---
+Molecules updated: 283
+
+--- Convergence info step 69 ---
+Molecules updated: 269
+
+--- Convergence info step 69 ---
+Molecules updated: 281
+
+--- Convergence info step 69 ---
+Molecules updated: 275
+
+--- Convergence info step 69 ---
+Molecules updated: 280
+
+--- Convergence info step 69 ---
+Molecules updated: 286
+
+--- Convergence info step 69 ---
+Molecules updated: 283
+
+--- Convergence info step 69 ---
+Molecules updated: 290
+
+--- Convergence info step 69 ---
+Molecules updated: 296
+
+--- Convergence info step 69 ---
+Molecules updated: 293
+
+--- Convergence info step 69 ---
+Molecules updated: 286
+
+--- Convergence info step 69 ---
+Molecules updated: 302
+
+--- Convergence info step 69 ---
+Molecules updated: 296
+
+--- Convergence info step 69 ---
+Molecules updated: 300
+
+--- Convergence info step 69 ---
+Molecules updated: 290
+
+--- Convergence info step 69 ---
+Molecules updated: 308
+
+--- Convergence info step 69 ---
+Molecules updated: 299
+
+--- Convergence info step 69 ---
+Molecules updated: 303
+
+--- Convergence info step 69 ---
+Molecules updated: 314
+
+--- Convergence info step 69 ---
+Molecules updated: 314
+
+--- Convergence info step 69 ---
+Molecules updated: 328
+
+--- Convergence info step 69 ---
+Molecules updated: 320
+
+--- Convergence info step 69 ---
+Molecules updated: 317
+
+--- Convergence info step 69 ---
+Molecules updated: 315
+
+--- Convergence info step 69 ---
+Molecules updated: 331
+
+--- Convergence info step 69 ---
+Molecules updated: 317
+
+--- Convergence info step 69 ---
+Molecules updated: 345
+
+--- Convergence info step 69 ---
+Molecules updated: 331
+
+--- Convergence info step 69 ---
+Molecules updated: 344
+

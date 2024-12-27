@@ -1,0 +1,21 @@
+
+============================= JOB FEEDBACK =============================
+
+Job ID: 2363830
+Cluster: hk
+User/Group: nz8308/hk-project-zimnano
+Account: hk-project-doled
+State: COMPLETED (exit code 0)
+Partition: cpuonly
+Nodes: 10
+Cores per node: 152
+Nodelist: hkn[0271,0330,1110,1113-1114,1118,1129,1201,1227,1668]
+CPU Utilized: 3-06:11:11
+CPU Efficiency: 2.25% of 144-22:41:20 core-walltime
+Job Wall-clock time: 02:17:19
+Starttime: Fri Apr  5 17:29:52 2024
+Endtime: Fri Apr  5 19:47:11 2024
+Memory Utilized: 155.27 GB
+Memory Efficiency: 6.54% of 2.32 TB
+Energy Consumed: 40062878 Joule / 11128.5772222222 Watthours
+Average node power draw: 4862.58987741231 Watt

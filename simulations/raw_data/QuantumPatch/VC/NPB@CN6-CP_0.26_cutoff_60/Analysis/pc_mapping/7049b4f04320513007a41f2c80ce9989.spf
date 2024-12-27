@@ -1,0 +1,690 @@
+residues:
+  T00:
+    atoms:
+      C:
+        charge: 0.0464
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C1:
+        charge: 0.0464
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C10:
+        charge: -0.0161
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C11:
+        charge: -0.0161
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C12:
+        charge: -0.0394
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C13:
+        charge: -0.0394
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C14:
+        charge: -0.0394
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C15:
+        charge: -0.0394
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C16:
+        charge: -0.0523
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C17:
+        charge: -0.0523
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C18:
+        charge: -0.0523
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C19:
+        charge: -0.0523
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C2:
+        charge: 0.0388
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C20:
+        charge: -0.0394
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C21:
+        charge: -0.0394
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C22:
+        charge: -0.0522
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C23:
+        charge: -0.0522
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C24:
+        charge: -0.0539
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C25:
+        charge: -0.0539
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C26:
+        charge: -0.0594
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C27:
+        charge: -0.0594
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C28:
+        charge: -0.054
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C29:
+        charge: -0.054
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C3:
+        charge: 0.0388
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C30:
+        charge: -0.04
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C31:
+        charge: -0.04
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C32:
+        charge: -0.04
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C33:
+        charge: -0.04
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C34:
+        charge: -0.0611
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C35:
+        charge: -0.0611
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C36:
+        charge: -0.0612
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C37:
+        charge: -0.0612
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C38:
+        charge: -0.06
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C39:
+        charge: -0.06
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C4:
+        charge: 0.0038
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C40:
+        charge: -0.06
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C41:
+        charge: -0.06
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C42:
+        charge: -0.0616
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C43:
+        charge: -0.0616
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C5:
+        charge: 0.0038
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C6:
+        charge: -0.0178
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C7:
+        charge: -0.0178
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C8:
+        charge: 0.0388
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      C9:
+        charge: 0.0388
+        epsilon: 0.1505736138
+        mol2_atom_type: C.ar
+        sigma: 3.56
+      H:
+        charge: 0.0636
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H1:
+        charge: 0.0636
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H10:
+        charge: 0.0624
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H11:
+        charge: 0.0624
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H12:
+        charge: 0.0624
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H13:
+        charge: 0.0624
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H14:
+        charge: 0.0618
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H15:
+        charge: 0.0618
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H16:
+        charge: 0.0624
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H17:
+        charge: 0.0624
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H18:
+        charge: 0.0636
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H19:
+        charge: 0.0636
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H2:
+        charge: 0.0636
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H20:
+        charge: 0.0636
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H21:
+        charge: 0.0636
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H22:
+        charge: 0.0618
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H23:
+        charge: 0.0618
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H24:
+        charge: 0.0618
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H25:
+        charge: 0.0618
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H26:
+        charge: 0.0618
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H27:
+        charge: 0.0618
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H28:
+        charge: 0.0618
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H29:
+        charge: 0.0618
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H3:
+        charge: 0.0636
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H30:
+        charge: 0.0618
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H31:
+        charge: 0.0618
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H4:
+        charge: 0.0624
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H5:
+        charge: 0.0624
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H6:
+        charge: 0.0624
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H7:
+        charge: 0.0624
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H8:
+        charge: 0.0636
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      H9:
+        charge: 0.0636
+        epsilon: 0.0191204589
+        mol2_atom_type: H
+        sigma: 1.78
+      N:
+        charge: -0.2686
+        epsilon: 0.1601338432
+        mol2_atom_type: N.pl3
+        sigma: 2.9
+      N1:
+        charge: -0.2686
+        epsilon: 0.1601338432
+        mol2_atom_type: N.pl3
+        sigma: 2.9
+    bonds:
+    - - N
+      - C
+      - '1'
+    - - N
+      - C2
+      - '1'
+    - - N
+      - C8
+      - '1'
+    - - N1
+      - C1
+      - '1'
+    - - N1
+      - C3
+      - '1'
+    - - N1
+      - C9
+      - '1'
+    - - C
+      - C20
+      - ar
+    - - C
+      - C4
+      - ar
+    - - C1
+      - C21
+      - ar
+    - - C1
+      - C5
+      - ar
+    - - C2
+      - C14
+      - ar
+    - - C2
+      - C12
+      - ar
+    - - C3
+      - C13
+      - ar
+    - - C3
+      - C15
+      - ar
+    - - C4
+      - C10
+      - ar
+    - - C4
+      - C22
+      - ar
+    - - C5
+      - C11
+      - ar
+    - - C5
+      - C23
+      - ar
+    - - C6
+      - C18
+      - ar
+    - - C6
+      - C16
+      - ar
+    - - C6
+      - C7
+      - '1'
+    - - C7
+      - C17
+      - ar
+    - - C7
+      - C19
+      - ar
+    - - C8
+      - C32
+      - ar
+    - - C8
+      - C30
+      - ar
+    - - C9
+      - C33
+      - ar
+    - - C9
+      - C31
+      - ar
+    - - C10
+      - C24
+      - ar
+    - - C10
+      - C28
+      - ar
+    - - C11
+      - C25
+      - ar
+    - - C11
+      - C29
+      - ar
+    - - C12
+      - H
+      - '1'
+    - - C12
+      - C16
+      - ar
+    - - C13
+      - H1
+      - '1'
+    - - C13
+      - C17
+      - ar
+    - - C14
+      - H2
+      - '1'
+    - - C14
+      - C18
+      - ar
+    - - C15
+      - C19
+      - ar
+    - - C15
+      - H3
+      - '1'
+    - - C16
+      - H4
+      - '1'
+    - - C17
+      - H5
+      - '1'
+    - - C18
+      - H6
+      - '1'
+    - - C19
+      - H7
+      - '1'
+    - - C20
+      - C26
+      - ar
+    - - C20
+      - H8
+      - '1'
+    - - C21
+      - C27
+      - ar
+    - - C21
+      - H9
+      - '1'
+    - - C22
+      - C34
+      - ar
+    - - C22
+      - H10
+      - '1'
+    - - C23
+      - C35
+      - ar
+    - - C23
+      - H11
+      - '1'
+    - - C24
+      - C26
+      - ar
+    - - C24
+      - H12
+      - '1'
+    - - C25
+      - H13
+      - '1'
+    - - C25
+      - C27
+      - ar
+    - - C26
+      - H14
+      - '1'
+    - - C27
+      - H15
+      - '1'
+    - - C28
+      - H16
+      - '1'
+    - - C28
+      - C36
+      - ar
+    - - C29
+      - H17
+      - '1'
+    - - C29
+      - C37
+      - ar
+    - - C30
+      - C38
+      - ar
+    - - C30
+      - H18
+      - '1'
+    - - C31
+      - H19
+      - '1'
+    - - C31
+      - C39
+      - ar
+    - - C32
+      - H20
+      - '1'
+    - - C32
+      - C40
+      - ar
+    - - C33
+      - H21
+      - '1'
+    - - C33
+      - C41
+      - ar
+    - - C34
+      - C36
+      - ar
+    - - C34
+      - H22
+      - '1'
+    - - C35
+      - C37
+      - ar
+    - - C35
+      - H23
+      - '1'
+    - - C36
+      - H24
+      - '1'
+    - - C37
+      - H25
+      - '1'
+    - - C38
+      - C42
+      - ar
+    - - C38
+      - H26
+      - '1'
+    - - C39
+      - C43
+      - ar
+    - - C39
+      - H27
+      - '1'
+    - - C40
+      - H28
+      - '1'
+    - - C40
+      - C42
+      - ar
+    - - C41
+      - H29
+      - '1'
+    - - C41
+      - C43
+      - ar
+    - - C42
+      - H30
+      - '1'
+    - - C43
+      - H31
+      - '1'
+    moves:
+      dihedral:
+      - - - C8
+          - N
+          - C
+          - C4
+        - single
+      - - - C8
+          - N
+          - C2
+          - C12
+        - single
+      - - - C2
+          - N
+          - C8
+          - C30
+        - single
+      - - - C9
+          - N1
+          - C1
+          - C5
+        - single
+      - - - C9
+          - N1
+          - C3
+          - C15
+        - single
+      - - - C3
+          - N1
+          - C9
+          - C31
+        - single
+      - - - C16
+          - C6
+          - C7
+          - C19
+        - single
+structure:
+  bonds: []
+  moves: {}
+  parameters: {}

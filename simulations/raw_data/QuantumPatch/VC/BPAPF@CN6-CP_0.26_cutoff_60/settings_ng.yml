@@ -1,0 +1,226 @@
+QuantumPatch:
+  morphology: structurePBC.cml
+  metadata_spfs: []
+  type: matrix_eaip
+  dimer_cutoff: 7.0
+  number_of_equilibration_steps: 17
+  charge_damping: 0.3
+  damping_by_iter: {}
+  abs_damping_by_iter: {}
+  partial_charge_cutoff: 80
+  pc_cutoff_by_cog: true
+  core_induction_only: false
+  calculateJs: false
+  max_batch_size: 29
+  save_final_coeff_matrices: false
+  chargetype_multipoles: false
+  atomistic_polarizability_steps: [Vacuum]
+  vacuum_charge_mapping: map_similar
+  equilibration_options:
+    equilibration_mode: steps
+    mixing_type: NoMixing
+    core_only: false
+    max_iterdelta_pc: 0.05
+    max_iterdelta_pot: 0.05
+    vac_damping: false
+    p_skip: 0.0
+    delta_pot: 0.002
+    delta_E: 0.005
+    multiplier: 1.0
+    max_level: 2
+  molstate_loop_order:
+  - [2, 2]
+  - [2, 1]
+  - [0, 2]
+  - [0, 1]
+DFTEngine:
+  defaults:
+    Turbomole:
+      engine: Turbomole
+      basis: def2-SVP
+      functional: BP86
+      threads: 1
+      memory: 1500
+      charge_model: ESP
+    Turbomole Evalstep:
+      engine: Turbomole
+      basis: cc-pVTZ
+      method: ridft
+      functional: REVM11
+      threads: 40
+      memory: 60000
+      charge_model: ESP
+      GW: true
+      minimal_basis_guess: true
+      minbasis_cascade: true
+      minbas_func: PBE0
+    Psi4Engine:
+      engine: Psi4Engine
+      basis: def2-SVP
+      functional: BP86
+      threads: 1
+      memory: 1500
+      reference: rdft
+      charge_model: ESP
+    DFTBplus:
+      engine: DFTBplus
+      threads: 1
+      charge_model: cm3
+      skfset: 3ob-3-1
+    Dalton:
+      engine: DaltonEngine
+      basis: def2-SVP
+      functional: BP86
+      threads: 1
+      memory: 1500
+      charge_model: ESP
+  user:
+    polFF:
+      engine: polFF
+      threads: 1
+      field_screening: 0.3
+      damp_radius: 0.75
+      damp_type: avrg
+      induction_only: false
+      induced_multipoles:
+        dipol: true
+        monopol: false
+        monodipol: false
+        quadrupol: false
+    Turbomole 1:
+      basis: def2-SVPD
+      charge_model: ESP
+      dispersion: false
+      engine: Turbomole
+      fallback: Turbomole 1 fallback
+      functional: BP86
+      memory: 3000
+      scf_convergence: normal_1000
+      threads: 16
+      auto_openshell_conv: false
+    Turbomole 1 fallback:
+      basis: def2-SVPD
+      charge_model: ESP
+      dispersion: false
+      engine: Turbomole
+      functional: BP86
+      memory: 1500
+      scf_convergence: superextreme
+      threads: 16
+      auto_openshell_conv: false
+  geo_opt:
+    ECP_env: true
+    optimize: true
+    ired: false
+    engine: Turbomole
+    basis: def2-SVP
+    functional: BP86
+    threads: 1
+    memory: 1500
+    charge_model: ESP
+System:
+  Core:
+    type: pairs_by_number
+    pair_combinations: AB
+    pair_molorder: molsize
+    pair_cutoff: 25
+    number: 50
+    engine: Turbomole 1
+    engine_by_iter: {}
+    default_molstates: 0;1
+    GeometricalOptimizationSteps: []
+    distance:
+      cutoff_x: 10.0
+      cutoff_y: 10.0
+      cutoff_z: 10.0
+  Shells:
+    '0':
+      cutoff: 15.0
+      engine: polFF
+      type: scf
+      engine_by_iter:
+        Vacuum: Turbomole 1
+    '1':
+      cutoff: 40.0
+      engine: polFF
+      type: scf
+      engine_by_iter:
+        Vacuum: Turbomole 1
+      skip_by_iter: [Vacuum]
+  MolStates:
+    '0':
+      charge: 1
+      multiplicity: 2
+      excited_state_of_interest: 0
+      roots: 10
+    '1':
+      charge: -1
+      multiplicity: 2
+      excited_state_of_interest: 0
+      roots: 10
+    '2':
+      charge: 0
+      multiplicity: 1
+      excited_state_of_interest: 0
+      roots: 10
+  IdenticalMolecules:
+    enable_mapping: false
+    filename: identical_molecules.txt
+    crystal_centers: []
+  PointChargeAveraging:
+    enabled: false
+    filename: averaged_molecule_ids.txt
+Analysis:
+  Excitonic:
+    Fluorescence:
+      enabled: true
+      DFTEngine: Turbomole 1
+    Phosphorescence:
+      enabled: true
+      DFTEngine: Dalton Phosphoresence
+      roots: 1
+    TTA:
+      enabled: true
+      DFTEngine: Turbomole 1
+      roots: 20
+      geo_opt: false
+    TPQ:
+      enabled: true
+      DFTEngine: Turbomole 1
+      anion: true
+      cation: true
+      roots: 20
+  HigherOrder:
+    ExtraJs: 10
+  MultipoleOutput: false
+  MatrixEAIP:
+    EAIP_trick: false
+    classical_coulomb: false
+    radius: [10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0]
+    classical_eps: 3.5
+    exact_coulomb: false
+    relax_exact_coulomb: false
+    single_delta: true
+    calculate_vac: false
+    do_lambda: false
+    approximation_split: 1000000.0
+    number_of_centers_approx: 2
+    DoEvalStep: false
+    approx_equilibration_steps: 0
+    approx_equilibration_engine: XTBEngine
+  MachineLearning:
+    enable: false
+    neighbour_radius: 20.0
+    histogram_width: 6
+    debug_output: false
+  homo_lumo_generator:
+    enabled: false
+    swap_x_z_axis: false
+    periodic_copies: [1, 1, 1]
+    coulomb_cutoff: 25.0
+    non_PBC_morphology: morphology.cml
+SpecialSteps:
+  EvalStep:
+    engine: Turbomole Evalstep
+    mollist: core
+    environment_source: LastUncharged
