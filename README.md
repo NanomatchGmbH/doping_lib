@@ -2,10 +2,12 @@
 
 Library of the doped materials.
 ## Data:
-Type:
+
+### Type:
 - conductivity;
 - ionization rate.
-Source:
+ 
+### Source:
 - publihed experimenal;
 - own simulations.
 
