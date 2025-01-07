@@ -1,17 +1,21 @@
 # doping_lib
 
 Library of the doped materials.
-## Data:
+## Data
 
-### Type:
+### Type
 - conductivity;
 - ionization rate.
  
-### Source:
+### Source
 - publihed experimenal;
 - own simulations.
 
-## Scripts:
+### "Rawness" of Data:
+- raw
+- summary
+
+## Scripts
 - to compile data from raw simulation data into summary data;
 - to analyze and plot summary data;
 
@@ -20,4 +24,3 @@ Library of the doped materials.
 - **Code**: This project’s code is licensed under the [MIT License](./LICENSE).
 - **Data**: The data in this repository is licensed under 
   [Creative Commons Attribution–ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/)
-
