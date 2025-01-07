@@ -1,4 +1,4 @@
-# Scripts to visualize [experimental_data](https://github.com/NanomatchGmbH/doping_lib/experimental_data)
+# Scripts to visualize [experimental_data](https://github.com/NanomatchGmbH/doping_lib/tree/main/experimental_data)
 
 The script have in common that the raw experimental data, such as [doped_materials.yaml](https://github.com/NanomatchGmbH/doping_lib/experimental_data/doped_materials.yaml) will be summarized and visualized. Analysis results are saved in the folder [summary](https://github.com/NanomatchGmbH/doping_lib/experimental_data/summary)
 
