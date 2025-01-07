@@ -84,12 +84,12 @@ parser.add_argument("--normalized_mobility", action="store_true",
 args = parser.parse_args()
 
 # Load the YAML data
-with open('../../lib.yaml', 'r') as file:
+with open('../../experimental_data/doped_materials.yaml', 'r') as file:
     data = yaml.load(file, Loader=yaml.FullLoader)
 
 
 # Load the YAML data for intrinsic mobilities
-with open('../../mobility.yaml', 'r') as file:
+with open('../../experimental_data/mobility.yaml', 'r') as file:
     mobility_data = yaml.load(file, Loader=yaml.FullLoader)
 
 # get IP/EA/sigma simulated
