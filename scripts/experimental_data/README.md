@@ -4,7 +4,5 @@ The script have in common that the raw experimental data, such as [doped_materia
 
 ## Script description
 - measured_efficiency.py : output the information about about the materials where doping efficiency were experimentally measured. Generated data: `measured_efficiency.csv`, Generated visualization: `measured_efficiency.png`. Note: - you can ignore some dopants and hosts.
-- work_or_not.py
-- basic analysis.py
-
-## todo: adjust paths in scripts
+- work_or_not.py: plot materials classification in a binary fasion, i.e. if the doping works or does not work.
+- basic analysis.py: output number of host and dopant materials and other basic information.
